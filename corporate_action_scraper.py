@@ -16,12 +16,32 @@ SUPABASE_CLIENT = create_client(URL, KEY)
 
 
 def allowed_symbol(supabase_client: Client = SUPABASE_CLIENT) -> list[str]:
+    """
+    Get a list of allowed symbols from the idx_company_profile table in Supabase.
+    This function retrieves the first four characters of each symbol to match the format used in the scrapers.
+    
+    Args:
+        supabase_client (Client): The Supabase client instance to use for database queries.
+    
+    Returns:
+        list[str]: A list of allowed symbols, each symbol truncated to the first four characters.
+    """
     allowed_symbols = [symbol_to_check['symbol'][:4] for symbol_to_check in
                                 supabase_client.from_("idx_company_profile").select("symbol").execute().data]
     return allowed_symbols
 
 
 def parse_date_safe(date_str: str) -> str | None:
+    """ 
+    Parse a date string in the format "dd-MMM-yyyy" and return it in "yyyy-MM-dd" format.
+    If the input string is empty or cannot be parsed, return None.
+
+    Args:
+        date_str (str): The date string to parse, expected in "dd-MMM-yyyy" format.
+    
+    Returns:
+        str | None: The date in "yyyy-MM-dd" format if parsing is successful,
+    """
     date_str = date_str.strip()
     if not date_str or date_str == '':
         return None
@@ -29,9 +49,19 @@ def parse_date_safe(date_str: str) -> str | None:
         return datetime.strptime(date_str, "%d-%b-%Y").strftime("%Y-%m-%d")
     except ValueError:
         return None
-        
+         
 
 def clean_numeric_value(value_str: str) -> float | None:
+    """ 
+    Clean a numeric value string by removing commas and spaces, then convert it to a float.
+    If the string is empty or cannot be converted, return None.
+
+    Args:
+        value_str (str): The numeric value string to clean and convert.
+    
+    Returns:
+        float | None: The cleaned float value if conversion is successful, otherwise None.
+    """
     try:
         cleaned = value_str.replace(',', '').replace(' ', '')
         return float(cleaned) if cleaned else None
@@ -41,6 +71,17 @@ def clean_numeric_value(value_str: str) -> float | None:
 
 
 def rups_scraper(cutoff_date: str = None) -> pd.DataFrame:
+    """ 
+    Scrape RUPS data from the SahamIDX website.
+    This function retrieves RUPS data, including symbol, recording date,
+    RUPS date, and RUPS place. It filters the data based on a cutoff date and the current date.
+
+    Args:
+        cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format.
+    
+    Returns:
+        pd.DataFrame: A DataFrame containing the scraped RUPS data with columns:
+    """
     page = 1
     rups_data = []
     keep_scraping = True
@@ -148,6 +189,18 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame:
 
 
 def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame:
+    """
+    Scrape bonus data from the SahamIDX website.
+    This function retrieves bonus data, including symbol, old ratio, new ratio,
+    cum date, ex date, payment date, and recording date. It filters the data based on a cutoff date
+    and the current date.
+
+    Args:
+        cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format.
+    
+    Returns:
+        pd.DataFrame: A DataFrame containing the scraped bonus data with columns:
+    """
     page = 1
     keep_scraping = True
     valid_symbols = allowed_symbol()
@@ -255,6 +308,18 @@ def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame:
 
 
 def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame:
+    """ 
+    Scrape warrant data from the SahamIDX website.
+    This function retrieves warrant data, including symbol, old ratio, new ratio,
+    price, ex period start and end dates, maturity date, ex date tunai, and trading period start and end dates.
+    It filters the data based on a cutoff date and the current date.
+
+    Args:
+        cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format.
+    
+    Returns:
+        pd.DataFrame: A DataFrame containing the scraped warrant data with columns:
+    """
     page = 1
     keep_scraping = True
     valid_symbols = allowed_symbol()
@@ -352,6 +417,18 @@ def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame:
 
 
 def right_scraper(cutoff_date: str = None) -> pd.DataFrame:
+    """ 
+    Scrape right issue data from the SahamIDX website.
+    This function retrieves right issue data, including symbol, old ratio, new ratio,
+    price, cum date, ex date, trading period start and end dates, subscription date, and recording date.
+    It filters the data based on a cutoff date and the current date.
+
+    Args:
+        cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format.
+    
+    Returns:
+        pd.DataFrame: A DataFrame containing the scraped right issue data with columns:
+    """
     page = 1
     keep_scraping = True 
     valid_symbols = allowed_symbol()
@@ -463,9 +540,17 @@ def right_scraper(cutoff_date: str = None) -> pd.DataFrame:
 
 
 def upsert_to_db(scraper: str, cutoff_date: str = None):
+    """ 
+    Run a specific scraper and upsert its data to the database.
+    This function checks which scraper to run based on the provided argument,
+    executes the corresponding scraper function, processes the data, and upserts it to the Supabase database.
+
+    Args:
+        scraper (str): The name of the scraper to run. 
+        cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format to pass to the scraper.
+    """
     if scraper == 'scraper_rups':
         df = rups_scraper(cutoff_date)
-        # df.to_csv("test_rups.csv", index=False)
         df = df.drop_duplicates(
             subset=['symbol', 'recording_date'],
             keep='first'
