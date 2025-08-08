@@ -2,7 +2,7 @@ name: Daily Scraper Rups
 
 on:
   schedule:
-    - cron: '0 18 * * 5'
+    - cron: 0 18 * * *'  # Run daily at 18:00 UTC
 
   workflow_dispatch:
 

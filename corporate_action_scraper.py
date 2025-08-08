@@ -46,12 +46,12 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame:
     keep_scraping = True
     valid_symbols = allowed_symbol()
 
-    start_date = datetime.today().date()
+    start_date = datetime.today()
 
     if cutoff_date is None:
         cutoff_date = start_date - timedelta(days=1)
     else:
-        cutoff_date = datetime.strptime(cutoff_date, "%Y-%m-%d").date()
+        cutoff_date = datetime.strptime(cutoff_date, "%Y-%m-%d")
 
     while keep_scraping:
         url = f"https://www.sahamidx.com/?view=Stock.Rups&path=Stock&field_sort=recording_date&sort_by=DESC&page={page}"
@@ -89,7 +89,7 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame:
                 )
                 recording_date_str = recording_date.strftime("%Y-%m-%d")
                 
-                if recording_date.date() > start_date:
+                if recording_date > start_date:
                     continue 
                 
                 # Get rups place 
@@ -108,31 +108,34 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame:
                 symbol_str = symbol + ".JK"
 
                 # Add valid data
-                data_dict = {
-                    "symbol": symbol_str,
-                    "recording_date":  recording_date_str,
-                    "rups_date": rups_date
-                }
+                if cutoff_date <= recording_date <= start_date:
+                    data_dict = {
+                        "symbol": symbol_str,
+                        "recording_date":  recording_date_str,
+                        "rups_date": rups_date
+                    }
 
-                # Add special case for rups place is 'Dibatalkan'
-                if 'Dibatalkan' in rups_place:
-                    if len(rups_place) > 10:
-                        rups_place = rups_place[:10]
-                        data_dict["rups_place_ket"] = rups_place
-                    else:
-                        data_dict["rups_place_ket"] = rups_place
+                    # Add special case for rups place is 'Dibatalkan'
+                    if 'Dibatalkan' in rups_place:
+                        if len(rups_place) > 10:
+                            rups_place = rups_place[:10]
+                            data_dict["rups_place_ket"] = rups_place
+                        else:
+                            data_dict["rups_place_ket"] = rups_place
 
-                rups_data.append(data_dict)
-                valid_rows_count += 1
-
-                if recording_date.date() < cutoff_date:
-                    print(f"Reached cutoff date: {recording_date_str}")
-                    keep_scraping = False
-                    break 
+                    rups_data.append(data_dict)
+                    valid_rows_count += 1
+                
+                else:
+                    keep_scraping = False 
+                    break
 
             except (ValueError, AttributeError) as error:
                 print(f"Error parsing row on page {page}: {error}")
                 continue
+        
+        if not keep_scraping:
+            break 
 
         print(f"Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
         page += 1
@@ -180,7 +183,6 @@ def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame:
 
         # Counter for debug
         valid_rows_count = 0 
-        found_cutoff = False
 
         for row in rows:
             if len(row.find_all("td")) <= 2:
@@ -217,33 +219,33 @@ def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame:
 
                 symbol_str = symbol + ".JK"
 
-                data_dict = {
-                    "symbol": symbol_str.strip(),
-                    "old_ratio": clean_numeric_value(values[3].text),
-                    "new_ratio": clean_numeric_value(values[4].text),
-                    "cum_date":  cum_date,
-                    "ex_date": ex_date,
-                    "payment_date":  payment_date,
-                    "recording_date": recording_date_str
-                }
+                if cutoff_date <= recording_date <= start_date:
+                    data_dict = {
+                        "symbol": symbol_str.strip(),
+                        "old_ratio": clean_numeric_value(values[3].text),
+                        "new_ratio": clean_numeric_value(values[4].text),
+                        "cum_date":  cum_date,
+                        "ex_date": ex_date,
+                        "payment_date":  payment_date,
+                        "recording_date": recording_date_str
+                    }
 
-                bonus_data.append(data_dict)
-                valid_rows_count += 1
-
-                if recording_date <= cutoff_date:
-                    print(f"Found the cut off date: {recording_date}")
-                    found_cutoff = True
-                    break 
+                    bonus_data.append(data_dict)
+                    valid_rows_count += 1
+                
+                else:
+                    keep_scraping = False
+                    break
             
             except (ValueError, AttributeError) as error:
                 print(f"Error parsing row on page {page}: {error}")
                 continue
-            
+        
+        if not keep_scraping:
+            break
+        
         print(f"Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
-        if found_cutoff:
-            keep_scraping = False
-        else:
-            page += 1
+        page += 1
 
     print(f"Scraping completed. Total records collected: {len(bonus_data)}")
 
@@ -260,10 +262,10 @@ def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame:
     start_date = datetime.today()
 
     if cutoff_date is None:
-        cutoff_date = datetime.today() - timedelta(days=7)
+        cutoff_date = start_date - timedelta(days=7)
     else:
         cutoff_date = datetime.strptime(cutoff_date, "%Y-%m-%d")
-
+    
     warrant_data = []
 
     while keep_scraping:
@@ -312,31 +314,33 @@ def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame:
 
                 symbol_str = symbol + ".JK"
 
-                data_dict = {
-                    "symbol": symbol_str.strip(),
-                    "old_ratio": clean_numeric_value(values[3].text),
-                    "new_ratio": clean_numeric_value(values[4].text),
-                    "price": clean_numeric_value(values[5].text),
-                    "ex_per_end":  ex_per_end,
-                    "ex_per_start":  ex_per_start,
-                    "maturity_date": maturity_date,
-                    "ex_date_tunai": ex_date_tunai,
-                    "trading_period_start": trading_per_start_str,
-                    "trading_period_end": trading_per_end
-                } 
+                if cutoff_date <= trading_per_start <= start_date:
+                    data_dict = {
+                        "symbol": symbol_str.strip(),
+                        "old_ratio": clean_numeric_value(values[3].text),
+                        "new_ratio": clean_numeric_value(values[4].text),
+                        "price": clean_numeric_value(values[5].text),
+                        "ex_per_end":  ex_per_end,
+                        "ex_per_start":  ex_per_start,
+                        "maturity_date": maturity_date,
+                        "ex_date_tunai": ex_date_tunai,
+                        "trading_period_start": trading_per_start_str,
+                        "trading_period_end": trading_per_end
+                    } 
 
-                warrant_data.append(data_dict)
-                valid_rows_count += 1
-
-                if trading_per_start <= cutoff_date:
-                    print(f"Found the cut off date: {trading_per_start}")
+                    warrant_data.append(data_dict)
+                    valid_rows_count += 1
+                else:
                     keep_scraping = False
                     break
 
             except (ValueError, AttributeError) as error:
                 print(f"Error parsing row on page {page}: {error}")
                 continue
-
+        
+        if not keep_scraping:
+            break
+        
         print(f"Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
         page += 1
 
@@ -420,31 +424,34 @@ def right_scraper(cutoff_date: str = None) -> pd.DataFrame:
 
                 symbol_str = symbol + ".JK"
 
-                data_dict = {
-                    "symbol": symbol_str.strip(),
-                    "old_ratio": clean_numeric_value(values[3].text),
-                    "new_ratio": clean_numeric_value(values[4].text),
-                    "price": clean_numeric_value(values[5].text),
-                    "cum_date":  cum_date,
-                    "ex_date": ex_date,
-                    "trading_period_start": trading_per_start,
-                    "trading_period_end": trading_per_end,
-                    "subscription_date":  subscription_date,
-                    "recording_date": recording_date_str
-                }
+                if cutoff_date <= recording_date <= start_date:
+                    data_dict = {
+                        "symbol": symbol_str.strip(),
+                        "old_ratio": clean_numeric_value(values[3].text),
+                        "new_ratio": clean_numeric_value(values[4].text),
+                        "price": clean_numeric_value(values[5].text),
+                        "cum_date":  cum_date,
+                        "ex_date": ex_date,
+                        "trading_period_start": trading_per_start,
+                        "trading_period_end": trading_per_end,
+                        "subscription_date":  subscription_date,
+                        "recording_date": recording_date_str
+                    }
 
-                right_data.append(data_dict)
-                valid_rows_count += 1
-
-                if recording_date <= cutoff_date:
-                    print(f"Found the cut off date: {recording_date}")
-                    keep_scraping = False
+                    right_data.append(data_dict)
+                    valid_rows_count += 1
+                
+                else:
+                    keep_scraping = False 
                     break 
             
             except (ValueError, AttributeError) as error:
                 print(f"Error parsing row on page {page}: {error}")
                 continue
-                
+
+        if not keep_scraping:
+            break 
+
         print(f"Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
         page += 1
 
@@ -466,7 +473,7 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         df = df.where(pd.notnull(df), None)
         data_to_upsert = df.to_dict('records')
         for data in data_to_upsert:
-            print(f"Data to inserted: {data.get('symbol')}")
+            print(f"Data to inserted: {data.get('symbol')} | date: {data.get('recording_date')}")
 
     elif scraper == 'scraper_bonus':
         df = bonus_scraper(cutoff_date)
@@ -474,11 +481,10 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
             subset=['symbol', 'recording_date'],
             keep='first'
         )
-        # df.to_csv("test_bonus.csv", index=False)
         df = df.where(pd.notnull(df), None)
         data_to_upsert = df.to_dict('records')
         for data in data_to_upsert:
-            print(f"Data to inserted: {data.get('symbol')}")
+            print(f"Data to inserted: {data.get('symbol')} | date: {data.get('recording_date')}")
 
     elif scraper == 'scraper_warrant':
         df = warrant_scraper(cutoff_date)
@@ -486,11 +492,10 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
             subset=['symbol', 'trading_period_start'],
             keep='first'
         )
-        # df.to_csv("test_warrant.csv", index=False)
         df = df.where(pd.notnull(df), None)
         data_to_upsert = df.to_dict('records')
         for data in data_to_upsert:
-            print(f"Data to inserted: {data.get('symbol')}")
+            print(f"Data to inserted: {data.get('symbol')} | date: {data.get('trading_per_start')}")
 
     elif scraper == 'scraper_right':
         df= right_scraper(cutoff_date)
@@ -498,11 +503,10 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
             subset=['symbol', 'trading_period_start'],
             keep='first'
         )
-        # df.to_csv("test_right.csv", index=False)
         df = df.where(pd.notnull(df), None)
         data_to_upsert = df.to_dict('records')
         for data in data_to_upsert:
-            print(f"Data to inserted: {data.get('symbol')}")
+            print(f"Data to inserted: {data.get('symbol')} | date: {data.get('recording_date')}")
 
     else:
         raise ValueError(f"Unsupported scraper: {scraper}")
