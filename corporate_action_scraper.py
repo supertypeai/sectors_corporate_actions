@@ -465,6 +465,8 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         )
         df = df.where(pd.notnull(df), None)
         data_to_upsert = df.to_dict('records')
+        for data in data_to_upsert:
+            print(f"Data to inserted: {data.get('symbol')}")
 
     elif scraper == 'scraper_bonus':
         df = bonus_scraper(cutoff_date)
@@ -475,6 +477,8 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         # df.to_csv("test_bonus.csv", index=False)
         df = df.where(pd.notnull(df), None)
         data_to_upsert = df.to_dict('records')
+        for data in data_to_upsert:
+            print(f"Data to inserted: {data.get('symbol')}")
 
     elif scraper == 'scraper_warrant':
         df = warrant_scraper(cutoff_date)
@@ -485,6 +489,8 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         # df.to_csv("test_warrant.csv", index=False)
         df = df.where(pd.notnull(df), None)
         data_to_upsert = df.to_dict('records')
+        for data in data_to_upsert:
+            print(f"Data to inserted: {data.get('symbol')}")
 
     elif scraper == 'scraper_right':
         df= right_scraper(cutoff_date)
@@ -495,6 +501,8 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         # df.to_csv("test_right.csv", index=False)
         df = df.where(pd.notnull(df), None)
         data_to_upsert = df.to_dict('records')
+        for data in data_to_upsert:
+            print(f"Data to inserted: {data.get('symbol')}")
 
     else:
         raise ValueError(f"Unsupported scraper: {scraper}")
