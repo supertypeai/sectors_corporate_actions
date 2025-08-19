@@ -2,7 +2,7 @@ name: Daily Scraper Rups
 
 on:
   schedule:
-    - cron: 0 18 * * *'  # Run daily at 18:00 UTC
+    - cron: '0 18 * * 5'
 
   workflow_dispatch:
 
@@ -30,4 +30,4 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        run: python corporate_action_scraper.py scraper_rups 
+        run: python corporate_action_scraper.py scraper_rups

@@ -70,7 +70,7 @@ def clean_numeric_value(value_str: str) -> float | None:
         return None
 
 
-def rups_scraper(cutoff_date: str = None) -> pd.DataFrame:
+def rups_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
     """ 
     Scrape RUPS data from the SahamIDX website.
     This function retrieves RUPS data, including symbol, recording date,
@@ -80,7 +80,8 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame:
         cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format.
     
     Returns:
-        pd.DataFrame: A DataFrame containing the scraped RUPS data with columns:
+        pd.DataFrame: A DataFrame containing the scraped RUPS data.
+        str: The cutoff date used for filtering the data.
     """
     page = 1
     rups_data = []
@@ -185,10 +186,10 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame:
 
     rups_data_df = pd.DataFrame(rups_data)
 
-    return rups_data_df
+    return rups_data_df, cutoff_date
 
 
-def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame:
+def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
     """
     Scrape bonus data from the SahamIDX website.
     This function retrieves bonus data, including symbol, old ratio, new ratio,
@@ -199,7 +200,8 @@ def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame:
         cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format.
     
     Returns:
-        pd.DataFrame: A DataFrame containing the scraped bonus data with columns:
+        pd.DataFrame: A DataFrame containing the scraped bonus data.
+        str: The cutoff date used for filtering the data.
     """
     page = 1
     keep_scraping = True
@@ -304,10 +306,10 @@ def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame:
 
     bonus_data_df = pd.DataFrame(bonus_data)
 
-    return bonus_data_df
+    return bonus_data_df, cutoff_date
 
 
-def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame:
+def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
     """ 
     Scrape warrant data from the SahamIDX website.
     This function retrieves warrant data, including symbol, old ratio, new ratio,
@@ -318,7 +320,8 @@ def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame:
         cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format.
     
     Returns:
-        pd.DataFrame: A DataFrame containing the scraped warrant data with columns:
+        pd.DataFrame: A DataFrame containing the scraped warrant data
+        str: The cutoff date used for filtering the data.
     """
     page = 1
     keep_scraping = True
@@ -413,10 +416,10 @@ def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame:
 
     warrant_data_df = pd.DataFrame(warrant_data)
 
-    return warrant_data_df
+    return warrant_data_df, cutoff_date
 
 
-def right_scraper(cutoff_date: str = None) -> pd.DataFrame:
+def right_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
     """ 
     Scrape right issue data from the SahamIDX website.
     This function retrieves right issue data, including symbol, old ratio, new ratio,
@@ -427,7 +430,8 @@ def right_scraper(cutoff_date: str = None) -> pd.DataFrame:
         cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format.
     
     Returns:
-        pd.DataFrame: A DataFrame containing the scraped right issue data with columns:
+        pd.DataFrame: A DataFrame containing the scraped right issue data 
+        str: The cutoff date used for filtering the data.
     """
     page = 1
     keep_scraping = True 
@@ -536,7 +540,7 @@ def right_scraper(cutoff_date: str = None) -> pd.DataFrame:
 
     right_data_df = pd.DataFrame(right_data)
 
-    return right_data_df
+    return right_data_df, cutoff_date
 
 
 def upsert_to_db(scraper: str, cutoff_date: str = None):
@@ -550,7 +554,7 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format to pass to the scraper.
     """
     if scraper == 'scraper_rups':
-        df = rups_scraper(cutoff_date)
+        df, filter_date = rups_scraper(cutoff_date)
         df = df.drop_duplicates(
             subset=['symbol', 'recording_date'],
             keep='first'
@@ -561,7 +565,7 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
             print(f"Data to inserted: {data.get('symbol')} | date: {data.get('recording_date')}")
 
     elif scraper == 'scraper_bonus':
-        df = bonus_scraper(cutoff_date)
+        df, filter_date = bonus_scraper(cutoff_date)
         df = df.drop_duplicates(
             subset=['symbol', 'recording_date'],
             keep='first'
@@ -572,7 +576,7 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
             print(f"Data to inserted: {data.get('symbol')} | date: {data.get('recording_date')}")
 
     elif scraper == 'scraper_warrant':
-        df = warrant_scraper(cutoff_date)
+        df, filter_date = warrant_scraper(cutoff_date)
         df = df.drop_duplicates(
             subset=['symbol', 'trading_period_start'],
             keep='first'
@@ -583,7 +587,7 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
             print(f"Data to inserted: {data.get('symbol')} | date: {data.get('trading_per_start')}")
 
     elif scraper == 'scraper_right':
-        df= right_scraper(cutoff_date)
+        df, filter_date = right_scraper(cutoff_date)
         df = df.drop_duplicates(
             subset=['symbol', 'trading_period_start'],
             keep='first'
@@ -597,6 +601,10 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         raise ValueError(f"Unsupported scraper: {scraper}")
     
     try:
+        if not data_to_upsert:
+            print(f"No records to upsert for scraper '{scraper}' with cutoff {filter_date}. Skipping DB insert.")
+            return
+        
         table_map = {
             "scraper_rups": "idx_rups",
             "scraper_bonus": "idx_ca_bonus",
