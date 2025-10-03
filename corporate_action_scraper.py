@@ -7,6 +7,18 @@ import pandas as pd
 import requests
 import argparse
 import os 
+import logging
+
+
+logging.basicConfig(
+    filename='scraper.log', 
+    level=logging.INFO, 
+    format='%(asctime)s [%(levelname)s] - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S'
+    )
+
+LOGGER = logging.getLogger(__name__)
+LOGGER.info("Init Global Variable")
 
 
 load_dotenv(override=True)
@@ -66,7 +78,7 @@ def clean_numeric_value(value_str: str) -> float | None:
         cleaned = value_str.replace(',', '').replace(' ', '')
         return float(cleaned) if cleaned else None
     except ValueError:
-        print(f"Warning: Could not convert '{value_str}' to float")
+        LOGGER.error(f"Warning: Could not convert '{value_str}' to float")
         return None
 
 
@@ -102,7 +114,7 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
             response = requests.get(url)
             response.raise_for_status()
         except requests.exceptions.RequestException as error:
-            print(f"Network error on page {page}: {error}. Stopping.")
+            LOGGER.error(f"Network error on page {page}: {error}. Stopping.")
             break
 
         soup = BeautifulSoup(response.text, "lxml")
@@ -173,16 +185,16 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                     break
 
             except (ValueError, AttributeError) as error:
-                print(f"Error parsing row on page {page}: {error}")
+                LOGGER.error(f"Error parsing row on page {page}: {error}")
                 continue
         
         if not keep_scraping:
             break 
 
-        print(f"Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
+        LOGGER.info(f"[RUPS SCRAPER] Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
         page += 1
 
-    print(f"Scraping completed. Total records collected: {len(rups_data)}")
+    LOGGER.info(f"[RUPS SCRAPER] Scraping completed. Total records collected: {len(rups_data)}")
 
     rups_data_df = pd.DataFrame(rups_data)
 
@@ -222,14 +234,14 @@ def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
             response = requests.get(url)
             response.raise_for_status()
         except requests.exceptions.RequestException as error:
-            print(f"Network error on page {page}: {error}. Stopping.")
+            LOGGER.error(f"Network error on page {page}: {error}. Stopping.")
             break
 
         soup = BeautifulSoup(response.text, "lxml")
 
         table = soup.find("table", {"class": "tbl_border_gray"})
         if not table:
-            print("No data table found on page. Stopping scrape.")
+            LOGGER.error("No data table found on page. Stopping scrape.")
             break
         
         rows = table.find_all("tr", recursive=False)[1:]
@@ -293,16 +305,16 @@ def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                     break
             
             except (ValueError, AttributeError) as error:
-                print(f"Error parsing row on page {page}: {error}")
+                LOGGER.error(f"Error parsing row on page {page}: {error}")
                 continue
         
         if not keep_scraping:
             break
         
-        print(f"Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
+        LOGGER.info(f"[BONUS SCRAPER] Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
         page += 1
 
-    print(f"Scraping completed. Total records collected: {len(bonus_data)}")
+    LOGGER.info(f"[BONUS SCRAPER] Scraping completed. Total records collected: {len(bonus_data)}")
 
     bonus_data_df = pd.DataFrame(bonus_data)
 
@@ -343,7 +355,7 @@ def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
             response = requests.get(url)
             response.raise_for_status()
         except requests.exceptions.RequestException as error:
-            print(f"Network error on page {page}: {error}. Stopping.")
+            LOGGER.error(f"Network error on page {page}: {error}. Stopping.")
             break
     
         soup = BeautifulSoup(response.text, "lxml")
@@ -403,16 +415,16 @@ def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                     break
 
             except (ValueError, AttributeError) as error:
-                print(f"Error parsing row on page {page}: {error}")
+                LOGGER.error(f"Error parsing row on page {page}: {error}")
                 continue
         
         if not keep_scraping:
             break
         
-        print(f"Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
+        LOGGER.info(f"[WARRANT SCRAPER] Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
         page += 1
 
-    print(f"Scraping completed. Total records collected: {len(warrant_data)}")
+    LOGGER.info(f"[WARRANT SCRAPER] Scraping completed. Total records collected: {len(warrant_data)}")
 
     warrant_data_df = pd.DataFrame(warrant_data)
 
@@ -453,7 +465,7 @@ def right_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
             response = requests.get(url)
             response.raise_for_status()
         except requests.exceptions.RequestException as error:
-            print(f"Network error on page {page}: {error}. Stopping.")
+            LOGGER.error(f"Network error on page {page}: {error}. Stopping.")
             break
 
         soup = BeautifulSoup(response.text, "lxml")
@@ -527,16 +539,16 @@ def right_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                     break 
             
             except (ValueError, AttributeError) as error:
-                print(f"Error parsing row on page {page}: {error}")
+                LOGGER.error(f"Error parsing row on page {page}: {error}")
                 continue
 
         if not keep_scraping:
             break 
 
-        print(f"Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
+        LOGGER.info(f"[RIGHT SCRAPER] Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
         page += 1
 
-    print(f"Scraping completed. Total records collected: {len(right_data)}")
+    LOGGER.info(f"[RIGHT SCRAPER] Scraping completed. Total records collected: {len(right_data)}")
 
     right_data_df = pd.DataFrame(right_data)
 
@@ -562,7 +574,7 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         df = df.where(pd.notnull(df), None)
         data_to_upsert = df.to_dict('records')
         for data in data_to_upsert:
-            print(f"Data to inserted: {data.get('symbol')} | date: {data.get('recording_date')}")
+            LOGGER.info(f"Data to inserted: {data.get('symbol')} | date: {data.get('recording_date')}")
 
     elif scraper == 'scraper_bonus':
         df, filter_date = bonus_scraper(cutoff_date)
@@ -573,7 +585,7 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         df = df.where(pd.notnull(df), None)
         data_to_upsert = df.to_dict('records')
         for data in data_to_upsert:
-            print(f"Data to inserted: {data.get('symbol')} | date: {data.get('recording_date')}")
+            LOGGER.info(f"Data to inserted: {data.get('symbol')} | date: {data.get('recording_date')}")
 
     elif scraper == 'scraper_warrant':
         df, filter_date = warrant_scraper(cutoff_date)
@@ -584,7 +596,7 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         df = df.where(pd.notnull(df), None)
         data_to_upsert = df.to_dict('records')
         for data in data_to_upsert:
-            print(f"Data to inserted: {data.get('symbol')} | date: {data.get('trading_per_start')}")
+            LOGGER.info(f"Data to inserted: {data.get('symbol')} | date: {data.get('trading_per_start')}")
 
     elif scraper == 'scraper_right':
         df, filter_date = right_scraper(cutoff_date)
@@ -595,14 +607,14 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         df = df.where(pd.notnull(df), None)
         data_to_upsert = df.to_dict('records')
         for data in data_to_upsert:
-            print(f"Data to inserted: {data.get('symbol')} | date: {data.get('recording_date')}")
+            LOGGER.info(f"Data to inserted: {data.get('symbol')} | date: {data.get('recording_date')}")
 
     else:
         raise ValueError(f"Unsupported scraper: {scraper}")
     
     try:
         if not data_to_upsert:
-            print(f"No records to upsert for scraper '{scraper}' with cutoff {filter_date}. Skipping DB insert.")
+            LOGGER.info(f"No records to upsert for scraper '{scraper}' with cutoff {filter_date}. Skipping DB insert.")
             return
         
         table_map = {
@@ -616,7 +628,7 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         SUPABASE_CLIENT.table(table_name).upsert(
             data_to_upsert
         ).execute()
-        print(
+        LOGGER.info(
             f"Successfully upserted {len(data_to_upsert)} data to database"
         )
     except Exception as error:
