@@ -1,0 +1,4 @@
+2025-10-28 09:48:31 [INFO] - Init Global Variable
+2025-10-28 09:48:31 [INFO] - HTTP Request: GET https://rfiycxgjbnkefczvbosm.supabase.co/rest/v1/idx_company_profile?select=symbol "HTTP/2 200 OK"
+2025-10-28 09:48:32 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
+2025-10-28 09:48:32 [INFO] - Data to inserted: PZZA.JK | date: 2025-10-28
