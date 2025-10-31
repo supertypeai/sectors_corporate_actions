@@ -8,3 +8,6 @@
 2025-10-31 18:15:20 [INFO] - Data to inserted: DMMX.JK | date: 2025-10-31
 2025-10-31 18:15:20 [INFO] - Data to inserted: NFCX.JK | date: 2025-10-31
 2025-10-31 18:15:21 [INFO] - Successfully upserted 3 data to database
+2025-10-31 18:22:21 [INFO] - Init Global Variable
+2025-10-31 18:22:24 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2025-10-31 18:22:24 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff 2025-10-24 18:22:22.473085. Skipping DB insert.
