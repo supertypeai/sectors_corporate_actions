@@ -11,3 +11,6 @@
 2025-10-31 18:22:21 [INFO] - Init Global Variable
 2025-10-31 18:22:24 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
 2025-10-31 18:22:24 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff 2025-10-24 18:22:22.473085. Skipping DB insert.
+2025-10-31 18:24:42 [INFO] - Init Global Variable
+2025-10-31 18:24:45 [INFO] - [RIGHT SCRAPER] Scraping completed. Total records collected: 0
+2025-10-31 18:24:45 [INFO] - No records to upsert for scraper 'scraper_right' with cutoff 2025-10-24 18:24:43.837349. Skipping DB insert.
