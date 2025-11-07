@@ -18,3 +18,6 @@
 2025-10-31 18:34:21 [INFO] - [BONUS SCRAPER] Scraping completed. Total records collected: 1
 2025-10-31 18:34:21 [INFO] - Data to inserted: MMIX.JK | date: 2025-10-27
 2025-10-31 18:34:22 [INFO] - Successfully upserted 1 data to database
+2025-11-07 18:14:44 [INFO] - Init Global Variable
+2025-11-07 18:14:47 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-11-07 18:14:47 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff 2025-11-06 18:14:45.884500. Skipping DB insert.
