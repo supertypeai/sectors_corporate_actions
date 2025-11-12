@@ -161,7 +161,7 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                 symbol_str = symbol_cell.text.strip()
                 if symbol_str not in valid_symbols:
                     continue
-                
+
                 symbol = symbol_str + '.JK'
                 
                 # Prepare recording date 
@@ -633,7 +633,7 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
     df, filter_date = config.get('func')(cutoff_date)
     df = df.drop_duplicates(subset=config.get("dedup_keys"), keep="first") 
     df = df.where(pd.notnull(df), None)
-    df.to_csv('new_warrant.csv', index=False)
+    
     data_to_upsert = df.to_dict("records")
 
     for data in data_to_upsert:
