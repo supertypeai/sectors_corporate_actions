@@ -92,3 +92,9 @@
 2025-11-12 09:18:27 [INFO] - Start scraping warrant for start date: 2025-11-05 and end date: 2025-11-12
 2025-11-12 09:18:29 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
 2025-11-12 09:18:29 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2025-11-12 09:30:26 [INFO] - Init Global Variable
+2025-11-12 09:30:27 [INFO] - Start scraping rups for start date: 2025-11-11 and end date: 2025-11-12
+2025-11-12 09:30:33 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2025-11-12 09:30:33 [INFO] - Data to insert: SMCB.JK | date: 2025-11-12
+2025-11-12 09:30:33 [INFO] - Data to insert: FASW.JK | date: 2025-11-12
+2025-11-12 09:30:34 [INFO] - Successfully upserted 2 data to database
