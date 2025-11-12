@@ -158,9 +158,11 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                     continue 
 
                 # Prepare symbol 
-                symbol = symbol_cell.text.strip()
-                if symbol not in valid_symbols:
+                symbol_str = symbol_cell.text.strip()
+                if symbol_str not in valid_symbols:
                     continue
+                
+                symbol = symbol_str + '.JK'
                 
                 # Prepare recording date 
                 recording_date_str = recording_date_cell.text.strip()
