@@ -111,3 +111,8 @@
 2025-11-13 11:20:22 [INFO] - Data to insert: SMCB.JK | date: 2025-11-12
 2025-11-13 11:20:22 [INFO] - Data to insert: FASW.JK | date: 2025-11-12
 2025-11-13 11:20:23 [INFO] - Successfully upserted 3 data to database
+2025-11-14 11:19:25 [INFO] - Init Global Variable
+2025-11-14 11:19:26 [INFO] - Start scraping rups for start date: 2025-11-13 and end date: 2025-11-14
+2025-11-14 11:19:29 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
+2025-11-14 11:19:29 [INFO] - Data to insert: NAIK.JK | date: 2025-11-13
+2025-11-14 11:19:30 [INFO] - Successfully upserted 1 data to database
