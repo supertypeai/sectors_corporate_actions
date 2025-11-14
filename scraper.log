@@ -116,3 +116,7 @@
 2025-11-14 11:19:29 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
 2025-11-14 11:19:29 [INFO] - Data to insert: NAIK.JK | date: 2025-11-13
 2025-11-14 11:19:30 [INFO] - Successfully upserted 1 data to database
+2025-11-14 18:22:31 [INFO] - Init Global Variable
+2025-11-14 18:22:32 [INFO] - Start scraping warrant for start date: 2025-11-07 and end date: 2025-11-14
+2025-11-14 18:22:33 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2025-11-14 18:22:33 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
