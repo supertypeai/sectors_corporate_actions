@@ -120,3 +120,7 @@
 2025-11-14 18:22:32 [INFO] - Start scraping warrant for start date: 2025-11-07 and end date: 2025-11-14
 2025-11-14 18:22:33 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
 2025-11-14 18:22:33 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2025-11-14 18:34:32 [INFO] - Init Global Variable
+2025-11-14 18:34:35 [ERROR] - No data table found on page. Stopping scrape.
+2025-11-14 18:34:35 [INFO] - [BONUS SCRAPER] Scraping completed. Total records collected: 0
+2025-11-14 18:34:35 [INFO] - No records to upsert for scraper 'scraper_bonus' with cutoff 2025-11-07 18:34:33.645899. Skipping DB insert.
