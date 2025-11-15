@@ -124,3 +124,7 @@
 2025-11-14 18:34:35 [ERROR] - No data table found on page. Stopping scrape.
 2025-11-14 18:34:35 [INFO] - [BONUS SCRAPER] Scraping completed. Total records collected: 0
 2025-11-14 18:34:35 [INFO] - No records to upsert for scraper 'scraper_bonus' with cutoff 2025-11-07 18:34:33.645899. Skipping DB insert.
+2025-11-15 11:16:32 [INFO] - Init Global Variable
+2025-11-15 11:16:33 [INFO] - Start scraping rups for start date: 2025-11-14 and end date: 2025-11-15
+2025-11-15 11:16:38 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-11-15 11:16:38 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
