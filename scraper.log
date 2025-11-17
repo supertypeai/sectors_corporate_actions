@@ -132,3 +132,9 @@
 2025-11-16 11:16:44 [INFO] - Start scraping rups for start date: 2025-11-15 and end date: 2025-11-16
 2025-11-16 11:16:50 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
 2025-11-16 11:16:50 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-11-17 11:19:32 [INFO] - Init Global Variable
+2025-11-17 11:19:33 [INFO] - Start scraping rups for start date: 2025-11-16 and end date: 2025-11-17
+2025-11-17 11:19:38 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2025-11-17 11:19:38 [INFO] - Data to insert: EMAS.JK | date: 2025-11-17
+2025-11-17 11:19:38 [INFO] - Data to insert: CGAS.JK | date: 2025-11-17
+2025-11-17 11:19:38 [INFO] - Successfully upserted 2 data to database
