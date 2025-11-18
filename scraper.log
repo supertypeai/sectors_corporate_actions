@@ -138,3 +138,10 @@
 2025-11-17 11:19:38 [INFO] - Data to insert: EMAS.JK | date: 2025-11-17
 2025-11-17 11:19:38 [INFO] - Data to insert: CGAS.JK | date: 2025-11-17
 2025-11-17 11:19:38 [INFO] - Successfully upserted 2 data to database
+2025-11-18 11:20:29 [INFO] - Init Global Variable
+2025-11-18 11:20:30 [INFO] - Start scraping rups for start date: 2025-11-17 and end date: 2025-11-18
+2025-11-18 11:20:36 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2025-11-18 11:20:36 [INFO] - Data to insert: CANI.JK | date: 2025-11-18
+2025-11-18 11:20:36 [INFO] - Data to insert: EMAS.JK | date: 2025-11-17
+2025-11-18 11:20:36 [INFO] - Data to insert: CGAS.JK | date: 2025-11-17
+2025-11-18 11:20:37 [INFO] - Successfully upserted 3 data to database
