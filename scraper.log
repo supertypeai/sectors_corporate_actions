@@ -156,3 +156,17 @@
 2025-11-19 11:19:28 [INFO] - Data to insert: CANI.JK | date: 2025-11-18
 2025-11-19 11:19:28 [INFO] - Data to insert: SOUL.JK | date: 2025-11-18
 2025-11-19 11:19:29 [INFO] - Successfully upserted 7 data to database
+2025-11-20 11:19:32 [INFO] - Init Global Variable
+2025-11-20 11:19:33 [INFO] - Start scraping rups for start date: 2025-11-19 and end date: 2025-11-20
+2025-11-20 11:19:39 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 11
+2025-11-20 11:19:39 [INFO] - Data to insert: NICE.JK | date: 2025-11-20
+2025-11-20 11:19:39 [INFO] - Data to insert: GGRP.JK | date: 2025-11-20
+2025-11-20 11:19:39 [INFO] - Data to insert: BBNI.JK | date: 2025-11-20
+2025-11-20 11:19:39 [INFO] - Data to insert: WIKA.JK | date: 2025-11-20
+2025-11-20 11:19:39 [INFO] - Data to insert: ANTM.JK | date: 2025-11-20
+2025-11-20 11:19:39 [INFO] - Data to insert: FOLK.JK | date: 2025-11-19
+2025-11-20 11:19:39 [INFO] - Data to insert: MTFN.JK | date: 2025-11-19
+2025-11-20 11:19:39 [INFO] - Data to insert: MCOR.JK | date: 2025-11-19
+2025-11-20 11:19:39 [INFO] - Data to insert: KKGI.JK | date: 2025-11-19
+2025-11-20 11:19:39 [INFO] - Data to insert: TLKM.JK | date: 2025-11-19
+2025-11-20 11:19:40 [INFO] - Successfully upserted 10 data to database
