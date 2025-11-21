@@ -181,3 +181,7 @@
 2025-11-21 11:18:48 [INFO] - Data to insert: WIKA.JK | date: 2025-11-20
 2025-11-21 11:18:48 [INFO] - Data to insert: ANTM.JK | date: 2025-11-20
 2025-11-21 11:18:49 [INFO] - Successfully upserted 7 data to database
+2025-11-21 18:21:45 [INFO] - Init Global Variable
+2025-11-21 18:21:46 [INFO] - Start scraping warrant for start date: 2025-11-14 and end date: 2025-11-21
+2025-11-21 18:21:47 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2025-11-21 18:21:47 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
