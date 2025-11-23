@@ -191,3 +191,7 @@
 2025-11-22 11:16:09 [INFO] - Data to insert: WOWS.JK | date: 2025-11-21
 2025-11-22 11:16:09 [INFO] - Data to insert: PTBA.JK | date: 2025-11-21
 2025-11-22 11:16:09 [INFO] - Successfully upserted 2 data to database
+2025-11-23 11:17:14 [INFO] - Init Global Variable
+2025-11-23 11:17:15 [INFO] - Start scraping rups for start date: 2025-11-22 and end date: 2025-11-23
+2025-11-23 11:17:19 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-11-23 11:17:19 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
