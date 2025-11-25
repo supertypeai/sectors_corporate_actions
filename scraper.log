@@ -203,3 +203,15 @@
 2025-11-24 11:20:10 [INFO] - Data to insert: PNSE.JK | date: 2025-11-24
 2025-11-24 11:20:10 [INFO] - Data to insert: SOSS.JK | date: 2025-11-24
 2025-11-24 11:20:11 [INFO] - Successfully upserted 4 data to database
+2025-11-25 11:20:07 [INFO] - Init Global Variable
+2025-11-25 11:20:08 [INFO] - Start scraping rups for start date: 2025-11-24 and end date: 2025-11-25
+2025-11-25 11:20:12 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 8
+2025-11-25 11:20:12 [INFO] - Data to insert: BANK.JK | date: 2025-11-25
+2025-11-25 11:20:12 [INFO] - Data to insert: SOFA.JK | date: 2025-11-25
+2025-11-25 11:20:12 [INFO] - Data to insert: PMMP.JK | date: 2025-11-25
+2025-11-25 11:20:12 [INFO] - Data to insert: MUTU.JK | date: 2025-11-25
+2025-11-25 11:20:12 [INFO] - Data to insert: LCKM.JK | date: 2025-11-24
+2025-11-25 11:20:12 [INFO] - Data to insert: AKPI.JK | date: 2025-11-24
+2025-11-25 11:20:12 [INFO] - Data to insert: PNSE.JK | date: 2025-11-24
+2025-11-25 11:20:12 [INFO] - Data to insert: SOSS.JK | date: 2025-11-24
+2025-11-25 11:20:12 [INFO] - Successfully upserted 8 data to database
