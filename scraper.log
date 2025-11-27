@@ -224,3 +224,10 @@
 2025-11-26 11:20:21 [INFO] - Data to insert: PMMP.JK | date: 2025-11-25
 2025-11-26 11:20:21 [INFO] - Data to insert: MUTU.JK | date: 2025-11-25
 2025-11-26 11:20:21 [INFO] - Successfully upserted 5 data to database
+2025-11-27 11:20:27 [INFO] - Init Global Variable
+2025-11-27 11:20:28 [INFO] - Start scraping rups for start date: 2025-11-26 and end date: 2025-11-27
+2025-11-27 11:20:29 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2025-11-27 11:20:29 [INFO] - Data to insert: BBTN.JK | date: 2025-11-27
+2025-11-27 11:20:29 [INFO] - Data to insert: BRIS.JK | date: 2025-11-27
+2025-11-27 11:20:29 [INFO] - Data to insert: SMGR.JK | date: 2025-11-27
+2025-11-27 11:20:30 [INFO] - Successfully upserted 3 data to database
