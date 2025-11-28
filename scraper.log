@@ -243,3 +243,7 @@
 2025-11-28 11:20:16 [INFO] - Data to insert: BRIS.JK | date: 2025-11-27
 2025-11-28 11:20:16 [INFO] - Data to insert: SMGR.JK | date: 2025-11-27
 2025-11-28 11:20:16 [INFO] - Successfully upserted 8 data to database
+2025-11-28 18:22:16 [INFO] - Init Global Variable
+2025-11-28 18:22:17 [INFO] - Start scraping warrant for start date: 2025-11-21 and end date: 2025-11-28
+2025-11-28 18:22:18 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2025-11-28 18:22:18 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
