@@ -231,3 +231,15 @@
 2025-11-27 11:20:29 [INFO] - Data to insert: BRIS.JK | date: 2025-11-27
 2025-11-27 11:20:29 [INFO] - Data to insert: SMGR.JK | date: 2025-11-27
 2025-11-27 11:20:30 [INFO] - Successfully upserted 3 data to database
+2025-11-28 11:20:12 [INFO] - Init Global Variable
+2025-11-28 11:20:13 [INFO] - Start scraping rups for start date: 2025-11-27 and end date: 2025-11-28
+2025-11-28 11:20:16 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 8
+2025-11-28 11:20:16 [INFO] - Data to insert: KRAS.JK | date: 2025-11-28
+2025-11-28 11:20:16 [INFO] - Data to insert: VRNA.JK | date: 2025-11-28
+2025-11-28 11:20:16 [INFO] - Data to insert: GIAA.JK | date: 2025-11-28
+2025-11-28 11:20:16 [INFO] - Data to insert: WSKT.JK | date: 2025-11-28
+2025-11-28 11:20:16 [INFO] - Data to insert: ASJT.JK | date: 2025-11-28
+2025-11-28 11:20:16 [INFO] - Data to insert: BBTN.JK | date: 2025-11-27
+2025-11-28 11:20:16 [INFO] - Data to insert: BRIS.JK | date: 2025-11-27
+2025-11-28 11:20:16 [INFO] - Data to insert: SMGR.JK | date: 2025-11-27
+2025-11-28 11:20:16 [INFO] - Successfully upserted 8 data to database
