@@ -183,16 +183,16 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                     data_dict = {
                         "symbol": symbol,
                         "recording_date":  recording_date,
-                        "rups_date": rups_date
+                        "agm_date": rups_date
                     }
 
                     # Add special case for rups place is 'Dibatalkan'
                     if 'Dibatalkan' in rups_place:
                         if len(rups_place) > 10:
                             rups_place = rups_place[:10]
-                            data_dict["rups_place_ket"] = rups_place
+                            data_dict["agm_place_ket"] = rups_place
                         else:
-                            data_dict["rups_place_ket"] = rups_place
+                            data_dict["agm_place_ket"] = rups_place
 
                     rups_data.append(data_dict)
 
@@ -606,7 +606,7 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
             "func": rups_scraper,
             "dedup_keys": ["symbol", "recording_date"],
             "log_date_field": "recording_date",
-            "table": "idx_rups",
+            "table": "idx_agm",
         },
         "scraper_bonus": {
             "func": bonus_scraper,
