@@ -320,3 +320,9 @@
 2025-12-15 11:22:05 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
 2025-12-15 11:22:05 [INFO] - Data to insert: BWPT.JK | date: 2025-12-15
 2025-12-15 11:22:05 [INFO] - Successfully upserted 1 data to database
+2025-12-16 11:22:34 [INFO] - Init Global Variable
+2025-12-16 11:22:35 [INFO] - Start scraping rups for start date: 2025-12-15 and end date: 2025-12-16
+2025-12-16 11:22:36 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2025-12-16 11:22:36 [INFO] - Data to insert: TRON.JK | date: 2025-12-16
+2025-12-16 11:22:36 [INFO] - Data to insert: BWPT.JK | date: 2025-12-15
+2025-12-16 11:22:37 [INFO] - Successfully upserted 2 data to database
