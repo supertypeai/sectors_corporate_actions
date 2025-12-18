@@ -332,3 +332,7 @@
 2025-12-17 11:22:31 [INFO] - Data to insert: TRON.JK | date: 2025-12-16
 2025-12-17 11:22:31 [INFO] - Data to insert: BPFI.JK | date: 2025-12-17
 2025-12-17 11:22:32 [INFO] - Successfully upserted 2 data to database
+2025-12-18 11:21:32 [INFO] - Init Global Variable
+2025-12-18 11:21:33 [INFO] - Start scraping rups for start date: 2025-12-17 and end date: 2025-12-18
+2025-12-18 11:21:34 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-18 11:21:34 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
