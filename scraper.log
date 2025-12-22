@@ -352,3 +352,9 @@
 2025-12-21 11:18:41 [INFO] - Start scraping rups for start date: 2025-12-20 and end date: 2025-12-21
 2025-12-21 11:18:41 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
 2025-12-21 11:18:41 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-22 11:21:17 [INFO] - Init Global Variable
+2025-12-22 11:21:18 [INFO] - Start scraping rups for start date: 2025-12-21 and end date: 2025-12-22
+2025-12-22 11:21:19 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2025-12-22 11:21:19 [INFO] - Data to insert: NOBU.JK | date: 2025-12-22
+2025-12-22 11:21:19 [INFO] - Data to insert: DNET.JK | date: 2025-12-22
+2025-12-22 11:21:20 [INFO] - Successfully upserted 2 data to database
