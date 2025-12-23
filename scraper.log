@@ -358,3 +358,11 @@
 2025-12-22 11:21:19 [INFO] - Data to insert: NOBU.JK | date: 2025-12-22
 2025-12-22 11:21:19 [INFO] - Data to insert: DNET.JK | date: 2025-12-22
 2025-12-22 11:21:20 [INFO] - Successfully upserted 2 data to database
+2025-12-23 11:21:19 [INFO] - Init Global Variable
+2025-12-23 11:21:20 [INFO] - Start scraping rups for start date: 2025-12-22 and end date: 2025-12-23
+2025-12-23 11:21:21 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 4
+2025-12-23 11:21:21 [INFO] - Data to insert: RMKE.JK | date: 2025-12-23
+2025-12-23 11:21:21 [INFO] - Data to insert: NOBU.JK | date: 2025-12-22
+2025-12-23 11:21:21 [INFO] - Data to insert: MINA.JK | date: 2025-12-23
+2025-12-23 11:21:21 [INFO] - Data to insert: DNET.JK | date: 2025-12-22
+2025-12-23 11:21:21 [INFO] - Successfully upserted 4 data to database
