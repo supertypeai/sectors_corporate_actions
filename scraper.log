@@ -366,3 +366,10 @@
 2025-12-23 11:21:21 [INFO] - Data to insert: MINA.JK | date: 2025-12-23
 2025-12-23 11:21:21 [INFO] - Data to insert: DNET.JK | date: 2025-12-22
 2025-12-23 11:21:21 [INFO] - Successfully upserted 4 data to database
+2025-12-24 11:20:51 [INFO] - Init Global Variable
+2025-12-24 11:20:52 [INFO] - Start scraping rups for start date: 2025-12-23 and end date: 2025-12-24
+2025-12-24 11:20:53 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2025-12-24 11:20:53 [INFO] - Data to insert: LABA.JK | date: 2025-12-24
+2025-12-24 11:20:53 [INFO] - Data to insert: PGEO.JK | date: 2025-12-24
+2025-12-24 11:20:53 [INFO] - Data to insert: RMKE.JK | date: 2025-12-23
+2025-12-24 11:20:53 [INFO] - Successfully upserted 3 data to database
