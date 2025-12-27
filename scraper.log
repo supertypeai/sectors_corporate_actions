@@ -388,3 +388,7 @@
 2025-12-26 18:23:59 [INFO] - Start scraping warrant for start date: 2025-12-19 and end date: 2025-12-26
 2025-12-26 18:24:00 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
 2025-12-26 18:24:00 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2025-12-27 11:18:33 [INFO] - Init Global Variable
+2025-12-27 11:18:34 [INFO] - Start scraping rups for start date: 2025-12-26 and end date: 2025-12-27
+2025-12-27 11:18:37 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-27 11:18:37 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
