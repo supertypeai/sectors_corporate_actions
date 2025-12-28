@@ -392,3 +392,7 @@
 2025-12-27 11:18:34 [INFO] - Start scraping rups for start date: 2025-12-26 and end date: 2025-12-27
 2025-12-27 11:18:37 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
 2025-12-27 11:18:37 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-28 11:19:16 [INFO] - Init Global Variable
+2025-12-28 11:19:16 [INFO] - Start scraping rups for start date: 2025-12-27 and end date: 2025-12-28
+2025-12-28 11:19:19 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-28 11:19:19 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
