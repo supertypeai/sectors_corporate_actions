@@ -396,3 +396,13 @@
 2025-12-28 11:19:16 [INFO] - Start scraping rups for start date: 2025-12-27 and end date: 2025-12-28
 2025-12-28 11:19:19 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
 2025-12-28 11:19:19 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-29 11:21:42 [INFO] - Init Global Variable
+2025-12-29 11:21:43 [INFO] - Start scraping rups for start date: 2025-12-28 and end date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 7
+2025-12-29 11:21:47 [INFO] - Data to insert: BOGA.JK | date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - Data to insert: BEKS.JK | date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - Data to insert: PPRE.JK | date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - Data to insert: KRYA.JK | date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - Data to insert: TEBE.JK | date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - Data to insert: NSSS.JK | date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - Successfully upserted 6 data to database
