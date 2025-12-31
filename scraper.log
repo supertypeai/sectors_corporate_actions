@@ -418,3 +418,11 @@
 2025-12-30 11:21:27 [INFO] - Data to insert: BOGA.JK | date: 2025-12-29
 2025-12-30 11:21:27 [INFO] - Data to insert: TEBE.JK | date: 2025-12-29
 2025-12-30 11:21:27 [INFO] - Successfully upserted 8 data to database
+2025-12-31 11:21:06 [INFO] - Init Global Variable
+2025-12-31 11:21:07 [INFO] - Start scraping rups for start date: 2025-12-30 and end date: 2025-12-31
+2025-12-31 11:21:08 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 4
+2025-12-31 11:21:08 [INFO] - Data to insert: BABY.JK | date: 2025-12-30
+2025-12-31 11:21:08 [INFO] - Data to insert: UCID.JK | date: 2025-12-30
+2025-12-31 11:21:08 [INFO] - Data to insert: PIPA.JK | date: 2025-12-30
+2025-12-31 11:21:08 [INFO] - Data to insert: DKHH.JK | date: 2025-12-30
+2025-12-31 11:21:08 [INFO] - Successfully upserted 4 data to database
