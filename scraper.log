@@ -434,3 +434,9 @@
 2026-01-02 18:24:13 [INFO] - Start scraping warrant for start date: 2025-12-26 and end date: 2026-01-02
 2026-01-02 18:24:14 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
 2026-01-02 18:24:14 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2026-01-03 11:19:06 [INFO] - Init Global Variable
+2026-01-03 11:19:07 [INFO] - Start scraping rups for start date: 2026-01-02 and end date: 2026-01-03
+2026-01-03 11:19:08 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-01-03 11:19:08 [INFO] - Data to insert: PORT.JK | date: 2026-01-02
+2026-01-03 11:19:08 [INFO] - Data to insert: ADMF.JK | date: 2026-01-02
+2026-01-03 11:19:08 [INFO] - Successfully upserted 2 data to database
