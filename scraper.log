@@ -440,3 +440,7 @@
 2026-01-03 11:19:08 [INFO] - Data to insert: PORT.JK | date: 2026-01-02
 2026-01-03 11:19:08 [INFO] - Data to insert: ADMF.JK | date: 2026-01-02
 2026-01-03 11:19:08 [INFO] - Successfully upserted 2 data to database
+2026-01-04 11:19:10 [INFO] - Init Global Variable
+2026-01-04 11:19:11 [INFO] - Start scraping rups for start date: 2026-01-03 and end date: 2026-01-04
+2026-01-04 11:19:12 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-01-04 11:19:12 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
