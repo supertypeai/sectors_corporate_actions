@@ -450,3 +450,9 @@
 2026-01-05 11:22:14 [INFO] - Data to insert: BBKP.JK | date: 2026-01-05
 2026-01-05 11:22:14 [INFO] - Data to insert: SOTS.JK | date: 2026-01-05
 2026-01-05 11:22:14 [INFO] - Successfully upserted 2 data to database
+2026-01-06 11:21:15 [INFO] - Init Global Variable
+2026-01-06 11:21:16 [INFO] - Start scraping rups for start date: 2026-01-05 and end date: 2026-01-06
+2026-01-06 11:21:18 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-01-06 11:21:18 [INFO] - Data to insert: BBKP.JK | date: 2026-01-05
+2026-01-06 11:21:18 [INFO] - Data to insert: SOTS.JK | date: 2026-01-05
+2026-01-06 11:21:18 [INFO] - Successfully upserted 2 data to database
