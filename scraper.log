@@ -461,3 +461,9 @@
 2026-01-07 11:23:07 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
 2026-01-07 11:23:07 [INFO] - Data to insert: FAST.JK | date: 2026-01-07
 2026-01-07 11:23:07 [INFO] - Successfully upserted 1 data to database
+2026-01-08 11:23:34 [INFO] - Init Global Variable
+2026-01-08 11:23:35 [INFO] - Start scraping rups for start date: 2026-01-07 and end date: 2026-01-08
+2026-01-08 11:23:36 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-01-08 11:23:36 [INFO] - Data to insert: FAST.JK | date: 2026-01-07
+2026-01-08 11:23:36 [INFO] - Data to insert: SDRA.JK | date: 2026-01-07
+2026-01-08 11:23:36 [INFO] - Successfully upserted 2 data to database
