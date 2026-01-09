@@ -467,3 +467,7 @@
 2026-01-08 11:23:36 [INFO] - Data to insert: FAST.JK | date: 2026-01-07
 2026-01-08 11:23:36 [INFO] - Data to insert: SDRA.JK | date: 2026-01-07
 2026-01-08 11:23:36 [INFO] - Successfully upserted 2 data to database
+2026-01-09 11:22:08 [INFO] - Init Global Variable
+2026-01-09 11:22:09 [INFO] - Start scraping rups for start date: 2026-01-08 and end date: 2026-01-09
+2026-01-09 11:22:10 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-01-09 11:22:10 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
