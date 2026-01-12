@@ -483,3 +483,8 @@
 2026-01-11 11:19:27 [INFO] - Start scraping rups for start date: 2026-01-10 and end date: 2026-01-11
 2026-01-11 11:19:28 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
 2026-01-11 11:19:28 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-12 11:23:28 [INFO] - Init Global Variable
+2026-01-12 11:23:29 [INFO] - Start scraping rups for start date: 2026-01-11 and end date: 2026-01-12
+2026-01-12 11:23:34 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
+2026-01-12 11:23:34 [INFO] - Data to insert: NATO.JK | date: 2026-01-12
+2026-01-12 11:23:35 [INFO] - Successfully upserted 1 data to database
