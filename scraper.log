@@ -511,3 +511,7 @@
 2026-01-16 11:22:49 [INFO] - Data to insert: MGLV.JK | date: 2026-01-15
 2026-01-16 11:22:49 [INFO] - Data to insert: OKAS.JK | date: 2026-01-15
 2026-01-16 11:22:49 [INFO] - Successfully upserted 3 data to database
+2026-01-16 18:26:40 [INFO] - Init Global Variable
+2026-01-16 18:26:40 [INFO] - Start scraping warrant for start date: 2026-01-09 and end date: 2026-01-16
+2026-01-16 18:26:41 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-01-16 18:26:41 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
