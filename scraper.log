@@ -504,3 +504,10 @@
 2026-01-15 11:22:42 [INFO] - Data to insert: MGLV.JK | date: 2026-01-15
 2026-01-15 11:22:42 [INFO] - Data to insert: OKAS.JK | date: 2026-01-15
 2026-01-15 11:22:42 [INFO] - Successfully upserted 3 data to database
+2026-01-16 11:22:39 [INFO] - Init Global Variable
+2026-01-16 11:22:40 [INFO] - Start scraping rups for start date: 2026-01-15 and end date: 2026-01-16
+2026-01-16 11:22:49 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2026-01-16 11:22:49 [INFO] - Data to insert: SRAJ.JK | date: 2026-01-15
+2026-01-16 11:22:49 [INFO] - Data to insert: MGLV.JK | date: 2026-01-15
+2026-01-16 11:22:49 [INFO] - Data to insert: OKAS.JK | date: 2026-01-15
+2026-01-16 11:22:49 [INFO] - Successfully upserted 3 data to database
