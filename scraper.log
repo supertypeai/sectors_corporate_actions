@@ -523,3 +523,8 @@
 2026-01-18 11:18:50 [INFO] - Start scraping rups for start date: 2026-01-17 and end date: 2026-01-18
 2026-01-18 11:18:51 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
 2026-01-18 11:18:51 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-19 11:24:04 [INFO] - Init Global Variable
+2026-01-19 11:24:05 [INFO] - Start scraping rups for start date: 2026-01-18 and end date: 2026-01-19
+2026-01-19 11:24:06 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
+2026-01-19 11:24:06 [INFO] - Data to insert: STAR.JK | date: 2026-01-19
+2026-01-19 11:24:07 [INFO] - Successfully upserted 1 data to database
