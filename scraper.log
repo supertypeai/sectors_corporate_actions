@@ -528,3 +528,10 @@
 2026-01-19 11:24:06 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
 2026-01-19 11:24:06 [INFO] - Data to insert: STAR.JK | date: 2026-01-19
 2026-01-19 11:24:07 [INFO] - Successfully upserted 1 data to database
+2026-01-20 11:25:51 [INFO] - Init Global Variable
+2026-01-20 11:25:52 [INFO] - Start scraping rups for start date: 2026-01-19 and end date: 2026-01-20
+2026-01-20 11:25:57 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2026-01-20 11:25:57 [INFO] - Data to insert: MFMI.JK | date: 2026-01-20
+2026-01-20 11:25:57 [INFO] - Data to insert: HERO.JK | date: 2026-01-20
+2026-01-20 11:25:57 [INFO] - Data to insert: STAR.JK | date: 2026-01-19
+2026-01-20 11:25:57 [INFO] - Successfully upserted 3 data to database
