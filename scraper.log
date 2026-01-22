@@ -535,3 +535,10 @@
 2026-01-20 11:25:57 [INFO] - Data to insert: HERO.JK | date: 2026-01-20
 2026-01-20 11:25:57 [INFO] - Data to insert: STAR.JK | date: 2026-01-19
 2026-01-20 11:25:57 [INFO] - Successfully upserted 3 data to database
+2026-01-22 11:25:41 [INFO] - Init Global Variable
+2026-01-22 11:25:42 [INFO] - Start scraping rups for start date: 2026-01-21 and end date: 2026-01-22
+2026-01-22 11:25:48 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2026-01-22 11:25:48 [INFO] - Data to insert: TRON.JK | date: 2026-01-22
+2026-01-22 11:25:48 [INFO] - Data to insert: UNVR.JK | date: 2026-01-21
+2026-01-22 11:25:48 [INFO] - Data to insert: BESS.JK | date: 2026-01-21
+2026-01-22 11:25:49 [INFO] - Successfully upserted 3 data to database
