@@ -548,3 +548,7 @@
 2026-01-23 11:24:08 [INFO] - Data to insert: TRON.JK | date: 2026-01-22
 2026-01-23 11:24:08 [INFO] - Data to insert: MKNT.JK | date: 2026-01-23
 2026-01-23 11:24:08 [INFO] - Successfully upserted 2 data to database
+2026-01-23 18:27:14 [INFO] - Init Global Variable
+2026-01-23 18:27:15 [INFO] - Start scraping warrant for start date: 2026-01-16 and end date: 2026-01-23
+2026-01-23 18:27:16 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-01-23 18:27:16 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
