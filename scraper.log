@@ -564,3 +564,8 @@
 2026-01-26 11:23:23 [INFO] - Start scraping rups for start date: 2026-01-25 and end date: 2026-01-26
 2026-01-26 11:23:38 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
 2026-01-26 11:23:38 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-27 11:25:42 [INFO] - Init Global Variable
+2026-01-27 11:25:43 [INFO] - Start scraping rups for start date: 2026-01-26 and end date: 2026-01-27
+2026-01-27 11:25:47 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
+2026-01-27 11:25:47 [INFO] - Data to insert: MKNT.JK | date: 2026-01-27
+2026-01-27 11:25:47 [INFO] - Successfully upserted 1 data to database
