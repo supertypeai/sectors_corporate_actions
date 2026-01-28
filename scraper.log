@@ -569,3 +569,9 @@
 2026-01-27 11:25:47 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
 2026-01-27 11:25:47 [INFO] - Data to insert: MKNT.JK | date: 2026-01-27
 2026-01-27 11:25:47 [INFO] - Successfully upserted 1 data to database
+2026-01-28 11:25:47 [INFO] - Init Global Variable
+2026-01-28 11:25:48 [INFO] - Start scraping rups for start date: 2026-01-27 and end date: 2026-01-28
+2026-01-28 11:25:56 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-01-28 11:25:56 [INFO] - Data to insert: PLIN.JK | date: 2026-01-28
+2026-01-28 11:25:56 [INFO] - Data to insert: MKNT.JK | date: 2026-01-27
+2026-01-28 11:25:56 [INFO] - Successfully upserted 2 data to database
