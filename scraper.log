@@ -587,3 +587,7 @@
 2026-01-30 11:31:20 [INFO] - Data to insert: SOTS.JK | date: 2026-01-30
 2026-01-30 11:31:20 [INFO] - Data to insert: SOHO.JK | date: 2026-01-29
 2026-01-30 11:31:21 [INFO] - Successfully upserted 2 data to database
+2026-01-30 18:35:41 [INFO] - Init Global Variable
+2026-01-30 18:35:42 [INFO] - Start scraping warrant for start date: 2026-01-23 and end date: 2026-01-30
+2026-01-30 18:35:43 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-01-30 18:35:43 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
