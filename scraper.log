@@ -596,3 +596,7 @@
 2026-01-31 11:23:10 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
 2026-01-31 11:23:10 [INFO] - Data to insert: SOTS.JK | date: 2026-01-30
 2026-01-31 11:23:10 [INFO] - Successfully upserted 1 data to database
+2026-02-01 11:24:20 [INFO] - Init Global Variable
+2026-02-01 11:24:21 [INFO] - Start scraping rups for start date: 2026-01-31 and end date: 2026-02-01
+2026-02-01 11:24:29 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-02-01 11:24:29 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
