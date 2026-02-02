@@ -600,3 +600,9 @@
 2026-02-01 11:24:21 [INFO] - Start scraping rups for start date: 2026-01-31 and end date: 2026-02-01
 2026-02-01 11:24:29 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
 2026-02-01 11:24:29 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-02-02 11:37:15 [INFO] - Init Global Variable
+2026-02-02 11:37:16 [INFO] - Start scraping rups for start date: 2026-02-01 and end date: 2026-02-02
+2026-02-02 11:37:20 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-02-02 11:37:20 [INFO] - Data to insert: AYAM.JK | date: 2026-02-02
+2026-02-02 11:37:20 [INFO] - Data to insert: HOPE.JK | date: 2026-02-02
+2026-02-02 11:37:20 [INFO] - Successfully upserted 2 data to database
