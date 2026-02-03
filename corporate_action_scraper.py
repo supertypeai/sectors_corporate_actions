@@ -625,7 +625,6 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
             "dedup_keys": ["symbol", "recording_date"],
             "log_date_field": "recording_date",
             "table": "idx_agm",
-            "table": "idx_agm",
         },
         "scraper_bonus": {
             "func": bonus_scraper,
