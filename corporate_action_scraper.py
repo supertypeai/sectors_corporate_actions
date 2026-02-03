@@ -111,7 +111,7 @@ def get_parse_html(url: str, page: int) -> BeautifulSoup:
     return soup
 
 
-def rups_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
+def rups_scraper(start_date: str = None, end_date: str = None) -> pd.DataFrame | str:
     """ 
     Scrape RUPS data from the SahamIDX website.
     This function retrieves RUPS data, including symbol, recording date,
@@ -129,12 +129,15 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
     keep_scraping = True
     valid_symbols = allowed_symbol()
 
-    end_date = datetime.now()
+    if end_date is None:
+        end_date = datetime.now()
+    else:
+        end_date = datetime.strptime(end_date, "%Y-%m-%d")
 
-    if cutoff_date is None:
+    if start_date is None:
         start_date = end_date - timedelta(days=1)
     else:
-        start_date = datetime.strptime(cutoff_date, "%Y-%m-%d")
+        start_date = datetime.strptime(start_date, "%Y-%m-%d")
 
     end_date = end_date.strftime("%Y-%m-%d")
     start_date = start_date.strftime("%Y-%m-%d")
@@ -147,13 +150,18 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
         soup = get_parse_html(url, page)
         rows = soup.find_all("tr")
 
-        for row in rows:
+        LOGGER.info(f"Found {len(rows)} rows to process at page: {page}")
+
+        for index, row in enumerate(rows):
+            LOGGER.info(f"Processing row {index + 1}/{len(rows)}")
+
             try:
                 symbol_cell = row.find("td", {"data-header": "Kode Emiten"})
                 recording_date_cell = row.find("td", {"data-header": "Tanggal Rekording"})
                 rups_date_cell = row.find("td", {"data-header": "Tanggal Rups"})
                 rups_place_cell = row.find("td", {"data-header": "Tempat"})
-
+                rups_time = row.find("td", {"data-header": "Jam"})
+                
                 if not (symbol_cell and recording_date_cell and rups_date_cell and rups_date_cell):
                     continue 
 
@@ -175,6 +183,9 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                 rups_date_str = rups_date_cell.text.strip()
                 rups_date = parse_date_safe(rups_date_str)
 
+                # Prepare rups time 
+                rups_time_str = rups_time.text.strip()
+
                 # Prepare rups place 
                 rups_place = rups_place_cell.text.strip()
 
@@ -183,16 +194,23 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                     data_dict = {
                         "symbol": symbol,
                         "recording_date":  recording_date,
-                        "rups_date": rups_date
+                        "agm_date": rups_date,
+                        'agm_place': rups_place.title(), 
+                        'agm_time': rups_time_str
                     }
 
-                    # Add special case for rups place is 'Dibatalkan'
+                    # Add agm_ket: dibatalkan, online, offline 
                     if 'Dibatalkan' in rups_place:
-                        if len(rups_place) > 10:
-                            rups_place = rups_place[:10]
-                            data_dict["rups_place_ket"] = rups_place
-                        else:
-                            data_dict["rups_place_ket"] = rups_place
+                        data_dict["agm_place_desc"] = 'Dibatalkan'
+
+                    elif any(tag in rups_place.lower() for tag in ['online', 'zoom', 'daring']):
+                        data_dict["agm_place_desc"] = 'Online'
+
+                    elif len(rups_place) > 5: 
+                        data_dict["agm_place_desc"] = 'Onsite'
+
+                    else: 
+                        data_dict["agm_place_desc"] = None
 
                     rups_data.append(data_dict)
 
@@ -213,7 +231,7 @@ def rups_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
     LOGGER.info(f"[RUPS SCRAPER] Scraping completed. Total records collected: {len(rups_data)}")
 
     rups_data_df = pd.DataFrame(rups_data)
-    return rups_data_df, cutoff_date
+    return rups_data_df, start_date
 
 
 def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
@@ -606,7 +624,7 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
             "func": rups_scraper,
             "dedup_keys": ["symbol", "recording_date"],
             "log_date_field": "recording_date",
-            "table": "idx_rups",
+            "table": "idx_agm",
         },
         "scraper_bonus": {
             "func": bonus_scraper,
@@ -695,5 +713,3 @@ if __name__ == '__main__':
     
     # Call the main function directly 
     upsert_to_db(scraper=args.scraper, cutoff_date=args.date)
-        
-   
