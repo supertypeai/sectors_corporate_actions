@@ -104,3 +104,505 @@
 2025-11-12 11:19:47 [INFO] - Data to insert: SMCB.JK | date: 2025-11-12
 2025-11-12 11:19:47 [INFO] - Data to insert: FASW.JK | date: 2025-11-12
 2025-11-12 11:19:48 [INFO] - Successfully upserted 2 data to database
+2025-11-13 11:20:15 [INFO] - Init Global Variable
+2025-11-13 11:20:17 [INFO] - Start scraping rups for start date: 2025-11-12 and end date: 2025-11-13
+2025-11-13 11:20:22 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2025-11-13 11:20:22 [INFO] - Data to insert: NAIK.JK | date: 2025-11-13
+2025-11-13 11:20:22 [INFO] - Data to insert: SMCB.JK | date: 2025-11-12
+2025-11-13 11:20:22 [INFO] - Data to insert: FASW.JK | date: 2025-11-12
+2025-11-13 11:20:23 [INFO] - Successfully upserted 3 data to database
+2025-11-14 11:19:25 [INFO] - Init Global Variable
+2025-11-14 11:19:26 [INFO] - Start scraping rups for start date: 2025-11-13 and end date: 2025-11-14
+2025-11-14 11:19:29 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
+2025-11-14 11:19:29 [INFO] - Data to insert: NAIK.JK | date: 2025-11-13
+2025-11-14 11:19:30 [INFO] - Successfully upserted 1 data to database
+2025-11-14 18:22:31 [INFO] - Init Global Variable
+2025-11-14 18:22:32 [INFO] - Start scraping warrant for start date: 2025-11-07 and end date: 2025-11-14
+2025-11-14 18:22:33 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2025-11-14 18:22:33 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2025-11-14 18:34:32 [INFO] - Init Global Variable
+2025-11-14 18:34:35 [ERROR] - No data table found on page. Stopping scrape.
+2025-11-14 18:34:35 [INFO] - [BONUS SCRAPER] Scraping completed. Total records collected: 0
+2025-11-14 18:34:35 [INFO] - No records to upsert for scraper 'scraper_bonus' with cutoff 2025-11-07 18:34:33.645899. Skipping DB insert.
+2025-11-15 11:16:32 [INFO] - Init Global Variable
+2025-11-15 11:16:33 [INFO] - Start scraping rups for start date: 2025-11-14 and end date: 2025-11-15
+2025-11-15 11:16:38 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-11-15 11:16:38 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-11-16 11:16:43 [INFO] - Init Global Variable
+2025-11-16 11:16:44 [INFO] - Start scraping rups for start date: 2025-11-15 and end date: 2025-11-16
+2025-11-16 11:16:50 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-11-16 11:16:50 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-11-17 11:19:32 [INFO] - Init Global Variable
+2025-11-17 11:19:33 [INFO] - Start scraping rups for start date: 2025-11-16 and end date: 2025-11-17
+2025-11-17 11:19:38 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2025-11-17 11:19:38 [INFO] - Data to insert: EMAS.JK | date: 2025-11-17
+2025-11-17 11:19:38 [INFO] - Data to insert: CGAS.JK | date: 2025-11-17
+2025-11-17 11:19:38 [INFO] - Successfully upserted 2 data to database
+2025-11-18 11:20:29 [INFO] - Init Global Variable
+2025-11-18 11:20:30 [INFO] - Start scraping rups for start date: 2025-11-17 and end date: 2025-11-18
+2025-11-18 11:20:36 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2025-11-18 11:20:36 [INFO] - Data to insert: CANI.JK | date: 2025-11-18
+2025-11-18 11:20:36 [INFO] - Data to insert: EMAS.JK | date: 2025-11-17
+2025-11-18 11:20:36 [INFO] - Data to insert: CGAS.JK | date: 2025-11-17
+2025-11-18 11:20:37 [INFO] - Successfully upserted 3 data to database
+2025-11-19 11:19:21 [INFO] - Init Global Variable
+2025-11-19 11:19:22 [INFO] - Start scraping rups for start date: 2025-11-18 and end date: 2025-11-19
+2025-11-19 11:19:28 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 8
+2025-11-19 11:19:28 [INFO] - Data to insert: FOLK.JK | date: 2025-11-19
+2025-11-19 11:19:28 [INFO] - Data to insert: MTFN.JK | date: 2025-11-19
+2025-11-19 11:19:28 [INFO] - Data to insert: MCOR.JK | date: 2025-11-19
+2025-11-19 11:19:28 [INFO] - Data to insert: KKGI.JK | date: 2025-11-19
+2025-11-19 11:19:28 [INFO] - Data to insert: TLKM.JK | date: 2025-11-19
+2025-11-19 11:19:28 [INFO] - Data to insert: CANI.JK | date: 2025-11-18
+2025-11-19 11:19:28 [INFO] - Data to insert: SOUL.JK | date: 2025-11-18
+2025-11-19 11:19:29 [INFO] - Successfully upserted 7 data to database
+2025-11-20 11:19:32 [INFO] - Init Global Variable
+2025-11-20 11:19:33 [INFO] - Start scraping rups for start date: 2025-11-19 and end date: 2025-11-20
+2025-11-20 11:19:39 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 11
+2025-11-20 11:19:39 [INFO] - Data to insert: NICE.JK | date: 2025-11-20
+2025-11-20 11:19:39 [INFO] - Data to insert: GGRP.JK | date: 2025-11-20
+2025-11-20 11:19:39 [INFO] - Data to insert: BBNI.JK | date: 2025-11-20
+2025-11-20 11:19:39 [INFO] - Data to insert: WIKA.JK | date: 2025-11-20
+2025-11-20 11:19:39 [INFO] - Data to insert: ANTM.JK | date: 2025-11-20
+2025-11-20 11:19:39 [INFO] - Data to insert: FOLK.JK | date: 2025-11-19
+2025-11-20 11:19:39 [INFO] - Data to insert: MTFN.JK | date: 2025-11-19
+2025-11-20 11:19:39 [INFO] - Data to insert: MCOR.JK | date: 2025-11-19
+2025-11-20 11:19:39 [INFO] - Data to insert: KKGI.JK | date: 2025-11-19
+2025-11-20 11:19:39 [INFO] - Data to insert: TLKM.JK | date: 2025-11-19
+2025-11-20 11:19:40 [INFO] - Successfully upserted 10 data to database
+2025-11-21 11:18:42 [INFO] - Init Global Variable
+2025-11-21 11:18:44 [INFO] - Start scraping rups for start date: 2025-11-20 and end date: 2025-11-21
+2025-11-21 11:18:48 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 7
+2025-11-21 11:18:48 [INFO] - Data to insert: WOWS.JK | date: 2025-11-21
+2025-11-21 11:18:48 [INFO] - Data to insert: PTBA.JK | date: 2025-11-21
+2025-11-21 11:18:48 [INFO] - Data to insert: NICE.JK | date: 2025-11-20
+2025-11-21 11:18:48 [INFO] - Data to insert: GGRP.JK | date: 2025-11-20
+2025-11-21 11:18:48 [INFO] - Data to insert: BBNI.JK | date: 2025-11-20
+2025-11-21 11:18:48 [INFO] - Data to insert: WIKA.JK | date: 2025-11-20
+2025-11-21 11:18:48 [INFO] - Data to insert: ANTM.JK | date: 2025-11-20
+2025-11-21 11:18:49 [INFO] - Successfully upserted 7 data to database
+2025-11-21 18:21:45 [INFO] - Init Global Variable
+2025-11-21 18:21:46 [INFO] - Start scraping warrant for start date: 2025-11-14 and end date: 2025-11-21
+2025-11-21 18:21:47 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2025-11-21 18:21:47 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2025-11-22 11:16:04 [INFO] - Init Global Variable
+2025-11-22 11:16:05 [INFO] - Start scraping rups for start date: 2025-11-21 and end date: 2025-11-22
+2025-11-22 11:16:09 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2025-11-22 11:16:09 [INFO] - Data to insert: WOWS.JK | date: 2025-11-21
+2025-11-22 11:16:09 [INFO] - Data to insert: PTBA.JK | date: 2025-11-21
+2025-11-22 11:16:09 [INFO] - Successfully upserted 2 data to database
+2025-11-23 11:17:14 [INFO] - Init Global Variable
+2025-11-23 11:17:15 [INFO] - Start scraping rups for start date: 2025-11-22 and end date: 2025-11-23
+2025-11-23 11:17:19 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-11-23 11:17:19 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-11-24 11:20:06 [INFO] - Init Global Variable
+2025-11-24 11:20:07 [INFO] - Start scraping rups for start date: 2025-11-23 and end date: 2025-11-24
+2025-11-24 11:20:10 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 4
+2025-11-24 11:20:10 [INFO] - Data to insert: LCKM.JK | date: 2025-11-24
+2025-11-24 11:20:10 [INFO] - Data to insert: AKPI.JK | date: 2025-11-24
+2025-11-24 11:20:10 [INFO] - Data to insert: PNSE.JK | date: 2025-11-24
+2025-11-24 11:20:10 [INFO] - Data to insert: SOSS.JK | date: 2025-11-24
+2025-11-24 11:20:11 [INFO] - Successfully upserted 4 data to database
+2025-11-25 11:20:07 [INFO] - Init Global Variable
+2025-11-25 11:20:08 [INFO] - Start scraping rups for start date: 2025-11-24 and end date: 2025-11-25
+2025-11-25 11:20:12 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 8
+2025-11-25 11:20:12 [INFO] - Data to insert: BANK.JK | date: 2025-11-25
+2025-11-25 11:20:12 [INFO] - Data to insert: SOFA.JK | date: 2025-11-25
+2025-11-25 11:20:12 [INFO] - Data to insert: PMMP.JK | date: 2025-11-25
+2025-11-25 11:20:12 [INFO] - Data to insert: MUTU.JK | date: 2025-11-25
+2025-11-25 11:20:12 [INFO] - Data to insert: LCKM.JK | date: 2025-11-24
+2025-11-25 11:20:12 [INFO] - Data to insert: AKPI.JK | date: 2025-11-24
+2025-11-25 11:20:12 [INFO] - Data to insert: PNSE.JK | date: 2025-11-24
+2025-11-25 11:20:12 [INFO] - Data to insert: SOSS.JK | date: 2025-11-24
+2025-11-25 11:20:12 [INFO] - Successfully upserted 8 data to database
+2025-11-26 11:20:16 [INFO] - Init Global Variable
+2025-11-26 11:20:17 [INFO] - Start scraping rups for start date: 2025-11-25 and end date: 2025-11-26
+2025-11-26 11:20:21 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 5
+2025-11-26 11:20:21 [INFO] - Data to insert: BANK.JK | date: 2025-11-25
+2025-11-26 11:20:21 [INFO] - Data to insert: SOFA.JK | date: 2025-11-25
+2025-11-26 11:20:21 [INFO] - Data to insert: TECH.JK | date: 2025-11-26
+2025-11-26 11:20:21 [INFO] - Data to insert: PMMP.JK | date: 2025-11-25
+2025-11-26 11:20:21 [INFO] - Data to insert: MUTU.JK | date: 2025-11-25
+2025-11-26 11:20:21 [INFO] - Successfully upserted 5 data to database
+2025-11-27 11:20:27 [INFO] - Init Global Variable
+2025-11-27 11:20:28 [INFO] - Start scraping rups for start date: 2025-11-26 and end date: 2025-11-27
+2025-11-27 11:20:29 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2025-11-27 11:20:29 [INFO] - Data to insert: BBTN.JK | date: 2025-11-27
+2025-11-27 11:20:29 [INFO] - Data to insert: BRIS.JK | date: 2025-11-27
+2025-11-27 11:20:29 [INFO] - Data to insert: SMGR.JK | date: 2025-11-27
+2025-11-27 11:20:30 [INFO] - Successfully upserted 3 data to database
+2025-11-28 11:20:12 [INFO] - Init Global Variable
+2025-11-28 11:20:13 [INFO] - Start scraping rups for start date: 2025-11-27 and end date: 2025-11-28
+2025-11-28 11:20:16 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 8
+2025-11-28 11:20:16 [INFO] - Data to insert: KRAS.JK | date: 2025-11-28
+2025-11-28 11:20:16 [INFO] - Data to insert: VRNA.JK | date: 2025-11-28
+2025-11-28 11:20:16 [INFO] - Data to insert: GIAA.JK | date: 2025-11-28
+2025-11-28 11:20:16 [INFO] - Data to insert: WSKT.JK | date: 2025-11-28
+2025-11-28 11:20:16 [INFO] - Data to insert: ASJT.JK | date: 2025-11-28
+2025-11-28 11:20:16 [INFO] - Data to insert: BBTN.JK | date: 2025-11-27
+2025-11-28 11:20:16 [INFO] - Data to insert: BRIS.JK | date: 2025-11-27
+2025-11-28 11:20:16 [INFO] - Data to insert: SMGR.JK | date: 2025-11-27
+2025-11-28 11:20:16 [INFO] - Successfully upserted 8 data to database
+2025-11-28 18:22:16 [INFO] - Init Global Variable
+2025-11-28 18:22:17 [INFO] - Start scraping warrant for start date: 2025-11-21 and end date: 2025-11-28
+2025-11-28 18:22:18 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2025-11-28 18:22:18 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2025-11-30 11:17:29 [INFO] - Init Global Variable
+2025-11-30 11:17:30 [INFO] - Start scraping rups for start date: 2025-11-29 and end date: 2025-11-30
+2025-11-30 11:17:31 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-11-30 11:17:31 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-01 11:20:44 [INFO] - Init Global Variable
+2025-12-01 11:20:45 [INFO] - Start scraping rups for start date: 2025-11-30 and end date: 2025-12-01
+2025-12-01 11:20:46 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-01 11:20:46 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-02 11:22:12 [INFO] - Init Global Variable
+2025-12-02 11:22:13 [INFO] - Start scraping rups for start date: 2025-12-01 and end date: 2025-12-02
+2025-12-02 11:22:14 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-02 11:22:14 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-03 11:21:10 [INFO] - Init Global Variable
+2025-12-03 11:21:11 [INFO] - Start scraping rups for start date: 2025-12-02 and end date: 2025-12-03
+2025-12-03 11:21:12 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-03 11:21:12 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-04 11:22:05 [INFO] - Init Global Variable
+2025-12-04 11:22:07 [INFO] - Start scraping rups for start date: 2025-12-03 and end date: 2025-12-04
+2025-12-04 11:22:08 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-04 11:22:08 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-05 11:21:16 [INFO] - Init Global Variable
+2025-12-05 11:21:17 [INFO] - Start scraping rups for start date: 2025-12-04 and end date: 2025-12-05
+2025-12-05 11:21:18 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-05 11:21:18 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-05 18:21:40 [INFO] - Init Global Variable
+2025-12-05 18:21:41 [INFO] - Start scraping warrant for start date: 2025-11-28 and end date: 2025-12-05
+2025-12-05 18:21:42 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2025-12-05 18:21:42 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2025-12-06 11:17:38 [INFO] - Init Global Variable
+2025-12-06 11:17:39 [INFO] - Start scraping rups for start date: 2025-12-05 and end date: 2025-12-06
+2025-12-06 11:17:41 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-06 11:17:41 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-07 11:17:30 [INFO] - Init Global Variable
+2025-12-07 11:17:30 [INFO] - Start scraping rups for start date: 2025-12-06 and end date: 2025-12-07
+2025-12-07 11:17:31 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-07 11:17:31 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-08 11:21:12 [INFO] - Init Global Variable
+2025-12-08 11:21:13 [INFO] - Start scraping rups for start date: 2025-12-07 and end date: 2025-12-08
+2025-12-08 11:21:14 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-08 11:21:14 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-09 11:21:39 [INFO] - Init Global Variable
+2025-12-09 11:21:40 [INFO] - Start scraping rups for start date: 2025-12-08 and end date: 2025-12-09
+2025-12-09 11:21:41 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-09 11:21:41 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-10 11:21:01 [INFO] - Init Global Variable
+2025-12-10 11:21:02 [INFO] - Start scraping rups for start date: 2025-12-09 and end date: 2025-12-10
+2025-12-10 11:21:04 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-10 11:21:04 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-11 11:21:51 [INFO] - Init Global Variable
+2025-12-11 11:21:52 [INFO] - Start scraping rups for start date: 2025-12-10 and end date: 2025-12-11
+2025-12-11 11:21:53 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-11 11:21:53 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-12 11:22:40 [INFO] - Init Global Variable
+2025-12-12 11:22:41 [INFO] - Start scraping rups for start date: 2025-12-11 and end date: 2025-12-12
+2025-12-12 11:22:42 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-12 11:22:42 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-12 18:25:54 [INFO] - Init Global Variable
+2025-12-12 18:25:55 [INFO] - Start scraping warrant for start date: 2025-12-05 and end date: 2025-12-12
+2025-12-12 18:25:57 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2025-12-12 18:25:57 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2025-12-13 11:17:57 [INFO] - Init Global Variable
+2025-12-13 11:17:58 [INFO] - Start scraping rups for start date: 2025-12-12 and end date: 2025-12-13
+2025-12-13 11:18:00 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-13 11:18:00 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-14 11:18:37 [INFO] - Init Global Variable
+2025-12-14 11:18:38 [INFO] - Start scraping rups for start date: 2025-12-13 and end date: 2025-12-14
+2025-12-14 11:18:40 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-14 11:18:40 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-15 11:22:02 [INFO] - Init Global Variable
+2025-12-15 11:22:03 [INFO] - Start scraping rups for start date: 2025-12-14 and end date: 2025-12-15
+2025-12-15 11:22:05 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
+2025-12-15 11:22:05 [INFO] - Data to insert: BWPT.JK | date: 2025-12-15
+2025-12-15 11:22:05 [INFO] - Successfully upserted 1 data to database
+2025-12-16 11:22:34 [INFO] - Init Global Variable
+2025-12-16 11:22:35 [INFO] - Start scraping rups for start date: 2025-12-15 and end date: 2025-12-16
+2025-12-16 11:22:36 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2025-12-16 11:22:36 [INFO] - Data to insert: TRON.JK | date: 2025-12-16
+2025-12-16 11:22:36 [INFO] - Data to insert: BWPT.JK | date: 2025-12-15
+2025-12-16 11:22:37 [INFO] - Successfully upserted 2 data to database
+2025-12-17 11:22:27 [INFO] - Init Global Variable
+2025-12-17 11:22:28 [INFO] - Start scraping rups for start date: 2025-12-16 and end date: 2025-12-17
+2025-12-17 11:22:31 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2025-12-17 11:22:31 [INFO] - Data to insert: TRON.JK | date: 2025-12-16
+2025-12-17 11:22:31 [INFO] - Data to insert: BPFI.JK | date: 2025-12-17
+2025-12-17 11:22:32 [INFO] - Successfully upserted 2 data to database
+2025-12-18 11:21:32 [INFO] - Init Global Variable
+2025-12-18 11:21:33 [INFO] - Start scraping rups for start date: 2025-12-17 and end date: 2025-12-18
+2025-12-18 11:21:34 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-18 11:21:34 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-19 11:20:49 [INFO] - Init Global Variable
+2025-12-19 11:20:50 [INFO] - Start scraping rups for start date: 2025-12-18 and end date: 2025-12-19
+2025-12-19 11:20:51 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-19 11:20:51 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-19 18:23:53 [INFO] - Init Global Variable
+2025-12-19 18:23:53 [INFO] - Start scraping warrant for start date: 2025-12-12 and end date: 2025-12-19
+2025-12-19 18:23:55 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2025-12-19 18:23:55 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2025-12-20 11:18:04 [INFO] - Init Global Variable
+2025-12-20 11:18:05 [INFO] - Start scraping rups for start date: 2025-12-19 and end date: 2025-12-20
+2025-12-20 11:18:06 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-20 11:18:06 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-21 11:18:40 [INFO] - Init Global Variable
+2025-12-21 11:18:41 [INFO] - Start scraping rups for start date: 2025-12-20 and end date: 2025-12-21
+2025-12-21 11:18:41 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-21 11:18:41 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-22 11:21:17 [INFO] - Init Global Variable
+2025-12-22 11:21:18 [INFO] - Start scraping rups for start date: 2025-12-21 and end date: 2025-12-22
+2025-12-22 11:21:19 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2025-12-22 11:21:19 [INFO] - Data to insert: NOBU.JK | date: 2025-12-22
+2025-12-22 11:21:19 [INFO] - Data to insert: DNET.JK | date: 2025-12-22
+2025-12-22 11:21:20 [INFO] - Successfully upserted 2 data to database
+2025-12-23 11:21:19 [INFO] - Init Global Variable
+2025-12-23 11:21:20 [INFO] - Start scraping rups for start date: 2025-12-22 and end date: 2025-12-23
+2025-12-23 11:21:21 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 4
+2025-12-23 11:21:21 [INFO] - Data to insert: RMKE.JK | date: 2025-12-23
+2025-12-23 11:21:21 [INFO] - Data to insert: NOBU.JK | date: 2025-12-22
+2025-12-23 11:21:21 [INFO] - Data to insert: MINA.JK | date: 2025-12-23
+2025-12-23 11:21:21 [INFO] - Data to insert: DNET.JK | date: 2025-12-22
+2025-12-23 11:21:21 [INFO] - Successfully upserted 4 data to database
+2025-12-24 11:20:51 [INFO] - Init Global Variable
+2025-12-24 11:20:52 [INFO] - Start scraping rups for start date: 2025-12-23 and end date: 2025-12-24
+2025-12-24 11:20:53 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2025-12-24 11:20:53 [INFO] - Data to insert: LABA.JK | date: 2025-12-24
+2025-12-24 11:20:53 [INFO] - Data to insert: PGEO.JK | date: 2025-12-24
+2025-12-24 11:20:53 [INFO] - Data to insert: RMKE.JK | date: 2025-12-23
+2025-12-24 11:20:53 [INFO] - Successfully upserted 3 data to database
+2025-12-25 11:20:08 [INFO] - Init Global Variable
+2025-12-25 11:20:09 [INFO] - Start scraping rups for start date: 2025-12-24 and end date: 2025-12-25
+2025-12-25 11:20:13 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2025-12-25 11:20:13 [INFO] - Data to insert: VTNY.JK | date: 2025-12-24
+2025-12-25 11:20:13 [INFO] - Data to insert: PGEO.JK | date: 2025-12-24
+2025-12-25 11:20:13 [INFO] - Data to insert: LABA.JK | date: 2025-12-24
+2025-12-25 11:20:13 [INFO] - Successfully upserted 3 data to database
+2025-12-26 11:20:38 [INFO] - Init Global Variable
+2025-12-26 11:20:40 [INFO] - Start scraping rups for start date: 2025-12-25 and end date: 2025-12-26
+2025-12-26 11:20:43 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-26 11:20:43 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-26 18:23:58 [INFO] - Init Global Variable
+2025-12-26 18:23:59 [INFO] - Start scraping warrant for start date: 2025-12-19 and end date: 2025-12-26
+2025-12-26 18:24:00 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2025-12-26 18:24:00 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2025-12-27 11:18:33 [INFO] - Init Global Variable
+2025-12-27 11:18:34 [INFO] - Start scraping rups for start date: 2025-12-26 and end date: 2025-12-27
+2025-12-27 11:18:37 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-27 11:18:37 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-28 11:19:16 [INFO] - Init Global Variable
+2025-12-28 11:19:16 [INFO] - Start scraping rups for start date: 2025-12-27 and end date: 2025-12-28
+2025-12-28 11:19:19 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2025-12-28 11:19:19 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2025-12-29 11:21:42 [INFO] - Init Global Variable
+2025-12-29 11:21:43 [INFO] - Start scraping rups for start date: 2025-12-28 and end date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 7
+2025-12-29 11:21:47 [INFO] - Data to insert: BOGA.JK | date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - Data to insert: BEKS.JK | date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - Data to insert: PPRE.JK | date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - Data to insert: KRYA.JK | date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - Data to insert: TEBE.JK | date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - Data to insert: NSSS.JK | date: 2025-12-29
+2025-12-29 11:21:47 [INFO] - Successfully upserted 6 data to database
+2025-12-30 11:21:22 [INFO] - Init Global Variable
+2025-12-30 11:21:23 [INFO] - Start scraping rups for start date: 2025-12-29 and end date: 2025-12-30
+2025-12-30 11:21:27 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 11
+2025-12-30 11:21:27 [INFO] - Data to insert: UCID.JK | date: 2025-12-30
+2025-12-30 11:21:27 [INFO] - Data to insert: DKHH.JK | date: 2025-12-30
+2025-12-30 11:21:27 [INFO] - Data to insert: BABY.JK | date: 2025-12-30
+2025-12-30 11:21:27 [INFO] - Data to insert: PIPA.JK | date: 2025-12-30
+2025-12-30 11:21:27 [INFO] - Data to insert: PPRE.JK | date: 2025-12-29
+2025-12-30 11:21:27 [INFO] - Data to insert: KRYA.JK | date: 2025-12-29
+2025-12-30 11:21:27 [INFO] - Data to insert: BOGA.JK | date: 2025-12-29
+2025-12-30 11:21:27 [INFO] - Data to insert: TEBE.JK | date: 2025-12-29
+2025-12-30 11:21:27 [INFO] - Successfully upserted 8 data to database
+2025-12-31 11:21:06 [INFO] - Init Global Variable
+2025-12-31 11:21:07 [INFO] - Start scraping rups for start date: 2025-12-30 and end date: 2025-12-31
+2025-12-31 11:21:08 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 4
+2025-12-31 11:21:08 [INFO] - Data to insert: BABY.JK | date: 2025-12-30
+2025-12-31 11:21:08 [INFO] - Data to insert: UCID.JK | date: 2025-12-30
+2025-12-31 11:21:08 [INFO] - Data to insert: PIPA.JK | date: 2025-12-30
+2025-12-31 11:21:08 [INFO] - Data to insert: DKHH.JK | date: 2025-12-30
+2025-12-31 11:21:08 [INFO] - Successfully upserted 4 data to database
+2026-01-01 11:20:11 [INFO] - Init Global Variable
+2026-01-01 11:20:12 [INFO] - Start scraping rups for start date: 2025-12-31 and end date: 2026-01-01
+2026-01-01 11:20:13 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-01-01 11:20:13 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-02 18:24:12 [INFO] - Init Global Variable
+2026-01-02 18:24:13 [INFO] - Start scraping warrant for start date: 2025-12-26 and end date: 2026-01-02
+2026-01-02 18:24:14 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-01-02 18:24:14 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2026-01-03 11:19:06 [INFO] - Init Global Variable
+2026-01-03 11:19:07 [INFO] - Start scraping rups for start date: 2026-01-02 and end date: 2026-01-03
+2026-01-03 11:19:08 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-01-03 11:19:08 [INFO] - Data to insert: PORT.JK | date: 2026-01-02
+2026-01-03 11:19:08 [INFO] - Data to insert: ADMF.JK | date: 2026-01-02
+2026-01-03 11:19:08 [INFO] - Successfully upserted 2 data to database
+2026-01-04 11:19:10 [INFO] - Init Global Variable
+2026-01-04 11:19:11 [INFO] - Start scraping rups for start date: 2026-01-03 and end date: 2026-01-04
+2026-01-04 11:19:12 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-01-04 11:19:12 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-05 11:22:11 [INFO] - Init Global Variable
+2026-01-05 11:22:12 [INFO] - Start scraping rups for start date: 2026-01-04 and end date: 2026-01-05
+2026-01-05 11:22:14 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-01-05 11:22:14 [INFO] - Data to insert: BBKP.JK | date: 2026-01-05
+2026-01-05 11:22:14 [INFO] - Data to insert: SOTS.JK | date: 2026-01-05
+2026-01-05 11:22:14 [INFO] - Successfully upserted 2 data to database
+2026-01-06 11:21:15 [INFO] - Init Global Variable
+2026-01-06 11:21:16 [INFO] - Start scraping rups for start date: 2026-01-05 and end date: 2026-01-06
+2026-01-06 11:21:18 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-01-06 11:21:18 [INFO] - Data to insert: BBKP.JK | date: 2026-01-05
+2026-01-06 11:21:18 [INFO] - Data to insert: SOTS.JK | date: 2026-01-05
+2026-01-06 11:21:18 [INFO] - Successfully upserted 2 data to database
+2026-01-07 11:23:05 [INFO] - Init Global Variable
+2026-01-07 11:23:06 [INFO] - Start scraping rups for start date: 2026-01-06 and end date: 2026-01-07
+2026-01-07 11:23:07 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
+2026-01-07 11:23:07 [INFO] - Data to insert: FAST.JK | date: 2026-01-07
+2026-01-07 11:23:07 [INFO] - Successfully upserted 1 data to database
+2026-01-08 11:23:34 [INFO] - Init Global Variable
+2026-01-08 11:23:35 [INFO] - Start scraping rups for start date: 2026-01-07 and end date: 2026-01-08
+2026-01-08 11:23:36 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-01-08 11:23:36 [INFO] - Data to insert: FAST.JK | date: 2026-01-07
+2026-01-08 11:23:36 [INFO] - Data to insert: SDRA.JK | date: 2026-01-07
+2026-01-08 11:23:36 [INFO] - Successfully upserted 2 data to database
+2026-01-09 11:22:08 [INFO] - Init Global Variable
+2026-01-09 11:22:09 [INFO] - Start scraping rups for start date: 2026-01-08 and end date: 2026-01-09
+2026-01-09 11:22:10 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-01-09 11:22:10 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-09 18:26:13 [INFO] - Init Global Variable
+2026-01-09 18:26:14 [INFO] - Start scraping warrant for start date: 2026-01-02 and end date: 2026-01-09
+2026-01-09 18:26:15 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-01-09 18:26:15 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2026-01-10 11:19:33 [INFO] - Init Global Variable
+2026-01-10 11:19:34 [INFO] - Start scraping rups for start date: 2026-01-09 and end date: 2026-01-10
+2026-01-10 11:19:35 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-01-10 11:19:35 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-11 11:19:26 [INFO] - Init Global Variable
+2026-01-11 11:19:27 [INFO] - Start scraping rups for start date: 2026-01-10 and end date: 2026-01-11
+2026-01-11 11:19:28 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-01-11 11:19:28 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-12 11:23:28 [INFO] - Init Global Variable
+2026-01-12 11:23:29 [INFO] - Start scraping rups for start date: 2026-01-11 and end date: 2026-01-12
+2026-01-12 11:23:34 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
+2026-01-12 11:23:34 [INFO] - Data to insert: NATO.JK | date: 2026-01-12
+2026-01-12 11:23:35 [INFO] - Successfully upserted 1 data to database
+2026-01-13 11:22:54 [INFO] - Init Global Variable
+2026-01-13 11:22:55 [INFO] - Start scraping rups for start date: 2026-01-12 and end date: 2026-01-13
+2026-01-13 11:22:56 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
+2026-01-13 11:22:56 [INFO] - Data to insert: NATO.JK | date: 2026-01-12
+2026-01-13 11:22:57 [INFO] - Successfully upserted 1 data to database
+2026-01-14 11:24:10 [INFO] - Init Global Variable
+2026-01-14 11:24:11 [INFO] - Start scraping rups for start date: 2026-01-13 and end date: 2026-01-14
+2026-01-14 11:24:12 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-01-14 11:24:12 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-15 11:22:36 [INFO] - Init Global Variable
+2026-01-15 11:22:37 [INFO] - Start scraping rups for start date: 2026-01-14 and end date: 2026-01-15
+2026-01-15 11:22:42 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2026-01-15 11:22:42 [INFO] - Data to insert: SRAJ.JK | date: 2026-01-15
+2026-01-15 11:22:42 [INFO] - Data to insert: MGLV.JK | date: 2026-01-15
+2026-01-15 11:22:42 [INFO] - Data to insert: OKAS.JK | date: 2026-01-15
+2026-01-15 11:22:42 [INFO] - Successfully upserted 3 data to database
+2026-01-16 11:22:39 [INFO] - Init Global Variable
+2026-01-16 11:22:40 [INFO] - Start scraping rups for start date: 2026-01-15 and end date: 2026-01-16
+2026-01-16 11:22:49 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2026-01-16 11:22:49 [INFO] - Data to insert: SRAJ.JK | date: 2026-01-15
+2026-01-16 11:22:49 [INFO] - Data to insert: MGLV.JK | date: 2026-01-15
+2026-01-16 11:22:49 [INFO] - Data to insert: OKAS.JK | date: 2026-01-15
+2026-01-16 11:22:49 [INFO] - Successfully upserted 3 data to database
+2026-01-16 18:26:40 [INFO] - Init Global Variable
+2026-01-16 18:26:40 [INFO] - Start scraping warrant for start date: 2026-01-09 and end date: 2026-01-16
+2026-01-16 18:26:41 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-01-16 18:26:41 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2026-01-17 11:19:18 [INFO] - Init Global Variable
+2026-01-17 11:19:19 [INFO] - Start scraping rups for start date: 2026-01-16 and end date: 2026-01-17
+2026-01-17 11:19:20 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-01-17 11:19:20 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-18 11:18:49 [INFO] - Init Global Variable
+2026-01-18 11:18:50 [INFO] - Start scraping rups for start date: 2026-01-17 and end date: 2026-01-18
+2026-01-18 11:18:51 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-01-18 11:18:51 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-19 11:24:04 [INFO] - Init Global Variable
+2026-01-19 11:24:05 [INFO] - Start scraping rups for start date: 2026-01-18 and end date: 2026-01-19
+2026-01-19 11:24:06 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
+2026-01-19 11:24:06 [INFO] - Data to insert: STAR.JK | date: 2026-01-19
+2026-01-19 11:24:07 [INFO] - Successfully upserted 1 data to database
+2026-01-20 11:25:51 [INFO] - Init Global Variable
+2026-01-20 11:25:52 [INFO] - Start scraping rups for start date: 2026-01-19 and end date: 2026-01-20
+2026-01-20 11:25:57 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2026-01-20 11:25:57 [INFO] - Data to insert: MFMI.JK | date: 2026-01-20
+2026-01-20 11:25:57 [INFO] - Data to insert: HERO.JK | date: 2026-01-20
+2026-01-20 11:25:57 [INFO] - Data to insert: STAR.JK | date: 2026-01-19
+2026-01-20 11:25:57 [INFO] - Successfully upserted 3 data to database
+2026-01-22 11:25:41 [INFO] - Init Global Variable
+2026-01-22 11:25:42 [INFO] - Start scraping rups for start date: 2026-01-21 and end date: 2026-01-22
+2026-01-22 11:25:48 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 3
+2026-01-22 11:25:48 [INFO] - Data to insert: TRON.JK | date: 2026-01-22
+2026-01-22 11:25:48 [INFO] - Data to insert: UNVR.JK | date: 2026-01-21
+2026-01-22 11:25:48 [INFO] - Data to insert: BESS.JK | date: 2026-01-21
+2026-01-22 11:25:49 [INFO] - Successfully upserted 3 data to database
+2026-01-23 11:23:54 [INFO] - Init Global Variable
+2026-01-23 11:23:55 [INFO] - Start scraping rups for start date: 2026-01-22 and end date: 2026-01-23
+2026-01-23 11:24:08 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-01-23 11:24:08 [INFO] - Data to insert: TRON.JK | date: 2026-01-22
+2026-01-23 11:24:08 [INFO] - Data to insert: MKNT.JK | date: 2026-01-23
+2026-01-23 11:24:08 [INFO] - Successfully upserted 2 data to database
+2026-01-23 18:27:14 [INFO] - Init Global Variable
+2026-01-23 18:27:15 [INFO] - Start scraping warrant for start date: 2026-01-16 and end date: 2026-01-23
+2026-01-23 18:27:16 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-01-23 18:27:16 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2026-01-24 11:19:56 [INFO] - Init Global Variable
+2026-01-24 11:19:57 [INFO] - Start scraping rups for start date: 2026-01-23 and end date: 2026-01-24
+2026-01-24 11:20:01 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-01-24 11:20:01 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-25 11:19:48 [INFO] - Init Global Variable
+2026-01-25 11:19:49 [INFO] - Start scraping rups for start date: 2026-01-24 and end date: 2026-01-25
+2026-01-25 11:20:01 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-01-25 11:20:01 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-26 11:23:22 [INFO] - Init Global Variable
+2026-01-26 11:23:23 [INFO] - Start scraping rups for start date: 2026-01-25 and end date: 2026-01-26
+2026-01-26 11:23:38 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-01-26 11:23:38 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-01-27 11:25:42 [INFO] - Init Global Variable
+2026-01-27 11:25:43 [INFO] - Start scraping rups for start date: 2026-01-26 and end date: 2026-01-27
+2026-01-27 11:25:47 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
+2026-01-27 11:25:47 [INFO] - Data to insert: MKNT.JK | date: 2026-01-27
+2026-01-27 11:25:47 [INFO] - Successfully upserted 1 data to database
+2026-01-28 11:25:47 [INFO] - Init Global Variable
+2026-01-28 11:25:48 [INFO] - Start scraping rups for start date: 2026-01-27 and end date: 2026-01-28
+2026-01-28 11:25:56 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-01-28 11:25:56 [INFO] - Data to insert: PLIN.JK | date: 2026-01-28
+2026-01-28 11:25:56 [INFO] - Data to insert: MKNT.JK | date: 2026-01-27
+2026-01-28 11:25:56 [INFO] - Successfully upserted 2 data to database
+2026-01-29 11:33:45 [INFO] - Init Global Variable
+2026-01-29 11:33:46 [INFO] - Start scraping rups for start date: 2026-01-28 and end date: 2026-01-29
+2026-01-29 11:33:48 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-01-29 11:33:48 [INFO] - Data to insert: SOHO.JK | date: 2026-01-29
+2026-01-29 11:33:48 [INFO] - Data to insert: PLIN.JK | date: 2026-01-28
+2026-01-29 11:33:48 [INFO] - Successfully upserted 2 data to database
+2026-01-30 11:31:04 [INFO] - Init Global Variable
+2026-01-30 11:31:05 [INFO] - Start scraping rups for start date: 2026-01-29 and end date: 2026-01-30
+2026-01-30 11:31:20 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-01-30 11:31:20 [INFO] - Data to insert: SOTS.JK | date: 2026-01-30
+2026-01-30 11:31:20 [INFO] - Data to insert: SOHO.JK | date: 2026-01-29
+2026-01-30 11:31:21 [INFO] - Successfully upserted 2 data to database
+2026-01-30 18:35:41 [INFO] - Init Global Variable
+2026-01-30 18:35:42 [INFO] - Start scraping warrant for start date: 2026-01-23 and end date: 2026-01-30
+2026-01-30 18:35:43 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-01-30 18:35:43 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2026-01-31 11:23:04 [INFO] - Init Global Variable
+2026-01-31 11:23:05 [INFO] - Start scraping rups for start date: 2026-01-30 and end date: 2026-01-31
+2026-01-31 11:23:10 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 1
+2026-01-31 11:23:10 [INFO] - Data to insert: SOTS.JK | date: 2026-01-30
+2026-01-31 11:23:10 [INFO] - Successfully upserted 1 data to database
+2026-02-01 11:24:20 [INFO] - Init Global Variable
+2026-02-01 11:24:21 [INFO] - Start scraping rups for start date: 2026-01-31 and end date: 2026-02-01
+2026-02-01 11:24:29 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-02-01 11:24:29 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff None. Skipping DB insert.
+2026-02-02 11:37:15 [INFO] - Init Global Variable
+2026-02-02 11:37:16 [INFO] - Start scraping rups for start date: 2026-02-01 and end date: 2026-02-02
+2026-02-02 11:37:20 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-02-02 11:37:20 [INFO] - Data to insert: AYAM.JK | date: 2026-02-02
+2026-02-02 11:37:20 [INFO] - Data to insert: HOPE.JK | date: 2026-02-02
+2026-02-02 11:37:20 [INFO] - Successfully upserted 2 data to database
