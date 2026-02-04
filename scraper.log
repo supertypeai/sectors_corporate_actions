@@ -640,3 +640,35 @@
 2026-02-03 11:36:43 [INFO] - Data to insert: AYAM.JK | date: 2026-02-02
 2026-02-03 11:36:43 [INFO] - Data to insert: HOPE.JK | date: 2026-02-02
 2026-02-03 11:36:43 [INFO] - Successfully upserted 4 data to database
+2026-02-04 11:35:20 [INFO] - Init Global Variable
+2026-02-04 11:35:21 [INFO] - Start scraping rups for start date: 2026-02-03 and end date: 2026-02-04
+2026-02-04 11:35:23 [INFO] - Found 16 rows to process at page: 1
+2026-02-04 11:35:23 [INFO] - Processing row 1/16
+2026-02-04 11:35:23 [INFO] - Processing row 2/16
+2026-02-04 11:35:23 [INFO] - Processing row 3/16
+2026-02-04 11:35:23 [INFO] - Processing row 4/16
+2026-02-04 11:35:23 [INFO] - Processing row 5/16
+2026-02-04 11:35:23 [INFO] - Processing row 6/16
+2026-02-04 11:35:23 [INFO] - Processing row 7/16
+2026-02-04 11:35:23 [INFO] - Processing row 8/16
+2026-02-04 11:35:23 [INFO] - Processing row 9/16
+2026-02-04 11:35:23 [INFO] - Processing row 10/16
+2026-02-04 11:35:23 [INFO] - Processing row 11/16
+2026-02-04 11:35:23 [INFO] - Processing row 12/16
+2026-02-04 11:35:23 [INFO] - Processing row 13/16
+2026-02-04 11:35:23 [INFO] - Processing row 14/16
+2026-02-04 11:35:23 [INFO] - Processing row 15/16
+2026-02-04 11:35:23 [INFO] - Processing row 16/16
+2026-02-04 11:35:25 [INFO] - Found 16 rows to process at page: 2
+2026-02-04 11:35:25 [INFO] - Processing row 1/16
+2026-02-04 11:35:25 [INFO] - Processing row 2/16
+2026-02-04 11:35:25 [INFO] - Processing row 3/16
+2026-02-04 11:35:25 [INFO] - Processing row 4/16
+2026-02-04 11:35:25 [INFO] - Processing row 5/16
+2026-02-04 11:35:25 [INFO] - Processing row 6/16
+2026-02-04 11:35:25 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 5
+2026-02-04 11:35:25 [INFO] - Data to insert: HMSP.JK | date: 2026-02-04
+2026-02-04 11:35:25 [INFO] - Data to insert: FPNI.JK | date: 2026-02-04
+2026-02-04 11:35:25 [INFO] - Data to insert: GTSI.JK | date: 2026-02-03
+2026-02-04 11:35:25 [INFO] - Data to insert: BUVA.JK | date: 2026-02-03
+2026-02-04 11:35:25 [INFO] - Successfully upserted 4 data to database
