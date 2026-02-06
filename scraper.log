@@ -736,3 +736,7 @@
 2026-02-06 11:36:32 [INFO] - Data to insert: YOII.JK | date: 2026-02-05
 2026-02-06 11:36:32 [INFO] - Data to insert: CLAY.JK | date: 2026-02-05
 2026-02-06 11:36:32 [INFO] - Successfully upserted 4 data to database
+2026-02-06 18:42:01 [INFO] - Init Global Variable
+2026-02-06 18:42:02 [INFO] - Start scraping warrant for start date: 2026-01-30 and end date: 2026-02-06
+2026-02-06 18:42:04 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-02-06 18:42:04 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
