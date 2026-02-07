@@ -740,3 +740,34 @@
 2026-02-06 18:42:02 [INFO] - Start scraping warrant for start date: 2026-01-30 and end date: 2026-02-06
 2026-02-06 18:42:04 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
 2026-02-06 18:42:04 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2026-02-07 11:25:00 [INFO] - Init Global Variable
+2026-02-07 11:25:01 [INFO] - Start scraping rups for start date: 2026-02-06 and end date: 2026-02-07
+2026-02-07 11:25:06 [INFO] - Found 16 rows to process at page: 1
+2026-02-07 11:25:06 [INFO] - Processing row 1/16
+2026-02-07 11:25:06 [INFO] - Processing row 2/16
+2026-02-07 11:25:06 [INFO] - Processing row 3/16
+2026-02-07 11:25:06 [INFO] - Processing row 4/16
+2026-02-07 11:25:06 [INFO] - Processing row 5/16
+2026-02-07 11:25:06 [INFO] - Processing row 6/16
+2026-02-07 11:25:06 [INFO] - Processing row 7/16
+2026-02-07 11:25:06 [INFO] - Processing row 8/16
+2026-02-07 11:25:06 [INFO] - Processing row 9/16
+2026-02-07 11:25:06 [INFO] - Processing row 10/16
+2026-02-07 11:25:06 [INFO] - Processing row 11/16
+2026-02-07 11:25:06 [INFO] - Processing row 12/16
+2026-02-07 11:25:06 [INFO] - Processing row 13/16
+2026-02-07 11:25:06 [INFO] - Processing row 14/16
+2026-02-07 11:25:06 [INFO] - Processing row 15/16
+2026-02-07 11:25:06 [INFO] - Processing row 16/16
+2026-02-07 11:25:11 [INFO] - Found 16 rows to process at page: 2
+2026-02-07 11:25:11 [INFO] - Processing row 1/16
+2026-02-07 11:25:11 [INFO] - Processing row 2/16
+2026-02-07 11:25:11 [INFO] - Processing row 3/16
+2026-02-07 11:25:11 [INFO] - Processing row 4/16
+2026-02-07 11:25:11 [INFO] - Processing row 5/16
+2026-02-07 11:25:11 [INFO] - Processing row 6/16
+2026-02-07 11:25:11 [INFO] - Processing row 7/16
+2026-02-07 11:25:11 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 2
+2026-02-07 11:25:11 [INFO] - Data to insert: PTMR.JK | date: 2026-02-06
+2026-02-07 11:25:11 [INFO] - Data to insert: PTMP.JK | date: 2026-02-06
+2026-02-07 11:25:12 [INFO] - Successfully upserted 2 data to database
