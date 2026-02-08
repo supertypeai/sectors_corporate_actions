@@ -771,3 +771,30 @@
 2026-02-07 11:25:11 [INFO] - Data to insert: PTMR.JK | date: 2026-02-06
 2026-02-07 11:25:11 [INFO] - Data to insert: PTMP.JK | date: 2026-02-06
 2026-02-07 11:25:12 [INFO] - Successfully upserted 2 data to database
+2026-02-08 11:25:37 [INFO] - Init Global Variable
+2026-02-08 11:25:38 [INFO] - Start scraping rups for start date: 2026-02-07 and end date: 2026-02-08
+2026-02-08 11:25:39 [INFO] - Found 16 rows to process at page: 1
+2026-02-08 11:25:39 [INFO] - Processing row 1/16
+2026-02-08 11:25:39 [INFO] - Processing row 2/16
+2026-02-08 11:25:39 [INFO] - Processing row 3/16
+2026-02-08 11:25:39 [INFO] - Processing row 4/16
+2026-02-08 11:25:39 [INFO] - Processing row 5/16
+2026-02-08 11:25:39 [INFO] - Processing row 6/16
+2026-02-08 11:25:39 [INFO] - Processing row 7/16
+2026-02-08 11:25:39 [INFO] - Processing row 8/16
+2026-02-08 11:25:39 [INFO] - Processing row 9/16
+2026-02-08 11:25:39 [INFO] - Processing row 10/16
+2026-02-08 11:25:39 [INFO] - Processing row 11/16
+2026-02-08 11:25:39 [INFO] - Processing row 12/16
+2026-02-08 11:25:39 [INFO] - Processing row 13/16
+2026-02-08 11:25:39 [INFO] - Processing row 14/16
+2026-02-08 11:25:39 [INFO] - Processing row 15/16
+2026-02-08 11:25:39 [INFO] - Processing row 16/16
+2026-02-08 11:25:41 [INFO] - Found 16 rows to process at page: 2
+2026-02-08 11:25:41 [INFO] - Processing row 1/16
+2026-02-08 11:25:41 [INFO] - Processing row 2/16
+2026-02-08 11:25:41 [INFO] - Processing row 3/16
+2026-02-08 11:25:41 [INFO] - Processing row 4/16
+2026-02-08 11:25:41 [INFO] - Processing row 5/16
+2026-02-08 11:25:41 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-02-08 11:25:41 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff 2026-02-07. Skipping DB insert.
