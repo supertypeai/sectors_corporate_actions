@@ -133,7 +133,7 @@ elif page == "IDX Buyback":
         
         with st.form("add_new_form",clear_on_submit=True):
             # 1. Basic String/Number Inputs
-            symbol = st.text_input("Symbol", placeholder="e.g. BBRI")
+            symbol = st.text_input("Symbol", placeholder="e.g. BBRI.JK")
             accumulated_shares = st.number_input("Accumulated Shares Purchased", min_value=0, step=1, value=0)
             
             st.divider()
@@ -149,13 +149,24 @@ elif page == "IDX Buyback":
             st.divider()
 
             # 3. Transaction Details (JSONB - Table)
-            st.write("**Transaction Details**")
-            tx_template = pd.DataFrame(columns=['date', 'share_amount', 'average_price', 'percentage_of_shares'])
+            tx_template = pd.DataFrame({
+                'date': pd.Series(dtype='str'),
+                'share_amount': pd.Series(dtype='int'),
+                'average_price': pd.Series(dtype='float'),
+                'percentage_of_shares': pd.Series(dtype='float')
+            })
+
             tx_editor = st.data_editor(
                 tx_template, 
                 num_rows="dynamic", 
                 use_container_width=True, 
-                key="new_tx_editor"
+                key="new_tx_editor",
+                # Explicitly define column configurations
+                column_config={
+                    "share_amount": st.column_config.NumberColumn("Share Amount", format="%d"),
+                    "average_price": st.column_config.NumberColumn("Average Price", format="%.2f"),
+                    "percentage_of_shares": st.column_config.NumberColumn("Percentage", format="%.4f")
+                }
             )
 
             st.divider()
