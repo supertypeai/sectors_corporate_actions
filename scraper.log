@@ -930,3 +930,7 @@
 2026-02-13 11:33:12 [INFO] - Processing row 10/16
 2026-02-13 11:33:12 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
 2026-02-13 11:33:12 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff 2026-02-12. Skipping DB insert.
+2026-02-13 18:40:26 [INFO] - Init Global Variable
+2026-02-13 18:40:27 [INFO] - Start scraping warrant for start date: 2026-02-06 and end date: 2026-02-13
+2026-02-13 18:40:32 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-02-13 18:40:32 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
