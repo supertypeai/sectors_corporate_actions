@@ -22,7 +22,7 @@ st.set_page_config(page_title="Corporate Action Entry", layout="wide")
 
 # --- NAVIGATION ---
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to:", ["IDX Right Issue", "IDX Buyback", "IDX Reverse Stock Split"])
+page = st.sidebar.radio("Go to:", ["IDX Right Issue", "IDX Buyback", "IDX Reverse Stock Split", "IDX Bonus"])
 
 # --- SHARED FUNCTIONS ---
 def upsert_to_supabase(table_name, payload):
@@ -88,8 +88,46 @@ if page == "IDX Right Issue":
                     time.sleep(2)
                     st.rerun()
 
+elif page == "IDX Bonus":
+    st.header("Insert: IDX Bonus")
+    
+    with st.form("idx_bonus_form",clear_on_submit=True):
+        symbol = st.text_input("Symbol", placeholder="e.g. BBCA.JK")
+        recording_date = st.date_input("Recording Date")
+        cum_date = st.date_input("Cum Date")
+        ex_date = st.date_input("Ex Date")
+        payment_date = st.date_input("Payment Date")
+        old_ratio = st.number_input("Old Ratio", min_value=0.0, step=0.01)
+        new_ratio = st.number_input("New Ratio", min_value=0.0, step=0.01)
+
+        submitted = st.form_submit_button("Upsert Data")
+
+        if submitted:
+            if not symbol or old_ratio == 0 or new_ratio == 0:
+                st.warning("⚠️ All fields are required. Please ensure Symbol is text and numeric values are greater than 0.")
+            else:
+                if ex_date < cum_date:
+                    st.warning("⚠️ Ex Date cannot be earlier than Cum Date.")
+                else:
+                    data = {
+                        "symbol": symbol,
+                        "old_ratio": old_ratio,
+                        "new_ratio": new_ratio,
+                        "recording_date": recording_date.strftime("%Y-%m-%d"),
+                        "cum_date": cum_date.strftime("%Y-%m-%d"),
+                        "ex_date": ex_date.strftime("%Y-%m-%d"),
+                        "payment_date": payment_date.strftime("%Y-%m-%d"),
+                        "updated_on": time.strftime("%Y-%m-%d %H:%M:%S")
+                    }
+                    upsert_to_supabase("idx_ca_bonus", data)
+                    
+                    st.success(f"🟢🟢 Successfully added bonus for {symbol}! 🟢🟢")
+                    st.cache_data.clear()
+                    time.sleep(2)
+                    st.rerun()
+
 elif page == "IDX Reverse Stock Split":
-    st.header("Upsert: IDX Reverse Stock Split")
+    st.header("Insert: IDX Reverse Stock Split")
     
     with st.form("idx_reverse_stock_split_form",clear_on_submit=True):
         symbol = st.text_input("Symbol", placeholder="e.g. BBCA.JK")
