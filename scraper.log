@@ -1031,3 +1031,29 @@
 2026-02-20 18:39:22 [INFO] - Start scraping warrant for start date: 2026-02-13 and end date: 2026-02-20
 2026-02-20 18:39:24 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
 2026-02-20 18:39:24 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
+2026-02-21 11:24:51 [INFO] - Init Global Variable
+2026-02-21 11:24:52 [INFO] - Start scraping rups for start date: 2026-02-20 and end date: 2026-02-21
+2026-02-21 11:24:53 [INFO] - Found 16 rows to process at page: 1
+2026-02-21 11:24:53 [INFO] - Processing row 1/16
+2026-02-21 11:24:53 [INFO] - Processing row 2/16
+2026-02-21 11:24:53 [INFO] - Processing row 3/16
+2026-02-21 11:24:53 [INFO] - Processing row 4/16
+2026-02-21 11:24:53 [INFO] - Processing row 5/16
+2026-02-21 11:24:53 [INFO] - Processing row 6/16
+2026-02-21 11:24:53 [INFO] - Processing row 7/16
+2026-02-21 11:24:53 [INFO] - Processing row 8/16
+2026-02-21 11:24:53 [INFO] - Processing row 9/16
+2026-02-21 11:24:53 [INFO] - Processing row 10/16
+2026-02-21 11:24:53 [INFO] - Processing row 11/16
+2026-02-21 11:24:53 [INFO] - Processing row 12/16
+2026-02-21 11:24:53 [INFO] - Processing row 13/16
+2026-02-21 11:24:53 [INFO] - Processing row 14/16
+2026-02-21 11:24:53 [INFO] - Processing row 15/16
+2026-02-21 11:24:53 [INFO] - Processing row 16/16
+2026-02-21 11:24:55 [INFO] - Found 16 rows to process at page: 2
+2026-02-21 11:24:55 [INFO] - Processing row 1/16
+2026-02-21 11:24:55 [INFO] - Processing row 2/16
+2026-02-21 11:24:55 [INFO] - Processing row 3/16
+2026-02-21 11:24:55 [INFO] - Processing row 4/16
+2026-02-21 11:24:55 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 0
+2026-02-21 11:24:55 [INFO] - No records to upsert for scraper 'scraper_rups' with cutoff 2026-02-20. Skipping DB insert.
