@@ -111,7 +111,7 @@ def get_parse_html(url: str, page: int) -> BeautifulSoup:
     return soup
 
 
-def rups_scraper(start_date: str = None, end_date: str = None) -> pd.DataFrame | str:
+def rups_scraper(end_date: str = None) -> pd.DataFrame | str:
     """ 
     Scrape RUPS data from the SahamIDX website.
     This function retrieves RUPS data, including symbol, recording date,
@@ -134,15 +134,15 @@ def rups_scraper(start_date: str = None, end_date: str = None) -> pd.DataFrame |
     else:
         end_date = datetime.strptime(end_date, "%Y-%m-%d")
 
-    if start_date is None:
-        start_date = end_date - timedelta(days=1)
-    else:
-        start_date = datetime.strptime(start_date, "%Y-%m-%d")
+    # if start_date is None:
+    #     start_date = end_date - timedelta(days=1)
+    # else:
+    #     start_date = datetime.strptime(start_date, "%Y-%m-%d")
 
     end_date = end_date.strftime("%Y-%m-%d")
-    start_date = start_date.strftime("%Y-%m-%d")
+    # start_date = start_date.strftime("%Y-%m-%d")
 
-    LOGGER.info(f'Start scraping rups for start date: {start_date} and end date: {end_date}')
+    LOGGER.info(f'Start scraping rups for end date: {end_date}')
 
     while keep_scraping:
         url = f"https://www.new.sahamidx.com/?/rups/page/{page}"
@@ -176,8 +176,8 @@ def rups_scraper(start_date: str = None, end_date: str = None) -> pd.DataFrame |
                 recording_date_str = recording_date_cell.text.strip()
                 recording_date = parse_date_safe(recording_date_str)
                 
-                if recording_date > end_date:
-                    continue 
+                # if recording_date > end_date:
+                #     continue 
 
                 # Prepare rups date 
                 rups_date_str = rups_date_cell.text.strip()
@@ -190,7 +190,7 @@ def rups_scraper(start_date: str = None, end_date: str = None) -> pd.DataFrame |
                 rups_place = rups_place_cell.text.strip()
 
                 # Add valid data
-                if start_date <= recording_date <= end_date:
+                if rups_date >= end_date:
                     data_dict = {
                         "symbol": symbol,
                         "recording_date":  recording_date,
@@ -231,7 +231,7 @@ def rups_scraper(start_date: str = None, end_date: str = None) -> pd.DataFrame |
     LOGGER.info(f"[RUPS SCRAPER] Scraping completed. Total records collected: {len(rups_data)}")
 
     rups_data_df = pd.DataFrame(rups_data)
-    return rups_data_df, start_date
+    return rups_data_df, end_date
 
 
 def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
