@@ -1602,3 +1602,7 @@
 2026-02-27 11:34:37 [INFO] - Data to insert: HMSP.JK | date: 2026-02-04
 2026-02-27 11:34:37 [INFO] - Data to insert: ENVY.JK | date: 2026-01-30
 2026-02-27 11:34:38 [INFO] - Successfully upserted 54 data to database
+2026-02-27 18:35:47 [INFO] - Init Global Variable
+2026-02-27 18:35:48 [INFO] - Start scraping warrant for start date: 2026-02-20 and end date: 2026-02-27
+2026-02-27 18:35:54 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-02-27 18:35:54 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
