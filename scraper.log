@@ -4716,3 +4716,7 @@
 2026-03-20 11:34:17 [INFO] - Data to insert: MORA.JK | date: 2026-02-26
 2026-03-20 11:34:17 [INFO] - Data to insert: WGSH.JK | date: 2026-02-23
 2026-03-20 11:34:18 [INFO] - Successfully upserted 125 data to database
+2026-03-20 18:41:09 [INFO] - Init Global Variable
+2026-03-20 18:41:10 [INFO] - Start scraping warrant for start date: 2026-03-13 and end date: 2026-03-20
+2026-03-20 18:41:11 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-03-20 18:41:11 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
