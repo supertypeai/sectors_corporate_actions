@@ -5008,3 +5008,291 @@
 2026-03-22 11:26:38 [INFO] - Data to insert: MORA.JK | date: 2026-02-26
 2026-03-22 11:26:38 [INFO] - Data to insert: WGSH.JK | date: 2026-02-23
 2026-03-22 11:26:39 [INFO] - Successfully upserted 125 data to database
+2026-03-23 11:46:02 [INFO] - Init Global Variable
+2026-03-23 11:46:03 [INFO] - Start scraping rups for end date: 2026-03-23
+2026-03-23 11:46:04 [INFO] - Found 16 rows to process at page: 1
+2026-03-23 11:46:04 [INFO] - Processing row 1/16
+2026-03-23 11:46:04 [INFO] - Processing row 2/16
+2026-03-23 11:46:04 [INFO] - Processing row 3/16
+2026-03-23 11:46:04 [INFO] - Processing row 4/16
+2026-03-23 11:46:04 [INFO] - Processing row 5/16
+2026-03-23 11:46:04 [INFO] - Processing row 6/16
+2026-03-23 11:46:04 [INFO] - Processing row 7/16
+2026-03-23 11:46:04 [INFO] - Processing row 8/16
+2026-03-23 11:46:04 [INFO] - Processing row 9/16
+2026-03-23 11:46:04 [INFO] - Processing row 10/16
+2026-03-23 11:46:04 [INFO] - Processing row 11/16
+2026-03-23 11:46:04 [INFO] - Processing row 12/16
+2026-03-23 11:46:04 [INFO] - Processing row 13/16
+2026-03-23 11:46:04 [INFO] - Processing row 14/16
+2026-03-23 11:46:04 [INFO] - Processing row 15/16
+2026-03-23 11:46:04 [INFO] - Processing row 16/16
+2026-03-23 11:46:06 [INFO] - Found 16 rows to process at page: 2
+2026-03-23 11:46:06 [INFO] - Processing row 1/16
+2026-03-23 11:46:06 [INFO] - Processing row 2/16
+2026-03-23 11:46:06 [INFO] - Processing row 3/16
+2026-03-23 11:46:06 [INFO] - Processing row 4/16
+2026-03-23 11:46:06 [INFO] - Processing row 5/16
+2026-03-23 11:46:06 [INFO] - Processing row 6/16
+2026-03-23 11:46:06 [INFO] - Processing row 7/16
+2026-03-23 11:46:06 [INFO] - Processing row 8/16
+2026-03-23 11:46:06 [INFO] - Processing row 9/16
+2026-03-23 11:46:06 [INFO] - Processing row 10/16
+2026-03-23 11:46:06 [INFO] - Processing row 11/16
+2026-03-23 11:46:06 [INFO] - Processing row 12/16
+2026-03-23 11:46:06 [INFO] - Processing row 13/16
+2026-03-23 11:46:06 [INFO] - Processing row 14/16
+2026-03-23 11:46:06 [INFO] - Processing row 15/16
+2026-03-23 11:46:06 [INFO] - Processing row 16/16
+2026-03-23 11:46:09 [INFO] - Found 16 rows to process at page: 3
+2026-03-23 11:46:09 [INFO] - Processing row 1/16
+2026-03-23 11:46:09 [INFO] - Processing row 2/16
+2026-03-23 11:46:09 [INFO] - Processing row 3/16
+2026-03-23 11:46:09 [INFO] - Processing row 4/16
+2026-03-23 11:46:09 [INFO] - Processing row 5/16
+2026-03-23 11:46:09 [INFO] - Processing row 6/16
+2026-03-23 11:46:09 [INFO] - Processing row 7/16
+2026-03-23 11:46:09 [INFO] - Processing row 8/16
+2026-03-23 11:46:09 [INFO] - Processing row 9/16
+2026-03-23 11:46:09 [INFO] - Processing row 10/16
+2026-03-23 11:46:09 [INFO] - Processing row 11/16
+2026-03-23 11:46:09 [INFO] - Processing row 12/16
+2026-03-23 11:46:09 [INFO] - Processing row 13/16
+2026-03-23 11:46:09 [INFO] - Processing row 14/16
+2026-03-23 11:46:09 [INFO] - Processing row 15/16
+2026-03-23 11:46:09 [INFO] - Processing row 16/16
+2026-03-23 11:46:11 [INFO] - Found 16 rows to process at page: 4
+2026-03-23 11:46:11 [INFO] - Processing row 1/16
+2026-03-23 11:46:11 [INFO] - Processing row 2/16
+2026-03-23 11:46:11 [INFO] - Processing row 3/16
+2026-03-23 11:46:11 [INFO] - Processing row 4/16
+2026-03-23 11:46:11 [INFO] - Processing row 5/16
+2026-03-23 11:46:11 [INFO] - Processing row 6/16
+2026-03-23 11:46:11 [INFO] - Processing row 7/16
+2026-03-23 11:46:11 [INFO] - Processing row 8/16
+2026-03-23 11:46:11 [INFO] - Processing row 9/16
+2026-03-23 11:46:11 [INFO] - Processing row 10/16
+2026-03-23 11:46:11 [INFO] - Processing row 11/16
+2026-03-23 11:46:11 [INFO] - Processing row 12/16
+2026-03-23 11:46:11 [INFO] - Processing row 13/16
+2026-03-23 11:46:11 [INFO] - Processing row 14/16
+2026-03-23 11:46:11 [INFO] - Processing row 15/16
+2026-03-23 11:46:11 [INFO] - Processing row 16/16
+2026-03-23 11:46:13 [INFO] - Found 16 rows to process at page: 5
+2026-03-23 11:46:13 [INFO] - Processing row 1/16
+2026-03-23 11:46:13 [INFO] - Processing row 2/16
+2026-03-23 11:46:13 [INFO] - Processing row 3/16
+2026-03-23 11:46:13 [INFO] - Processing row 4/16
+2026-03-23 11:46:13 [INFO] - Processing row 5/16
+2026-03-23 11:46:13 [INFO] - Processing row 6/16
+2026-03-23 11:46:13 [INFO] - Processing row 7/16
+2026-03-23 11:46:13 [INFO] - Processing row 8/16
+2026-03-23 11:46:13 [INFO] - Processing row 9/16
+2026-03-23 11:46:13 [INFO] - Processing row 10/16
+2026-03-23 11:46:13 [INFO] - Processing row 11/16
+2026-03-23 11:46:13 [INFO] - Processing row 12/16
+2026-03-23 11:46:13 [INFO] - Processing row 13/16
+2026-03-23 11:46:13 [INFO] - Processing row 14/16
+2026-03-23 11:46:13 [INFO] - Processing row 15/16
+2026-03-23 11:46:13 [INFO] - Processing row 16/16
+2026-03-23 11:46:15 [INFO] - Found 16 rows to process at page: 6
+2026-03-23 11:46:15 [INFO] - Processing row 1/16
+2026-03-23 11:46:15 [INFO] - Processing row 2/16
+2026-03-23 11:46:15 [INFO] - Processing row 3/16
+2026-03-23 11:46:15 [INFO] - Processing row 4/16
+2026-03-23 11:46:15 [INFO] - Processing row 5/16
+2026-03-23 11:46:15 [INFO] - Processing row 6/16
+2026-03-23 11:46:15 [INFO] - Processing row 7/16
+2026-03-23 11:46:15 [INFO] - Processing row 8/16
+2026-03-23 11:46:15 [INFO] - Processing row 9/16
+2026-03-23 11:46:15 [INFO] - Processing row 10/16
+2026-03-23 11:46:15 [INFO] - Processing row 11/16
+2026-03-23 11:46:15 [INFO] - Processing row 12/16
+2026-03-23 11:46:15 [INFO] - Processing row 13/16
+2026-03-23 11:46:15 [INFO] - Processing row 14/16
+2026-03-23 11:46:15 [INFO] - Processing row 15/16
+2026-03-23 11:46:15 [INFO] - Processing row 16/16
+2026-03-23 11:46:17 [INFO] - Found 16 rows to process at page: 7
+2026-03-23 11:46:17 [INFO] - Processing row 1/16
+2026-03-23 11:46:17 [INFO] - Processing row 2/16
+2026-03-23 11:46:17 [INFO] - Processing row 3/16
+2026-03-23 11:46:17 [INFO] - Processing row 4/16
+2026-03-23 11:46:17 [INFO] - Processing row 5/16
+2026-03-23 11:46:17 [INFO] - Processing row 6/16
+2026-03-23 11:46:17 [INFO] - Processing row 7/16
+2026-03-23 11:46:17 [INFO] - Processing row 8/16
+2026-03-23 11:46:17 [INFO] - Processing row 9/16
+2026-03-23 11:46:17 [INFO] - Processing row 10/16
+2026-03-23 11:46:17 [INFO] - Processing row 11/16
+2026-03-23 11:46:17 [INFO] - Processing row 12/16
+2026-03-23 11:46:17 [INFO] - Processing row 13/16
+2026-03-23 11:46:17 [INFO] - Processing row 14/16
+2026-03-23 11:46:17 [INFO] - Processing row 15/16
+2026-03-23 11:46:17 [INFO] - Processing row 16/16
+2026-03-23 11:46:19 [INFO] - Found 16 rows to process at page: 8
+2026-03-23 11:46:19 [INFO] - Processing row 1/16
+2026-03-23 11:46:19 [INFO] - Processing row 2/16
+2026-03-23 11:46:19 [INFO] - Processing row 3/16
+2026-03-23 11:46:19 [INFO] - Processing row 4/16
+2026-03-23 11:46:19 [INFO] - Processing row 5/16
+2026-03-23 11:46:19 [INFO] - Processing row 6/16
+2026-03-23 11:46:19 [INFO] - Processing row 7/16
+2026-03-23 11:46:19 [INFO] - Processing row 8/16
+2026-03-23 11:46:19 [INFO] - Processing row 9/16
+2026-03-23 11:46:19 [INFO] - Processing row 10/16
+2026-03-23 11:46:19 [INFO] - Processing row 11/16
+2026-03-23 11:46:19 [INFO] - Processing row 12/16
+2026-03-23 11:46:19 [INFO] - Processing row 13/16
+2026-03-23 11:46:19 [INFO] - Processing row 14/16
+2026-03-23 11:46:19 [INFO] - Processing row 15/16
+2026-03-23 11:46:19 [INFO] - Processing row 16/16
+2026-03-23 11:46:21 [INFO] - Found 16 rows to process at page: 9
+2026-03-23 11:46:21 [INFO] - Processing row 1/16
+2026-03-23 11:46:21 [INFO] - Processing row 2/16
+2026-03-23 11:46:21 [INFO] - Processing row 3/16
+2026-03-23 11:46:21 [INFO] - Processing row 4/16
+2026-03-23 11:46:21 [INFO] - Processing row 5/16
+2026-03-23 11:46:21 [INFO] - Processing row 6/16
+2026-03-23 11:46:21 [INFO] - Processing row 7/16
+2026-03-23 11:46:21 [INFO] - Processing row 8/16
+2026-03-23 11:46:21 [INFO] - Processing row 9/16
+2026-03-23 11:46:21 [INFO] - Processing row 10/16
+2026-03-23 11:46:21 [INFO] - Processing row 11/16
+2026-03-23 11:46:21 [INFO] - Processing row 12/16
+2026-03-23 11:46:21 [INFO] - Processing row 13/16
+2026-03-23 11:46:21 [INFO] - Processing row 14/16
+2026-03-23 11:46:21 [INFO] - Processing row 15/16
+2026-03-23 11:46:21 [INFO] - Processing row 16/16
+2026-03-23 11:46:24 [INFO] - Found 16 rows to process at page: 10
+2026-03-23 11:46:24 [INFO] - Processing row 1/16
+2026-03-23 11:46:24 [INFO] - Processing row 2/16
+2026-03-23 11:46:24 [INFO] - Processing row 3/16
+2026-03-23 11:46:24 [INFO] - Processing row 4/16
+2026-03-23 11:46:24 [INFO] - Processing row 5/16
+2026-03-23 11:46:24 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 134
+2026-03-23 11:46:24 [INFO] - Data to insert: MSJA.JK | date: 2026-04-07
+2026-03-23 11:46:24 [INFO] - Data to insert: LPCK.JK | date: 2026-04-07
+2026-03-23 11:46:24 [INFO] - Data to insert: LPKR.JK | date: 2026-04-07
+2026-03-23 11:46:24 [INFO] - Data to insert: SSMS.JK | date: 2026-04-07
+2026-03-23 11:46:24 [INFO] - Data to insert: RICY.JK | date: 2026-04-07
+2026-03-23 11:46:24 [INFO] - Data to insert: BBYB.JK | date: 2026-04-07
+2026-03-23 11:46:24 [INFO] - Data to insert: CCSI.JK | date: 2026-04-07
+2026-03-23 11:46:24 [INFO] - Data to insert: CBUT.JK | date: 2026-04-07
+2026-03-23 11:46:24 [INFO] - Data to insert: TUGU.JK | date: 2026-04-06
+2026-03-23 11:46:24 [INFO] - Data to insert: LPGI.JK | date: 2026-04-06
+2026-03-23 11:46:24 [INFO] - Data to insert: IFSH.JK | date: 2026-04-06
+2026-03-23 11:46:24 [INFO] - Data to insert: BMRI.JK | date: 2026-04-06
+2026-03-23 11:46:24 [INFO] - Data to insert: MLPT.JK | date: 2026-04-06
+2026-03-23 11:46:24 [INFO] - Data to insert: ASMI.JK | date: 2026-04-06
+2026-03-23 11:46:24 [INFO] - Data to insert: PZZA.JK | date: 2026-04-06
+2026-03-23 11:46:24 [INFO] - Data to insert: SKLT.JK | date: 2026-04-01
+2026-03-23 11:46:24 [INFO] - Data to insert: ASRM.JK | date: 2026-04-02
+2026-03-23 11:46:24 [INFO] - Data to insert: KRAS.JK | date: 2026-04-02
+2026-03-23 11:46:24 [INFO] - Data to insert: JMAS.JK | date: 2026-04-02
+2026-03-23 11:46:24 [INFO] - Data to insert: LPIN.JK | date: 2026-04-02
+2026-03-23 11:46:24 [INFO] - Data to insert: AKRA.JK | date: 2026-04-01
+2026-03-23 11:46:24 [INFO] - Data to insert: SUPA.JK | date: 2026-04-01
+2026-03-23 11:46:24 [INFO] - Data to insert: AMAG.JK | date: 2026-04-01
+2026-03-23 11:46:24 [INFO] - Data to insert: ASJT.JK | date: 2026-04-01
+2026-03-23 11:46:24 [INFO] - Data to insert: BOLT.JK | date: 2026-04-01
+2026-03-23 11:46:24 [INFO] - Data to insert: BSBK.JK | date: 2026-04-01
+2026-03-23 11:46:24 [INFO] - Data to insert: GMTD.JK | date: 2026-04-01
+2026-03-23 11:46:24 [INFO] - Data to insert: TLKM.JK | date: 2026-04-01
+2026-03-23 11:46:24 [INFO] - Data to insert: ZINC.JK | date: 2026-03-31
+2026-03-23 11:46:24 [INFO] - Data to insert: BTPN.JK | date: 2026-03-31
+2026-03-23 11:46:24 [INFO] - Data to insert: TRIS.JK | date: 2026-03-31
+2026-03-23 11:46:24 [INFO] - Data to insert: BBTN.JK | date: 2026-03-31
+2026-03-23 11:46:24 [INFO] - Data to insert: VINS.JK | date: 2026-03-31
+2026-03-23 11:46:24 [INFO] - Data to insert: HEAL.JK | date: 2026-03-31
+2026-03-23 11:46:24 [INFO] - Data to insert: PRDA.JK | date: 2026-03-31
+2026-03-23 11:46:24 [INFO] - Data to insert: CANI.JK | date: 2026-03-31
+2026-03-23 11:46:24 [INFO] - Data to insert: ASII.JK | date: 2026-03-31
+2026-03-23 11:46:24 [INFO] - Data to insert: BULL.JK | date: 2026-03-31
+2026-03-23 11:46:24 [INFO] - Data to insert: ULTJ.JK | date: 2026-03-30
+2026-03-23 11:46:24 [INFO] - Data to insert: EDGE.JK | date: 2026-03-30
+2026-03-23 11:46:24 [INFO] - Data to insert: MINE.JK | date: 2026-03-30
+2026-03-23 11:46:24 [INFO] - Data to insert: POLU.JK | date: 2026-03-30
+2026-03-23 11:46:24 [INFO] - Data to insert: PYFA.JK | date: 2026-03-30
+2026-03-23 11:46:24 [INFO] - Data to insert: MCOL.JK | date: 2026-03-30
+2026-03-23 11:46:24 [INFO] - Data to insert: CINT.JK | date: 2026-03-30
+2026-03-23 11:46:24 [INFO] - Data to insert: POLI.JK | date: 2026-03-30
+2026-03-23 11:46:24 [INFO] - Data to insert: KDSI.JK | date: 2026-03-30
+2026-03-23 11:46:24 [INFO] - Data to insert: DKFT.JK | date: 2026-03-30
+2026-03-23 11:46:24 [INFO] - Data to insert: SIPD.JK | date: 2026-03-27
+2026-03-23 11:46:24 [INFO] - Data to insert: KEJU.JK | date: 2026-03-27
+2026-03-23 11:46:24 [INFO] - Data to insert: BNGA.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: DRMA.JK | date: 2026-03-25
+2026-03-23 11:46:24 [INFO] - Data to insert: AUTO.JK | date: 2026-03-25
+2026-03-23 11:46:24 [INFO] - Data to insert: TGRA.JK | date: 2026-03-25
+2026-03-23 11:46:24 [INFO] - Data to insert: ITMG.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: ADRO.JK | date: 2026-03-25
+2026-03-23 11:46:24 [INFO] - Data to insert: BRIS.JK | date: 2026-03-25
+2026-03-23 11:46:24 [INFO] - Data to insert: COCO.JK | date: 2026-03-25
+2026-03-23 11:46:24 [INFO] - Data to insert: MKNT.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: MAPB.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: UNTR.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: TLDN.JK | date: 2026-04-17
+2026-03-23 11:46:24 [INFO] - Data to insert: MERI.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: TOBA.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: CYBR.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: FUJI.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: BTPS.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: YOII.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: LPPF.JK | date: 2026-03-23
+2026-03-23 11:46:24 [INFO] - Data to insert: NICK.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: AALI.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: ASGR.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: PLIN.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: PJAA.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: EMAS.JK | date: 2026-03-05
+2026-03-23 11:46:24 [INFO] - Data to insert: YULE.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: BBRI.JK | date: 2026-03-12
+2026-03-23 11:46:24 [INFO] - Data to insert: DPUM.JK | date: 2026-03-17
+2026-03-23 11:46:24 [INFO] - Data to insert: BPFI.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: SIDO.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: SICO.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: HERO.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: CMRY.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: AVIA.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: PTRO.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: MEJA.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: WIFI.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: ARKO.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: NIKL.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: ARNA.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: ASLI.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: BEKS.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: RMKO.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: MSIN.JK | date: 2026-03-16
+2026-03-23 11:46:24 [INFO] - Data to insert: UNTD.JK | date: 2026-03-13
+2026-03-23 11:46:24 [INFO] - Data to insert: BIKE.JK | date: 2026-03-13
+2026-03-23 11:46:24 [INFO] - Data to insert: BNLI.JK | date: 2026-03-09
+2026-03-23 11:46:24 [INFO] - Data to insert: ROTI.JK | date: 2026-03-13
+2026-03-23 11:46:24 [INFO] - Data to insert: ACST.JK | date: 2026-03-12
+2026-03-23 11:46:24 [INFO] - Data to insert: ADMF.JK | date: 2026-03-12
+2026-03-23 11:46:24 [INFO] - Data to insert: DGNS.JK | date: 2026-03-12
+2026-03-23 11:46:24 [INFO] - Data to insert: CNMA.JK | date: 2026-03-12
+2026-03-23 11:46:24 [INFO] - Data to insert: WMUU.JK | date: 2026-03-10
+2026-03-23 11:46:24 [INFO] - Data to insert: PADI.JK | date: 2026-03-10
+2026-03-23 11:46:24 [INFO] - Data to insert: MTPS.JK | date: 2026-03-10
+2026-03-23 11:46:24 [INFO] - Data to insert: ANDI.JK | date: 2026-03-10
+2026-03-23 11:46:24 [INFO] - Data to insert: TAYS.JK | date: 2026-03-09
+2026-03-23 11:46:24 [INFO] - Data to insert: JGLE.JK | date: 2026-03-06
+2026-03-23 11:46:24 [INFO] - Data to insert: BAIK.JK | date: 2026-03-11
+2026-03-23 11:46:24 [INFO] - Data to insert: MMLP.JK | date: 2026-03-06
+2026-03-23 11:46:24 [INFO] - Data to insert: PEVE.JK | date: 2026-03-06
+2026-03-23 11:46:24 [INFO] - Data to insert: BDMN.JK | date: 2026-03-06
+2026-03-23 11:46:24 [INFO] - Data to insert: MEGA.JK | date: 2026-03-06
+2026-03-23 11:46:24 [INFO] - Data to insert: BUKA.JK | date: 2026-03-06
+2026-03-23 11:46:24 [INFO] - Data to insert: BAJA.JK | date: 2026-03-06
+2026-03-23 11:46:24 [INFO] - Data to insert: WOMF.JK | date: 2026-03-05
+2026-03-23 11:46:24 [INFO] - Data to insert: MPPA.JK | date: 2026-03-05
+2026-03-23 11:46:24 [INFO] - Data to insert: TEBE.JK | date: 2026-03-05
+2026-03-23 11:46:24 [INFO] - Data to insert: DCII.JK | date: 2026-03-05
+2026-03-23 11:46:24 [INFO] - Data to insert: ATIC.JK | date: 2026-02-26
+2026-03-23 11:46:24 [INFO] - Data to insert: PTMR.JK | date: 2026-02-06
+2026-03-23 11:46:24 [INFO] - Data to insert: PTMP.JK | date: 2026-02-06
+2026-03-23 11:46:24 [INFO] - Data to insert: UDNG.JK | date: 2026-03-03
+2026-03-23 11:46:24 [INFO] - Data to insert: MORA.JK | date: 2026-02-26
+2026-03-23 11:46:24 [INFO] - Data to insert: WGSH.JK | date: 2026-02-23
+2026-03-23 11:46:24 [INFO] - Successfully upserted 125 data to database
