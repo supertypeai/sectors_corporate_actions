@@ -6441,3 +6441,7 @@
 2026-03-27 11:43:14 [INFO] - Data to insert: PTMR.JK | date: 2026-02-06
 2026-03-27 11:43:14 [INFO] - Data to insert: PTMP.JK | date: 2026-02-06
 2026-03-27 11:43:14 [INFO] - Successfully upserted 123 data to database
+2026-03-27 18:50:18 [INFO] - Init Global Variable
+2026-03-27 18:50:19 [INFO] - Start scraping warrant for start date: 2026-03-20 and end date: 2026-03-27
+2026-03-27 18:50:20 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-03-27 18:50:20 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
