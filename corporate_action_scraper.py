@@ -3,6 +3,8 @@ from datetime   import datetime, timedelta
 from dotenv     import load_dotenv
 from supabase   import create_client, Client
 
+from rups_place_helper import clean_agm_place, detect_agm_place_desc
+
 import pandas as pd
 import requests
 import argparse
@@ -35,74 +37,41 @@ SUPABASE_CLIENT = create_client(URL, KEY)
 
 
 def allowed_symbol(supabase_client: Client = SUPABASE_CLIENT) -> list[str]:
-    """
-    Get a list of allowed symbols from the idx_company_profile table in Supabase.
-    This function retrieves the first four characters of each symbol to match the format used in the scrapers.
-    
-    Args:
-        supabase_client (Client): The Supabase client instance to use for database queries.
-    
-    Returns:
-        list[str]: A list of allowed symbols, each symbol truncated to the first four characters.
-    """
-    allowed_symbols = [symbol_to_check['symbol'][:4] for symbol_to_check in
-                                supabase_client.from_("idx_company_profile").select("symbol").execute().data]
+    allowed_symbols = [
+        symbol_to_check['symbol'][:4] 
+        for symbol_to_check in supabase_client.from_("idx_company_profile").select("symbol").execute().data
+    ]
     return allowed_symbols
 
 
 def parse_date_safe(date_str: str) -> str | None:
-    """ 
-    Parse a date string in the format "dd-MMM-yyyy" and return it in "yyyy-MM-dd" format.
-    If the input string is empty or cannot be parsed, return None.
-
-    Args:
-        date_str (str): The date string to parse, expected in "dd-MMM-yyyy" format.
-    
-    Returns:
-        str | None: The date in "yyyy-MM-dd" format if parsing is successful,
-    """
     date_str = date_str.strip()
+
     if not date_str or date_str == '':
         return None
+    
     try:
         return datetime.strptime(date_str, "%d-%b-%Y").strftime("%Y-%m-%d")
+    
     except ValueError:
         return None
-         
+
 
 def clean_numeric_value(value_str: str) -> float | None:
-    """ 
-    Clean a numeric value string by removing commas and spaces, then convert it to a float.
-    If the string is empty or cannot be converted, return None.
-
-    Args:
-        value_str (str): The numeric value string to clean and convert.
-    
-    Returns:
-        float | None: The cleaned float value if conversion is successful, otherwise None.
-    """
     try:
         cleaned = value_str.replace(',', '').replace(' ', '')
         return float(cleaned) if cleaned else None
+    
     except ValueError:
         LOGGER.error(f"Warning: Could not convert '{value_str}' to float")
         return None
 
 
 def get_parse_html(url: str, page: int) -> BeautifulSoup: 
-    """
-    Fetches a URL and parses the HTML using BeautifulSoup.
-
-    Args:
-        url (str): The target URL to fetch.
-        page (Optional[int]): Page number for logging context.
-
-    Returns:
-        BeautifulSoup: Parsed HTML content, or None if a request error occurs.
-    """
     try:
         response = requests.get(url)
         response.raise_for_status()
+
     except requests.exceptions.RequestException as error:
         LOGGER.error(f"Network error on page {page}: {error}. Stopping.")
         return None
@@ -115,14 +84,19 @@ def rups_scraper(end_date: str = None) -> pd.DataFrame | str:
     """ 
     Scrape RUPS data from the SahamIDX website.
     This function retrieves RUPS data, including symbol, recording date,
-    RUPS date, and RUPS place. It filters the data based on a cutoff date and the current date.
-
+    RUPS date, RUPS place, RUPS time, and place description. It filters
+    the data based on the following conditions:
+        1. recording_date <= agm_date
+        2. agm_date >= end_date (only upcoming AGMs)
+        3. Deduplicates by symbol + agm_date, keeping the earliest recording_date
+        4. Detects and classifies agm_place_desc from agm_place into one of:
+           Public expose, Dibatalkan, Online, Hybrid, Onsite, or None
     Args:
-        cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format.
-    
+        end_date (str, optional): The end date in "YYYY-MM-DD" format. Defaults to today.
+
     Returns:
-        pd.DataFrame: A DataFrame containing the scraped RUPS data.
-        str: The cutoff date used for filtering the data.
+        pd.DataFrame: A DataFrame containing the scraped and filtered RUPS data.
+        str: The end date used for filtering the data.
     """
     page = 1
     rups_data = []
@@ -162,11 +136,19 @@ def rups_scraper(end_date: str = None) -> pd.DataFrame | str:
                 rups_place_cell = row.find("td", {"data-header": "Tempat"})
                 rups_time = row.find("td", {"data-header": "Jam"})
                 
-                if not (symbol_cell and recording_date_cell and rups_date_cell and rups_date_cell):
+                if not (
+                    symbol_cell and 
+                    recording_date_cell and 
+                    rups_date_cell and 
+                    rups_place_cell and 
+                    rups_time
+                ):
+                    LOGGER.info(f"Skipping row {index + 1} missing required cells")
                     continue 
 
                 # Prepare symbol 
                 symbol_str = symbol_cell.text.strip()
+
                 if symbol_str not in valid_symbols:
                     continue
 
@@ -175,46 +157,40 @@ def rups_scraper(end_date: str = None) -> pd.DataFrame | str:
                 # Prepare recording date 
                 recording_date_str = recording_date_cell.text.strip()
                 recording_date = parse_date_safe(recording_date_str)
-                
-                # if recording_date > end_date:
-                #     continue 
 
                 # Prepare rups date 
                 rups_date_str = rups_date_cell.text.strip()
                 rups_date = parse_date_safe(rups_date_str)
+
+                if recording_date > rups_date:
+                    LOGGER.info(f"Skipping {symbol} — recording_date {recording_date} > agm_date {rups_date}")
+                    continue 
 
                 # Prepare rups time 
                 rups_time_str = rups_time.text.strip()
 
                 # Prepare rups place 
                 rups_place = rups_place_cell.text.strip()
+                rups_place_cleaned = clean_agm_place(rups_place)
 
+                # Detect agm_place_desc 
+                rups_place_desc = detect_agm_place_desc(rups_place_cleaned)
+                
                 # Add valid data
                 if rups_date >= end_date:
                     data_dict = {
                         "symbol": symbol,
                         "recording_date":  recording_date,
                         "agm_date": rups_date,
-                        'agm_place': rups_place.title(), 
-                        'agm_time': rups_time_str
+                        'agm_place': rups_place_cleaned, 
+                        'agm_time': rups_time_str, 
+                        'agm_place_desc': rups_place_desc
                     }
-
-                    # Add agm_ket: dibatalkan, online, offline 
-                    if 'Dibatalkan' in rups_place:
-                        data_dict["agm_place_desc"] = 'Dibatalkan'
-
-                    elif any(tag in rups_place.lower() for tag in ['online', 'zoom', 'daring']):
-                        data_dict["agm_place_desc"] = 'Online'
-
-                    elif len(rups_place) > 5: 
-                        data_dict["agm_place_desc"] = 'Onsite'
-
-                    else: 
-                        data_dict["agm_place_desc"] = None
 
                     rups_data.append(data_dict)
 
                 else: 
+                    LOGGER.info(f"Stopping scrape — agm_date {rups_date} is before end_date {end_date}")
                     keep_scraping = False 
                     break 
 
@@ -231,6 +207,15 @@ def rups_scraper(end_date: str = None) -> pd.DataFrame | str:
     LOGGER.info(f"[RUPS SCRAPER] Scraping completed. Total records collected: {len(rups_data)}")
 
     rups_data_df = pd.DataFrame(rups_data)
+
+    # Dedup agm_date, and keep the first record 
+    rups_data_df = (
+        rups_data_df
+        .sort_values('recording_date', ascending=True)
+        .drop_duplicates(subset=['symbol', 'agm_date'], keep='first')
+        .reset_index(drop=True)
+    )
+    
     return rups_data_df, end_date
 
 
@@ -655,7 +640,7 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
     data_to_upsert = df.to_dict("records")
 
     for data in data_to_upsert:
-        LOGGER.info(f"Data to insert: {data.get('symbol')} | date: {data.get(config.get('log_date_field'))}")
+        LOGGER.info(f"Data to upsert: {data.get('symbol')} | date: {data.get(config.get('log_date_field'))}")
 
     # Skip if no data
     if not data_to_upsert:
@@ -708,7 +693,6 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    
     print(f"Running task for scraper: '{args.scraper}' with cut off date: {args.date or 'default'}")
     
     # Call the main function directly 
