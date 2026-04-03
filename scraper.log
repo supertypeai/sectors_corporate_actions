@@ -8360,3 +8360,7 @@
 2026-04-03 11:40:02 [INFO] - Data to upsert: CCSI.JK | date: 2026-04-07
 2026-04-03 11:40:02 [INFO] - Data to upsert: RICY.JK | date: 2026-04-07
 2026-04-03 11:40:03 [INFO] - Successfully upserted 110 data to database
+2026-04-03 18:40:07 [INFO] - Init Global Variable
+2026-04-03 18:40:08 [INFO] - Start scraping warrant for start date: 2026-03-27 and end date: 2026-04-03
+2026-04-03 18:40:09 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-04-03 18:40:09 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
