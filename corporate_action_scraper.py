@@ -1,27 +1,26 @@
-from bs4        import BeautifulSoup
-from datetime   import datetime, timedelta
-from dotenv     import load_dotenv
-from supabase   import create_client, Client
+from bs4 import BeautifulSoup
+from datetime import datetime, timedelta
+from dotenv import load_dotenv
+from supabase import create_client, Client
 
 from rups_place_helper import clean_agm_place, detect_agm_place_desc
 
 import pandas as pd
 import requests
 import argparse
-import os 
+import os
 import logging
-import time 
+import time
 
 
 LOGGER = logging.getLogger(__name__)
 LOGGER.setLevel(logging.INFO)
 
-file_handler = logging.FileHandler('scraper.log')
+file_handler = logging.FileHandler("scraper.log")
 file_handler.setLevel(logging.INFO)
 
 formatter = logging.Formatter(
-    '%(asctime)s [%(levelname)s] - %(message)s',
-    datefmt='%Y-%m-%d %H:%M:%S'
+    "%(asctime)s [%(levelname)s] - %(message)s", datefmt="%Y-%m-%d %H:%M:%S"
 )
 file_handler.setFormatter(formatter)
 
@@ -38,36 +37,75 @@ SUPABASE_CLIENT = create_client(URL, KEY)
 
 def allowed_symbol(supabase_client: Client = SUPABASE_CLIENT) -> list[str]:
     allowed_symbols = [
-        symbol_to_check['symbol'][:4] 
-        for symbol_to_check in supabase_client.from_("idx_company_profile").select("symbol").execute().data
+        symbol_to_check["symbol"][:4]
+        for symbol_to_check in supabase_client.from_("idx_company_profile")
+        .select("symbol")
+        .execute()
+        .data
     ]
     return allowed_symbols
 
 
 def parse_date_safe(date_str: str) -> str | None:
-    date_str = date_str.strip()
+    if not date_str:
+        return None
 
-    if not date_str or date_str == '':
+    date_str = date_str.strip()
+    if date_str == "" or date_str == "-" or date_str == "N/A":
         return None
-    
-    try:
-        return datetime.strptime(date_str, "%d-%b-%Y").strftime("%Y-%m-%d")
-    
-    except ValueError:
-        return None
+
+    # Translate Indonesian month abbreviations to English
+    id_to_en = {
+        "Mei": "May",
+        "Ags": "Aug",
+        "Agu": "Aug",
+        "Okt": "Oct",
+        "Nop": "Nov",
+        "Des": "Dec",
+    }
+
+    for id_month, en_month in id_to_en.items():
+        if id_month in date_str:
+            date_str = date_str.replace(id_month, en_month)
+
+    # Try parsing with multiple possible formats
+    formats_to_try = [
+        "%d-%b-%Y",  # 05-May-2026
+        "%Y-%m-%d",  # 2026-05-05
+        "%d/%m/%Y",  # 05/05/2026
+        "%d-%m-%Y",  # 05-05-2026
+    ]
+
+    for fmt in formats_to_try:
+        try:
+            return datetime.strptime(date_str, fmt).strftime("%Y-%m-%d")
+        except ValueError:
+            continue
+
+    # If all formats fail, log it so it doesn't fail silently
+    LOGGER.warning(f"Could not parse unrecognized date format: '{date_str}'")
+    return None
 
 
 def clean_numeric_value(value_str: str) -> float | None:
+    if not value_str or value_str.strip() == "" or value_str.strip() == "-":
+        return None
     try:
-        cleaned = value_str.replace(',', '').replace(' ', '')
+        # If it's a range like "120-150", split it and take the first number.
+        # "not value_str.startswith("-")" ensures we don't accidentally break negative numbers!
+        if "-" in value_str and not value_str.startswith("-"):
+            parts = value_str.split("-")
+            if len(parts) == 2:
+                value_str = parts[0]
+
+        cleaned = value_str.replace(",", "").replace(" ", "")
         return float(cleaned) if cleaned else None
-    
     except ValueError:
         LOGGER.error(f"Warning: Could not convert '{value_str}' to float")
         return None
 
 
-def get_parse_html(url: str, page: int) -> BeautifulSoup: 
+def get_parse_html(url: str, page: int) -> BeautifulSoup:
     try:
         response = requests.get(url)
         response.raise_for_status()
@@ -81,7 +119,7 @@ def get_parse_html(url: str, page: int) -> BeautifulSoup:
 
 
 def rups_scraper(end_date: str = None) -> pd.DataFrame | str:
-    """ 
+    """
     Scrape RUPS data from the SahamIDX website.
     This function retrieves RUPS data, including symbol, recording date,
     RUPS date, RUPS place, RUPS time, and place description. It filters
@@ -116,7 +154,7 @@ def rups_scraper(end_date: str = None) -> pd.DataFrame | str:
     end_date = end_date.strftime("%Y-%m-%d")
     # start_date = start_date.strftime("%Y-%m-%d")
 
-    LOGGER.info(f'Start scraping rups for end date: {end_date}')
+    LOGGER.info(f"Start scraping rups for end date: {end_date}")
 
     while keep_scraping:
         url = f"https://www.new.sahamidx.com/?/rups/page/{page}"
@@ -131,91 +169,98 @@ def rups_scraper(end_date: str = None) -> pd.DataFrame | str:
 
             try:
                 symbol_cell = row.find("td", {"data-header": "Kode Emiten"})
-                recording_date_cell = row.find("td", {"data-header": "Tanggal Rekording"})
+                recording_date_cell = row.find(
+                    "td", {"data-header": "Tanggal Rekording"}
+                )
                 rups_date_cell = row.find("td", {"data-header": "Tanggal Rups"})
                 rups_place_cell = row.find("td", {"data-header": "Tempat"})
                 rups_time = row.find("td", {"data-header": "Jam"})
-                
+
                 if not (
-                    symbol_cell and 
-                    recording_date_cell and 
-                    rups_date_cell and 
-                    rups_place_cell and 
-                    rups_time
+                    symbol_cell
+                    and recording_date_cell
+                    and rups_date_cell
+                    and rups_place_cell
+                    and rups_time
                 ):
                     LOGGER.info(f"Skipping row {index + 1} missing required cells")
-                    continue 
+                    continue
 
-                # Prepare symbol 
+                # Prepare symbol
                 symbol_str = symbol_cell.text.strip()
 
                 if symbol_str not in valid_symbols:
                     continue
 
-                symbol = symbol_str + '.JK'
-                
-                # Prepare recording date 
+                symbol = symbol_str + ".JK"
+
+                # Prepare recording date
                 recording_date_str = recording_date_cell.text.strip()
                 recording_date = parse_date_safe(recording_date_str)
 
-                # Prepare rups date 
+                # Prepare rups date
                 rups_date_str = rups_date_cell.text.strip()
                 rups_date = parse_date_safe(rups_date_str)
 
                 if recording_date > rups_date:
-                    LOGGER.info(f"Skipping {symbol} — recording_date {recording_date} > agm_date {rups_date}")
-                    continue 
+                    LOGGER.info(
+                        f"Skipping {symbol} — recording_date {recording_date} > agm_date {rups_date}"
+                    )
+                    continue
 
-                # Prepare rups time 
+                # Prepare rups time
                 rups_time_str = rups_time.text.strip()
 
-                # Prepare rups place 
+                # Prepare rups place
                 rups_place = rups_place_cell.text.strip()
                 rups_place_cleaned = clean_agm_place(rups_place)
 
-                # Detect agm_place_desc 
+                # Detect agm_place_desc
                 rups_place_desc = detect_agm_place_desc(rups_place_cleaned)
-                
+
                 # Add valid data
                 if rups_date >= end_date:
                     data_dict = {
                         "symbol": symbol,
-                        "recording_date":  recording_date,
+                        "recording_date": recording_date,
                         "agm_date": rups_date,
-                        'agm_place': rups_place_cleaned, 
-                        'agm_time': rups_time_str, 
-                        'agm_place_desc': rups_place_desc
+                        "agm_place": rups_place_cleaned,
+                        "agm_time": rups_time_str,
+                        "agm_place_desc": rups_place_desc,
                     }
 
                     rups_data.append(data_dict)
 
-                else: 
-                    LOGGER.info(f"Stopping scrape — agm_date {rups_date} is before end_date {end_date}")
-                    keep_scraping = False 
-                    break 
+                else:
+                    LOGGER.info(
+                        f"Stopping scrape — agm_date {rups_date} is before end_date {end_date}"
+                    )
+                    keep_scraping = False
+                    break
 
             except Exception as error:
                 LOGGER.error(f"Skipping row due to error: {error}")
                 continue
 
         if not keep_scraping:
-            break 
+            break
 
         page += 1
         time.sleep(1.2)
 
-    LOGGER.info(f"[RUPS SCRAPER] Scraping completed. Total records collected: {len(rups_data)}")
+    LOGGER.info(
+        f"[RUPS SCRAPER] Scraping completed. Total records collected: {len(rups_data)}"
+    )
 
     rups_data_df = pd.DataFrame(rups_data)
 
-    # Dedup agm_date, and keep the first record 
+    # Dedup agm_date, and keep the first record
     rups_data_df = (
-        rups_data_df
-        .sort_values('recording_date', ascending=True)
-        .drop_duplicates(subset=['symbol', 'agm_date'], keep='first')
+        rups_data_df.sort_values("recording_date", ascending=True)
+        .drop_duplicates(subset=["symbol", "agm_date"], keep="first")
         .reset_index(drop=True)
     )
-    
+
     return rups_data_df, end_date
 
 
@@ -228,7 +273,7 @@ def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
 
     Args:
         cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format.
-    
+
     Returns:
         pd.DataFrame: A DataFrame containing the scraped bonus data.
         str: The cutoff date used for filtering the data.
@@ -261,25 +306,25 @@ def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
         if not table:
             LOGGER.error("No data table found on page. Stopping scrape.")
             break
-        
+
         rows = table.find_all("tr", recursive=False)[1:]
         if not rows:
-            break 
+            break
 
         # Counter for debug
-        valid_rows_count = 0 
+        valid_rows_count = 0
 
         for row in rows:
             if len(row.find_all("td")) <= 2:
-                continue 
+                continue
 
             try:
                 values = row.find_all("td")
-                
+
                 cum_date = datetime.strptime(
                     values[5].text.strip(), "%d-%b-%Y"
                 ).strftime("%Y-%m-%d")
-                
+
                 ex_date = datetime.strptime(
                     values[6].text.strip(), "%d-%b-%Y"
                 ).strftime("%Y-%m-%d")
@@ -287,20 +332,18 @@ def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                 payment_date = datetime.strptime(
                     values[-2].text.strip(), "%d-%b-%Y"
                 ).strftime("%Y-%m-%d")
-                
-                recording_date = datetime.strptime(
-                    values[-3].text.strip(), "%d-%b-%Y"
-                )
+
+                recording_date = datetime.strptime(values[-3].text.strip(), "%d-%b-%Y")
                 # print(recording_date)
                 recording_date_str = recording_date.strftime("%Y-%m-%d")
-                
+
                 if recording_date > start_date:
-                    continue 
-                
+                    continue
+
                 # Get symbol
-                symbol = values[1].find("a").text.strip() 
+                symbol = values[1].find("a").text.strip()
                 if symbol not in valid_symbols:
-                    continue 
+                    continue
 
                 symbol_str = symbol + ".JK"
 
@@ -309,30 +352,34 @@ def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                         "symbol": symbol_str.strip(),
                         "old_ratio": clean_numeric_value(values[3].text),
                         "new_ratio": clean_numeric_value(values[4].text),
-                        "cum_date":  cum_date,
+                        "cum_date": cum_date,
                         "ex_date": ex_date,
-                        "payment_date":  payment_date,
-                        "recording_date": recording_date_str
+                        "payment_date": payment_date,
+                        "recording_date": recording_date_str,
                     }
 
                     bonus_data.append(data_dict)
                     valid_rows_count += 1
-                
+
                 else:
                     keep_scraping = False
                     break
-            
+
             except (ValueError, AttributeError) as error:
                 LOGGER.error(f"Error parsing row on page {page}: {error}")
                 continue
-        
+
         if not keep_scraping:
             break
-        
-        LOGGER.info(f"[BONUS SCRAPER] Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
+
+        LOGGER.info(
+            f"[BONUS SCRAPER] Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows"
+        )
         page += 1
 
-    LOGGER.info(f"[BONUS SCRAPER] Scraping completed. Total records collected: {len(bonus_data)}")
+    LOGGER.info(
+        f"[BONUS SCRAPER] Scraping completed. Total records collected: {len(bonus_data)}"
+    )
 
     bonus_data_df = pd.DataFrame(bonus_data)
 
@@ -340,48 +387,38 @@ def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
 
 
 def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
-    """ 
+    """
     Scrape warrant data from the SahamIDX website.
-    This function retrieves warrant data, including symbol, old ratio, new ratio,
-    price, ex period start and end dates, maturity date, ex date tunai, and trading period start and end dates.
-    It filters the data based on a cutoff date and the current date.
-
-    Args:
-        cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format.
-    
-    Returns:
-        pd.DataFrame: A DataFrame containing the scraped warrant data
-        str: The cutoff date used for filtering the data.
+    Maps exactly to Supabase table `idx_warrant`.
     """
     page = 1
     keep_scraping = True
     valid_symbols = allowed_symbol()
 
-    end_date = datetime.now()
-
+    # If no cutoff_date is provided, default to 7 days ago
     if cutoff_date is None:
-        start_date = end_date - timedelta(days=7)
+        start_date = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
     else:
-        start_date = datetime.strptime(cutoff_date, "%Y-%m-%d")
+        start_date = datetime.strptime(cutoff_date, "%Y-%m-%d").strftime("%Y-%m-%d")
 
-    end_date = end_date.strftime("%Y-%m-%d")
-    start_date = start_date.strftime("%Y-%m-%d")
+    LOGGER.info(f"Start scraping warrant for cutoff date: {start_date}")
 
-    LOGGER.info(f'Start scraping warrant for start date: {start_date} and end date: {end_date}')
-    
     warrant_data = []
 
     while keep_scraping:
         url = f"https://www.new.sahamidx.com/?/waran/page/{page}"
 
         soup = get_parse_html(url, page)
-        rows = soup.find_all("tr")
-        
-        valid_rows_count = 0 
-        page_records = []
 
-        for row in rows:
+        if soup is None:
+            break
+
+        rows = soup.find_all("tr")
+        valid_rows_count = 0
+
+        for index, row in enumerate(rows):
             try:
+                # 1. Get raw cells from HTML
                 symbol_cell = row.find("td", {"data-header": "Nama"})
                 ratio_cell = row.find("td", {"data-header": "Ratio"})
                 price_cell = row.find("td", {"data-header": "Price Exercise"})
@@ -389,89 +426,119 @@ def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                 trading_end_date_cell = row.find("td", {"data-header": "Trading End"})
                 ex_start_date_cell = row.find("td", {"data-header": "Exercise Start"})
                 ex_end_date_cell = row.find("td", {"data-header": "Exercise End"})
-                maturity_date_cell = row.find("td", {"data-header": "Maturity Date"}) 
+                maturity_date_cell = row.find("td", {"data-header": "Maturity Date"})
 
-                if not (symbol_cell and ratio_cell and price_cell):
+                # Ex date cash is sometimes listed as "Ex Date Tunai" on the IDX site
+                ex_date_cash_cell = row.find("td", {"data-header": "Ex Date Tunai"})
+
+                if not (
+                    symbol_cell and ratio_cell and price_cell and listing_date_cell
+                ):
                     continue
 
-                # Prepare symbol 
-                symbol = symbol_cell.text.strip()
-                if symbol not in valid_symbols:
-                    continue 
+                # 2. Parse Symbol (Nama -> symbol)
+                symbol_raw = symbol_cell.text.strip()
+                if symbol_raw not in valid_symbols:
+                    LOGGER.warning(
+                        f"Skipping '{symbol_raw}' - Not found in idx_company_profile table!"
+                    )
+                    continue
+                symbol = symbol_raw + ".JK"
 
-                symbol = symbol + '.JK'
-                
-                # Prepare maturity date 
-                maturity_date_str = maturity_date_cell.text.strip()
-                maturity_date = parse_date_safe(maturity_date_str)
-
-                # Prepare ratio 
-                ratio = ratio_cell.text.strip()
-                ratio_parts = ratio.split(':')
-                left_ratio = clean_numeric_value(ratio_parts[0])
-                right_ratio = clean_numeric_value(ratio_parts[1])
-
-                # Prepare price 
-                price_str = price_cell.text.strip()
-                price = clean_numeric_value(price_str)
-
-                # Prepare listing date / trading_period_start
+                # 3. Parse Listing Date (Listing Date -> trading_period_start)
                 listing_date_str = listing_date_cell.text.strip()
                 listing_date = parse_date_safe(listing_date_str)
 
-                if listing_date > end_date:
-                    continue 
+                if not listing_date:
+                    LOGGER.warning(
+                        f"Skipping warrant '{symbol}' due to unparseable Listing Date: '{listing_date_str}'"
+                    )
+                    continue
 
-                # Prepare trading end date / trading period end
-                trading_end_date_str = trading_end_date_cell.text.strip()
-                trading_end_date = parse_date_safe(trading_end_date_str)
+                # BREAK CONDITION: Stop if we hit old historical data
+                if listing_date < start_date:
+                    keep_scraping = False
+                    break
 
-                # Prepare ex start date 
-                ex_start_date_str = ex_start_date_cell.text.strip()
-                ex_start_date = parse_date_safe(ex_start_date_str)
-
-                # Prepare ex end date 
-                ex_end_date_str = ex_end_date_cell.text.strip()
-                ex_end_date = parse_date_safe(ex_end_date_str)
-
-                if start_date <= listing_date <= end_date:
-                    data_dict = {
-                        "symbol": symbol,
-                        "ratio_shares": left_ratio,
-                        "ratio_warrant": right_ratio,
-                        "price": price,
-                        "ex_per_end":  ex_end_date,
-                        "ex_per_start":  ex_start_date,
-                        "maturity_date": maturity_date,
-                        "trading_period_start": listing_date,
-                        "trading_period_end": trading_end_date
-                    } 
-
-                    page_records.append(data_dict)
-                    valid_rows_count += 1
+                # 4. Parse Ratio (Ratio -> ratio_shares & ratio_warrant)
+                ratio = ratio_cell.text.strip()
+                if ":" in ratio:
+                    ratio_parts = ratio.split(":")
+                    left_ratio = clean_numeric_value(ratio_parts[0])
+                    right_ratio = clean_numeric_value(ratio_parts[1])
                 else:
-                    keep_scraping = False 
-                    break 
+                    left_ratio, right_ratio = None, None
+
+                # 5. Parse Price (Price Exercise -> price)
+                price_str = price_cell.text.strip()
+                price = clean_numeric_value(price_str)
+
+                # 6. Map to dictionary
+                data_dict = {
+                    "symbol": symbol,
+                    "ratio_shares": left_ratio,
+                    "ratio_warrant": right_ratio,
+                    "price": price,
+                    "trading_period_start": listing_date,
+                    "trading_period_end": (
+                        parse_date_safe(trading_end_date_cell.text)
+                        if trading_end_date_cell
+                        else None
+                    ),
+                    "ex_per_start": (
+                        parse_date_safe(ex_start_date_cell.text)
+                        if ex_start_date_cell
+                        else None
+                    ),
+                    "ex_per_end": (
+                        parse_date_safe(ex_end_date_cell.text)
+                        if ex_end_date_cell
+                        else None
+                    ),
+                    "maturity_date": (
+                        parse_date_safe(maturity_date_cell.text)
+                        if maturity_date_cell
+                        else None
+                    ),
+                    "ex_date_cash": (
+                        parse_date_safe(ex_date_cash_cell.text)
+                        if ex_date_cash_cell
+                        else None
+                    ),
+                    "updated_on": datetime.now().isoformat(),
+                }
+
+                warrant_data.append(data_dict)
+                valid_rows_count += 1
 
             except Exception as error:
-                LOGGER.error(f"Error parsing row on page {page}: {error}")
+                LOGGER.exception(f"Error parsing row {index} on page {page}: {error}")
                 continue
 
         if not keep_scraping:
             break
 
-        LOGGER.info(f"[WARRANT SCRAPER] Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
+        LOGGER.info(
+            f"[WARRANT SCRAPER] Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows"
+        )
+
+        # Stop scraping if an entire page yields 0 valid results
+        if valid_rows_count == 0 and page > 1:
+            break
+
         page += 1
         time.sleep(1.1)
 
-    LOGGER.info(f"[WARRANT SCRAPER] Scraping completed. Total records collected: {len(warrant_data)}")
+    LOGGER.info(
+        f"[WARRANT SCRAPER] Scraping completed. Total records collected: {len(warrant_data)}"
+    )
 
     warrant_data_df = pd.DataFrame(warrant_data)
     return warrant_data_df, cutoff_date
 
 
 def right_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
-    """ 
+    """
     Scrape right issue data from the SahamIDX website.
     This function retrieves right issue data, including symbol, old ratio, new ratio,
     price, cum date, ex date, trading period start and end dates, subscription date, and recording date.
@@ -479,13 +546,13 @@ def right_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
 
     Args:
         cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format.
-    
+
     Returns:
-        pd.DataFrame: A DataFrame containing the scraped right issue data 
+        pd.DataFrame: A DataFrame containing the scraped right issue data
         str: The cutoff date used for filtering the data.
     """
     page = 1
-    keep_scraping = True 
+    keep_scraping = True
     valid_symbols = allowed_symbol()
 
     start_date = datetime.today()
@@ -516,15 +583,15 @@ def right_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
 
         for row in rows:
             if len(row.find_all("td")) <= 2:
-                continue 
-            
+                continue
+
             try:
                 values = row.find_all("td")
-                
+
                 cum_date = datetime.strptime(
                     values[6].text.strip(), "%d-%b-%Y"
                 ).strftime("%Y-%m-%d")
-                
+
                 ex_date = datetime.strptime(
                     values[7].text.strip(), "%d-%b-%Y"
                 ).strftime("%Y-%m-%d")
@@ -532,27 +599,25 @@ def right_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                 subscription_date = datetime.strptime(
                     values[-2].text.strip(), "%d-%b-%Y"
                 ).strftime("%Y-%m-%d")
-                
-                recording_date = datetime.strptime(
-                    values[-5].text.strip(), "%d-%b-%Y"
-                )
+
+                recording_date = datetime.strptime(values[-5].text.strip(), "%d-%b-%Y")
                 recording_date_str = recording_date.strftime("%Y-%m-%d")
-                
+
                 if recording_date > start_date:
                     continue
 
                 trading_per_start = datetime.strptime(
                     values[-4].text.strip(), "%d-%b-%Y"
                 ).strftime("%Y-%m-%d")
-                
+
                 trading_per_end = datetime.strptime(
                     values[-3].text.strip(), "%d-%b-%Y"
                 ).strftime("%Y-%m-%d")
 
                 # Get symbol
-                symbol = values[1].find("a").text.strip() 
+                symbol = values[1].find("a").text.strip()
                 if symbol not in valid_symbols:
-                    continue 
+                    continue
 
                 symbol_str = symbol + ".JK"
 
@@ -562,32 +627,36 @@ def right_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
                         "old_ratio": clean_numeric_value(values[3].text),
                         "new_ratio": clean_numeric_value(values[4].text),
                         "price": clean_numeric_value(values[5].text),
-                        "cum_date":  cum_date,
+                        "cum_date": cum_date,
                         "ex_date": ex_date,
                         "trading_period_start": trading_per_start,
                         "trading_period_end": trading_per_end,
-                        "subscription_date":  subscription_date,
-                        "recording_date": recording_date_str
+                        "subscription_date": subscription_date,
+                        "recording_date": recording_date_str,
                     }
 
                     right_data.append(data_dict)
                     valid_rows_count += 1
-                
+
                 else:
-                    keep_scraping = False 
-                    break 
-            
+                    keep_scraping = False
+                    break
+
             except (ValueError, AttributeError) as error:
                 LOGGER.error(f"Error parsing row on page {page}: {error}")
                 continue
 
         if not keep_scraping:
-            break 
+            break
 
-        LOGGER.info(f"[RIGHT SCRAPER] Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows")
+        LOGGER.info(
+            f"[RIGHT SCRAPER] Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows"
+        )
         page += 1
 
-    LOGGER.info(f"[RIGHT SCRAPER] Scraping completed. Total records collected: {len(right_data)}")
+    LOGGER.info(
+        f"[RIGHT SCRAPER] Scraping completed. Total records collected: {len(right_data)}"
+    )
 
     right_data_df = pd.DataFrame(right_data)
 
@@ -595,13 +664,13 @@ def right_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
 
 
 def upsert_to_db(scraper: str, cutoff_date: str = None):
-    """ 
+    """
     Run a specific scraper and upsert its data to the database.
     This function checks which scraper to run based on the provided argument,
     executes the corresponding scraper function, processes the data, and upserts it to the Supabase database.
 
     Args:
-        scraper (str): The name of the scraper to run. 
+        scraper (str): The name of the scraper to run.
         cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format to pass to the scraper.
     """
     scraper_config = {
@@ -633,67 +702,76 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
 
     config = scraper_config.get(scraper)
 
-    df, filter_date = config.get('func')(cutoff_date)
-    df = df.drop_duplicates(subset=config.get("dedup_keys"), keep="first") 
+    df, filter_date = config.get("func")(cutoff_date)
+    df = df.drop_duplicates(subset=config.get("dedup_keys"), keep="first")
     df = df.where(pd.notnull(df), None)
-    
+
     data_to_upsert = df.to_dict("records")
 
     for data in data_to_upsert:
-        LOGGER.info(f"Data to upsert: {data.get('symbol')} | date: {data.get(config.get('log_date_field'))}")
+        LOGGER.info(
+            f"Data to upsert: {data.get('symbol')} | date: {data.get(config.get('log_date_field'))}"
+        )
 
     # Skip if no data
     if not data_to_upsert:
-        LOGGER.info(f"No records to upsert for scraper '{scraper}' with cutoff {filter_date}. Skipping DB insert.")
+        LOGGER.info(
+            f"No records to upsert for scraper '{scraper}' with cutoff {filter_date}. Skipping DB insert."
+        )
         return
 
     try:
         if not data_to_upsert:
-            LOGGER.info(f"No records to upsert for scraper '{scraper}' with cutoff {filter_date}. Skipping DB insert.")
+            LOGGER.info(
+                f"No records to upsert for scraper '{scraper}' with cutoff {filter_date}. Skipping DB insert."
+            )
             return
-        
-        table_name = config.get('table')
 
-        SUPABASE_CLIENT.table(table_name).upsert(
-            data_to_upsert
-        ).execute()
+        table_name = config.get("table")
 
-        LOGGER.info(
-            f"Successfully upserted {len(data_to_upsert)} data to database"
-        )
+        SUPABASE_CLIENT.table(table_name).upsert(data_to_upsert).execute()
+
+        LOGGER.info(f"Successfully upserted {len(data_to_upsert)} data to database")
 
     except Exception as error:
         raise Exception(f"Error upserting to database: {error}")
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description='Run a specific scraper and upsert its data to the database.'
+        description="Run a specific scraper and upsert its data to the database."
     )
 
     # A list of your available scrapers
-    scraper_choices = ['scraper_rups', 'scraper_bonus', 'scraper_warrant', 'scraper_right']
+    scraper_choices = [
+        "scraper_rups",
+        "scraper_bonus",
+        "scraper_warrant",
+        "scraper_right",
+    ]
 
-    # Required positional argument 
+    # Required positional argument
     parser.add_argument(
-        'scraper',
+        "scraper",
         type=str,
         choices=scraper_choices,
-        help=f'The name of the scraper to run. Choices are: {", ".join(scraper_choices)}'
+        help=f'The name of the scraper to run. Choices are: {", ".join(scraper_choices)}',
     )
 
     # An optional argument for the cutoff date.
     parser.add_argument(
-        '--date',
-        '-d',
+        "--date",
+        "-d",
         type=str,
         default=None,
-        help='The cutoff date in YYYY-MM-DD format to pass to the scraper.'
+        help="The cutoff date in YYYY-MM-DD format to pass to the scraper.",
     )
 
     args = parser.parse_args()
 
-    print(f"Running task for scraper: '{args.scraper}' with cut off date: {args.date or 'default'}")
-    
-    # Call the main function directly 
+    print(
+        f"Running task for scraper: '{args.scraper}' with cut off date: {args.date or 'default'}"
+    )
+
+    # Call the main function directly
     upsert_to_db(scraper=args.scraper, cutoff_date=args.date)
