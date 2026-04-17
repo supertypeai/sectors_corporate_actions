@@ -12337,3 +12337,7 @@
 2026-04-17 11:53:33 [INFO] - Data to upsert: MDLA.JK | date: 2026-04-17
 2026-04-17 11:53:33 [INFO] - Data to upsert: ASRM.JK | date: 2026-04-27
 2026-04-17 11:53:33 [INFO] - Successfully upserted 108 data to database
+2026-04-17 18:53:50 [INFO] - Init Global Variable
+2026-04-17 18:53:51 [INFO] - Start scraping warrant for cutoff date: 2026-04-10
+2026-04-17 18:53:52 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-04-17 18:53:52 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
