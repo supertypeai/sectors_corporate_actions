@@ -14079,3 +14079,8 @@
 2026-04-24 11:59:12 [INFO] - Data to upsert: INRU.JK | date: 2026-04-22
 2026-04-24 11:59:12 [INFO] - Data to upsert: ASRM.JK | date: 2026-04-27
 2026-04-24 11:59:13 [INFO] - Successfully upserted 89 data to database
+2026-04-24 18:42:32 [INFO] - Init Global Variable
+2026-04-24 18:42:33 [INFO] - Start scraping warrant for cutoff date: 2026-04-17
+2026-04-24 18:42:34 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 1
+2026-04-24 18:42:34 [INFO] - Data to upsert: PEGE.JK | date: 2026-07-14
+2026-04-24 18:42:34 [INFO] - Successfully upserted 1 data to database
