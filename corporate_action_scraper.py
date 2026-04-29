@@ -254,12 +254,61 @@ def rups_scraper(end_date: str = None) -> pd.DataFrame | str:
 
     rups_data_df = pd.DataFrame(rups_data)
 
-    # Dedup agm_date, and keep the first record
-    rups_data_df = (
-        rups_data_df.sort_values("recording_date", ascending=True)
-        .drop_duplicates(subset=["symbol", "agm_date"], keep="first")
-        .reset_index(drop=True)
-    )
+    # Merge duplicates by symbol + agm_date:
+    # - Keep latest recording_date row as base
+    # - Preserve multiple values as "(A); (B); ..."
+    if not rups_data_df.empty:
+        rups_data_df = rups_data_df.sort_values("recording_date", ascending=False)
+
+        merged_rows = []
+        grouped = rups_data_df.groupby(["symbol", "agm_date"], sort=False, dropna=False)
+
+        for _, group in grouped:
+            base = group.iloc[0].copy()
+
+            place_desc_values = [
+                value
+                for value in group["agm_place_desc"].tolist()
+                if value is not None and str(value).strip() != ""
+            ]
+
+            unique_place_desc_values = []
+            for value in place_desc_values:
+                if value not in unique_place_desc_values:
+                    unique_place_desc_values.append(value)
+
+            if len(unique_place_desc_values) > 1:
+                base["agm_place_desc"] = "; ".join(
+                    [f"({value})" for value in unique_place_desc_values]
+                )
+            elif len(unique_place_desc_values) == 1:
+                base["agm_place_desc"] = unique_place_desc_values[0]
+            else:
+                base["agm_place_desc"] = None
+
+            place_values = [
+                value
+                for value in group["agm_place"].tolist()
+                if value is not None and str(value).strip() != ""
+            ]
+
+            unique_place_values = []
+            for value in place_values:
+                if value not in unique_place_values:
+                    unique_place_values.append(value)
+
+            if len(unique_place_values) > 1:
+                base["agm_place"] = "; ".join(
+                    [f"({value})" for value in unique_place_values]
+                )
+            elif len(unique_place_values) == 1:
+                base["agm_place"] = unique_place_values[0]
+            else:
+                base["agm_place"] = None
+
+            merged_rows.append(base.to_dict())
+
+        rups_data_df = pd.DataFrame(merged_rows).reset_index(drop=True)
 
     return rups_data_df, end_date
 
@@ -676,25 +725,29 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
     scraper_config = {
         "scraper_rups": {
             "func": rups_scraper,
-            "dedup_keys": ["symbol", "recording_date"],
+            "dedup_keys": ["symbol", "agm_date"],
+            "upsert_on_conflict": "symbol,agm_date",
             "log_date_field": "recording_date",
             "table": "idx_agm",
         },
         "scraper_bonus": {
             "func": bonus_scraper,
             "dedup_keys": ["symbol", "recording_date"],
+            "upsert_on_conflict": "symbol,recording_date",
             "log_date_field": "recording_date",
             "table": "idx_ca_bonus",
         },
         "scraper_warrant": {
             "func": warrant_scraper,
             "dedup_keys": ["symbol", "trading_period_start"],
+            "upsert_on_conflict": "symbol,trading_period_start",
             "log_date_field": "trading_period_start",
             "table": "idx_warrant",
         },
         "scraper_right": {
             "func": right_scraper,
             "dedup_keys": ["symbol", "trading_period_start"],
+            "upsert_on_conflict": "symbol,trading_period_start",
             "log_date_field": "recording_date",
             "table": "idx_right_issue",
         },
@@ -728,8 +781,11 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
             return
 
         table_name = config.get("table")
+        on_conflict = config.get("upsert_on_conflict")
 
-        SUPABASE_CLIENT.table(table_name).upsert(data_to_upsert).execute()
+        SUPABASE_CLIENT.table(table_name).upsert(
+            data_to_upsert, on_conflict=on_conflict
+        ).execute()
 
         LOGGER.info(f"Successfully upserted {len(data_to_upsert)} data to database")
 
