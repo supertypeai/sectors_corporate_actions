@@ -783,6 +783,67 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         table_name = config.get("table")
         on_conflict = config.get("upsert_on_conflict")
 
+        if scraper == "scraper_rups":
+            normalized_rows = []
+            skipped_rows = 0
+
+            for row in data_to_upsert:
+                symbol = row.get("symbol")
+                agm_date = row.get("agm_date")
+                recording_date = row.get("recording_date")
+
+                if not (symbol and agm_date and recording_date):
+                    normalized_rows.append(row)
+                    continue
+
+                existing_same_agm = (
+                    SUPABASE_CLIENT.table(table_name)
+                    .select("recording_date")
+                    .eq("symbol", symbol)
+                    .eq("agm_date", agm_date)
+                    .limit(1)
+                    .execute()
+                    .data
+                )
+
+                # Keep recording_date as it already exists in DB for this symbol+agm_date.
+                if existing_same_agm:
+                    existing_recording_date = existing_same_agm[0].get("recording_date")
+                    if existing_recording_date:
+                        row["recording_date"] = existing_recording_date
+                        recording_date = existing_recording_date
+
+                existing_same_recording = (
+                    SUPABASE_CLIENT.table(table_name)
+                    .select("agm_date")
+                    .eq("symbol", symbol)
+                    .eq("recording_date", recording_date)
+                    .limit(1)
+                    .execute()
+                    .data
+                )
+
+                # Avoid violating unique(symbol, recording_date) when it belongs to a different AGM.
+                if (
+                    existing_same_recording
+                    and existing_same_recording[0].get("agm_date") != agm_date
+                ):
+                    skipped_rows += 1
+                    LOGGER.warning(
+                        f"Skipping row due to idx_rups_pk conflict: {symbol} | recording_date={recording_date} already used by agm_date={existing_same_recording[0].get('agm_date')}"
+                    )
+                    continue
+
+                normalized_rows.append(row)
+
+            data_to_upsert = normalized_rows
+
+            if not data_to_upsert:
+                LOGGER.info(
+                    f"No records to upsert for scraper '{scraper}' after conflict normalization. Skipping DB insert."
+                )
+                return
+
         SUPABASE_CLIENT.table(table_name).upsert(
             data_to_upsert, on_conflict=on_conflict
         ).execute()
