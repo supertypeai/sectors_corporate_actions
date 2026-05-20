@@ -29808,3 +29808,1147 @@
 2026-05-19 13:59:50 [WARNING] - Skipping row due to idx_rups_pk conflict: UNSP.JK | recording_date=2026-04-29 already used by agm_date=2026-05-22
 2026-05-19 14:00:15 [WARNING] - Skipping row due to idx_rups_pk conflict: DEWA.JK | recording_date=2026-04-22 already used by agm_date=2026-05-18
 2026-05-19 14:00:18 [INFO] - Successfully upserted 372 data to database
+2026-05-20 13:40:57 [INFO] - Init Global Variable
+2026-05-20 13:40:58 [INFO] - Start scraping rups for end date: 2026-05-20
+2026-05-20 13:40:59 [INFO] - Found 16 rows to process at page: 1
+2026-05-20 13:40:59 [INFO] - Processing row 1/16
+2026-05-20 13:40:59 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:40:59 [INFO] - Processing row 2/16
+2026-05-20 13:40:59 [INFO] - Processing row 3/16
+2026-05-20 13:40:59 [INFO] - Processing row 4/16
+2026-05-20 13:40:59 [INFO] - Processing row 5/16
+2026-05-20 13:40:59 [INFO] - Processing row 6/16
+2026-05-20 13:40:59 [INFO] - Processing row 7/16
+2026-05-20 13:40:59 [INFO] - Processing row 8/16
+2026-05-20 13:40:59 [INFO] - Processing row 9/16
+2026-05-20 13:40:59 [INFO] - Processing row 10/16
+2026-05-20 13:40:59 [INFO] - Processing row 11/16
+2026-05-20 13:40:59 [INFO] - Processing row 12/16
+2026-05-20 13:40:59 [INFO] - Processing row 13/16
+2026-05-20 13:40:59 [INFO] - Processing row 14/16
+2026-05-20 13:40:59 [INFO] - Processing row 15/16
+2026-05-20 13:40:59 [INFO] - Processing row 16/16
+2026-05-20 13:41:01 [INFO] - Found 16 rows to process at page: 2
+2026-05-20 13:41:01 [INFO] - Processing row 1/16
+2026-05-20 13:41:01 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:01 [INFO] - Processing row 2/16
+2026-05-20 13:41:01 [INFO] - Processing row 3/16
+2026-05-20 13:41:01 [INFO] - Processing row 4/16
+2026-05-20 13:41:01 [INFO] - Processing row 5/16
+2026-05-20 13:41:01 [INFO] - Processing row 6/16
+2026-05-20 13:41:01 [INFO] - Processing row 7/16
+2026-05-20 13:41:01 [INFO] - Processing row 8/16
+2026-05-20 13:41:01 [INFO] - Processing row 9/16
+2026-05-20 13:41:01 [INFO] - Processing row 10/16
+2026-05-20 13:41:01 [INFO] - Processing row 11/16
+2026-05-20 13:41:01 [INFO] - Processing row 12/16
+2026-05-20 13:41:01 [INFO] - Processing row 13/16
+2026-05-20 13:41:01 [INFO] - Processing row 14/16
+2026-05-20 13:41:01 [INFO] - Processing row 15/16
+2026-05-20 13:41:01 [INFO] - Processing row 16/16
+2026-05-20 13:41:03 [INFO] - Found 16 rows to process at page: 3
+2026-05-20 13:41:03 [INFO] - Processing row 1/16
+2026-05-20 13:41:03 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:03 [INFO] - Processing row 2/16
+2026-05-20 13:41:03 [INFO] - Processing row 3/16
+2026-05-20 13:41:03 [INFO] - Processing row 4/16
+2026-05-20 13:41:03 [INFO] - Processing row 5/16
+2026-05-20 13:41:03 [INFO] - Processing row 6/16
+2026-05-20 13:41:03 [INFO] - Processing row 7/16
+2026-05-20 13:41:03 [INFO] - Processing row 8/16
+2026-05-20 13:41:03 [INFO] - Processing row 9/16
+2026-05-20 13:41:03 [INFO] - Processing row 10/16
+2026-05-20 13:41:03 [INFO] - Processing row 11/16
+2026-05-20 13:41:03 [INFO] - Processing row 12/16
+2026-05-20 13:41:03 [INFO] - Processing row 13/16
+2026-05-20 13:41:03 [INFO] - Processing row 14/16
+2026-05-20 13:41:03 [INFO] - Processing row 15/16
+2026-05-20 13:41:03 [INFO] - Processing row 16/16
+2026-05-20 13:41:05 [INFO] - Found 16 rows to process at page: 4
+2026-05-20 13:41:05 [INFO] - Processing row 1/16
+2026-05-20 13:41:05 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:05 [INFO] - Processing row 2/16
+2026-05-20 13:41:05 [INFO] - Processing row 3/16
+2026-05-20 13:41:05 [INFO] - Processing row 4/16
+2026-05-20 13:41:05 [INFO] - Processing row 5/16
+2026-05-20 13:41:05 [INFO] - Processing row 6/16
+2026-05-20 13:41:05 [INFO] - Processing row 7/16
+2026-05-20 13:41:05 [INFO] - Processing row 8/16
+2026-05-20 13:41:05 [INFO] - Processing row 9/16
+2026-05-20 13:41:05 [INFO] - Processing row 10/16
+2026-05-20 13:41:05 [INFO] - Processing row 11/16
+2026-05-20 13:41:05 [INFO] - Processing row 12/16
+2026-05-20 13:41:05 [INFO] - Processing row 13/16
+2026-05-20 13:41:05 [INFO] - Processing row 14/16
+2026-05-20 13:41:05 [INFO] - Processing row 15/16
+2026-05-20 13:41:05 [INFO] - Processing row 16/16
+2026-05-20 13:41:07 [INFO] - Found 16 rows to process at page: 5
+2026-05-20 13:41:07 [INFO] - Processing row 1/16
+2026-05-20 13:41:07 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:07 [INFO] - Processing row 2/16
+2026-05-20 13:41:07 [INFO] - Processing row 3/16
+2026-05-20 13:41:07 [INFO] - Processing row 4/16
+2026-05-20 13:41:07 [INFO] - Processing row 5/16
+2026-05-20 13:41:07 [INFO] - Processing row 6/16
+2026-05-20 13:41:07 [INFO] - Processing row 7/16
+2026-05-20 13:41:07 [INFO] - Processing row 8/16
+2026-05-20 13:41:07 [INFO] - Processing row 9/16
+2026-05-20 13:41:07 [INFO] - Processing row 10/16
+2026-05-20 13:41:07 [INFO] - Processing row 11/16
+2026-05-20 13:41:07 [INFO] - Processing row 12/16
+2026-05-20 13:41:07 [INFO] - Processing row 13/16
+2026-05-20 13:41:07 [INFO] - Processing row 14/16
+2026-05-20 13:41:07 [INFO] - Processing row 15/16
+2026-05-20 13:41:07 [INFO] - Processing row 16/16
+2026-05-20 13:41:10 [INFO] - Found 16 rows to process at page: 6
+2026-05-20 13:41:10 [INFO] - Processing row 1/16
+2026-05-20 13:41:10 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:10 [INFO] - Processing row 2/16
+2026-05-20 13:41:10 [INFO] - Processing row 3/16
+2026-05-20 13:41:10 [INFO] - Processing row 4/16
+2026-05-20 13:41:10 [INFO] - Processing row 5/16
+2026-05-20 13:41:10 [INFO] - Processing row 6/16
+2026-05-20 13:41:10 [INFO] - Processing row 7/16
+2026-05-20 13:41:10 [INFO] - Processing row 8/16
+2026-05-20 13:41:10 [INFO] - Processing row 9/16
+2026-05-20 13:41:10 [INFO] - Processing row 10/16
+2026-05-20 13:41:10 [INFO] - Processing row 11/16
+2026-05-20 13:41:10 [INFO] - Processing row 12/16
+2026-05-20 13:41:10 [INFO] - Processing row 13/16
+2026-05-20 13:41:10 [INFO] - Processing row 14/16
+2026-05-20 13:41:10 [INFO] - Processing row 15/16
+2026-05-20 13:41:10 [INFO] - Processing row 16/16
+2026-05-20 13:41:12 [INFO] - Found 16 rows to process at page: 7
+2026-05-20 13:41:12 [INFO] - Processing row 1/16
+2026-05-20 13:41:12 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:12 [INFO] - Processing row 2/16
+2026-05-20 13:41:12 [INFO] - Processing row 3/16
+2026-05-20 13:41:12 [INFO] - Processing row 4/16
+2026-05-20 13:41:12 [INFO] - Processing row 5/16
+2026-05-20 13:41:12 [INFO] - Processing row 6/16
+2026-05-20 13:41:12 [INFO] - Processing row 7/16
+2026-05-20 13:41:12 [INFO] - Processing row 8/16
+2026-05-20 13:41:12 [INFO] - Processing row 9/16
+2026-05-20 13:41:12 [INFO] - Processing row 10/16
+2026-05-20 13:41:12 [INFO] - Processing row 11/16
+2026-05-20 13:41:12 [INFO] - Processing row 12/16
+2026-05-20 13:41:12 [INFO] - Processing row 13/16
+2026-05-20 13:41:12 [INFO] - Processing row 14/16
+2026-05-20 13:41:12 [INFO] - Processing row 15/16
+2026-05-20 13:41:12 [INFO] - Processing row 16/16
+2026-05-20 13:41:14 [INFO] - Found 16 rows to process at page: 8
+2026-05-20 13:41:14 [INFO] - Processing row 1/16
+2026-05-20 13:41:14 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:14 [INFO] - Processing row 2/16
+2026-05-20 13:41:14 [INFO] - Processing row 3/16
+2026-05-20 13:41:14 [INFO] - Processing row 4/16
+2026-05-20 13:41:14 [INFO] - Processing row 5/16
+2026-05-20 13:41:14 [INFO] - Processing row 6/16
+2026-05-20 13:41:14 [INFO] - Processing row 7/16
+2026-05-20 13:41:14 [INFO] - Processing row 8/16
+2026-05-20 13:41:14 [INFO] - Processing row 9/16
+2026-05-20 13:41:14 [INFO] - Processing row 10/16
+2026-05-20 13:41:14 [INFO] - Processing row 11/16
+2026-05-20 13:41:14 [INFO] - Processing row 12/16
+2026-05-20 13:41:14 [INFO] - Processing row 13/16
+2026-05-20 13:41:14 [INFO] - Processing row 14/16
+2026-05-20 13:41:14 [INFO] - Processing row 15/16
+2026-05-20 13:41:14 [INFO] - Processing row 16/16
+2026-05-20 13:41:16 [INFO] - Found 16 rows to process at page: 9
+2026-05-20 13:41:16 [INFO] - Processing row 1/16
+2026-05-20 13:41:16 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:16 [INFO] - Processing row 2/16
+2026-05-20 13:41:16 [INFO] - Processing row 3/16
+2026-05-20 13:41:16 [INFO] - Processing row 4/16
+2026-05-20 13:41:16 [INFO] - Processing row 5/16
+2026-05-20 13:41:16 [INFO] - Processing row 6/16
+2026-05-20 13:41:16 [INFO] - Processing row 7/16
+2026-05-20 13:41:16 [INFO] - Processing row 8/16
+2026-05-20 13:41:16 [INFO] - Processing row 9/16
+2026-05-20 13:41:16 [INFO] - Processing row 10/16
+2026-05-20 13:41:16 [INFO] - Processing row 11/16
+2026-05-20 13:41:16 [INFO] - Processing row 12/16
+2026-05-20 13:41:16 [INFO] - Processing row 13/16
+2026-05-20 13:41:16 [INFO] - Processing row 14/16
+2026-05-20 13:41:16 [INFO] - Processing row 15/16
+2026-05-20 13:41:16 [INFO] - Processing row 16/16
+2026-05-20 13:41:18 [INFO] - Found 16 rows to process at page: 10
+2026-05-20 13:41:18 [INFO] - Processing row 1/16
+2026-05-20 13:41:18 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:18 [INFO] - Processing row 2/16
+2026-05-20 13:41:18 [INFO] - Processing row 3/16
+2026-05-20 13:41:18 [INFO] - Processing row 4/16
+2026-05-20 13:41:18 [INFO] - Processing row 5/16
+2026-05-20 13:41:18 [INFO] - Processing row 6/16
+2026-05-20 13:41:18 [INFO] - Processing row 7/16
+2026-05-20 13:41:18 [INFO] - Processing row 8/16
+2026-05-20 13:41:18 [INFO] - Processing row 9/16
+2026-05-20 13:41:18 [INFO] - Processing row 10/16
+2026-05-20 13:41:18 [INFO] - Processing row 11/16
+2026-05-20 13:41:18 [INFO] - Processing row 12/16
+2026-05-20 13:41:18 [INFO] - Processing row 13/16
+2026-05-20 13:41:18 [INFO] - Processing row 14/16
+2026-05-20 13:41:18 [INFO] - Processing row 15/16
+2026-05-20 13:41:18 [INFO] - Processing row 16/16
+2026-05-20 13:41:20 [INFO] - Found 16 rows to process at page: 11
+2026-05-20 13:41:20 [INFO] - Processing row 1/16
+2026-05-20 13:41:20 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:20 [INFO] - Processing row 2/16
+2026-05-20 13:41:20 [INFO] - Processing row 3/16
+2026-05-20 13:41:20 [INFO] - Processing row 4/16
+2026-05-20 13:41:20 [INFO] - Processing row 5/16
+2026-05-20 13:41:20 [INFO] - Processing row 6/16
+2026-05-20 13:41:20 [INFO] - Processing row 7/16
+2026-05-20 13:41:20 [INFO] - Processing row 8/16
+2026-05-20 13:41:20 [INFO] - Processing row 9/16
+2026-05-20 13:41:20 [INFO] - Processing row 10/16
+2026-05-20 13:41:20 [INFO] - Processing row 11/16
+2026-05-20 13:41:20 [INFO] - Processing row 12/16
+2026-05-20 13:41:20 [INFO] - Processing row 13/16
+2026-05-20 13:41:20 [INFO] - Processing row 14/16
+2026-05-20 13:41:20 [INFO] - Processing row 15/16
+2026-05-20 13:41:20 [INFO] - Processing row 16/16
+2026-05-20 13:41:22 [INFO] - Found 16 rows to process at page: 12
+2026-05-20 13:41:22 [INFO] - Processing row 1/16
+2026-05-20 13:41:22 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:22 [INFO] - Processing row 2/16
+2026-05-20 13:41:22 [INFO] - Processing row 3/16
+2026-05-20 13:41:22 [INFO] - Processing row 4/16
+2026-05-20 13:41:22 [INFO] - Processing row 5/16
+2026-05-20 13:41:22 [INFO] - Processing row 6/16
+2026-05-20 13:41:22 [INFO] - Processing row 7/16
+2026-05-20 13:41:22 [INFO] - Processing row 8/16
+2026-05-20 13:41:22 [INFO] - Processing row 9/16
+2026-05-20 13:41:22 [INFO] - Processing row 10/16
+2026-05-20 13:41:22 [INFO] - Processing row 11/16
+2026-05-20 13:41:22 [INFO] - Processing row 12/16
+2026-05-20 13:41:22 [INFO] - Processing row 13/16
+2026-05-20 13:41:22 [INFO] - Processing row 14/16
+2026-05-20 13:41:22 [INFO] - Processing row 15/16
+2026-05-20 13:41:22 [INFO] - Processing row 16/16
+2026-05-20 13:41:25 [INFO] - Found 16 rows to process at page: 13
+2026-05-20 13:41:25 [INFO] - Processing row 1/16
+2026-05-20 13:41:25 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:25 [INFO] - Processing row 2/16
+2026-05-20 13:41:25 [INFO] - Processing row 3/16
+2026-05-20 13:41:25 [INFO] - Processing row 4/16
+2026-05-20 13:41:25 [INFO] - Processing row 5/16
+2026-05-20 13:41:25 [INFO] - Processing row 6/16
+2026-05-20 13:41:25 [INFO] - Processing row 7/16
+2026-05-20 13:41:25 [INFO] - Processing row 8/16
+2026-05-20 13:41:25 [INFO] - Processing row 9/16
+2026-05-20 13:41:25 [INFO] - Processing row 10/16
+2026-05-20 13:41:25 [INFO] - Processing row 11/16
+2026-05-20 13:41:25 [INFO] - Processing row 12/16
+2026-05-20 13:41:25 [INFO] - Processing row 13/16
+2026-05-20 13:41:25 [INFO] - Processing row 14/16
+2026-05-20 13:41:25 [INFO] - Processing row 15/16
+2026-05-20 13:41:25 [INFO] - Processing row 16/16
+2026-05-20 13:41:27 [INFO] - Found 16 rows to process at page: 14
+2026-05-20 13:41:27 [INFO] - Processing row 1/16
+2026-05-20 13:41:27 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:27 [INFO] - Processing row 2/16
+2026-05-20 13:41:27 [INFO] - Processing row 3/16
+2026-05-20 13:41:27 [INFO] - Processing row 4/16
+2026-05-20 13:41:27 [INFO] - Processing row 5/16
+2026-05-20 13:41:27 [INFO] - Processing row 6/16
+2026-05-20 13:41:27 [INFO] - Processing row 7/16
+2026-05-20 13:41:27 [INFO] - Processing row 8/16
+2026-05-20 13:41:27 [INFO] - Processing row 9/16
+2026-05-20 13:41:27 [INFO] - Processing row 10/16
+2026-05-20 13:41:27 [INFO] - Processing row 11/16
+2026-05-20 13:41:27 [INFO] - Processing row 12/16
+2026-05-20 13:41:27 [INFO] - Processing row 13/16
+2026-05-20 13:41:27 [INFO] - Processing row 14/16
+2026-05-20 13:41:27 [INFO] - Processing row 15/16
+2026-05-20 13:41:27 [INFO] - Processing row 16/16
+2026-05-20 13:41:29 [INFO] - Found 16 rows to process at page: 15
+2026-05-20 13:41:29 [INFO] - Processing row 1/16
+2026-05-20 13:41:29 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:29 [INFO] - Processing row 2/16
+2026-05-20 13:41:29 [INFO] - Processing row 3/16
+2026-05-20 13:41:29 [INFO] - Processing row 4/16
+2026-05-20 13:41:29 [INFO] - Processing row 5/16
+2026-05-20 13:41:29 [INFO] - Processing row 6/16
+2026-05-20 13:41:29 [INFO] - Processing row 7/16
+2026-05-20 13:41:29 [INFO] - Processing row 8/16
+2026-05-20 13:41:29 [INFO] - Processing row 9/16
+2026-05-20 13:41:29 [INFO] - Processing row 10/16
+2026-05-20 13:41:29 [INFO] - Processing row 11/16
+2026-05-20 13:41:29 [INFO] - Processing row 12/16
+2026-05-20 13:41:29 [INFO] - Processing row 13/16
+2026-05-20 13:41:29 [INFO] - Processing row 14/16
+2026-05-20 13:41:29 [INFO] - Processing row 15/16
+2026-05-20 13:41:29 [INFO] - Processing row 16/16
+2026-05-20 13:41:31 [INFO] - Found 16 rows to process at page: 16
+2026-05-20 13:41:31 [INFO] - Processing row 1/16
+2026-05-20 13:41:31 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:31 [INFO] - Processing row 2/16
+2026-05-20 13:41:31 [INFO] - Processing row 3/16
+2026-05-20 13:41:31 [INFO] - Processing row 4/16
+2026-05-20 13:41:31 [INFO] - Processing row 5/16
+2026-05-20 13:41:31 [INFO] - Processing row 6/16
+2026-05-20 13:41:31 [INFO] - Processing row 7/16
+2026-05-20 13:41:31 [INFO] - Processing row 8/16
+2026-05-20 13:41:31 [INFO] - Processing row 9/16
+2026-05-20 13:41:31 [INFO] - Processing row 10/16
+2026-05-20 13:41:31 [INFO] - Processing row 11/16
+2026-05-20 13:41:31 [INFO] - Processing row 12/16
+2026-05-20 13:41:31 [INFO] - Processing row 13/16
+2026-05-20 13:41:31 [INFO] - Processing row 14/16
+2026-05-20 13:41:31 [INFO] - Processing row 15/16
+2026-05-20 13:41:31 [INFO] - Processing row 16/16
+2026-05-20 13:41:33 [INFO] - Found 16 rows to process at page: 17
+2026-05-20 13:41:33 [INFO] - Processing row 1/16
+2026-05-20 13:41:33 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:33 [INFO] - Processing row 2/16
+2026-05-20 13:41:33 [INFO] - Processing row 3/16
+2026-05-20 13:41:33 [INFO] - Processing row 4/16
+2026-05-20 13:41:33 [INFO] - Processing row 5/16
+2026-05-20 13:41:33 [INFO] - Processing row 6/16
+2026-05-20 13:41:33 [INFO] - Processing row 7/16
+2026-05-20 13:41:33 [INFO] - Processing row 8/16
+2026-05-20 13:41:33 [INFO] - Processing row 9/16
+2026-05-20 13:41:33 [INFO] - Processing row 10/16
+2026-05-20 13:41:33 [INFO] - Processing row 11/16
+2026-05-20 13:41:33 [INFO] - Processing row 12/16
+2026-05-20 13:41:33 [INFO] - Processing row 13/16
+2026-05-20 13:41:33 [INFO] - Processing row 14/16
+2026-05-20 13:41:33 [INFO] - Processing row 15/16
+2026-05-20 13:41:33 [INFO] - Processing row 16/16
+2026-05-20 13:41:35 [INFO] - Found 16 rows to process at page: 18
+2026-05-20 13:41:35 [INFO] - Processing row 1/16
+2026-05-20 13:41:35 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:35 [INFO] - Processing row 2/16
+2026-05-20 13:41:35 [INFO] - Processing row 3/16
+2026-05-20 13:41:35 [INFO] - Processing row 4/16
+2026-05-20 13:41:35 [INFO] - Processing row 5/16
+2026-05-20 13:41:35 [INFO] - Processing row 6/16
+2026-05-20 13:41:35 [INFO] - Processing row 7/16
+2026-05-20 13:41:35 [INFO] - Processing row 8/16
+2026-05-20 13:41:35 [INFO] - Processing row 9/16
+2026-05-20 13:41:35 [INFO] - Processing row 10/16
+2026-05-20 13:41:35 [INFO] - Processing row 11/16
+2026-05-20 13:41:35 [INFO] - Processing row 12/16
+2026-05-20 13:41:35 [INFO] - Processing row 13/16
+2026-05-20 13:41:35 [INFO] - Processing row 14/16
+2026-05-20 13:41:35 [INFO] - Processing row 15/16
+2026-05-20 13:41:35 [INFO] - Processing row 16/16
+2026-05-20 13:41:37 [INFO] - Found 16 rows to process at page: 19
+2026-05-20 13:41:37 [INFO] - Processing row 1/16
+2026-05-20 13:41:37 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:37 [INFO] - Processing row 2/16
+2026-05-20 13:41:37 [INFO] - Processing row 3/16
+2026-05-20 13:41:37 [INFO] - Processing row 4/16
+2026-05-20 13:41:37 [INFO] - Processing row 5/16
+2026-05-20 13:41:37 [INFO] - Processing row 6/16
+2026-05-20 13:41:37 [INFO] - Processing row 7/16
+2026-05-20 13:41:37 [INFO] - Processing row 8/16
+2026-05-20 13:41:37 [INFO] - Processing row 9/16
+2026-05-20 13:41:37 [INFO] - Processing row 10/16
+2026-05-20 13:41:37 [INFO] - Processing row 11/16
+2026-05-20 13:41:37 [INFO] - Processing row 12/16
+2026-05-20 13:41:37 [INFO] - Processing row 13/16
+2026-05-20 13:41:37 [INFO] - Processing row 14/16
+2026-05-20 13:41:37 [INFO] - Processing row 15/16
+2026-05-20 13:41:37 [INFO] - Processing row 16/16
+2026-05-20 13:41:39 [INFO] - Found 16 rows to process at page: 20
+2026-05-20 13:41:39 [INFO] - Processing row 1/16
+2026-05-20 13:41:39 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:39 [INFO] - Processing row 2/16
+2026-05-20 13:41:39 [INFO] - Processing row 3/16
+2026-05-20 13:41:39 [INFO] - Processing row 4/16
+2026-05-20 13:41:39 [INFO] - Processing row 5/16
+2026-05-20 13:41:39 [INFO] - Processing row 6/16
+2026-05-20 13:41:39 [INFO] - Processing row 7/16
+2026-05-20 13:41:39 [INFO] - Processing row 8/16
+2026-05-20 13:41:39 [INFO] - Processing row 9/16
+2026-05-20 13:41:39 [INFO] - Processing row 10/16
+2026-05-20 13:41:39 [INFO] - Processing row 11/16
+2026-05-20 13:41:39 [INFO] - Processing row 12/16
+2026-05-20 13:41:39 [INFO] - Processing row 13/16
+2026-05-20 13:41:39 [INFO] - Processing row 14/16
+2026-05-20 13:41:39 [INFO] - Processing row 15/16
+2026-05-20 13:41:39 [INFO] - Processing row 16/16
+2026-05-20 13:41:41 [INFO] - Found 16 rows to process at page: 21
+2026-05-20 13:41:41 [INFO] - Processing row 1/16
+2026-05-20 13:41:41 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:41 [INFO] - Processing row 2/16
+2026-05-20 13:41:41 [INFO] - Processing row 3/16
+2026-05-20 13:41:41 [INFO] - Processing row 4/16
+2026-05-20 13:41:41 [INFO] - Processing row 5/16
+2026-05-20 13:41:41 [INFO] - Processing row 6/16
+2026-05-20 13:41:41 [INFO] - Processing row 7/16
+2026-05-20 13:41:41 [INFO] - Processing row 8/16
+2026-05-20 13:41:41 [INFO] - Processing row 9/16
+2026-05-20 13:41:41 [INFO] - Processing row 10/16
+2026-05-20 13:41:41 [INFO] - Processing row 11/16
+2026-05-20 13:41:41 [INFO] - Processing row 12/16
+2026-05-20 13:41:41 [INFO] - Processing row 13/16
+2026-05-20 13:41:41 [INFO] - Processing row 14/16
+2026-05-20 13:41:41 [INFO] - Processing row 15/16
+2026-05-20 13:41:41 [INFO] - Processing row 16/16
+2026-05-20 13:41:43 [INFO] - Found 16 rows to process at page: 22
+2026-05-20 13:41:43 [INFO] - Processing row 1/16
+2026-05-20 13:41:43 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:43 [INFO] - Processing row 2/16
+2026-05-20 13:41:43 [INFO] - Processing row 3/16
+2026-05-20 13:41:43 [INFO] - Processing row 4/16
+2026-05-20 13:41:43 [INFO] - Processing row 5/16
+2026-05-20 13:41:43 [INFO] - Processing row 6/16
+2026-05-20 13:41:43 [INFO] - Processing row 7/16
+2026-05-20 13:41:43 [INFO] - Processing row 8/16
+2026-05-20 13:41:43 [INFO] - Processing row 9/16
+2026-05-20 13:41:43 [INFO] - Processing row 10/16
+2026-05-20 13:41:43 [INFO] - Processing row 11/16
+2026-05-20 13:41:43 [INFO] - Processing row 12/16
+2026-05-20 13:41:43 [INFO] - Processing row 13/16
+2026-05-20 13:41:43 [INFO] - Processing row 14/16
+2026-05-20 13:41:43 [INFO] - Processing row 15/16
+2026-05-20 13:41:43 [INFO] - Processing row 16/16
+2026-05-20 13:41:45 [INFO] - Found 16 rows to process at page: 23
+2026-05-20 13:41:45 [INFO] - Processing row 1/16
+2026-05-20 13:41:45 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:45 [INFO] - Processing row 2/16
+2026-05-20 13:41:45 [INFO] - Processing row 3/16
+2026-05-20 13:41:45 [INFO] - Processing row 4/16
+2026-05-20 13:41:45 [INFO] - Processing row 5/16
+2026-05-20 13:41:45 [INFO] - Processing row 6/16
+2026-05-20 13:41:45 [INFO] - Processing row 7/16
+2026-05-20 13:41:45 [INFO] - Processing row 8/16
+2026-05-20 13:41:45 [INFO] - Processing row 9/16
+2026-05-20 13:41:45 [INFO] - Processing row 10/16
+2026-05-20 13:41:45 [INFO] - Processing row 11/16
+2026-05-20 13:41:45 [INFO] - Processing row 12/16
+2026-05-20 13:41:45 [INFO] - Processing row 13/16
+2026-05-20 13:41:45 [INFO] - Processing row 14/16
+2026-05-20 13:41:45 [INFO] - Processing row 15/16
+2026-05-20 13:41:45 [INFO] - Processing row 16/16
+2026-05-20 13:41:47 [INFO] - Found 16 rows to process at page: 24
+2026-05-20 13:41:47 [INFO] - Processing row 1/16
+2026-05-20 13:41:47 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:47 [INFO] - Processing row 2/16
+2026-05-20 13:41:47 [INFO] - Processing row 3/16
+2026-05-20 13:41:47 [INFO] - Processing row 4/16
+2026-05-20 13:41:47 [INFO] - Processing row 5/16
+2026-05-20 13:41:47 [INFO] - Processing row 6/16
+2026-05-20 13:41:47 [INFO] - Processing row 7/16
+2026-05-20 13:41:47 [INFO] - Processing row 8/16
+2026-05-20 13:41:47 [INFO] - Processing row 9/16
+2026-05-20 13:41:47 [INFO] - Processing row 10/16
+2026-05-20 13:41:47 [INFO] - Processing row 11/16
+2026-05-20 13:41:47 [INFO] - Processing row 12/16
+2026-05-20 13:41:47 [INFO] - Processing row 13/16
+2026-05-20 13:41:47 [INFO] - Processing row 14/16
+2026-05-20 13:41:47 [INFO] - Processing row 15/16
+2026-05-20 13:41:47 [INFO] - Processing row 16/16
+2026-05-20 13:41:49 [INFO] - Found 16 rows to process at page: 25
+2026-05-20 13:41:49 [INFO] - Processing row 1/16
+2026-05-20 13:41:49 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:49 [INFO] - Processing row 2/16
+2026-05-20 13:41:49 [INFO] - Processing row 3/16
+2026-05-20 13:41:49 [INFO] - Processing row 4/16
+2026-05-20 13:41:49 [INFO] - Processing row 5/16
+2026-05-20 13:41:49 [INFO] - Processing row 6/16
+2026-05-20 13:41:49 [INFO] - Processing row 7/16
+2026-05-20 13:41:49 [INFO] - Processing row 8/16
+2026-05-20 13:41:49 [INFO] - Processing row 9/16
+2026-05-20 13:41:49 [INFO] - Processing row 10/16
+2026-05-20 13:41:49 [INFO] - Processing row 11/16
+2026-05-20 13:41:49 [INFO] - Processing row 12/16
+2026-05-20 13:41:49 [INFO] - Processing row 13/16
+2026-05-20 13:41:49 [INFO] - Processing row 14/16
+2026-05-20 13:41:49 [INFO] - Processing row 15/16
+2026-05-20 13:41:49 [INFO] - Processing row 16/16
+2026-05-20 13:41:51 [INFO] - Found 16 rows to process at page: 26
+2026-05-20 13:41:51 [INFO] - Processing row 1/16
+2026-05-20 13:41:51 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:51 [INFO] - Processing row 2/16
+2026-05-20 13:41:51 [INFO] - Processing row 3/16
+2026-05-20 13:41:51 [INFO] - Processing row 4/16
+2026-05-20 13:41:51 [INFO] - Processing row 5/16
+2026-05-20 13:41:51 [INFO] - Processing row 6/16
+2026-05-20 13:41:51 [INFO] - Processing row 7/16
+2026-05-20 13:41:51 [INFO] - Processing row 8/16
+2026-05-20 13:41:51 [INFO] - Processing row 9/16
+2026-05-20 13:41:51 [INFO] - Processing row 10/16
+2026-05-20 13:41:51 [INFO] - Processing row 11/16
+2026-05-20 13:41:51 [INFO] - Processing row 12/16
+2026-05-20 13:41:51 [INFO] - Processing row 13/16
+2026-05-20 13:41:51 [INFO] - Processing row 14/16
+2026-05-20 13:41:51 [INFO] - Processing row 15/16
+2026-05-20 13:41:51 [INFO] - Processing row 16/16
+2026-05-20 13:41:53 [INFO] - Found 16 rows to process at page: 27
+2026-05-20 13:41:53 [INFO] - Processing row 1/16
+2026-05-20 13:41:53 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:53 [INFO] - Processing row 2/16
+2026-05-20 13:41:53 [INFO] - Processing row 3/16
+2026-05-20 13:41:53 [INFO] - Processing row 4/16
+2026-05-20 13:41:53 [INFO] - Processing row 5/16
+2026-05-20 13:41:53 [INFO] - Processing row 6/16
+2026-05-20 13:41:53 [INFO] - Processing row 7/16
+2026-05-20 13:41:53 [INFO] - Processing row 8/16
+2026-05-20 13:41:53 [INFO] - Processing row 9/16
+2026-05-20 13:41:53 [INFO] - Processing row 10/16
+2026-05-20 13:41:53 [INFO] - Processing row 11/16
+2026-05-20 13:41:53 [INFO] - Processing row 12/16
+2026-05-20 13:41:53 [INFO] - Processing row 13/16
+2026-05-20 13:41:53 [INFO] - Processing row 14/16
+2026-05-20 13:41:53 [INFO] - Processing row 15/16
+2026-05-20 13:41:53 [INFO] - Processing row 16/16
+2026-05-20 13:41:55 [INFO] - Found 16 rows to process at page: 28
+2026-05-20 13:41:55 [INFO] - Processing row 1/16
+2026-05-20 13:41:55 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:55 [INFO] - Processing row 2/16
+2026-05-20 13:41:55 [INFO] - Processing row 3/16
+2026-05-20 13:41:55 [INFO] - Processing row 4/16
+2026-05-20 13:41:55 [INFO] - Processing row 5/16
+2026-05-20 13:41:55 [INFO] - Processing row 6/16
+2026-05-20 13:41:55 [INFO] - Processing row 7/16
+2026-05-20 13:41:55 [INFO] - Processing row 8/16
+2026-05-20 13:41:55 [INFO] - Processing row 9/16
+2026-05-20 13:41:55 [INFO] - Processing row 10/16
+2026-05-20 13:41:55 [INFO] - Processing row 11/16
+2026-05-20 13:41:55 [INFO] - Processing row 12/16
+2026-05-20 13:41:55 [INFO] - Processing row 13/16
+2026-05-20 13:41:55 [INFO] - Processing row 14/16
+2026-05-20 13:41:55 [INFO] - Processing row 15/16
+2026-05-20 13:41:55 [INFO] - Processing row 16/16
+2026-05-20 13:41:57 [INFO] - Found 16 rows to process at page: 29
+2026-05-20 13:41:57 [INFO] - Processing row 1/16
+2026-05-20 13:41:57 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:41:57 [INFO] - Processing row 2/16
+2026-05-20 13:41:57 [INFO] - Processing row 3/16
+2026-05-20 13:41:57 [INFO] - Processing row 4/16
+2026-05-20 13:41:57 [INFO] - Processing row 5/16
+2026-05-20 13:41:57 [INFO] - Processing row 6/16
+2026-05-20 13:41:57 [INFO] - Processing row 7/16
+2026-05-20 13:41:57 [INFO] - Processing row 8/16
+2026-05-20 13:41:57 [INFO] - Processing row 9/16
+2026-05-20 13:41:57 [INFO] - Processing row 10/16
+2026-05-20 13:41:57 [INFO] - Processing row 11/16
+2026-05-20 13:41:57 [INFO] - Processing row 12/16
+2026-05-20 13:41:57 [INFO] - Processing row 13/16
+2026-05-20 13:41:57 [INFO] - Processing row 14/16
+2026-05-20 13:41:57 [INFO] - Processing row 15/16
+2026-05-20 13:41:57 [INFO] - Processing row 16/16
+2026-05-20 13:42:00 [INFO] - Found 16 rows to process at page: 30
+2026-05-20 13:42:00 [INFO] - Processing row 1/16
+2026-05-20 13:42:00 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:42:00 [INFO] - Processing row 2/16
+2026-05-20 13:42:00 [INFO] - Processing row 3/16
+2026-05-20 13:42:00 [INFO] - Processing row 4/16
+2026-05-20 13:42:00 [INFO] - Processing row 5/16
+2026-05-20 13:42:00 [INFO] - Processing row 6/16
+2026-05-20 13:42:00 [INFO] - Processing row 7/16
+2026-05-20 13:42:00 [INFO] - Processing row 8/16
+2026-05-20 13:42:00 [INFO] - Processing row 9/16
+2026-05-20 13:42:00 [INFO] - Processing row 10/16
+2026-05-20 13:42:00 [INFO] - Processing row 11/16
+2026-05-20 13:42:00 [INFO] - Processing row 12/16
+2026-05-20 13:42:00 [INFO] - Processing row 13/16
+2026-05-20 13:42:00 [INFO] - Processing row 14/16
+2026-05-20 13:42:00 [INFO] - Processing row 15/16
+2026-05-20 13:42:00 [INFO] - Processing row 16/16
+2026-05-20 13:42:02 [INFO] - Found 16 rows to process at page: 31
+2026-05-20 13:42:02 [INFO] - Processing row 1/16
+2026-05-20 13:42:02 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:42:02 [INFO] - Processing row 2/16
+2026-05-20 13:42:02 [INFO] - Processing row 3/16
+2026-05-20 13:42:02 [INFO] - Processing row 4/16
+2026-05-20 13:42:02 [INFO] - Processing row 5/16
+2026-05-20 13:42:02 [INFO] - Processing row 6/16
+2026-05-20 13:42:02 [INFO] - Processing row 7/16
+2026-05-20 13:42:02 [INFO] - Processing row 8/16
+2026-05-20 13:42:02 [INFO] - Processing row 9/16
+2026-05-20 13:42:02 [INFO] - Processing row 10/16
+2026-05-20 13:42:02 [INFO] - Processing row 11/16
+2026-05-20 13:42:02 [INFO] - Processing row 12/16
+2026-05-20 13:42:02 [INFO] - Processing row 13/16
+2026-05-20 13:42:02 [INFO] - Processing row 14/16
+2026-05-20 13:42:02 [INFO] - Processing row 15/16
+2026-05-20 13:42:02 [INFO] - Processing row 16/16
+2026-05-20 13:42:04 [INFO] - Found 16 rows to process at page: 32
+2026-05-20 13:42:04 [INFO] - Processing row 1/16
+2026-05-20 13:42:04 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:42:04 [INFO] - Processing row 2/16
+2026-05-20 13:42:04 [INFO] - Processing row 3/16
+2026-05-20 13:42:04 [INFO] - Processing row 4/16
+2026-05-20 13:42:04 [INFO] - Processing row 5/16
+2026-05-20 13:42:04 [INFO] - Processing row 6/16
+2026-05-20 13:42:04 [INFO] - Processing row 7/16
+2026-05-20 13:42:04 [INFO] - Processing row 8/16
+2026-05-20 13:42:04 [INFO] - Processing row 9/16
+2026-05-20 13:42:04 [INFO] - Processing row 10/16
+2026-05-20 13:42:04 [INFO] - Processing row 11/16
+2026-05-20 13:42:04 [INFO] - Processing row 12/16
+2026-05-20 13:42:04 [INFO] - Processing row 13/16
+2026-05-20 13:42:04 [INFO] - Processing row 14/16
+2026-05-20 13:42:04 [INFO] - Processing row 15/16
+2026-05-20 13:42:04 [INFO] - Processing row 16/16
+2026-05-20 13:42:06 [INFO] - Found 16 rows to process at page: 33
+2026-05-20 13:42:06 [INFO] - Processing row 1/16
+2026-05-20 13:42:06 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:42:06 [INFO] - Processing row 2/16
+2026-05-20 13:42:06 [INFO] - Processing row 3/16
+2026-05-20 13:42:06 [INFO] - Processing row 4/16
+2026-05-20 13:42:06 [INFO] - Processing row 5/16
+2026-05-20 13:42:06 [INFO] - Processing row 6/16
+2026-05-20 13:42:06 [INFO] - Processing row 7/16
+2026-05-20 13:42:06 [INFO] - Processing row 8/16
+2026-05-20 13:42:06 [INFO] - Processing row 9/16
+2026-05-20 13:42:06 [INFO] - Processing row 10/16
+2026-05-20 13:42:06 [INFO] - Processing row 11/16
+2026-05-20 13:42:06 [INFO] - Processing row 12/16
+2026-05-20 13:42:06 [INFO] - Processing row 13/16
+2026-05-20 13:42:06 [INFO] - Processing row 14/16
+2026-05-20 13:42:06 [INFO] - Processing row 15/16
+2026-05-20 13:42:06 [INFO] - Processing row 16/16
+2026-05-20 13:42:08 [INFO] - Found 16 rows to process at page: 34
+2026-05-20 13:42:08 [INFO] - Processing row 1/16
+2026-05-20 13:42:08 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:42:08 [INFO] - Processing row 2/16
+2026-05-20 13:42:08 [INFO] - Processing row 3/16
+2026-05-20 13:42:08 [INFO] - Processing row 4/16
+2026-05-20 13:42:08 [INFO] - Processing row 5/16
+2026-05-20 13:42:08 [INFO] - Processing row 6/16
+2026-05-20 13:42:08 [INFO] - Processing row 7/16
+2026-05-20 13:42:08 [INFO] - Processing row 8/16
+2026-05-20 13:42:08 [INFO] - Processing row 9/16
+2026-05-20 13:42:08 [INFO] - Processing row 10/16
+2026-05-20 13:42:08 [INFO] - Processing row 11/16
+2026-05-20 13:42:08 [INFO] - Processing row 12/16
+2026-05-20 13:42:08 [INFO] - Processing row 13/16
+2026-05-20 13:42:08 [INFO] - Processing row 14/16
+2026-05-20 13:42:08 [INFO] - Processing row 15/16
+2026-05-20 13:42:08 [INFO] - Processing row 16/16
+2026-05-20 13:42:10 [INFO] - Found 16 rows to process at page: 35
+2026-05-20 13:42:10 [INFO] - Processing row 1/16
+2026-05-20 13:42:10 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:42:10 [INFO] - Processing row 2/16
+2026-05-20 13:42:10 [INFO] - Processing row 3/16
+2026-05-20 13:42:10 [INFO] - Processing row 4/16
+2026-05-20 13:42:10 [INFO] - Processing row 5/16
+2026-05-20 13:42:10 [INFO] - Processing row 6/16
+2026-05-20 13:42:10 [INFO] - Processing row 7/16
+2026-05-20 13:42:10 [INFO] - Processing row 8/16
+2026-05-20 13:42:10 [INFO] - Processing row 9/16
+2026-05-20 13:42:10 [INFO] - Processing row 10/16
+2026-05-20 13:42:10 [INFO] - Processing row 11/16
+2026-05-20 13:42:10 [INFO] - Processing row 12/16
+2026-05-20 13:42:10 [INFO] - Processing row 13/16
+2026-05-20 13:42:10 [INFO] - Processing row 14/16
+2026-05-20 13:42:10 [INFO] - Processing row 15/16
+2026-05-20 13:42:10 [INFO] - Processing row 16/16
+2026-05-20 13:42:12 [INFO] - Found 16 rows to process at page: 36
+2026-05-20 13:42:12 [INFO] - Processing row 1/16
+2026-05-20 13:42:12 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:42:12 [INFO] - Processing row 2/16
+2026-05-20 13:42:12 [INFO] - Processing row 3/16
+2026-05-20 13:42:12 [INFO] - Processing row 4/16
+2026-05-20 13:42:12 [INFO] - Processing row 5/16
+2026-05-20 13:42:12 [INFO] - Processing row 6/16
+2026-05-20 13:42:12 [INFO] - Processing row 7/16
+2026-05-20 13:42:12 [INFO] - Processing row 8/16
+2026-05-20 13:42:12 [INFO] - Processing row 9/16
+2026-05-20 13:42:12 [INFO] - Processing row 10/16
+2026-05-20 13:42:12 [INFO] - Processing row 11/16
+2026-05-20 13:42:12 [INFO] - Processing row 12/16
+2026-05-20 13:42:12 [INFO] - Processing row 13/16
+2026-05-20 13:42:12 [INFO] - Processing row 14/16
+2026-05-20 13:42:12 [INFO] - Processing row 15/16
+2026-05-20 13:42:12 [INFO] - Processing row 16/16
+2026-05-20 13:42:14 [INFO] - Found 16 rows to process at page: 37
+2026-05-20 13:42:14 [INFO] - Processing row 1/16
+2026-05-20 13:42:14 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:42:14 [INFO] - Processing row 2/16
+2026-05-20 13:42:14 [INFO] - Processing row 3/16
+2026-05-20 13:42:14 [INFO] - Processing row 4/16
+2026-05-20 13:42:14 [INFO] - Processing row 5/16
+2026-05-20 13:42:14 [INFO] - Processing row 6/16
+2026-05-20 13:42:14 [INFO] - Processing row 7/16
+2026-05-20 13:42:14 [INFO] - Processing row 8/16
+2026-05-20 13:42:14 [INFO] - Processing row 9/16
+2026-05-20 13:42:14 [INFO] - Processing row 10/16
+2026-05-20 13:42:14 [INFO] - Processing row 11/16
+2026-05-20 13:42:14 [INFO] - Processing row 12/16
+2026-05-20 13:42:14 [INFO] - Processing row 13/16
+2026-05-20 13:42:14 [INFO] - Processing row 14/16
+2026-05-20 13:42:14 [INFO] - Processing row 15/16
+2026-05-20 13:42:14 [INFO] - Processing row 16/16
+2026-05-20 13:42:16 [INFO] - Found 16 rows to process at page: 38
+2026-05-20 13:42:16 [INFO] - Processing row 1/16
+2026-05-20 13:42:16 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:42:16 [INFO] - Processing row 2/16
+2026-05-20 13:42:16 [INFO] - Processing row 3/16
+2026-05-20 13:42:16 [INFO] - Processing row 4/16
+2026-05-20 13:42:16 [INFO] - Processing row 5/16
+2026-05-20 13:42:16 [INFO] - Processing row 6/16
+2026-05-20 13:42:16 [INFO] - Processing row 7/16
+2026-05-20 13:42:16 [INFO] - Processing row 8/16
+2026-05-20 13:42:16 [INFO] - Processing row 9/16
+2026-05-20 13:42:16 [INFO] - Processing row 10/16
+2026-05-20 13:42:16 [INFO] - Processing row 11/16
+2026-05-20 13:42:16 [INFO] - Processing row 12/16
+2026-05-20 13:42:16 [INFO] - Processing row 13/16
+2026-05-20 13:42:16 [INFO] - Processing row 14/16
+2026-05-20 13:42:16 [INFO] - Processing row 15/16
+2026-05-20 13:42:16 [INFO] - Processing row 16/16
+2026-05-20 13:42:18 [INFO] - Found 16 rows to process at page: 39
+2026-05-20 13:42:18 [INFO] - Processing row 1/16
+2026-05-20 13:42:18 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:42:18 [INFO] - Processing row 2/16
+2026-05-20 13:42:18 [INFO] - Processing row 3/16
+2026-05-20 13:42:18 [INFO] - Processing row 4/16
+2026-05-20 13:42:18 [INFO] - Processing row 5/16
+2026-05-20 13:42:18 [INFO] - Processing row 6/16
+2026-05-20 13:42:18 [INFO] - Processing row 7/16
+2026-05-20 13:42:18 [INFO] - Processing row 8/16
+2026-05-20 13:42:18 [INFO] - Processing row 9/16
+2026-05-20 13:42:18 [INFO] - Processing row 10/16
+2026-05-20 13:42:18 [INFO] - Processing row 11/16
+2026-05-20 13:42:18 [INFO] - Processing row 12/16
+2026-05-20 13:42:18 [INFO] - Processing row 13/16
+2026-05-20 13:42:18 [INFO] - Processing row 14/16
+2026-05-20 13:42:18 [INFO] - Processing row 15/16
+2026-05-20 13:42:18 [INFO] - Processing row 16/16
+2026-05-20 13:42:20 [INFO] - Found 16 rows to process at page: 40
+2026-05-20 13:42:20 [INFO] - Processing row 1/16
+2026-05-20 13:42:20 [INFO] - Skipping row 1 missing required cells
+2026-05-20 13:42:20 [INFO] - Processing row 2/16
+2026-05-20 13:42:20 [INFO] - Processing row 3/16
+2026-05-20 13:42:20 [INFO] - Processing row 4/16
+2026-05-20 13:42:20 [INFO] - Processing row 5/16
+2026-05-20 13:42:20 [INFO] - Processing row 6/16
+2026-05-20 13:42:20 [INFO] - Processing row 7/16
+2026-05-20 13:42:20 [INFO] - Processing row 8/16
+2026-05-20 13:42:20 [INFO] - Processing row 9/16
+2026-05-20 13:42:20 [INFO] - Processing row 10/16
+2026-05-20 13:42:20 [INFO] - Processing row 11/16
+2026-05-20 13:42:20 [INFO] - Processing row 12/16
+2026-05-20 13:42:20 [INFO] - Processing row 13/16
+2026-05-20 13:42:20 [INFO] - Processing row 14/16
+2026-05-20 13:42:20 [INFO] - Stopping scrape — agm_date 2026-05-19 is before end_date 2026-05-20
+2026-05-20 13:42:20 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 594
+2026-05-20 13:42:20 [INFO] - Data to upsert: ESIP.JK | date: 2026-06-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: BATA.JK | date: 2026-06-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: ANJT.JK | date: 2026-06-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: LEAD.JK | date: 2026-06-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: MHKI.JK | date: 2026-06-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: BAPI.JK | date: 2026-06-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: MTEL.JK | date: 2026-06-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: PNIN.JK | date: 2026-06-04
+2026-05-20 13:42:20 [INFO] - Data to upsert: PNLF.JK | date: 2026-06-04
+2026-05-20 13:42:20 [INFO] - Data to upsert: ATAP.JK | date: 2026-06-04
+2026-05-20 13:42:20 [INFO] - Data to upsert: AMFG.JK | date: 2026-06-03
+2026-05-20 13:42:20 [INFO] - Data to upsert: RMKE.JK | date: 2026-06-03
+2026-05-20 13:42:20 [INFO] - Data to upsert: LABS.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: IPAC.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: MNCN.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: VOKS.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: LSIP.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: INAI.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: BBHI.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: CARS.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: BKSW.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: PIPA.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: SATU.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: HERO.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: DADA.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: LION.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: SIMP.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: BAIK.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: MRAT.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: CASA.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: SMMA.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: DLTA.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: BSIM.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: UFOE.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: FIRE.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: BBKP.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: YUPI.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: TIRA.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: ALMI.JK | date: 2026-06-02
+2026-05-20 13:42:20 [INFO] - Data to upsert: DOID.JK | date: 2026-06-01
+2026-05-20 13:42:20 [INFO] - Data to upsert: POLY.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: MAPI.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: EMDE.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: PPRE.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: KOIN.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: MGLV.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: FILM.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: NEST.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: PURA.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: BREN.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: KBLI.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: FIMP.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: JECC.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: PDPP.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: KIAS.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: BSWD.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: MPOW.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: BPFI.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: KOBX.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: SCPI.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: SURE.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: BSML.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: SLIS.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: KREN.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: PMJS.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: MGNA.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: MAPA.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: BIPP.JK | date: 2026-05-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: PTIS.JK | date: 2026-05-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: SHID.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: IATA.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: DOOH.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: SUNI.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: OMRE.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: LAPD.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: SURI.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: SSIA.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: NIRO.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: PSDN.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: CITY.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: MEDS.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: DMND.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: CTTH.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: BABP.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: CLEO.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: SMDM.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: AYAM.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: TRGU.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: PORT.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: HOKI.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: PCAR.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: CMPP.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: TALF.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: MBSS.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: TKIM.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: ERAL.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: TRIM.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: INKP.JK | date: 2026-05-26
+2026-05-20 13:42:20 [INFO] - Data to upsert: DMMX.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: CLPI.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: PSAT.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: NFCX.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: PNBN.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: STRK.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: ADES.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: BIRD.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: BTEK.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: BNBA.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: ALII.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: MAPB.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: BLTZ.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: SDMU.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: INPP.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: JARR.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: JIHD.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: ASSA.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: SOLA.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: ELIT.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: BACA.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: VTNY.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: BSDE.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: DOSS.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: TRUK.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: UDNG.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: DUTI.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: GRIA.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: AMAR.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: DART.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: SWID.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: SMLE.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: BESS.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: TBLA.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: FWCT.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: GULA.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: BRRC.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: WOMF.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: IDPR.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: CARE.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: WOOD.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: PTMR.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: PTMP.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: APIC.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: KKGI.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: OKAS.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: BUKK.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: BEST.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: ARTA.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: LMAX.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: IIKP.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: WGSH.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: OPMS.JK | date: 2026-05-25
+2026-05-20 13:42:20 [INFO] - Data to upsert: CGAS.JK | date: 2026-05-23
+2026-05-20 13:42:20 [INFO] - Data to upsert: MKNT.JK | date: 2026-05-22
+2026-05-20 13:42:20 [INFO] - Data to upsert: BOGA.JK | date: 2026-05-22
+2026-05-20 13:42:20 [INFO] - Data to upsert: TAMA.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: RSCH.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: CPRO.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: PURI.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: LAND.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: PJHB.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: RCCC.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: IBFN.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: UCID.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: HOMI.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: JAST.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: BPTR.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: COIN.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: SONA.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: BSSR.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: WINE.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: ITIC.JK | date: 2026-05-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: AKSI.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: FPNI.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: BNBR.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: NOBU.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: ESTA.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: NSSS.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: BOAT.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: COCO.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: BCIP.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: TINS.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: EPAC.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: PLAN.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: TBMS.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: KOKA.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: CAKK.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: MCOR.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: RODA.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: GLVA.JK | date: 2026-05-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: ASHA.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: GDYR.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: MKPI.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: JGLE.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: FLMC.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: HBAT.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: OLIV.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: MBMA.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: AGII.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: ENAK.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: TRUE.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: BAPA.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: PTBA.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: PWON.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: BUVA.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: SRAJ.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: SNLK.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: GSMF.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: PYFA.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: BMHS.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: MDIY.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: MORA.JK | date: 2026-05-19
+2026-05-20 13:42:20 [INFO] - Data to upsert: MKTR.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: KIOS.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: SAPX.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: ARGO.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: KSIX.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: PNBS.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: BYAN.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: SWAT.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: FASW.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: INOV.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: OBMD.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: HADE.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: TFCO.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: ECII.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: CFIN.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: ASBI.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: IMPC.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: GZCO.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: DILD.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: MLBI.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: TRIN.JK | date: 2026-05-18
+2026-05-20 13:42:20 [INFO] - Data to upsert: GDST.JK | date: 2026-05-15
+2026-05-20 13:42:20 [INFO] - Data to upsert: DAAZ.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: ASPR.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: BBMD.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: AMAN.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: SCCO.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: HATM.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: JSPT.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: SCNP.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: OMED.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: KBLM.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: TLKM.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: TBIG.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: DPNS.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: MIKA.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: SKBM.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: MTDL.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: LAJU.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: IGAR.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: BLES.JK | date: 2026-05-13
+2026-05-20 13:42:20 [INFO] - Data to upsert: BPII.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: ATLA.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: PPRO.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: ENRG.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: BLUE.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: YELO.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: BANK.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: BVIC.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: PBRX.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: IDEA.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: PEHA.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: ENZO.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: TSPC.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: AMRT.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: JRPT.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: MAXI.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: SMGA.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: MEDC.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: CBDK.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: MUTU.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: PUDP.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: MIDI.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: KIJA.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: GHON.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: NAYZ.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: DGNS.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: BAJA.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: HRME.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: GOLD.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: ISEA.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: STTP.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: RLCO.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: SEMA.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: IRRA.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: IFII.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: WBSA.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: AMIN.JK | date: 2026-05-12
+2026-05-20 13:42:20 [INFO] - Data to upsert: AGRS.JK | date: 2026-05-11
+2026-05-20 13:42:20 [INFO] - Data to upsert: AKPI.JK | date: 2026-05-11
+2026-05-20 13:42:20 [INFO] - Data to upsert: PSAB.JK | date: 2026-05-11
+2026-05-20 13:42:20 [INFO] - Data to upsert: KLIN.JK | date: 2026-05-11
+2026-05-20 13:42:20 [INFO] - Data to upsert: BALI.JK | date: 2026-05-11
+2026-05-20 13:42:20 [INFO] - Data to upsert: JKON.JK | date: 2026-05-11
+2026-05-20 13:42:20 [INFO] - Data to upsert: LINK.JK | date: 2026-05-11
+2026-05-20 13:42:20 [INFO] - Data to upsert: PKPK.JK | date: 2026-05-11
+2026-05-20 13:42:20 [INFO] - Data to upsert: HRTA.JK | date: 2026-05-11
+2026-05-20 13:42:20 [INFO] - Data to upsert: GOLF.JK | date: 2026-05-11
+2026-05-20 13:42:20 [INFO] - Data to upsert: TMAS.JK | date: 2026-05-11
+2026-05-20 13:42:20 [INFO] - Data to upsert: RANC.JK | date: 2026-05-11
+2026-05-20 13:42:20 [INFO] - Data to upsert: KAEF.JK | date: 2026-05-11
+2026-05-20 13:42:20 [INFO] - Data to upsert: AREA.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: PEVE.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: GPSO.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: SPTO.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: IOTF.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: VAST.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: EURO.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: KAYU.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: MERI.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: ADMG.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: SINI.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: BOLA.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: RSGK.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: TOTO.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: CSAP.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: ERTX.JK | date: 2026-05-08
+2026-05-20 13:42:20 [INFO] - Data to upsert: SMCB.JK | date: 2026-05-07
+2026-05-20 13:42:20 [INFO] - Data to upsert: PNSE.JK | date: 2026-05-07
+2026-05-20 13:42:20 [INFO] - Data to upsert: SDRA.JK | date: 2026-05-07
+2026-05-20 13:42:20 [INFO] - Data to upsert: APLI.JK | date: 2026-05-07
+2026-05-20 13:42:20 [INFO] - Data to upsert: SDPC.JK | date: 2026-05-07
+2026-05-20 13:42:20 [INFO] - Data to upsert: ELSA.JK | date: 2026-05-07
+2026-05-20 13:42:20 [INFO] - Data to upsert: PGUN.JK | date: 2026-05-07
+2026-05-20 13:42:20 [INFO] - Data to upsert: LOPI.JK | date: 2026-05-06
+2026-05-20 13:42:20 [INFO] - Data to upsert: NRCA.JK | date: 2026-05-06
+2026-05-20 13:42:20 [INFO] - Data to upsert: PSGO.JK | date: 2026-05-06
+2026-05-20 13:42:20 [INFO] - Data to upsert: WMPP.JK | date: 2026-05-06
+2026-05-20 13:42:20 [INFO] - Data to upsert: MLIA.JK | date: 2026-05-06
+2026-05-20 13:42:20 [INFO] - Data to upsert: LUCK.JK | date: 2026-05-06
+2026-05-20 13:42:20 [INFO] - Data to upsert: AEGS.JK | date: 2026-05-06
+2026-05-20 13:42:20 [INFO] - Data to upsert: GUNA.JK | date: 2026-05-06
+2026-05-20 13:42:20 [INFO] - Data to upsert: JTPE.JK | date: 2026-05-06
+2026-05-20 13:42:20 [INFO] - Data to upsert: INCI.JK | date: 2026-05-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: RGAS.JK | date: 2026-05-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: MAIN.JK | date: 2026-05-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: UNVR.JK | date: 2026-05-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: IBST.JK | date: 2026-05-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: GJTL.JK | date: 2026-05-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: SOFA.JK | date: 2026-05-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: CYBR.JK | date: 2026-05-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: PGUN.JK | date: 2026-05-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: CRSN.JK | date: 2026-05-05
+2026-05-20 13:42:20 [INFO] - Data to upsert: MBAP.JK | date: 2026-05-04
+2026-05-20 13:42:20 [INFO] - Data to upsert: SUPR.JK | date: 2026-05-04
+2026-05-20 13:42:20 [INFO] - Data to upsert: BMAS.JK | date: 2026-05-04
+2026-05-20 13:42:20 [INFO] - Data to upsert: BBSI.JK | date: 2026-05-04
+2026-05-20 13:42:20 [INFO] - Data to upsert: LFLO.JK | date: 2026-05-04
+2026-05-20 13:42:20 [INFO] - Data to upsert: AYLS.JK | date: 2026-05-04
+2026-05-20 13:42:20 [INFO] - Data to upsert: INCO.JK | date: 2026-05-04
+2026-05-20 13:42:20 [INFO] - Data to upsert: CENT.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: MTEL.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: AXIO.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: MERI.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: BGTG.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: KRYA.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: LPLI.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: MYTX.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: MTLA.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: LPPS.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: MPMX.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: BEEF.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: CTBN.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: APLN.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: BLTA.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: BEEF.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: KOCI.JK | date: 2026-04-30
+2026-05-20 13:42:20 [INFO] - Data to upsert: SGER.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: CBRE.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: CSRA.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: ABBA.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: MERK.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: AADI.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: ABDA.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: PTMP.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: RBMS.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: TAPG.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: NZIA.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: MAHA.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: MSTI.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: SMAR.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: SOSS.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: PTMR.JK | date: 2026-04-29
+2026-05-20 13:42:20 [INFO] - Data to upsert: MYOH.JK | date: 2026-04-28
+2026-05-20 13:42:20 [INFO] - Data to upsert: RMKE.JK | date: 2026-04-28
+2026-05-20 13:42:20 [INFO] - Data to upsert: KLBF.JK | date: 2026-04-28
+2026-05-20 13:42:20 [INFO] - Data to upsert: SMKL.JK | date: 2026-04-28
+2026-05-20 13:42:20 [INFO] - Data to upsert: UVCR.JK | date: 2026-04-28
+2026-05-20 13:42:20 [INFO] - Data to upsert: APEX.JK | date: 2026-04-28
+2026-05-20 13:42:20 [INFO] - Data to upsert: KINO.JK | date: 2026-04-28
+2026-05-20 13:42:20 [INFO] - Data to upsert: STAA.JK | date: 2026-04-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: JSMR.JK | date: 2026-04-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: NELY.JK | date: 2026-04-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: TNCA.JK | date: 2026-04-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: MASB.JK | date: 2026-04-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: MTPS.JK | date: 2026-04-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: TRJA.JK | date: 2026-04-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: AGRO.JK | date: 2026-04-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: BFIN.JK | date: 2026-04-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: ASRM.JK | date: 2026-04-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: CPIN.JK | date: 2026-04-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: EPMT.JK | date: 2026-04-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: AHAP.JK | date: 2026-04-27
+2026-05-20 13:42:20 [INFO] - Data to upsert: PRAY.JK | date: 2026-04-24
+2026-05-20 13:42:20 [INFO] - Data to upsert: INRU.JK | date: 2026-04-22
+2026-05-20 13:42:20 [INFO] - Data to upsert: EMTK.JK | date: 2026-04-22
+2026-05-20 13:42:20 [INFO] - Data to upsert: DEWA.JK | date: 2026-04-22
+2026-05-20 13:42:20 [INFO] - Data to upsert: TOOL.JK | date: 2026-04-21
+2026-05-20 13:42:20 [INFO] - Data to upsert: EXCL.JK | date: 2026-04-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: IBST.JK | date: 2026-04-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: ZONE.JK | date: 2026-04-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: TOWR.JK | date: 2026-04-20
+2026-05-20 13:42:20 [INFO] - Data to upsert: RATU.JK | date: 2026-04-14
+2026-05-20 13:42:20 [INFO] - Data to upsert: INDY.JK | date: 2026-04-07
+2026-05-20 13:43:27 [WARNING] - Skipping row due to idx_rups_pk conflict: BPTR.JK | recording_date=2026-05-21 already used by agm_date=2026-06-15
+2026-05-20 13:44:40 [WARNING] - Skipping row due to idx_rups_pk conflict: AYLS.JK | recording_date=2026-05-04 already used by agm_date=2026-05-29
+2026-05-20 13:44:42 [WARNING] - Skipping row due to idx_rups_pk conflict: MERI.JK | recording_date=2026-04-30 already used by agm_date=2026-05-26
+2026-05-20 13:44:45 [WARNING] - Skipping row due to idx_rups_pk conflict: BEEF.JK | recording_date=2026-04-30 already used by agm_date=2026-05-25
+2026-05-20 13:45:03 [WARNING] - Skipping row due to idx_rups_pk conflict: DEWA.JK | recording_date=2026-04-22 already used by agm_date=2026-05-18
+2026-05-20 13:45:05 [WARNING] - Skipping row due to idx_rups_pk conflict: RATU.JK | recording_date=2026-04-14 already used by agm_date=2026-05-20
+2026-05-20 13:45:06 [INFO] - Successfully upserted 409 data to database
