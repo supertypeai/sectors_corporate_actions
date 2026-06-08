@@ -3,7 +3,7 @@ from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from supabase import create_client, Client
 
-from rups_place_helper import clean_agm_place, detect_agm_place_desc
+from rups_place_helper import clean_agm_place, detect_agm_place_desc, resolve_place_desc
 
 import pandas as pd
 import requests
@@ -277,14 +277,7 @@ def rups_scraper(end_date: str = None) -> pd.DataFrame | str:
                 if value not in unique_place_desc_values:
                     unique_place_desc_values.append(value)
 
-            if len(unique_place_desc_values) > 1:
-                base["agm_place_desc"] = "; ".join(
-                    [f"({value})" for value in unique_place_desc_values]
-                )
-            elif len(unique_place_desc_values) == 1:
-                base["agm_place_desc"] = unique_place_desc_values[0]
-            else:
-                base["agm_place_desc"] = None
+            base["agm_place_desc"] = resolve_place_desc(unique_place_desc_values)
 
             place_values = [
                 value
@@ -297,14 +290,7 @@ def rups_scraper(end_date: str = None) -> pd.DataFrame | str:
                 if value not in unique_place_values:
                     unique_place_values.append(value)
 
-            if len(unique_place_values) > 1:
-                base["agm_place"] = "; ".join(
-                    [f"({value})" for value in unique_place_values]
-                )
-            elif len(unique_place_values) == 1:
-                base["agm_place"] = unique_place_values[0]
-            else:
-                base["agm_place"] = None
+            base["agm_place"] = unique_place_values[0] if unique_place_values else None
 
             merged_rows.append(base.to_dict())
 

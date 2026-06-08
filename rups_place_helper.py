@@ -325,7 +325,33 @@ def is_hybrid(agm_place: str) -> bool:
     return explicit_hybrid or implicit_hybrid
 
 
-def detect_agm_place_desc(agm_place: str) -> str: 
+def resolve_place_desc(values: list) -> str | None:
+    """
+    Collapse a list of unique agm_place_desc values into a single canonical value.
+
+    Priority:
+      Dibatalkan > Hybrid (explicit or Online+Onsite) > Public expose > Online > Onsite
+    """
+    if not values:
+        return None
+    if len(values) == 1:
+        return values[0]
+
+    s = set(values)
+    if 'Dibatalkan' in s:
+        return 'Dibatalkan'
+    if 'Hybrid' in s or ('Online' in s and 'Onsite' in s):
+        return 'Hybrid'
+    if 'Public expose' in s:
+        return 'Public expose'
+    if 'Online' in s:
+        return 'Online'
+    if 'Onsite' in s:
+        return 'Onsite'
+    return values[0]
+
+
+def detect_agm_place_desc(agm_place: str) -> str:
     if is_public_expose(agm_place):
         return 'Public expose'
 
