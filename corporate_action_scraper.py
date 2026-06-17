@@ -128,7 +128,7 @@ def rups_scraper(end_date: str = None) -> pd.DataFrame | str:
         2. agm_date >= end_date (only upcoming AGMs)
         3. Deduplicates by symbol + agm_date, keeping the earliest recording_date
         4. Detects and classifies agm_place_desc from agm_place into one of:
-           Public expose, Dibatalkan, Online, Hybrid, Onsite, or None
+           Public expose, Cancelled, Online, Hybrid, Onsite, or None
     Args:
         end_date (str, optional): The end date in "YYYY-MM-DD" format. Defaults to today.
 

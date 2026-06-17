@@ -330,7 +330,7 @@ def resolve_place_desc(values: list) -> str | None:
     Collapse a list of unique agm_place_desc values into a single canonical value.
 
     Priority:
-      Dibatalkan > Hybrid (explicit or Online+Onsite) > Public expose > Online > Onsite
+      Cancelled > Hybrid (explicit or Online+Onsite) > Public expose > Online > Onsite
     """
     if not values:
         return None
@@ -338,8 +338,8 @@ def resolve_place_desc(values: list) -> str | None:
         return values[0]
 
     s = set(values)
-    if 'Dibatalkan' in s:
-        return 'Dibatalkan'
+    if 'Cancelled' in s:
+        return 'Cancelled'
     if 'Hybrid' in s or ('Online' in s and 'Onsite' in s):
         return 'Hybrid'
     if 'Public expose' in s:
@@ -356,7 +356,7 @@ def detect_agm_place_desc(agm_place: str) -> str:
         return 'Public expose'
 
     elif 'dibatalkan' in (agm_place or '').lower():
-        return 'Dibatalkan'
+        return 'Cancelled'
 
     elif ONLINE_OVERRIDE_PATTERN.search(agm_place or ''):
         return 'Online'
