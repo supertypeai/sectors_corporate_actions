@@ -54318,3 +54318,9 @@
 2026-06-19 14:17:48 [WARNING] - Skipping row due to idx_rups_pk conflict: KRYA.JK | recording_date=2026-04-30 already used by agm_date=2026-05-26
 2026-06-19 14:17:49 [WARNING] - Skipping row due to idx_rups_pk conflict: DEWA.JK | recording_date=2026-04-22 already used by agm_date=2026-05-18
 2026-06-19 14:17:49 [INFO] - Successfully upserted 221 data to database
+2026-06-19 19:42:44 [INFO] - Init Global Variable
+2026-06-19 19:42:45 [INFO] - Start scraping warrant for cutoff date: 2026-06-12
+2026-06-19 19:42:46 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 2
+2026-06-19 19:42:46 [INFO] - Data to upsert: PEGE.JK | date: 2026-07-14
+2026-06-19 19:42:46 [INFO] - Data to upsert: PYFA.JK | date: 2026-07-10
+2026-06-19 19:42:47 [INFO] - Successfully upserted 2 data to database
