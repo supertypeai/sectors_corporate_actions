@@ -56368,3 +56368,8 @@
 2026-06-26 13:14:27 [WARNING] - Skipping row due to idx_rups_pk conflict: KRYA.JK | recording_date=2026-04-30 already used by agm_date=2026-05-26
 2026-06-26 13:14:27 [WARNING] - Skipping row due to idx_rups_pk conflict: DEWA.JK | recording_date=2026-04-22 already used by agm_date=2026-05-18
 2026-06-26 13:14:28 [INFO] - Successfully upserted 122 data to database
+2026-06-26 19:41:07 [INFO] - Init Global Variable
+2026-06-26 19:41:08 [INFO] - Start scraping warrant for cutoff date: 2026-06-19
+2026-06-26 19:41:09 [ERROR] - Network error on page 1: 415 Client Error: Unsupported Media Type for url: https://www.new.sahamidx.com/?/waran/page/1. Stopping.
+2026-06-26 19:41:09 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-06-26 19:41:09 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
