@@ -57205,3 +57205,8 @@
 2026-07-02 12:59:10 [WARNING] - Skipping row due to idx_rups_pk conflict: WOMF.JK | recording_date=2026-05-25 already used by agm_date=2026-06-19
 2026-07-02 12:59:11 [WARNING] - Skipping row due to idx_rups_pk conflict: KRYA.JK | recording_date=2026-04-30 already used by agm_date=2026-05-26
 2026-07-02 12:59:11 [INFO] - Successfully upserted 24 data to database
+2026-07-03 19:12:22 [INFO] - Init Global Variable
+2026-07-03 19:12:22 [INFO] - Start scraping warrant for cutoff date: 2026-06-26
+2026-07-03 19:12:24 [ERROR] - Network error on page 1: 500 Server Error: Internal Server Error for url: https://www.new.sahamidx.com/?/waran/page/1. Stopping.
+2026-07-03 19:12:24 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-07-03 19:12:24 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
