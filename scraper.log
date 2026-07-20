@@ -58563,3 +58563,147 @@
 2026-07-19 12:01:00 [WARNING] - Skipping row due to idx_rups_pk conflict: WOMF.JK | recording_date=2026-05-25 already used by agm_date=2026-06-19
 2026-07-19 12:01:01 [WARNING] - Skipping row due to idx_rups_pk conflict: KRYA.JK | recording_date=2026-04-30 already used by agm_date=2026-05-26
 2026-07-19 12:01:01 [INFO] - Successfully upserted 50 data to database
+2026-07-20 13:08:01 [INFO] - Init Global Variable
+2026-07-20 13:08:02 [INFO] - Start scraping rups for end date: 2026-07-20
+2026-07-20 13:08:03 [INFO] - Found 16 rows to process at page: 1
+2026-07-20 13:08:03 [INFO] - Processing row 1/16
+2026-07-20 13:08:03 [INFO] - Skipping row 1 missing required cells
+2026-07-20 13:08:03 [INFO] - Processing row 2/16
+2026-07-20 13:08:03 [INFO] - Processing row 3/16
+2026-07-20 13:08:03 [INFO] - Processing row 4/16
+2026-07-20 13:08:03 [INFO] - Processing row 5/16
+2026-07-20 13:08:03 [INFO] - Processing row 6/16
+2026-07-20 13:08:03 [INFO] - Processing row 7/16
+2026-07-20 13:08:03 [INFO] - Processing row 8/16
+2026-07-20 13:08:03 [INFO] - Processing row 9/16
+2026-07-20 13:08:03 [INFO] - Processing row 10/16
+2026-07-20 13:08:03 [INFO] - Processing row 11/16
+2026-07-20 13:08:03 [INFO] - Processing row 12/16
+2026-07-20 13:08:03 [INFO] - Processing row 13/16
+2026-07-20 13:08:03 [INFO] - Processing row 14/16
+2026-07-20 13:08:03 [INFO] - Processing row 15/16
+2026-07-20 13:08:03 [INFO] - Processing row 16/16
+2026-07-20 13:08:06 [INFO] - Found 16 rows to process at page: 2
+2026-07-20 13:08:06 [INFO] - Processing row 1/16
+2026-07-20 13:08:06 [INFO] - Skipping row 1 missing required cells
+2026-07-20 13:08:06 [INFO] - Processing row 2/16
+2026-07-20 13:08:06 [INFO] - Processing row 3/16
+2026-07-20 13:08:06 [INFO] - Processing row 4/16
+2026-07-20 13:08:06 [INFO] - Processing row 5/16
+2026-07-20 13:08:06 [INFO] - Processing row 6/16
+2026-07-20 13:08:06 [INFO] - Processing row 7/16
+2026-07-20 13:08:06 [INFO] - Processing row 8/16
+2026-07-20 13:08:06 [INFO] - Processing row 9/16
+2026-07-20 13:08:06 [INFO] - Processing row 10/16
+2026-07-20 13:08:06 [INFO] - Processing row 11/16
+2026-07-20 13:08:06 [INFO] - Processing row 12/16
+2026-07-20 13:08:06 [INFO] - Processing row 13/16
+2026-07-20 13:08:06 [INFO] - Processing row 14/16
+2026-07-20 13:08:06 [INFO] - Processing row 15/16
+2026-07-20 13:08:06 [INFO] - Processing row 16/16
+2026-07-20 13:08:08 [INFO] - Found 16 rows to process at page: 3
+2026-07-20 13:08:08 [INFO] - Processing row 1/16
+2026-07-20 13:08:08 [INFO] - Skipping row 1 missing required cells
+2026-07-20 13:08:08 [INFO] - Processing row 2/16
+2026-07-20 13:08:08 [INFO] - Processing row 3/16
+2026-07-20 13:08:08 [INFO] - Processing row 4/16
+2026-07-20 13:08:08 [INFO] - Processing row 5/16
+2026-07-20 13:08:08 [INFO] - Processing row 6/16
+2026-07-20 13:08:08 [INFO] - Processing row 7/16
+2026-07-20 13:08:08 [INFO] - Processing row 8/16
+2026-07-20 13:08:08 [INFO] - Processing row 9/16
+2026-07-20 13:08:08 [INFO] - Processing row 10/16
+2026-07-20 13:08:08 [INFO] - Processing row 11/16
+2026-07-20 13:08:08 [INFO] - Processing row 12/16
+2026-07-20 13:08:08 [INFO] - Processing row 13/16
+2026-07-20 13:08:08 [INFO] - Processing row 14/16
+2026-07-20 13:08:08 [INFO] - Processing row 15/16
+2026-07-20 13:08:08 [INFO] - Processing row 16/16
+2026-07-20 13:08:10 [INFO] - Found 16 rows to process at page: 4
+2026-07-20 13:08:10 [INFO] - Processing row 1/16
+2026-07-20 13:08:10 [INFO] - Skipping row 1 missing required cells
+2026-07-20 13:08:10 [INFO] - Processing row 2/16
+2026-07-20 13:08:10 [INFO] - Processing row 3/16
+2026-07-20 13:08:10 [INFO] - Processing row 4/16
+2026-07-20 13:08:10 [INFO] - Processing row 5/16
+2026-07-20 13:08:10 [INFO] - Processing row 6/16
+2026-07-20 13:08:10 [INFO] - Processing row 7/16
+2026-07-20 13:08:10 [INFO] - Processing row 8/16
+2026-07-20 13:08:10 [INFO] - Processing row 9/16
+2026-07-20 13:08:10 [INFO] - Processing row 10/16
+2026-07-20 13:08:10 [INFO] - Processing row 11/16
+2026-07-20 13:08:10 [INFO] - Processing row 12/16
+2026-07-20 13:08:10 [INFO] - Processing row 13/16
+2026-07-20 13:08:10 [INFO] - Processing row 14/16
+2026-07-20 13:08:10 [INFO] - Processing row 15/16
+2026-07-20 13:08:10 [INFO] - Processing row 16/16
+2026-07-20 13:08:13 [INFO] - Found 16 rows to process at page: 5
+2026-07-20 13:08:13 [INFO] - Processing row 1/16
+2026-07-20 13:08:13 [INFO] - Skipping row 1 missing required cells
+2026-07-20 13:08:13 [INFO] - Processing row 2/16
+2026-07-20 13:08:13 [INFO] - Processing row 3/16
+2026-07-20 13:08:13 [INFO] - Processing row 4/16
+2026-07-20 13:08:13 [INFO] - Processing row 5/16
+2026-07-20 13:08:13 [INFO] - Stopping scrape — agm_date 2026-07-17 is before end_date 2026-07-20
+2026-07-20 13:08:13 [INFO] - [RUPS SCRAPER] Scraping completed. Total records collected: 63
+2026-07-20 13:08:13 [INFO] - Data to upsert: BBTN.JK | date: 2026-08-05
+2026-07-20 13:08:13 [INFO] - Data to upsert: TBIG.JK | date: 2026-07-30
+2026-07-20 13:08:13 [INFO] - Data to upsert: MUTU.JK | date: 2026-07-30
+2026-07-20 13:08:13 [INFO] - Data to upsert: MKNT.JK | date: 2026-07-30
+2026-07-20 13:08:13 [INFO] - Data to upsert: BESS.JK | date: 2026-07-29
+2026-07-20 13:08:13 [INFO] - Data to upsert: HATM.JK | date: 2026-07-29
+2026-07-20 13:08:13 [INFO] - Data to upsert: SRTG.JK | date: 2026-07-29
+2026-07-20 13:08:13 [INFO] - Data to upsert: SCPI.JK | date: 2026-07-29
+2026-07-20 13:08:13 [INFO] - Data to upsert: BBSI.JK | date: 2026-07-28
+2026-07-20 13:08:13 [INFO] - Data to upsert: BAPI.JK | date: 2026-07-28
+2026-07-20 13:08:13 [INFO] - Data to upsert: BUDI.JK | date: 2026-07-27
+2026-07-20 13:08:13 [INFO] - Data to upsert: JKSW.JK | date: 2026-07-27
+2026-07-20 13:08:13 [INFO] - Data to upsert: MPOW.JK | date: 2026-07-27
+2026-07-20 13:08:13 [INFO] - Data to upsert: KRAS.JK | date: 2026-07-24
+2026-07-20 13:08:13 [INFO] - Data to upsert: GGRP.JK | date: 2026-07-24
+2026-07-20 13:08:13 [INFO] - Data to upsert: VINS.JK | date: 2026-07-24
+2026-07-20 13:08:13 [INFO] - Data to upsert: MREI.JK | date: 2026-07-22
+2026-07-20 13:08:13 [INFO] - Data to upsert: ZYRX.JK | date: 2026-07-22
+2026-07-20 13:08:13 [INFO] - Data to upsert: HERO.JK | date: 2026-07-21
+2026-07-20 13:08:13 [INFO] - Data to upsert: SDPC.JK | date: 2026-07-21
+2026-07-20 13:08:13 [INFO] - Data to upsert: SKRN.JK | date: 2026-07-21
+2026-07-20 13:08:13 [INFO] - Data to upsert: KMDS.JK | date: 2026-07-21
+2026-07-20 13:08:13 [INFO] - Data to upsert: NELY.JK | date: 2026-07-20
+2026-07-20 13:08:13 [INFO] - Data to upsert: ICON.JK | date: 2026-07-17
+2026-07-20 13:08:13 [INFO] - Data to upsert: SDRA.JK | date: 2026-07-17
+2026-07-20 13:08:13 [INFO] - Data to upsert: OBAT.JK | date: 2026-07-17
+2026-07-20 13:08:13 [INFO] - Data to upsert: AYAM.JK | date: 2026-07-16
+2026-07-20 13:08:13 [INFO] - Data to upsert: LABA.JK | date: 2026-07-16
+2026-07-20 13:08:13 [INFO] - Data to upsert: NPGF.JK | date: 2026-07-16
+2026-07-20 13:08:13 [INFO] - Data to upsert: WGSH.JK | date: 2026-07-15
+2026-07-20 13:08:13 [INFO] - Data to upsert: BJBR.JK | date: 2026-07-15
+2026-07-20 13:08:13 [INFO] - Data to upsert: PADI.JK | date: 2026-07-15
+2026-07-20 13:08:13 [INFO] - Data to upsert: BRNA.JK | date: 2026-07-13
+2026-07-20 13:08:13 [INFO] - Data to upsert: ASMI.JK | date: 2026-07-13
+2026-07-20 13:08:13 [INFO] - Data to upsert: EMTK.JK | date: 2026-07-13
+2026-07-20 13:08:13 [INFO] - Data to upsert: BMSR.JK | date: 2026-07-10
+2026-07-20 13:08:13 [INFO] - Data to upsert: RSGK.JK | date: 2026-07-08
+2026-07-20 13:08:13 [INFO] - Data to upsert: MINE.JK | date: 2026-07-08
+2026-07-20 13:08:13 [INFO] - Data to upsert: IKBI.JK | date: 2026-07-08
+2026-07-20 13:08:13 [INFO] - Data to upsert: TAMU.JK | date: 2026-07-07
+2026-07-20 13:08:13 [INFO] - Data to upsert: IRSX.JK | date: 2026-07-07
+2026-07-20 13:08:13 [INFO] - Data to upsert: OILS.JK | date: 2026-07-06
+2026-07-20 13:08:13 [INFO] - Data to upsert: OASA.JK | date: 2026-07-06
+2026-07-20 13:08:13 [INFO] - Data to upsert: KDSI.JK | date: 2026-07-06
+2026-07-20 13:08:13 [INFO] - Data to upsert: HUMI.JK | date: 2026-07-06
+2026-07-20 13:08:13 [INFO] - Data to upsert: BMRI.JK | date: 2026-07-06
+2026-07-20 13:08:13 [INFO] - Data to upsert: GMFI.JK | date: 2026-07-03
+2026-07-20 13:08:13 [INFO] - Data to upsert: SMKL.JK | date: 2026-07-02
+2026-07-20 13:08:13 [INFO] - Data to upsert: OASA.JK | date: 2026-06-29
+2026-07-20 13:08:13 [INFO] - Data to upsert: POOL.JK | date: 2026-06-24
+2026-07-20 13:08:13 [INFO] - Data to upsert: FORU.JK | date: 2026-06-23
+2026-07-20 13:08:13 [INFO] - Data to upsert: SMRU.JK | date: 2026-06-05
+2026-07-20 13:08:13 [INFO] - Data to upsert: CNKO.JK | date: 2026-06-04
+2026-07-20 13:08:13 [INFO] - Data to upsert: WOMF.JK | date: 2026-05-25
+2026-07-20 13:08:13 [INFO] - Data to upsert: KRYA.JK | date: 2026-04-30
+2026-07-20 13:08:57 [WARNING] - Skipping row due to idx_rups_pk conflict: FORU.JK | recording_date=2026-06-23 already used by agm_date=2026-07-16
+2026-07-20 13:08:57 [WARNING] - Skipping row due to idx_rups_pk conflict: SMRU.JK | recording_date=2026-06-05 already used by agm_date=2026-06-30
+2026-07-20 13:08:58 [WARNING] - Skipping row due to idx_rups_pk conflict: CNKO.JK | recording_date=2026-06-04 already used by agm_date=2026-06-29
+2026-07-20 13:08:58 [WARNING] - Skipping row due to idx_rups_pk conflict: WOMF.JK | recording_date=2026-05-25 already used by agm_date=2026-06-19
+2026-07-20 13:08:59 [WARNING] - Skipping row due to idx_rups_pk conflict: KRYA.JK | recording_date=2026-04-30 already used by agm_date=2026-05-26
+2026-07-20 13:08:59 [INFO] - Successfully upserted 50 data to database
