@@ -1,5 +1,3 @@
-from patchright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
-
 from supabase import create_client
 from dotenv import load_dotenv
 from pathlib import Path
@@ -12,9 +10,7 @@ from urllib3.util.retry import Retry
 import requests
 import json
 import time
-import random
 import os
-import asyncio
 import base64
 import binascii
 import logging
@@ -33,17 +29,21 @@ LOGGER = logging.getLogger(__name__)
 SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 SUPABASE_URL = os.getenv("SUPABASE_URL")
 
+# Paste a bearer token captured from the browser's network tab (exodus.stockbit.com
+# request, Authorization header) here.
+STOCKBIT_BEARER_TOKEN = os.getenv("STOCKBIT_BEARER_TOKEN")
+
 EXODUS_HOST = "exodus.stockbit.com"
+EXODUS_CORPACTION_URL = f"https://{EXODUS_HOST}/corpaction"
 
-DEFAULT_USER_DATA_DIR = Path.home() / ".stockbit_profile"
-DEFAULT_TOKEN_CACHE = Path(".stockbit_token.json")
-
-DEFAULT_ACTION_TYPES = [
-    "rightissue", 
-    "stocksplit", 
-    "bonus", 
-    "stock_reverse"
-]
+# Each of these is a bulk endpoint returning every symbol's pending/active
+# action of that type in one response, keyed by the given response_key.
+CORPACTION_ENDPOINTS = {
+    "rightissue": "rightissue",
+    "stocksplit": "stocksplit",
+    "reversesplit": "stock_reverse",
+    "bonus": "bonus",
+}
 
 
 def write_json(path: str, payload: list):
@@ -51,13 +51,6 @@ def write_json(path: str, payload: list):
 
     with path.open("w") as file:
         json.dump(payload, file, indent=2)
-
-
-def open_json(path: str) -> dict:
-    path = Path(path)
-
-    with path.open("r") as file:
-        return json.load(file)
 
 
 def parse_date(value) -> str | None:
@@ -110,25 +103,21 @@ def normalize_right_issue(symbol: str, info: dict) -> dict:
     }
 
 
-def build_right_issue_rows(payload: dict) -> list[dict]:
+def build_right_issue_rows(records: list[dict]) -> list[dict]:
     rows = []
 
-    for symbol, records in payload.items():
-        for record in records:
-            if record.get("action_type") != "rightissue":
-                continue
+    for record in records:
+        symbol = record.get("company_symbol")
+        row = normalize_right_issue(symbol, record)
 
-            info = record.get("action_info", {}).get("rightissue", {})
-            row = normalize_right_issue(symbol, info)
+        # recording_date is part of the primary key, skip if missing
+        if not row["recording_date"]:
+            LOGGER.warning(
+                "Skipping right issue for %s: missing recording_date", symbol
+            )
+            continue
 
-            # recording_date is part of the primary key, skip if missing
-            if not row["recording_date"]:
-                LOGGER.warning(
-                    "Skipping right issue for %s: missing recording_date", symbol
-                )
-                continue
-
-            rows.append(row)
+        rows.append(row)
 
     return rows
 
@@ -154,29 +143,24 @@ def normalize_stock_split(symbol: str, info: dict) -> dict:
     }
 
 
-def build_stock_split_rows(payload: dict) -> list[dict]:
+def build_stock_split_rows(records: list[dict]) -> list[dict]:
     # Both regular and reverse splits land in idx_stock_split, they share the
     # same stocksplit_* fields. A split_ratio (factor) < 1 means a reverse split
     # (e.g. 10 old shares -> 1 new, factor 0.1), >= 1 is a regular split
     rows = []
 
-    for symbol, records in payload.items():
-        for record in records:
-            if record.get("action_type") not in ("stocksplit", "stock_reverse"):
-                continue
+    for record in records:
+        symbol = record.get("company_symbol")
+        row = normalize_stock_split(symbol, record)
 
-            info_key = record.get("action_type")
-            info = record.get("action_info", {}).get(info_key, {})
-            row = normalize_stock_split(symbol, info)
+        # date and split_ratio are NOT NULL (date is part of the PK)
+        if not row["date"] or row["split_ratio"] is None:
+            LOGGER.warning(
+                "Skipping split for %s: missing date or split_ratio", symbol
+            )
+            continue
 
-            # date and split_ratio are NOT NULL (date is part of the PK)
-            if not row["date"] or row["split_ratio"] is None:
-                LOGGER.warning(
-                    "Skipping split for %s: missing date or split_ratio", symbol
-                )
-                continue
-
-            rows.append(row)
+        rows.append(row)
 
     return rows
 
@@ -195,25 +179,21 @@ def normalize_bonus(symbol: str, info: dict) -> dict:
     }
 
 
-def build_bonus_rows(payload: dict) -> list[dict]:
+def build_bonus_rows(records: list[dict]) -> list[dict]:
     rows = []
 
-    for symbol, records in payload.items():
-        for record in records:
-            if record.get("action_type") != "bonus":
-                continue
+    for record in records:
+        symbol = record.get("company_symbol")
+        row = normalize_bonus(symbol, record)
 
-            info = record.get("action_info", {}).get("bonus", {})
-            row = normalize_bonus(symbol, info)
+        # recording_date is part of the primary key, skip if missing
+        if not row["recording_date"]:
+            LOGGER.warning(
+                "Skipping bonus for %s: missing recording_date", symbol
+            )
+            continue
 
-            # recording_date is part of the primary key, skip if missing
-            if not row["recording_date"]:
-                LOGGER.warning(
-                    "Skipping bonus for %s: missing recording_date", symbol
-                )
-                continue
-
-            rows.append(row)
+        rows.append(row)
 
     return rows
 
@@ -260,27 +240,6 @@ def upsert_data(
     LOGGER.info("Upserted %d rows into %s", len(payload), table_name)
 
 
-def get_data_db():
-    client = create_client(
-        supabase_key=SUPABASE_KEY, 
-        supabase_url=SUPABASE_URL
-    )
-
-    response = (
-        client
-        .table("idx_company_profile")
-        .select("symbol")
-        .execute()
-    )
-
-    records = [
-        record.get("symbol").removesuffix('.JK')
-        for record in response.data
-    ] 
-
-    return records
-
-
 def decode_jwt_expiry(token: str) -> int | None:
     raw = token.removeprefix("Bearer ").strip()
 
@@ -316,103 +275,24 @@ def is_token_valid(token: str, skew_seconds: int = 120) -> bool:
     return time.time() < (exp - skew_seconds)
 
 
-def request_has_bearer(request) -> bool:
-    if EXODUS_HOST not in request.url:
-        return False
-
-    authorization = request.headers.get("authorization", "")
-
-    if not authorization.startswith("Bearer "):
-        return False
-
-    raw = authorization.removeprefix("Bearer ").strip()
-
-    return raw.count(".") == 2
-
-
-async def capture_bearer_token(
-    symbol: str = "BBCA",
-    user_data_dir: Path = DEFAULT_USER_DATA_DIR,
-    headless: bool = False,
-    timeout_seconds: float = 180.0,
-) -> str | None:
-    trigger_url = f"https://stockbit.com/symbol/{symbol}/corpaction"
-
-    async with async_playwright() as playwright_instance:
-        browser_context = await playwright_instance.chromium.launch_persistent_context(
-            user_data_dir=str(user_data_dir),
-            headless=headless,
-            viewport={"width": 1440, "height": 900},
-            locale="en-US",
-            args=["--disable-blink-features=AutomationControlled"],
+def get_bearer_token() -> str:
+    if not STOCKBIT_BEARER_TOKEN:
+        raise ValueError(
+            "STOCKBIT_BEARER_TOKEN is not set. Grab an Authorization header value "
+            f"from a request to {EXODUS_HOST} in your browser's network tab and "
+            "add it to the .env file."
         )
 
-        page = browser_context.pages[0] if browser_context.pages else await browser_context.new_page()
+    token = STOCKBIT_BEARER_TOKEN.removeprefix("Bearer ").strip()
 
-        LOGGER.info("Navigating to %s", trigger_url)
-        LOGGER.info(
-            "If a login screen appears, sign in manually within %.0fs, "
-            "the window stays open until an authenticated request is seen",
-            timeout_seconds,
+    if not is_token_valid(token):
+        raise ValueError(
+            "STOCKBIT_BEARER_TOKEN is expired or malformed. Grab a fresh "
+            f"Authorization header value from a request to {EXODUS_HOST} in your "
+            "browser's network tab and update the .env file."
         )
 
-        try:
-            async with page.expect_request(
-                request_has_bearer,
-                timeout=timeout_seconds * 1000,
-            ) as request_info:
-                await page.goto(trigger_url, wait_until="domcontentloaded")
-
-            captured_request = await request_info.value
-            authorization = captured_request.headers.get("authorization")
-
-        except PlaywrightTimeoutError:
-            LOGGER.warning(
-                "No authenticated request to %s within %.0fs, did you log in?",
-                EXODUS_HOST,
-                timeout_seconds,
-            )
-            authorization = None
-
-        await browser_context.close()
-
-    if authorization and authorization.startswith("Bearer "):
-        LOGGER.info("Captured bearer token")
-        return authorization
-
-    return None
-
-
-def get_bearer_token(
-    symbol: str = "BBCA",
-    cache_path: Path = DEFAULT_TOKEN_CACHE,
-    user_data_dir: Path = DEFAULT_USER_DATA_DIR,
-    headless: bool = False,
-    force_refresh: bool = False,
-) -> str | None:
-    cache_path = Path(cache_path)
-
-    if not force_refresh and cache_path.exists():
-        cached_token = json.loads(cache_path.read_text()).get("token", "")
-
-        if is_token_valid(cached_token):
-            LOGGER.info("Reusing cached bearer token")
-            return cached_token
-
-        LOGGER.info("Cached token missing or near expiry, re-capturing")
-
-    token = asyncio.run(
-        capture_bearer_token(
-            symbol=symbol,
-            user_data_dir=user_data_dir,
-            headless=headless,
-        )
-    )
-
-    if token:
-        cache_path.write_text(json.dumps({"token": token}))
-        LOGGER.info("Saved bearer token to %s", cache_path)
-
+    LOGGER.info("Using bearer token from STOCKBIT_BEARER_TOKEN env var")
     return token
 
 
@@ -453,144 +333,44 @@ def create_session(token: str) -> Session | None:
     return session
 
 
-def fetch_stockbit_api(
-    session: requests.Session,
-    symbol: str,
-    select: list[str] | None = DEFAULT_ACTION_TYPES,
-    limit: int = 30
-) -> list[dict] | None:
-    api_url = "https://exodus.stockbit.com/corpaction/"
-    param = f"{symbol}?limit={limit}"
-    final_api_url = api_url + param
-    
-    response = session.get(
-        final_api_url, 
-        timeout=(10, 30)
-    )
+def fetch_corpaction_bulk(session: requests.Session, endpoint: str) -> list[dict]:
+    response_key = CORPACTION_ENDPOINTS[endpoint]
+    url = f"{EXODUS_CORPACTION_URL}/{endpoint}"
 
-    response_data = response.json().get("data") or []
+    response = session.get(url, timeout=(10, 30))
+    response.raise_for_status()
 
-    if select: 
-        filtered_data = []
+    records = response.json().get("data", {}).get(response_key) or []
 
-        for record in response_data:
-            action_type = record.get("action_type")          
+    LOGGER.info("Fetched %d records from %s", len(records), url)
 
-            if action_type not in select:
-                continue
-
-            filtered_data.append(record) 
-        
-        LOGGER.info(
-            'total stockbit response after select for symbol: %s: %d', 
-            symbol, len(filtered_data)
-        )
-        
-        return filtered_data
-
-    LOGGER.info(
-        'total stockbit response for symbol: %s : %d', 
-        symbol, len(response_data)
-    )
-
-    return response_data
+    return records
 
 
-def run_fetching(
-    symbols: list[str],
-    token: str,
-    output_path: str = "corp_action_stockbit.json",
-    select: list[str] | None = DEFAULT_ACTION_TYPES,
-    limit: int = 30,
-    resume: bool = False
-):
-    final_payload = {}
+def run_pipeline(is_upsert: bool = True):
+    bearer_token = get_bearer_token()
+    session = create_session(token=bearer_token)
 
-    if resume and Path(output_path).exists():
-        final_payload = open_json(output_path)
-
-        LOGGER.info(
-            "Resuming from %s, %d symbols already fetched",
-            output_path, len(final_payload)
-        )
-
-    pending = [
-        symbol 
-        for symbol in symbols 
-        if symbol not in final_payload
-    ]
-
-    random_break_interval = random.randint(15, 30)
-
-    session = create_session(token=token)
-
-    for index, symbol in enumerate(pending, start=1):
-        LOGGER.info(f"Processing symbol: {symbol} of {index}/{len(pending)}")
-
-        records = fetch_stockbit_api(
-            session=session,
-            symbol=symbol,
-            select=select,
-            limit=limit,
-        )
-
-        time.sleep(random.uniform(1.2, 4.8))
-
-        if (index + 1) % random_break_interval == 0:
-            long_delay = random.uniform(20.0, 60.0)
-            LOGGER.info(f"Taking a {long_delay:.1f}s break")
-
-            time.sleep(long_delay)
-            random_break_interval += random.randint(15.22, 31.56)
-
-        final_payload[symbol] = records
-
-        # as checkpoint if crash in the middle
-        write_json(output_path, final_payload)
-    
-    LOGGER.info(
-        "Saved response raw stockbit to %s, total %d", 
-        output_path, len(final_payload)
-    )
-
-
-def run_pipeline(
-    symbols: list[str],
-    output_path: str = "corp_action_stockbit.json",
-    select: list[str] | None = DEFAULT_ACTION_TYPES,
-    limit: int = 30,
-    is_upsert: bool = True 
-):
-    bearer_token = get_bearer_token(
-        symbol=symbols[0],
-        headless=False
-    )
-
-    run_fetching(
-        symbols=symbols,
-        token=bearer_token,
-        output_path=output_path,
-        select=select,
-        limit=limit,
-    )
-
-    stockbit_records = open_json(output_path)
+    rightissue_records = fetch_corpaction_bulk(session, "rightissue")
+    stocksplit_records = fetch_corpaction_bulk(session, "stocksplit")
+    reversesplit_records = fetch_corpaction_bulk(session, "reversesplit")
+    bonus_records = fetch_corpaction_bulk(session, "bonus")
 
     tables = [
         {
-            "rows": build_right_issue_rows(stockbit_records),
+            "rows": build_right_issue_rows(rightissue_records),
             "output_path": "data/stockbit/right_issue.json",
             "table_name": "idx_right_issue",
             "on_conflict": "symbol,recording_date",
         },
         {
-            "rows": build_stock_split_rows(stockbit_records),
+            "rows": build_stock_split_rows(stocksplit_records + reversesplit_records),
             "output_path": "data/stockbit/stock_split.json",
             "table_name": "idx_stock_split",
             "on_conflict": "symbol,date",
         },
         {
-            "rows": build_bonus_rows(stockbit_records),
+            "rows": build_bonus_rows(bonus_records),
             "output_path": "data/stockbit/bonus.json",
             "table_name": "idx_ca_bonus",
             "on_conflict": "symbol,recording_date",
@@ -632,16 +412,6 @@ def run_pipeline(
 
 
 if __name__ == "__main__":
-    # need to install patchright 
-    # maybe also need patchright install chromium
+    # Requires STOCKBIT_BEARER_TOKEN to be set in .env
 
-    symbols = get_data_db()
-    
-    run_pipeline(
-        symbols=symbols,
-        limit=40,
-        is_upsert=False 
-    )
-
-   
-#  'right_issue', 'stock_split', 'reverse_split', 'bonus'
+    run_pipeline(is_upsert=True)
