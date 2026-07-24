@@ -59127,3 +59127,7 @@
 2026-07-24 12:21:01 [WARNING] - Skipping row due to idx_rups_pk conflict: WOMF.JK | recording_date=2026-05-25 already used by agm_date=2026-06-19
 2026-07-24 12:21:01 [WARNING] - Skipping row due to idx_rups_pk conflict: KRYA.JK | recording_date=2026-04-30 already used by agm_date=2026-05-26
 2026-07-24 12:21:02 [INFO] - Successfully upserted 56 data to database
+2026-07-24 19:17:26 [INFO] - Init Global Variable
+2026-07-24 19:17:27 [INFO] - Start scraping warrant for cutoff date: 2026-07-17
+2026-07-24 19:17:28 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-07-24 19:17:28 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
