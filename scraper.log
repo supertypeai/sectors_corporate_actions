@@ -61885,3 +61885,8 @@
 2026-08-14 11:44:51 [INFO] - Data to upsert: WOMF.JK | date: 2026-05-25
 2026-08-14 11:45:44 [WARNING] - Skipping row due to idx_rups_pk conflict: WOMF.JK | recording_date=2026-05-25 already used by agm_date=2026-06-19
 2026-08-14 11:45:45 [INFO] - Successfully upserted 76 data to database
+2026-08-14 18:45:12 [INFO] - Init Global Variable
+2026-08-14 18:45:13 [INFO] - Start scraping warrant for cutoff date: 2026-08-07
+2026-08-14 18:47:27 [ERROR] - Network error on page 1: HTTPSConnectionPool(host='www.new.sahamidx.com', port=443): Max retries exceeded with url: /?/waran/page/1 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fdae03e0a70>, 'Connection to www.new.sahamidx.com timed out. (connect timeout=None)')). Stopping.
+2026-08-14 18:47:27 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 0
+2026-08-14 18:47:27 [INFO] - No records to upsert for scraper 'scraper_warrant' with cutoff None. Skipping DB insert.
