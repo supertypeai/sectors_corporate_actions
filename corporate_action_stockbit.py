@@ -1,7 +1,7 @@
 from supabase import create_client
 from dotenv import load_dotenv
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import date, datetime, timezone
 
 from requests import Session
 from requests.adapters import HTTPAdapter
@@ -240,6 +240,69 @@ def upsert_data(
     LOGGER.info("Upserted %d rows into %s", len(payload), table_name)
 
 
+def delete_rows(table_name: str, rows: list[dict], key_columns: list[str]):
+    if not rows:
+        LOGGER.info("No stale rows to delete from %s", table_name)
+        return
+
+    client = create_client(
+        supabase_key=SUPABASE_KEY,
+        supabase_url=SUPABASE_URL,
+    )
+
+    for row in rows:
+        query = client.table(table_name).delete()
+
+        for column in key_columns:
+            query = query.eq(column, row[column])
+
+        query.execute()
+
+        LOGGER.info("Deleted stale row from %s: %s", table_name, row)
+
+
+def reconcile_future_actions(
+    table_name: str,
+    fresh_rows: list[dict],
+    key_columns: list[str],
+):
+    # A DB row whose ex_date is still in the future but no longer shows up in
+    # the latest scrape has been withdrawn or rescheduled upstream, so it's stale.
+    client = create_client(
+        supabase_key=SUPABASE_KEY,
+        supabase_url=SUPABASE_URL,
+    )
+
+    today = date.today().isoformat()
+
+    response = (
+        client
+        .table(table_name)
+        .select(",".join([*key_columns, "ex_date"]))
+        .gt("ex_date", today)
+        .execute()
+    )
+
+    db_rows = response.data
+
+    fresh_keys = {
+        tuple(row.get(column) for column in key_columns)
+        for row in fresh_rows
+    }
+
+    stale_rows = [
+        row for row in db_rows
+        if tuple(row.get(column) for column in key_columns) not in fresh_keys
+    ]
+
+    LOGGER.info(
+        "%s: %d rows with ex_date > %s, %d stale (missing from latest scrape)",
+        table_name, len(db_rows), today, len(stale_rows)
+    )
+
+    delete_rows(table_name, stale_rows, key_columns)
+
+
 def decode_jwt_expiry(token: str) -> int | None:
     raw = token.removeprefix("Bearer ").strip()
 
@@ -409,6 +472,16 @@ def run_pipeline(is_upsert: bool = True):
                 table_name=table["table_name"],
                 on_conflict=table["on_conflict"],
             )
+
+            # Reconciliation only applies to right issue/bonus: their action can
+            # be withdrawn before ex_date, unlike a stock split which is final
+            # once announced. idx_stock_split is intentionally left alone.
+            if table["table_name"] in ("idx_right_issue", "idx_ca_bonus"):
+                reconcile_future_actions(
+                    table["table_name"],
+                    table["rows"],
+                    table["on_conflict"].split(","),
+                )
 
 
 if __name__ == "__main__":
