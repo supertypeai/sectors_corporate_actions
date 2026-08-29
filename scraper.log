@@ -64302,3 +64302,8 @@
 2026-08-28 21:20:29 [WARNING] - Skipping row due to idx_rups_pk conflict: KRAS.JK | recording_date=2026-07-31 already used by agm_date=2026-08-26
 2026-08-28 21:20:29 [WARNING] - Skipping row due to idx_rups_pk conflict: WOMF.JK | recording_date=2026-05-25 already used by agm_date=2026-06-19
 2026-08-28 21:20:29 [INFO] - Successfully upserted 80 data to database
+2026-08-29 01:23:48 [INFO] - Init Global Variable
+2026-08-29 01:23:49 [INFO] - Start scraping warrant for cutoff date: 2026-08-22
+2026-08-29 01:23:50 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 1
+2026-08-29 01:23:50 [INFO] - Data to upsert: BRNA.JK | date: 2026-10-07
+2026-08-29 01:23:51 [INFO] - Successfully upserted 1 data to database
