@@ -3,8 +3,6 @@ from datetime import datetime, timedelta
 from dotenv import load_dotenv
 from supabase import create_client, Client
 
-from rups_place_helper import clean_agm_place, detect_agm_place_desc, resolve_place_desc
-
 import pandas as pd
 import requests
 import argparse
@@ -116,187 +114,6 @@ def get_parse_html(url: str, page: int) -> BeautifulSoup:
 
     soup = BeautifulSoup(response.text, "lxml")
     return soup
-
-
-def rups_scraper(end_date: str = None) -> pd.DataFrame | str:
-    """
-    Scrape RUPS data from the SahamIDX website.
-    This function retrieves RUPS data, including symbol, recording date,
-    RUPS date, RUPS place, RUPS time, and place description. It filters
-    the data based on the following conditions:
-        1. recording_date <= agm_date
-        2. agm_date >= end_date (only upcoming AGMs)
-        3. Deduplicates by symbol + agm_date, keeping the earliest recording_date
-        4. Detects and classifies agm_place_desc from agm_place into one of:
-           Public expose, Cancelled, Online, Hybrid, Onsite, or None
-    Args:
-        end_date (str, optional): The end date in "YYYY-MM-DD" format. Defaults to today.
-
-    Returns:
-        pd.DataFrame: A DataFrame containing the scraped and filtered RUPS data.
-        str: The end date used for filtering the data.
-    """
-    page = 1
-    rups_data = []
-    keep_scraping = True
-    valid_symbols = allowed_symbol()
-
-    if end_date is None:
-        end_date = datetime.now()
-    else:
-        end_date = datetime.strptime(end_date, "%Y-%m-%d")
-
-    # if start_date is None:
-    #     start_date = end_date - timedelta(days=1)
-    # else:
-    #     start_date = datetime.strptime(start_date, "%Y-%m-%d")
-
-    end_date = end_date.strftime("%Y-%m-%d")
-    # start_date = start_date.strftime("%Y-%m-%d")
-
-    LOGGER.info(f"Start scraping rups for end date: {end_date}")
-
-    while keep_scraping:
-        url = f"https://www.new.sahamidx.com/?/rups/page/{page}"
-
-        soup = get_parse_html(url, page)
-        rows = soup.find_all("tr")
-
-        LOGGER.info(f"Found {len(rows)} rows to process at page: {page}")
-
-        for index, row in enumerate(rows):
-            LOGGER.info(f"Processing row {index + 1}/{len(rows)}")
-
-            try:
-                symbol_cell = row.find("td", {"data-header": "Kode Emiten"})
-                recording_date_cell = row.find(
-                    "td", {"data-header": "Tanggal Rekording"}
-                )
-                rups_date_cell = row.find("td", {"data-header": "Tanggal Rups"})
-                rups_place_cell = row.find("td", {"data-header": "Tempat"})
-                rups_time = row.find("td", {"data-header": "Jam"})
-
-                if not (
-                    symbol_cell
-                    and recording_date_cell
-                    and rups_date_cell
-                    and rups_place_cell
-                    and rups_time
-                ):
-                    LOGGER.info(f"Skipping row {index + 1} missing required cells")
-                    continue
-
-                # Prepare symbol
-                symbol_str = symbol_cell.text.strip()
-
-                if symbol_str not in valid_symbols:
-                    continue
-
-                symbol = symbol_str + ".JK"
-
-                # Prepare recording date
-                recording_date_str = recording_date_cell.text.strip()
-                recording_date = parse_date_safe(recording_date_str)
-
-                # Prepare rups date
-                rups_date_str = rups_date_cell.text.strip()
-                rups_date = parse_date_safe(rups_date_str)
-
-                if recording_date > rups_date:
-                    LOGGER.info(
-                        f"Skipping {symbol} — recording_date {recording_date} > agm_date {rups_date}"
-                    )
-                    continue
-
-                # Prepare rups time
-                rups_time_str = rups_time.text.strip()
-
-                # Prepare rups place
-                rups_place = rups_place_cell.text.strip()
-                rups_place_cleaned = clean_agm_place(rups_place)
-
-                # Detect agm_place_desc
-                rups_place_desc = detect_agm_place_desc(rups_place_cleaned)
-
-                # Add valid data
-                if rups_date >= end_date:
-                    data_dict = {
-                        "symbol": symbol,
-                        "recording_date": recording_date,
-                        "agm_date": rups_date,
-                        "agm_place": rups_place_cleaned,
-                        "agm_time": rups_time_str,
-                        "agm_place_desc": rups_place_desc,
-                    }
-
-                    rups_data.append(data_dict)
-
-                else:
-                    LOGGER.info(
-                        f"Stopping scrape — agm_date {rups_date} is before end_date {end_date}"
-                    )
-                    keep_scraping = False
-                    break
-
-            except Exception as error:
-                LOGGER.error(f"Skipping row due to error: {error}")
-                continue
-
-        if not keep_scraping:
-            break
-
-        page += 1
-        time.sleep(1.2)
-
-    LOGGER.info(
-        f"[RUPS SCRAPER] Scraping completed. Total records collected: {len(rups_data)}"
-    )
-
-    rups_data_df = pd.DataFrame(rups_data)
-
-    # Merge duplicates by symbol + agm_date:
-    # - Keep latest recording_date row as base
-    # - Preserve multiple values as "(A); (B); ..."
-    if not rups_data_df.empty:
-        rups_data_df = rups_data_df.sort_values("recording_date", ascending=False)
-
-        merged_rows = []
-        grouped = rups_data_df.groupby(["symbol", "agm_date"], sort=False, dropna=False)
-
-        for _, group in grouped:
-            base = group.iloc[0].copy()
-
-            place_desc_values = [
-                value
-                for value in group["agm_place_desc"].tolist()
-                if value is not None and str(value).strip() != ""
-            ]
-
-            unique_place_desc_values = []
-            for value in place_desc_values:
-                if value not in unique_place_desc_values:
-                    unique_place_desc_values.append(value)
-
-            base["agm_place_desc"] = resolve_place_desc(unique_place_desc_values)
-
-            place_values = [
-                value
-                for value in group["agm_place"].tolist()
-                if value is not None and str(value).strip() != ""
-            ]
-
-            unique_place_values = []
-            for value in place_values:
-                if value not in unique_place_values:
-                    unique_place_values.append(value)
-
-            base["agm_place"] = unique_place_values[0] if unique_place_values else None
-
-            merged_rows.append(base.to_dict())
-
-        rups_data_df = pd.DataFrame(merged_rows).reset_index(drop=True)
-
-    return rups_data_df, end_date
 
 
 def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
@@ -709,13 +526,6 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         cutoff_date (str, optional): The cutoff date in "YYYY-MM-DD" format to pass to the scraper.
     """
     scraper_config = {
-        "scraper_rups": {
-            "func": rups_scraper,
-            "dedup_keys": ["symbol", "agm_date"],
-            "upsert_on_conflict": "symbol,agm_date",
-            "log_date_field": "recording_date",
-            "table": "idx_agm",
-        },
         "scraper_bonus": {
             "func": bonus_scraper,
             "dedup_keys": ["symbol", "recording_date"],
@@ -769,67 +579,6 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         table_name = config.get("table")
         on_conflict = config.get("upsert_on_conflict")
 
-        if scraper == "scraper_rups":
-            normalized_rows = []
-            skipped_rows = 0
-
-            for row in data_to_upsert:
-                symbol = row.get("symbol")
-                agm_date = row.get("agm_date")
-                recording_date = row.get("recording_date")
-
-                if not (symbol and agm_date and recording_date):
-                    normalized_rows.append(row)
-                    continue
-
-                existing_same_agm = (
-                    SUPABASE_CLIENT.table(table_name)
-                    .select("recording_date")
-                    .eq("symbol", symbol)
-                    .eq("agm_date", agm_date)
-                    .limit(1)
-                    .execute()
-                    .data
-                )
-
-                # Keep recording_date as it already exists in DB for this symbol+agm_date.
-                if existing_same_agm:
-                    existing_recording_date = existing_same_agm[0].get("recording_date")
-                    if existing_recording_date:
-                        row["recording_date"] = existing_recording_date
-                        recording_date = existing_recording_date
-
-                existing_same_recording = (
-                    SUPABASE_CLIENT.table(table_name)
-                    .select("agm_date")
-                    .eq("symbol", symbol)
-                    .eq("recording_date", recording_date)
-                    .limit(1)
-                    .execute()
-                    .data
-                )
-
-                # Avoid violating unique(symbol, recording_date) when it belongs to a different AGM.
-                if (
-                    existing_same_recording
-                    and existing_same_recording[0].get("agm_date") != agm_date
-                ):
-                    skipped_rows += 1
-                    LOGGER.warning(
-                        f"Skipping row due to idx_rups_pk conflict: {symbol} | recording_date={recording_date} already used by agm_date={existing_same_recording[0].get('agm_date')}"
-                    )
-                    continue
-
-                normalized_rows.append(row)
-
-            data_to_upsert = normalized_rows
-
-            if not data_to_upsert:
-                LOGGER.info(
-                    f"No records to upsert for scraper '{scraper}' after conflict normalization. Skipping DB insert."
-                )
-                return
-
         SUPABASE_CLIENT.table(table_name).upsert(
             data_to_upsert, on_conflict=on_conflict
         ).execute()
@@ -847,7 +596,6 @@ if __name__ == "__main__":
 
     # A list of your available scrapers
     scraper_choices = [
-        "scraper_rups",
         "scraper_bonus",
         "scraper_warrant",
         "scraper_right",

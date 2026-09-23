@@ -1,4 +1,4 @@
-name: Daily Scraper Rups
+name: Daily AGM Pipeline
 
 on:
   schedule:
@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  check_stock_split:
+  agm_pipeline:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,6 +21,11 @@ jobs:
           cache: pip
           cache-dependency-path: requirements.txt
 
+      - name: Install PDF and OCR tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils tesseract-ocr tesseract-ocr-eng tesseract-ocr-ind
+
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
@@ -30,11 +35,13 @@ jobs:
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        run: python corporate_action_scraper.py scraper_rups
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          OCR_LANG: eng+ind
+        run: python -m agm.agm_pipeline
 
       - name: Pull changes
         run: git pull origin main
-          
+
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"

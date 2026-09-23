@@ -171,3 +171,10 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# AGM pipeline: state lives in agm/state and is committed; the pipeline writes
+# nothing else (PDFs go to a temp file and are deleted).
+data
+test.*
+*.log
+.DS_Store
