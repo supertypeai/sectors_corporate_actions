@@ -32,6 +32,17 @@ load_dotenv(override=True)
 URL, KEY = os.getenv("SUPABASE_URL"), os.getenv("SUPABASE_KEY")
 SUPABASE_CLIENT = create_client(URL, KEY)
 
+# Warrant scrape/compare window: warrants listed within the last month are the
+# only ones compared against the DB (and the only ones deleted when missing).
+WARRANT_LOOKBACK_DAYS = 30
+
+# Hard stop for the warrant page walk; reaching it means pagination never ended.
+MAX_WARRANT_SCAN_PAGES = 25
+
+# Abort threshold for a single reconcile run: at or above this many stale rows
+# nothing is deleted and a human decides (idx_warrant only).
+WARRANT_STALE_DELETE_ABORT_THRESHOLD = 10
+
 
 def allowed_symbol(supabase_client: Client = SUPABASE_CLIENT) -> list[str]:
     allowed_symbols = [
@@ -238,6 +249,106 @@ def bonus_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
     return bonus_data_df, cutoff_date
 
 
+def parse_warrant_row(row, valid_symbols: list[str] | None = None) -> dict | None:
+    """
+    Map one warrant <tr> into an idx_warrant row.
+
+    When valid_symbols is given, symbols outside that list are skipped.
+    """
+    # 1. Get raw cells from HTML
+    symbol_cell = row.find("td", {"data-header": "Nama"})
+    ratio_cell = row.find("td", {"data-header": "Ratio"})
+    price_cell = row.find("td", {"data-header": "Price Exercise"})
+    listing_date_cell = row.find("td", {"data-header": "Listing Date"})
+    trading_end_date_cell = row.find("td", {"data-header": "Trading End"})
+    ex_start_date_cell = row.find("td", {"data-header": "Exercise Start"})
+    ex_end_date_cell = row.find("td", {"data-header": "Exercise End"})
+    maturity_date_cell = row.find("td", {"data-header": "Maturity Date"})
+
+    # Ex date cash is sometimes listed as "Ex Date Tunai" on the IDX site
+    ex_date_cash_cell = row.find("td", {"data-header": "Ex Date Tunai"})
+
+    if not (
+        symbol_cell and ratio_cell and price_cell and listing_date_cell
+    ):
+        return None
+
+    # 2. Parse Symbol (Nama -> symbol)
+    symbol_raw = symbol_cell.text.strip()
+    if valid_symbols is not None and symbol_raw not in valid_symbols:
+        LOGGER.warning(
+            f"Skipping '{symbol_raw}' - Not found in idx_company_profile table!"
+        )
+        return None
+    symbol = symbol_raw + ".JK"
+
+    # 3. Parse Listing Date (Listing Date -> trading_period_start)
+    listing_date_str = listing_date_cell.text.strip()
+    listing_date = parse_date_safe(listing_date_str)
+
+    if not listing_date:
+        LOGGER.warning(
+            f"Skipping warrant '{symbol}' due to unparseable Listing Date: '{listing_date_str}'"
+        )
+        return None
+
+    # 4. Parse Ratio (Ratio -> ratio_shares & ratio_warrant)
+    ratio = ratio_cell.text.strip()
+    if ":" in ratio:
+        ratio_parts = ratio.split(":")
+        left_ratio = clean_numeric_value(ratio_parts[0])
+        right_ratio = clean_numeric_value(ratio_parts[1])
+    else:
+        left_ratio, right_ratio = None, None
+
+    # 5. Parse Price (Price Exercise -> price)
+    price_str = price_cell.text.strip()
+    price = clean_numeric_value(price_str)
+
+    # 6. Map to dictionary
+    return {
+        "symbol": symbol,
+        "ratio_shares": left_ratio,
+        "ratio_warrant": right_ratio,
+        "price": price,
+        "trading_period_start": listing_date,
+        "trading_period_end": (
+            parse_date_safe(trading_end_date_cell.text)
+            if trading_end_date_cell
+            else None
+        ),
+        "ex_per_start": (
+            parse_date_safe(ex_start_date_cell.text)
+            if ex_start_date_cell
+            else None
+        ),
+        "ex_per_end": (
+            parse_date_safe(ex_end_date_cell.text)
+            if ex_end_date_cell
+            else None
+        ),
+        "maturity_date": (
+            parse_date_safe(maturity_date_cell.text)
+            if maturity_date_cell
+            else None
+        ),
+        "ex_date_cash": (
+            parse_date_safe(ex_date_cash_cell.text)
+            if ex_date_cash_cell
+            else None
+        ),
+        "updated_on": datetime.now().isoformat(),
+    }
+
+
+class WarrantScanAborted(Exception):
+    """Raised when the warrant scan cannot be trusted (fetch or parse failure).
+
+    Never let the per-row handler swallow this: a partial or mis-parsed scan
+    would make live DB rows look cancelled.
+    """
+
+
 def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
     """
     Scrape warrant data from the SahamIDX website.
@@ -247,123 +358,104 @@ def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
     keep_scraping = True
     valid_symbols = allowed_symbol()
 
-    # If no cutoff_date is provided, default to 7 days ago
+    # If no cutoff_date is provided, default to 1 month ago
     if cutoff_date is None:
-        start_date = (datetime.now() - timedelta(days=7)).strftime("%Y-%m-%d")
+        start_date = (
+            datetime.now() - timedelta(days=WARRANT_LOOKBACK_DAYS)
+        ).strftime("%Y-%m-%d")
     else:
         start_date = datetime.strptime(cutoff_date, "%Y-%m-%d").strftime("%Y-%m-%d")
 
     LOGGER.info(f"Start scraping warrant for cutoff date: {start_date}")
 
     warrant_data = []
+    last_seen_date = None
 
     while keep_scraping:
+        # Belt-and-braces: the per-page guards below already abort on unusable
+        # pages, but an upstream bug that keeps serving valid-looking historical
+        # pages would otherwise loop forever. Checked before fetching so the cap
+        # reads literally as "never fetch past page N".
+        if page > MAX_WARRANT_SCAN_PAGES:
+            raise WarrantScanAborted(
+                f"Hit page cap {MAX_WARRANT_SCAN_PAGES} before reaching the cutoff - "
+                "aborting to avoid an endless pagination loop"
+            )
+
         url = f"https://www.new.sahamidx.com/?/waran/page/{page}"
 
         soup = get_parse_html(url, page)
 
         if soup is None:
-            break
+            # A fetch failure would shrink fresh_keys and make live DB rows look
+            # "cancelled", so refuse to continue with an incomplete scan.
+            raise WarrantScanAborted(
+                f"Warrant page {page} failed to fetch - aborting before upsert/reconcile"
+            )
 
         rows = soup.find_all("tr")
         valid_rows_count = 0
+        warrant_rows_count = 0
 
         for index, row in enumerate(rows):
+            symbol_text = None
             try:
-                # 1. Get raw cells from HTML
                 symbol_cell = row.find("td", {"data-header": "Nama"})
-                ratio_cell = row.find("td", {"data-header": "Ratio"})
-                price_cell = row.find("td", {"data-header": "Price Exercise"})
-                listing_date_cell = row.find("td", {"data-header": "Listing Date"})
-                trading_end_date_cell = row.find("td", {"data-header": "Trading End"})
-                ex_start_date_cell = row.find("td", {"data-header": "Exercise Start"})
-                ex_end_date_cell = row.find("td", {"data-header": "Exercise End"})
-                maturity_date_cell = row.find("td", {"data-header": "Maturity Date"})
+                if symbol_cell is None:
+                    continue  # table header or non-data row
+                symbol_text = symbol_cell.text.strip()
+                warrant_rows_count += 1
 
-                # Ex date cash is sometimes listed as "Ex Date Tunai" on the IDX site
-                ex_date_cash_cell = row.find("td", {"data-header": "Ex Date Tunai"})
+                data_dict = parse_warrant_row(row, valid_symbols)
 
-                if not (
-                    symbol_cell and ratio_cell and price_cell and listing_date_cell
-                ):
+                if data_dict is None:
+                    # A whitelisted warrant row we cannot parse would silently
+                    # drop out of the keys and make its DB row look cancelled.
+                    # Refuse to guess: upstream layout/date format changed.
+                    if symbol_text in valid_symbols:
+                        raise WarrantScanAborted(
+                            "Failed to parse whitelisted warrant row "
+                            f"'{symbol_text}' on page {page} - upstream "
+                            "layout or date format likely changed"
+                        )
                     continue
 
-                # 2. Parse Symbol (Nama -> symbol)
-                symbol_raw = symbol_cell.text.strip()
-                if symbol_raw not in valid_symbols:
-                    LOGGER.warning(
-                        f"Skipping '{symbol_raw}' - Not found in idx_company_profile table!"
+                # The scan stops at the first row older than the cutoff, which is
+                # only safe while upstream lists newest-first. Abort rather than
+                # silently truncate (a short fresh_keys set deletes live rows).
+                # Only whitelisted rows are checked: non-whitelisted rows never
+                # enter fresh_keys, so their ordering cannot affect deletes, and
+                # aborting on a symbol we discard would be a pure availability
+                # regression.
+                current_date = data_dict["trading_period_start"]
+                if last_seen_date is not None and current_date > last_seen_date:
+                    raise WarrantScanAborted(
+                        f"Ordering violation on page {page}: date {current_date} came "
+                        f"after {last_seen_date} - upstream sort is broken"
                     )
-                    continue
-                symbol = symbol_raw + ".JK"
-
-                # 3. Parse Listing Date (Listing Date -> trading_period_start)
-                listing_date_str = listing_date_cell.text.strip()
-                listing_date = parse_date_safe(listing_date_str)
-
-                if not listing_date:
-                    LOGGER.warning(
-                        f"Skipping warrant '{symbol}' due to unparseable Listing Date: '{listing_date_str}'"
-                    )
-                    continue
+                last_seen_date = current_date
 
                 # BREAK CONDITION: Stop if we hit old historical data
-                if listing_date < start_date:
+                if current_date < start_date:
                     keep_scraping = False
                     break
-
-                # 4. Parse Ratio (Ratio -> ratio_shares & ratio_warrant)
-                ratio = ratio_cell.text.strip()
-                if ":" in ratio:
-                    ratio_parts = ratio.split(":")
-                    left_ratio = clean_numeric_value(ratio_parts[0])
-                    right_ratio = clean_numeric_value(ratio_parts[1])
-                else:
-                    left_ratio, right_ratio = None, None
-
-                # 5. Parse Price (Price Exercise -> price)
-                price_str = price_cell.text.strip()
-                price = clean_numeric_value(price_str)
-
-                # 6. Map to dictionary
-                data_dict = {
-                    "symbol": symbol,
-                    "ratio_shares": left_ratio,
-                    "ratio_warrant": right_ratio,
-                    "price": price,
-                    "trading_period_start": listing_date,
-                    "trading_period_end": (
-                        parse_date_safe(trading_end_date_cell.text)
-                        if trading_end_date_cell
-                        else None
-                    ),
-                    "ex_per_start": (
-                        parse_date_safe(ex_start_date_cell.text)
-                        if ex_start_date_cell
-                        else None
-                    ),
-                    "ex_per_end": (
-                        parse_date_safe(ex_end_date_cell.text)
-                        if ex_end_date_cell
-                        else None
-                    ),
-                    "maturity_date": (
-                        parse_date_safe(maturity_date_cell.text)
-                        if maturity_date_cell
-                        else None
-                    ),
-                    "ex_date_cash": (
-                        parse_date_safe(ex_date_cash_cell.text)
-                        if ex_date_cash_cell
-                        else None
-                    ),
-                    "updated_on": datetime.now().isoformat(),
-                }
 
                 warrant_data.append(data_dict)
                 valid_rows_count += 1
 
+            except WarrantScanAborted:
+                # never swallow an abort (the generic handler below would)
+                raise
             except Exception as error:
+                # An unexpected failure on a whitelisted row must abort too:
+                # silently dropping the row would shrink fresh_keys and let the
+                # reconciler delete a live DB row. Non-whitelisted/undeclared
+                # rows are ignored, so their failures stay non-fatal.
+                if symbol_text is not None and symbol_text in valid_symbols:
+                    raise WarrantScanAborted(
+                        f"Failed to parse whitelisted warrant row '{symbol_text}' "
+                        f"on page {page}: {error}"
+                    ) from error
                 LOGGER.exception(f"Error parsing row {index} on page {page}: {error}")
                 continue
 
@@ -374,9 +466,19 @@ def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
             f"[WARRANT SCRAPER] Scraped page {page}: {valid_rows_count} valid rows out of {len(rows)} total rows"
         )
 
-        # Stop scraping if an entire page yields 0 valid results
-        if valid_rows_count == 0 and page > 1:
-            break
+        # Terminate or refuse: an unusable page must never be silently skipped,
+        # because continuing could loop forever and starve fresh_keys enough to
+        # trigger false deletes. Whitelisted-but-unparseable rows raised above,
+        # so 0 valid rows here means either the layout changed or the whitelist
+        # no longer covers the listed symbols. The source wraps back to page 1
+        # instead of ever returning an empty page, so an unusable page is always
+        # anomalous: abort rather than let a short fresh_keys set delete rows.
+        if valid_rows_count == 0:
+            raise WarrantScanAborted(
+                f"No usable warrant rows on page {page} "
+                f"({warrant_rows_count} data rows, 0 kept) - upstream layout or "
+                "idx_company_profile whitelist changed"
+            )
 
         page += 1
         time.sleep(1.1)
@@ -386,7 +488,85 @@ def warrant_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
     )
 
     warrant_data_df = pd.DataFrame(warrant_data)
-    return warrant_data_df, cutoff_date
+    # Return the effective cutoff actually used, so callers can reconcile
+    # against the exact same window.
+    return warrant_data_df, start_date
+
+
+def reconcile_missing_warrants(fresh_keys: set[tuple], cutoff_start: str):
+    """
+    Delete idx_warrant rows that upstream no longer lists, scoped to the
+    1-month window.
+
+    Only rows whose listing date falls inside the same 1-month window that
+    was just scraped are compared: a warrant in that window disappearing from
+    the fresh scrape was withdrawn/cancelled upstream.
+
+    Rows whose symbol is not in idx_company_profile are skipped: the scrape
+    filters those out, so their absence from fresh_keys means "filtered", not
+    "cancelled".
+
+    Safety guard: aborts without deleting once the stale set reaches
+    WARRANT_STALE_DELETE_ABORT_THRESHOLD rows.
+    """
+    valid_symbols = set(allowed_symbol())
+
+    db_rows = (
+        SUPABASE_CLIENT.table("idx_warrant")
+        .select("symbol,trading_period_start")
+        .gte("trading_period_start", cutoff_start)
+        .execute()
+        .data
+    )
+
+    stale_rows = [
+        row
+        for row in db_rows
+        if (row.get("symbol"), row.get("trading_period_start")) not in fresh_keys
+        and row.get("symbol", "")[:4] in valid_symbols
+    ]
+
+    LOGGER.info(
+        "idx_warrant: %d rows in 1-month window (trading_period_start >= %s), "
+        "%d stale (missing from recent scrape)",
+        len(db_rows), cutoff_start, len(stale_rows)
+    )
+
+    if len(stale_rows) >= WARRANT_STALE_DELETE_ABORT_THRESHOLD:
+        LOGGER.error(
+            "idx_warrant reconcile aborted: %d stale rows reach the safety "
+            "threshold of %d. Nothing deleted.",
+            len(stale_rows), WARRANT_STALE_DELETE_ABORT_THRESHOLD
+        )
+        return
+
+    for row in stale_rows:
+        (
+            SUPABASE_CLIENT.table("idx_warrant")
+            .delete()
+            .eq("symbol", row["symbol"])
+            .eq("trading_period_start", row["trading_period_start"])
+            .execute()
+        )
+
+        # A key without DELETE permission returns empty data and no error, so
+        # confirm the row is actually gone before reporting success.
+        still_present = (
+            SUPABASE_CLIENT.table("idx_warrant")
+            .select("symbol")
+            .eq("symbol", row["symbol"])
+            .eq("trading_period_start", row["trading_period_start"])
+            .execute()
+            .data
+        )
+        if still_present:
+            raise Exception(
+                f"Delete verification failed for {row['symbol']} on "
+                f"{row['trading_period_start']}. Row still exists in DB. "
+                "Check Supabase RLS policies or DELETE permissions."
+            )
+
+        LOGGER.info("Deleted stale row from idx_warrant: %s", row)
 
 
 def right_scraper(cutoff_date: str = None) -> pd.DataFrame | str:
@@ -562,20 +742,35 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
             f"Data to upsert: {data.get('symbol')} | date: {data.get(config.get('log_date_field'))}"
         )
 
+    # Warrants reconcile against the same 1-month window that was just scraped,
+    # reusing the scraped keys instead of scraping the source a second time.
+    fresh_warrant_keys = set()
+    warrant_cutoff = filter_date
+    if scraper == "scraper_warrant":
+        fresh_warrant_keys = {
+            (row["symbol"], row["trading_period_start"])
+            for row in data_to_upsert
+            if row.get("trading_period_start")
+        }
     # Skip if no data
     if not data_to_upsert:
         LOGGER.info(
             f"No records to upsert for scraper '{scraper}' with cutoff {filter_date}. Skipping DB insert."
         )
+
+        # A warrant scan that fetched and parsed cleanly but found nothing inside
+        # the window means no new listings; there is nothing to compare, so
+        # reconcile is skipped rather than deleting. Fetch/parse failures raise
+        # inside warrant_scraper before reaching this point.
+        if scraper == "scraper_warrant":
+            LOGGER.warning(
+                f"Warrant scrape returned no rows inside the {WARRANT_LOOKBACK_DAYS}-day "
+                f"window (cutoff {filter_date}); skipping reconcile, nothing deleted."
+            )
+
         return
 
     try:
-        if not data_to_upsert:
-            LOGGER.info(
-                f"No records to upsert for scraper '{scraper}' with cutoff {filter_date}. Skipping DB insert."
-            )
-            return
-
         table_name = config.get("table")
         on_conflict = config.get("upsert_on_conflict")
 
@@ -586,7 +781,15 @@ def upsert_to_db(scraper: str, cutoff_date: str = None):
         LOGGER.info(f"Successfully upserted {len(data_to_upsert)} data to database")
 
     except Exception as error:
-        raise Exception(f"Error upserting to database: {error}")
+        raise Exception(f"Error upserting to database: {error}") from error
+
+    # Reconcile runs outside the upsert block so a delete failure is reported as
+    # a reconcile failure, not as an upsert failure.
+    if scraper == "scraper_warrant":
+        try:
+            reconcile_missing_warrants(fresh_warrant_keys, warrant_cutoff)
+        except Exception as error:
+            raise Exception(f"Error reconciling idx_warrant: {error}") from error
 
 
 if __name__ == "__main__":
