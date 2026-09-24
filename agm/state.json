@@ -1,5 +1,19 @@
 {
  "announcements": {
+  "104243020260924102712": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-02",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-09-24",
+    "announcement_type": "REVISION",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-08",
+    "symbol": "WIFI.JK",
+    "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SOLUSI SINERGI DIGITAL Tbk, PT"
+   }
+  },
   "104243220260908104215": {
    "attempts": 1,
    "done": true,
@@ -540,6 +554,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) HARTADINATA ABADI Tbk, PT"
    }
   },
+  "104250520260924171251": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-16",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-09-24",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-09-23",
+    "symbol": "HRTA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) HARTADINATA ABADI Tbk, PT"
+   }
+  },
   "104250620260909175301": {
    "attempts": 2,
    "done": true,
@@ -547,6 +575,20 @@
     "agm_date": "2026-10-16",
     "agm_time": "10:00:00",
     "announcement_type": "NEW",
+    "recording_date": "2026-09-23",
+    "symbol": "IBOS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDO BOGA SUKSES Tbk, PT"
+   }
+  },
+  "104250620260924091019": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-16",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-09-24",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
     "recording_date": "2026-09-23",
     "symbol": "IBOS.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDO BOGA SUKSES Tbk, PT"
@@ -838,6 +880,34 @@
     "recording_date": "2026-10-06",
     "symbol": "BBYB.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BANK NEO COMMERCE Tbk, PT"
+   }
+  },
+  "104254520260924151008": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-29",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-09-24",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-06",
+    "symbol": "INAF.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDOFARMA Tbk, PT"
+   }
+  },
+  "104254620260923120030": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-30",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-09-23",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-09-07",
+    "symbol": "VISI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SATU VISI PUTRA Tbk, PT"
    }
   },
   "104254720260923163329": {
@@ -1186,6 +1256,30 @@
    "attempts": 1,
    "done": true
   },
+  "104245120260923171425": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-23",
+    "symbol": "IPCM.JK"
+   }
+  },
+  "104245220260922144055": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-22",
+    "symbol": "DMAS.JK"
+   }
+  },
+  "104245520260924111345": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-22",
+    "symbol": "SILO.JK"
+   }
+  },
   "104246720260909145406": {
    "attempts": 1,
    "done": true
@@ -1202,10 +1296,18 @@
    "attempts": 1,
    "done": true
   },
+  "104248720260922192103": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-22",
+    "symbol": "POOL.JK"
+   }
+  },
   "104250220260914102200": {
    "attempts": 1,
    "done": true
   }
  },
- "updated_on": "2026-09-23T20:58:46"
+ "updated_on": "2026-09-24T15:50:15"
 }
