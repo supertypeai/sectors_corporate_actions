@@ -822,6 +822,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VICTORIA CARE INDONESIA Tbk, PT"
    }
   },
+  "104253020260925105500": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-29",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-09-25",
+    "announcement_type": "REVISION",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-06",
+    "symbol": "VICI.JK",
+    "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VICTORIA CARE INDONESIA Tbk, PT"
+   }
+  },
   "104253120260922091224": {
    "attempts": 1,
    "done": true,
@@ -920,6 +934,34 @@
     "recording_date": "2026-10-07",
     "symbol": "BSML.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BINTANG SAMUDERA MANDIRI LINES Tbk, PT"
+   }
+  },
+  "104254920260925114705": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-03",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-09-25",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-09",
+    "symbol": "EPAC.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MEGALESTARI EPACK SENTOSARAYA Tbk, PT"
+   }
+  },
+  "104255020260925175602": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-03",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-09-25",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-09",
+    "symbol": "INPS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDAH PRAKASA SENTOSA Tbk, PT"
    }
   }
  },
@@ -1248,6 +1290,14 @@
    "attempts": 1,
    "done": true
   },
+  "104244720260924141841": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-24",
+    "symbol": "MAYA.JK"
+   }
+  },
   "104244820260921092515": {
    "attempts": 1,
    "done": true
@@ -1309,5 +1359,5 @@
    "done": true
   }
  },
- "updated_on": "2026-09-24T15:50:15"
+ "updated_on": "2026-09-25T15:48:32"
 }
