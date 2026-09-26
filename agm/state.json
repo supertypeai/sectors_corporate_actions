@@ -606,6 +606,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ERA GRAHAREALTY Tbk, PT"
    }
   },
+  "104250820260926091008": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-20",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-09-26",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-09-25",
+    "symbol": "IPAC.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ERA GRAHAREALTY Tbk, PT"
+   }
+  },
   "104250920260910161138": {
    "attempts": 1,
    "done": true,
@@ -630,6 +644,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GOLDEN EAGLE ENERGY Tbk, PT"
    }
   },
+  "104251220260926091014": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-20",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-09-26",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-09-25",
+    "symbol": "SMMT.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GOLDEN EAGLE ENERGY Tbk, PT"
+   }
+  },
   "104251420260914102217": {
    "attempts": 1,
    "done": true,
@@ -637,6 +665,20 @@
     "agm_date": "2026-10-20",
     "agm_time": "10:00:00",
     "announcement_type": "NEW",
+    "recording_date": "2026-09-25",
+    "symbol": "LAPD.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) LEYAND INTERNATIONAL Tbk, PT"
+   }
+  },
+  "104251420260926091024": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-20",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-09-26",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
     "recording_date": "2026-09-25",
     "symbol": "LAPD.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) LEYAND INTERNATIONAL Tbk, PT"
@@ -1359,5 +1401,5 @@
    "done": true
   }
  },
- "updated_on": "2026-09-25T15:48:32"
+ "updated_on": "2026-09-26T14:57:59"
 }
