@@ -42,6 +42,20 @@
     "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SOLUSI SINERGI DIGITAL Tbk, PT"
    }
   },
+  "104243020260929091023": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-21",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-09-29",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-09-28",
+    "symbol": "WIFI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SOLUSI SINERGI DIGITAL Tbk, PT"
+   }
+  },
   "104243220260908104215": {
    "attempts": 1,
    "done": true,
@@ -776,6 +790,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) WIRA GLOBAL SOLUSI Tbk, PT"
    }
   },
+  "104251820260929091029": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-21",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-09-29",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-09-28",
+    "symbol": "WGSH.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) WIRA GLOBAL SOLUSI Tbk, PT"
+   }
+  },
   "104251920260915161302": {
    "attempts": 3,
    "done": true,
@@ -934,6 +962,20 @@
     "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VICTORIA CARE INDONESIA Tbk, PT"
    }
   },
+  "104253020260929165828": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-29",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-09-29",
+    "announcement_type": "REVISION",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-06",
+    "symbol": "VICI.JK",
+    "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VICTORIA CARE INDONESIA Tbk, PT"
+   }
+  },
   "104253120260922091224": {
    "attempts": 1,
    "done": true,
@@ -953,6 +995,20 @@
     "agm_date": "2026-11-04",
     "agm_time": "16:00:00",
     "announcement_date": "2026-09-28",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-09-12",
+    "symbol": "AMOR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) ASHMORE ASSET MANAGEMENT INDONESIA Tbk, PT"
+   }
+  },
+  "104253220260929091035": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-04",
+    "agm_time": "16:00:00",
+    "announcement_date": "2026-09-29",
     "announcement_type": "NEW",
     "meeting_type": "RUPST",
     "recording_date": "2026-09-12",
@@ -1484,6 +1540,14 @@
     "symbol": "SILO.JK"
    }
   },
+  "104245620260929153354": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-29",
+    "symbol": "ISAT.JK"
+   }
+  },
   "104245920260925152554": {
    "attempts": 2,
    "done": true,
@@ -1498,6 +1562,22 @@
    "meeting": {
     "agm_date": "2026-09-25",
     "symbol": "LMPI.JK"
+   }
+  },
+  "104246420260925154241": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-25",
+    "symbol": "CRAB.JK"
+   }
+  },
+  "104246520260925155313": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-25",
+    "symbol": "CRAB.JK"
    }
   },
   "104246620260925154332": {
@@ -1537,5 +1617,5 @@
    "done": true
   }
  },
- "updated_on": "2026-09-28T18:35:47"
+ "updated_on": "2026-09-29T16:55:00"
 }
