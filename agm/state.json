@@ -816,6 +816,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PP Properti Tbk, PT"
    }
   },
+  "104251920260930091015": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-22",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-09-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-09-29",
+    "symbol": "PPRO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PP Properti Tbk, PT"
+   }
+  },
   "104252020260916133517": {
    "attempts": 1,
    "done": true,
@@ -1066,6 +1080,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ARMIDIAN KARYATAMA Tbk, PT"
    }
   },
+  "104253720260930104237": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-06",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-09-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-14",
+    "symbol": "MTFN.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAPITALINC INVESTMENT Tbk, PT"
+   }
+  },
   "104254420260922181126": {
    "attempts": 1,
    "done": true,
@@ -1085,6 +1113,20 @@
     "agm_date": "2026-10-29",
     "agm_time": "14:00:00",
     "announcement_date": "2026-09-24",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-06",
+    "symbol": "INAF.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDOFARMA Tbk, PT"
+   }
+  },
+  "104254520260930112505": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-29",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-09-30",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-06",
@@ -1172,6 +1214,34 @@
     "recording_date": "2026-10-12",
     "symbol": "MINE.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SINAR TERANG MANDIRI Tbk, PT"
+   }
+  },
+  "104255420260930135238": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-06",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-09-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-14",
+    "symbol": "BRIS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PERUSAHAAN PERSEROAN (PERSERO) PT BANK SYARIAH INDONESIA Tbk"
+   }
+  },
+  "104255720260930183657": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-06",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-09-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-14",
+    "symbol": "KDTN.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PURI SENTUL PERMAI Tbk, PT"
    }
   }
  },
@@ -1596,6 +1666,14 @@
    "attempts": 1,
    "done": true
   },
+  "104247720260928100846": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-28",
+    "symbol": "DGWG.JK"
+   }
+  },
   "104248120260903115053": {
    "attempts": 1,
    "done": true
@@ -1617,5 +1695,5 @@
    "done": true
   }
  },
- "updated_on": "2026-09-29T16:55:00"
+ "updated_on": "2026-09-30T16:47:23"
 }
