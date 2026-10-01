@@ -714,6 +714,34 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GOLDEN EAGLE ENERGY Tbk, PT"
    }
   },
+  "104251320260912091031": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-02",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-09-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-09-09",
+    "symbol": "BEER.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) JOBUBU JARUM MINAHASA Tbk, PT"
+   }
+  },
+  "104251320261001180020": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-02",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-01",
+    "announcement_type": "CANCELLATION",
+    "meeting_type": "RUPSLB",
+    "recording_date": null,
+    "symbol": "BEER.JK",
+    "title": "Pembatalan Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) JOBUBU JARUM MINAHASA Tbk, PT"
+   }
+  },
   "104251420260914102217": {
    "attempts": 1,
    "done": true,
@@ -842,6 +870,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) IDEA INDONESIA AKADEMI Tbk, PT"
    }
   },
+  "104252020261001091009": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-23",
+    "agm_time": "13:30:00",
+    "announcement_date": "2026-10-01",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-09-30",
+    "symbol": "IDEA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) IDEA INDONESIA AKADEMI Tbk, PT"
+   }
+  },
   "104252120260917165447": {
    "attempts": 1,
    "done": true,
@@ -866,6 +908,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PRIMA GLOBALINDO LOGISTIK Tbk, PT"
    }
   },
+  "104252220261001091016": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-23",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-01",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-09-30",
+    "symbol": "PPGL.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PRIMA GLOBALINDO LOGISTIK Tbk, PT"
+   }
+  },
   "104252320260916211625": {
    "attempts": 1,
    "done": true,
@@ -873,6 +929,20 @@
     "agm_date": "2026-10-23",
     "agm_time": "10:30:00",
     "announcement_type": "NEW",
+    "recording_date": "2026-09-30",
+    "symbol": "PPGL.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PRIMA GLOBALINDO LOGISTIK Tbk, PT"
+   }
+  },
+  "104252320261001091023": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-23",
+    "agm_time": "10:30:00",
+    "announcement_date": "2026-10-01",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
     "recording_date": "2026-09-30",
     "symbol": "PPGL.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PRIMA GLOBALINDO LOGISTIK Tbk, PT"
@@ -1230,6 +1300,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PERUSAHAAN PERSEROAN (PERSERO) PT BANK SYARIAH INDONESIA Tbk"
    }
   },
+  "104255620261001091014": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-09",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-01",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-15",
+    "symbol": "UNTD.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) TERANG DUNIA INTERNUSA Tbk, PT"
+   }
+  },
   "104255720260930183657": {
    "attempts": 1,
    "done": true,
@@ -1242,6 +1326,48 @@
     "recording_date": "2026-10-14",
     "symbol": "KDTN.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PURI SENTUL PERMAI Tbk, PT"
+   }
+  },
+  "104255820260930234857": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-06",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-09-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-14",
+    "symbol": "GIAA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA INDONESIA (PERSERO) TBK, PT"
+   }
+  },
+  "104255920261001092549": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-09",
+    "agm_time": "11:00:00",
+    "announcement_date": "2026-10-01",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-15",
+    "symbol": "ITIC.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDONESIAN TOBACCO Tbk, PT"
+   }
+  },
+  "104256020261001205931": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-09",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-10-01",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-15",
+    "symbol": "UNTR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) UNITED TRACTORS Tbk, PT"
    }
   }
  },
@@ -1570,6 +1696,14 @@
    "attempts": 1,
    "done": true
   },
+  "104244620260929103651": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-29",
+    "symbol": "OBMD.JK"
+   }
+  },
   "104244720260924141841": {
    "attempts": 2,
    "done": true,
@@ -1662,6 +1796,14 @@
    "attempts": 1,
    "done": true
   },
+  "104246820260929185954": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-29",
+    "symbol": "TUGU.JK"
+   }
+  },
   "104247620260915154059": {
    "attempts": 1,
    "done": true
@@ -1695,5 +1837,5 @@
    "done": true
   }
  },
- "updated_on": "2026-09-30T16:47:23"
+ "updated_on": "2026-10-01T17:26:29"
 }
