@@ -896,6 +896,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) LINK NET Tbk, PT"
    }
   },
+  "104252120261002091008": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-26",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-02",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-01",
+    "symbol": "LINK.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) LINK NET Tbk, PT"
+   }
+  },
   "104252220260916211023": {
    "attempts": 1,
    "done": true,
@@ -955,6 +969,20 @@
     "agm_date": "2026-10-26",
     "agm_time": "14:00:00",
     "announcement_type": "NEW",
+    "recording_date": "2026-10-01",
+    "symbol": "YELO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) YELOOO INTEGRA DATANET Tbk, PT"
+   }
+  },
+  "104252420261002091017": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-26",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-02",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
     "recording_date": "2026-10-01",
     "symbol": "YELO.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) YELOOO INTEGRA DATANET Tbk, PT"
@@ -1369,6 +1397,20 @@
     "symbol": "UNTR.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) UNITED TRACTORS Tbk, PT"
    }
+  },
+  "104256120261002151732": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-10",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-10-02",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-16",
+    "symbol": "RIGS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) RIG TENDERS INDONESIA Tbk, PT"
+   }
   }
  },
  "minutes": {
@@ -1760,6 +1802,14 @@
     "symbol": "SMCB.JK"
    }
   },
+  "104246020260930160647": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-30",
+    "symbol": "ADHI.JK"
+   }
+  },
   "104246320260925102655": {
    "attempts": 2,
    "done": true,
@@ -1804,6 +1854,22 @@
     "symbol": "TUGU.JK"
    }
   },
+  "104246920261001143103": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-01",
+    "symbol": "FWCT.JK"
+   }
+  },
+  "104247320260930144000": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-09-30",
+    "symbol": "DMND.JK"
+   }
+  },
   "104247620260915154059": {
    "attempts": 1,
    "done": true
@@ -1837,5 +1903,5 @@
    "done": true
   }
  },
- "updated_on": "2026-10-01T17:26:29"
+ "updated_on": "2026-10-02T16:37:03"
 }
