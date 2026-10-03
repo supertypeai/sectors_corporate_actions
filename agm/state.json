@@ -1000,6 +1000,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) METROPOLITAN KENTJANA Tbk. PT"
    }
   },
+  "104252520261003091007": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-27",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-03",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-02",
+    "symbol": "MKPI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) METROPOLITAN KENTJANA Tbk. PT"
+   }
+  },
   "104252620260918162814": {
    "attempts": 1,
    "done": true,
@@ -1007,6 +1021,20 @@
     "agm_date": "2026-10-27",
     "agm_time": "14:00:00",
     "announcement_type": "NEW",
+    "recording_date": "2026-10-02",
+    "symbol": "KIOS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) KIOSON KOMERSIAL INDONESIA Tbk, PT"
+   }
+  },
+  "104252620261003091016": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-27",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-03",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
     "recording_date": "2026-10-02",
     "symbol": "KIOS.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) KIOSON KOMERSIAL INDONESIA Tbk, PT"
@@ -1036,6 +1064,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ULTRAJAYA MILK INDUSTRY & TRADING COMPANY Tbk, PT"
    }
   },
+  "104252820261003091025": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-27",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-03",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-02",
+    "symbol": "ULTJ.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ULTRAJAYA MILK INDUSTRY & TRADING COMPANY Tbk, PT"
+   }
+  },
   "104252920260918170042": {
    "attempts": 1,
    "done": true,
@@ -1043,6 +1085,20 @@
     "agm_date": "2026-10-27",
     "agm_time": "14:00:00",
     "announcement_type": "NEW",
+    "recording_date": "2026-10-02",
+    "symbol": "UVCR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) TRIMEGAH KARYA PRATAMA Tbk, PT"
+   }
+  },
+  "104252920261003091032": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-27",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-03",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
     "recording_date": "2026-10-02",
     "symbol": "UVCR.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) TRIMEGAH KARYA PRATAMA Tbk, PT"
@@ -1903,5 +1959,5 @@
    "done": true
   }
  },
- "updated_on": "2026-10-02T16:37:03"
+ "updated_on": "2026-10-03T15:08:05"
 }
