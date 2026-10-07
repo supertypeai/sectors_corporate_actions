@@ -430,6 +430,20 @@
     "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) BORNEO OLAH SARANA SUKSES Tbk, PT"
    }
   },
+  "104249220261007091014": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-29",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-07",
+    "announcement_type": "REVISION",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-06",
+    "symbol": "BOSS.JK",
+    "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) BORNEO OLAH SARANA SUKSES Tbk, PT"
+   }
+  },
   "104249320260903111156": {
    "attempts": 2,
    "done": true,
@@ -449,6 +463,20 @@
     "agm_date": "2026-10-29",
     "agm_time": "11:00:00",
     "announcement_type": "REVISION",
+    "recording_date": "2026-10-06",
+    "symbol": "BOSS.JK",
+    "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BORNEO OLAH SARANA SUKSES Tbk, PT"
+   }
+  },
+  "104249320261007091021": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-29",
+    "agm_time": "11:00:00",
+    "announcement_date": "2026-10-07",
+    "announcement_type": "REVISION",
+    "meeting_type": "RUPSLB",
     "recording_date": "2026-10-06",
     "symbol": "BOSS.JK",
     "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BORNEO OLAH SARANA SUKSES Tbk, PT"
@@ -1052,6 +1080,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) IMC PELITA LOGISTIK Tbk, PT"
    }
   },
+  "104252720261006091008": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-28",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-06",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-05",
+    "symbol": "PSSI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) IMC PELITA LOGISTIK Tbk, PT"
+   }
+  },
   "104252820260918164343": {
    "attempts": 1,
    "done": true,
@@ -1137,6 +1179,34 @@
     "agm_date": "2026-10-29",
     "agm_time": "10:00:00",
     "announcement_date": "2026-09-29",
+    "announcement_type": "REVISION",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-06",
+    "symbol": "VICI.JK",
+    "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VICTORIA CARE INDONESIA Tbk, PT"
+   }
+  },
+  "104253020261007091027": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-29",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-07",
+    "announcement_type": "REVISION",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-06",
+    "symbol": "VICI.JK",
+    "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VICTORIA CARE INDONESIA Tbk, PT"
+   }
+  },
+  "104253020261007113127": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-29",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-07",
     "announcement_type": "REVISION",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-06",
@@ -1234,6 +1304,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ARMIDIAN KARYATAMA Tbk, PT"
    }
   },
+  "104253520261007170630": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-30",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-07",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-07",
+    "symbol": "ARMY.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ARMIDIAN KARYATAMA Tbk, PT"
+   }
+  },
   "104253720260930104237": {
    "attempts": 1,
    "done": true,
@@ -1260,6 +1344,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BANK NEO COMMERCE Tbk, PT"
    }
   },
+  "104254420261007091044": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-29",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-07",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-06",
+    "symbol": "BBYB.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BANK NEO COMMERCE Tbk, PT"
+   }
+  },
   "104254520260924151008": {
    "attempts": 1,
    "done": true,
@@ -1281,6 +1379,20 @@
     "agm_date": "2026-10-29",
     "agm_time": "14:00:00",
     "announcement_date": "2026-09-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-06",
+    "symbol": "INAF.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDOFARMA Tbk, PT"
+   }
+  },
+  "104254520261007091051": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-29",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-07",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-06",
@@ -1508,6 +1620,48 @@
     "recording_date": "2026-10-07",
     "symbol": "BIPP.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BHUWANATALA INDAH PERMAI Tbk, PT"
+   }
+  },
+  "104256620261006212045": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-12",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-06",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-20",
+    "symbol": "MGLV.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NEXAI DIGITAL INFRASTRUKTUR Tbk, PT"
+   }
+  },
+  "104256920261007182745": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-13",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-07",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-21",
+    "symbol": "ADHI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ADHI KARYA (PERSERO) Tbk, PT"
+   }
+  },
+  "104257120261007185136": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-13",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-07",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-21",
+    "symbol": "ADCP.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ADHI COMMUTER PROPERTI Tbk, PT"
    }
   }
  },
@@ -1980,6 +2134,22 @@
     "symbol": "DGWG.JK"
    }
   },
+  "104247820261002144352": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-02",
+    "symbol": "NAYZ.JK"
+   }
+  },
+  "104247920261002155150": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-02",
+    "symbol": "WSBP.JK"
+   }
+  },
   "104248120260903115053": {
    "attempts": 1,
    "done": true
@@ -2001,5 +2171,5 @@
    "done": true
   }
  },
- "updated_on": "2026-10-06T17:09:24"
+ "updated_on": "2026-10-07T17:46:52"
 }
