@@ -1318,6 +1318,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ARMIDIAN KARYATAMA Tbk, PT"
    }
   },
+  "104253520261008093239": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-30",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-08",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-07",
+    "symbol": "ARMY.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ARMIDIAN KARYATAMA Tbk, PT"
+   }
+  },
   "104253720260930104237": {
    "attempts": 1,
    "done": true,
@@ -1421,6 +1435,20 @@
     "agm_date": "2026-10-30",
     "agm_time": "10:00:00",
     "announcement_type": "NEW",
+    "recording_date": "2026-10-07",
+    "symbol": "BSML.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BINTANG SAMUDERA MANDIRI LINES Tbk, PT"
+   }
+  },
+  "104254720261008091015": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-30",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-08",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
     "recording_date": "2026-10-07",
     "symbol": "BSML.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BINTANG SAMUDERA MANDIRI LINES Tbk, PT"
@@ -1622,6 +1650,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BHUWANATALA INDAH PERMAI Tbk, PT"
    }
   },
+  "104256420261008091023": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-16",
+    "agm_time": "15:00:00",
+    "announcement_date": "2026-10-08",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-07",
+    "symbol": "BIPP.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BHUWANATALA INDAH PERMAI Tbk, PT"
+   }
+  },
   "104256620261006212045": {
    "attempts": 1,
    "done": true,
@@ -1650,6 +1692,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ADHI KARYA (PERSERO) Tbk, PT"
    }
   },
+  "104257020261008093548": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-16",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-10-08",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-22",
+    "symbol": "TOTL.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) TOTAL BANGUN PERSADA Tbk, PT"
+   }
+  },
   "104257120261007185136": {
    "attempts": 1,
    "done": true,
@@ -1662,6 +1718,34 @@
     "recording_date": "2026-10-21",
     "symbol": "ADCP.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ADHI COMMUTER PROPERTI Tbk, PT"
+   }
+  },
+  "104257220261008144753": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-19",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-08",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-08",
+    "symbol": "LOPI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) LOGISTICSPLUS INTERNATIONAL Tbk, PT"
+   }
+  },
+  "104257320261008162408": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-16",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-10-08",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-22",
+    "symbol": "FAPA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) FAP AGRI Tbk, PT"
    }
   }
  },
@@ -2158,6 +2242,14 @@
    "attempts": 1,
    "done": true
   },
+  "104248520261007103834": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-07",
+    "symbol": "APEX.JK"
+   }
+  },
   "104248720260922192103": {
    "attempts": 2,
    "done": true,
@@ -2171,5 +2263,5 @@
    "done": true
   }
  },
- "updated_on": "2026-10-07T17:46:52"
+ "updated_on": "2026-10-08T17:51:39"
 }
