@@ -1678,6 +1678,25 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NEXAI DIGITAL INFRASTRUKTUR Tbk, PT"
    }
   },
+  "104256720261009140252": {
+   "attempts": 1,
+   "done": false,
+   "note": "could not read the PDF"
+  },
+  "104256820261009171534": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-17",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-23",
+    "symbol": "SMAR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PT SINAR MAS AGRO RESOURCES AND TECHNOLOGY Tbk. (PT. SMART TBK)"
+   }
+  },
   "104256920261007182745": {
    "attempts": 1,
    "done": true,
@@ -1734,6 +1753,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) LOGISTICSPLUS INTERNATIONAL Tbk, PT"
    }
   },
+  "104257220261009091008": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-19",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-08",
+    "symbol": "LOPI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) LOGISTICSPLUS INTERNATIONAL Tbk, PT"
+   }
+  },
   "104257320261008162408": {
    "attempts": 1,
    "done": true,
@@ -1746,6 +1779,76 @@
     "recording_date": "2026-10-22",
     "symbol": "FAPA.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) FAP AGRI Tbk, PT"
+   }
+  },
+  "104257520261009143654": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-17",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-23",
+    "symbol": "GEMA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GEMA GRAHA SARANA Tbk, PT"
+   }
+  },
+  "104257620261009211647": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-17",
+    "agm_time": "11:00:00",
+    "announcement_date": "2026-10-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-23",
+    "symbol": "MDIA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) INTERMEDIA CAPITAL Tbk. PT"
+   }
+  },
+  "104257720261009211738": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-17",
+    "agm_time": "13:00:00",
+    "announcement_date": "2026-10-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-23",
+    "symbol": "VIVA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) VISI MEDIA ASIA Tbk, PT"
+   }
+  },
+  "104257820261009211803": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-17",
+    "agm_time": "14:30:00",
+    "announcement_date": "2026-10-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-23",
+    "symbol": "VIVA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VISI MEDIA ASIA Tbk, PT"
+   }
+  },
+  "104257920261009162035": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-17",
+    "agm_time": "10:30:00",
+    "announcement_date": "2026-10-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-23",
+    "symbol": "AMMN.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AMMAN MINERAL INTERNASIONAL Tbk, PT"
    }
   }
  },
@@ -2250,6 +2353,14 @@
     "symbol": "APEX.JK"
    }
   },
+  "104248620261007151322": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-07",
+    "symbol": "AGRO.JK"
+   }
+  },
   "104248720260922192103": {
    "attempts": 2,
    "done": true,
@@ -2263,5 +2374,5 @@
    "done": true
   }
  },
- "updated_on": "2026-10-08T17:51:39"
+ "updated_on": "2026-10-09T17:26:10"
 }
