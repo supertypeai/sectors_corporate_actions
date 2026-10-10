@@ -1482,6 +1482,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MEGALESTARI EPACK SENTOSARAYA Tbk, PT"
    }
   },
+  "104254920261010091009": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-03",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-10",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-09",
+    "symbol": "EPAC.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MEGALESTARI EPACK SENTOSARAYA Tbk, PT"
+   }
+  },
   "104255020260925175602": {
    "attempts": 1,
    "done": true,
@@ -1489,6 +1503,20 @@
     "agm_date": "2026-11-03",
     "agm_time": "14:00:00",
     "announcement_date": "2026-09-25",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-09",
+    "symbol": "INPS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDAH PRAKASA SENTOSA Tbk, PT"
+   }
+  },
+  "104255020261010091014": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-03",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-10",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-09",
@@ -1679,9 +1707,18 @@
    }
   },
   "104256720261009140252": {
-   "attempts": 1,
-   "done": false,
-   "note": "could not read the PDF"
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-17",
+    "agm_time": "16:00:00",
+    "announcement_date": "2026-10-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-23",
+    "symbol": "SMMA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SINAR MAS MULTIARTHA Tbk, PT"
+   }
   },
   "104256820261009171534": {
    "attempts": 1,
@@ -2374,5 +2411,5 @@
    "done": true
   }
  },
- "updated_on": "2026-10-09T17:26:10"
+ "updated_on": "2026-10-10T16:10:51"
 }
