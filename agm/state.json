@@ -1524,6 +1524,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDAH PRAKASA SENTOSA Tbk, PT"
    }
   },
+  "104255020261012162911": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-03",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-09",
+    "symbol": "INPS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDAH PRAKASA SENTOSA Tbk, PT"
+   }
+  },
   "104255120260928170003": {
    "attempts": 1,
    "done": true,
@@ -1886,6 +1900,90 @@
     "recording_date": "2026-10-23",
     "symbol": "AMMN.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AMMAN MINERAL INTERNASIONAL Tbk, PT"
+   }
+  },
+  "104258020261012091407": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-26",
+    "symbol": "FLMC.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) FALMACO NONWOVEN INDUSTRI Tbk, PT"
+   }
+  },
+  "104258120261012155708": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-26",
+    "symbol": "TRUE.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) TRINITI DINAMIK Tbk, PT"
+   }
+  },
+  "104258220261012150106": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-10-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-26",
+    "symbol": "INCO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VALE INDONESIA Tbk, PT"
+   }
+  },
+  "104258420261012172635": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "agm_time": "00:00:00",
+    "announcement_date": "2026-10-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-26",
+    "symbol": "GTBO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) GARDA TUJUH BUANA Tbk, PT."
+   }
+  },
+  "104258520261012174220": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-26",
+    "symbol": "NINE.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) TECHNO9 INDONESIA Tbk, PT"
+   }
+  },
+  "104258620261012202147": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-23",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-12",
+    "symbol": "WSBP.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) WASKITA BETON PRECAST Tbk, PT"
    }
   }
  },
@@ -2338,6 +2436,14 @@
     "symbol": "FWCT.JK"
    }
   },
+  "104247120261008151700": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-08",
+    "symbol": "HUMI.JK"
+   }
+  },
   "104247320260930144000": {
    "attempts": 2,
    "done": true,
@@ -2406,10 +2512,26 @@
     "symbol": "POOL.JK"
    }
   },
+  "104248920261008171721": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-08",
+    "symbol": "GIAA.JK"
+   }
+  },
+  "104249020261008110240": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-08",
+    "symbol": "CASH.JK"
+   }
+  },
   "104250220260914102200": {
    "attempts": 1,
    "done": true
   }
  },
- "updated_on": "2026-10-11T16:37:42"
+ "updated_on": "2026-10-12T20:15:01"
 }
