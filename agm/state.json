@@ -1538,6 +1538,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDAH PRAKASA SENTOSA Tbk, PT"
    }
   },
+  "104255020261013000000": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-03",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-13",
+    "announcement_type": "CANCELLATION",
+    "meeting_type": "RUPSLB",
+    "recording_date": null,
+    "symbol": "INPS.JK",
+    "title": "Pembatalan Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDAH PRAKASA SENTOSA Tbk, PT"
+   }
+  },
   "104255120260928170003": {
    "attempts": 1,
    "done": true,
@@ -1552,6 +1566,34 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) KETROSDEN TRIASMITRA, PT"
    }
   },
+  "104255120261013091015": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-12",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-10-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-12",
+    "symbol": "KETR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) KETROSDEN TRIASMITRA, PT"
+   }
+  },
+  "104255120261013165732": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-12",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-10-13",
+    "announcement_type": "REVISION",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-12",
+    "symbol": "KETR.JK",
+    "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) KETROSDEN TRIASMITRA, PT"
+   }
+  },
   "104255220260928185236": {
    "attempts": 1,
    "done": true,
@@ -1559,6 +1601,20 @@
     "agm_date": "2026-11-04",
     "agm_time": "09:00:00",
     "announcement_date": "2026-09-28",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-12",
+    "symbol": "MINE.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SINAR TERANG MANDIRI Tbk, PT"
+   }
+  },
+  "104255220261013091021": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-04",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-10-13",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-12",
@@ -1704,6 +1760,20 @@
     "recording_date": "2026-10-07",
     "symbol": "BIPP.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BHUWANATALA INDAH PERMAI Tbk, PT"
+   }
+  },
+  "104256520261013145151": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-19",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-27",
+    "symbol": "ASHA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) CILACAP SAMUDERA FISHING INDUSTRY Tbk, PT"
    }
   },
   "104256620261006212045": {
@@ -1984,6 +2054,62 @@
     "recording_date": "2026-10-12",
     "symbol": "WSBP.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) WASKITA BETON PRECAST Tbk, PT"
+   }
+  },
+  "104258620261013091043": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-23",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-12",
+    "symbol": "WSBP.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) WASKITA BETON PRECAST Tbk, PT"
+   }
+  },
+  "104258720261013090703": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-23",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-14",
+    "symbol": "SLIS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GAYA ABADI SEMPURNA Tbk, PT"
+   }
+  },
+  "104258920261013180745": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-19",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-27",
+    "symbol": "GMFI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA MAINTENANCE FACILITY AERO ASIA Tbk, PT"
+   }
+  },
+  "104259020261013214538": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-19",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-27",
+    "symbol": "MARK.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MARK DYNAMICS INDONESIA Tbk, PT"
    }
   }
  },
@@ -2528,10 +2654,18 @@
     "symbol": "CASH.JK"
    }
   },
+  "104249420261012094946": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-12",
+    "symbol": "EXCL.JK"
+   }
+  },
   "104250220260914102200": {
    "attempts": 1,
    "done": true
   }
  },
- "updated_on": "2026-10-12T20:15:01"
+ "updated_on": "2026-10-13T18:06:33"
 }
