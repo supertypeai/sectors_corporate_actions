@@ -1292,6 +1292,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SEPATU BATA Tbk, PT"
    }
   },
+  "104253420261014091012": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-05",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-13",
+    "symbol": "BATA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SEPATU BATA Tbk, PT"
+   }
+  },
   "104253520260923134145": {
    "attempts": 1,
    "done": true,
@@ -1902,6 +1916,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) FAP AGRI Tbk, PT"
    }
   },
+  "104257420261014145719": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-13",
+    "agm_time": "03:00:00",
+    "announcement_date": "2026-10-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-21",
+    "symbol": "CENT.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) CENTRATAMA TELEKOMUNIKASI INDONESIA Tbk, PT"
+   }
+  },
   "104257520261009143654": {
    "attempts": 1,
    "done": true,
@@ -2014,6 +2042,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VALE INDONESIA Tbk, PT"
    }
   },
+  "104258320261013235554": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-20",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-28",
+    "symbol": "ARII.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ATLAS RESOURCES Tbk, PT"
+   }
+  },
   "104258420261012172635": {
    "attempts": 1,
    "done": true,
@@ -2110,6 +2152,104 @@
     "recording_date": "2026-10-27",
     "symbol": "MARK.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MARK DYNAMICS INDONESIA Tbk, PT"
+   }
+  },
+  "104259120261014145322": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-03",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-09",
+    "symbol": "INPS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDAH PRAKASA SENTOSA Tbk, PT"
+   }
+  },
+  "104259220261014174237": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-20",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-10-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-28",
+    "symbol": "ASGR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ASTRA GRAPHIA Tbk, PT"
+   }
+  },
+  "104259320261014135358": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-20",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-28",
+    "symbol": "UNSP.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BAKRIE SUMATERA PLANTATIONS Tbk, PT"
+   }
+  },
+  "104259420261014154710": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-20",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-28",
+    "symbol": "MSIE.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MULTISARANA INTAN EDUKA Tbk, PT"
+   }
+  },
+  "104259520261014172959": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-04",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-27",
+    "symbol": "CBMF.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAHAYA BINTANG MEDAN Tbk, PT"
+   }
+  },
+  "104259620261014172739": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-04",
+    "agm_time": "11:00:00",
+    "announcement_date": "2026-10-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-27",
+    "symbol": "CBMF.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAHAYA BINTANG MEDAN Tbk, PT"
+   }
+  },
+  "104259720261014172904": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-04",
+    "agm_time": "12:00:00",
+    "announcement_date": "2026-10-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-27",
+    "symbol": "CBMF.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAHAYA BINTANG MEDAN Tbk, PT"
    }
   }
  },
@@ -2662,10 +2802,18 @@
     "symbol": "EXCL.JK"
    }
   },
+  "104250020261014104907": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-14",
+    "symbol": "GOTO.JK"
+   }
+  },
   "104250220260914102200": {
    "attempts": 1,
    "done": true
   }
  },
- "updated_on": "2026-10-13T18:06:33"
+ "updated_on": "2026-10-14T15:48:31"
 }
