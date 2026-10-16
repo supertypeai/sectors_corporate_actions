@@ -1776,6 +1776,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDONESIAN TOBACCO Tbk, PT"
    }
   },
+  "104255920261016091020": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-09",
+    "agm_time": "11:00:00",
+    "announcement_date": "2026-10-16",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-15",
+    "symbol": "ITIC.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDONESIAN TOBACCO Tbk, PT"
+   }
+  },
   "104256020261001205931": {
    "attempts": 1,
    "done": true,
@@ -1783,6 +1797,20 @@
     "agm_date": "2026-11-09",
     "agm_time": "09:00:00",
     "announcement_date": "2026-10-01",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-15",
+    "symbol": "UNTR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) UNITED TRACTORS Tbk, PT"
+   }
+  },
+  "104256020261016091033": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-09",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-10-16",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-15",
@@ -2378,6 +2406,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BAKRIELAND DEVELOPMENT Tbk, PT"
    }
   },
+  "104259920261016091054": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-26",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-16",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-15",
+    "symbol": "ELTY.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BAKRIELAND DEVELOPMENT Tbk, PT"
+   }
+  },
   "104260020261015111714": {
    "attempts": 1,
    "done": true,
@@ -2418,6 +2460,20 @@
     "recording_date": "2026-10-29",
     "symbol": "BYAN.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BAYAN RESOURCES Tbk"
+   }
+  },
+  "104260320261016094924": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-23",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-16",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-29",
+    "symbol": "VTNY.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VENTENY FORTUNA INTERNATIONAL Tbk, PT"
    }
   }
  },
@@ -2978,6 +3034,30 @@
     "symbol": "BTPS.JK"
    }
   },
+  "104249720261014104155": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-14",
+    "symbol": "FAST.JK"
+   }
+  },
+  "104249820261015103129": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-15",
+    "symbol": "CLPI.JK"
+   }
+  },
+  "104249920261014102233": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-14",
+    "symbol": "UCID.JK"
+   }
+  },
   "104250020261014104907": {
    "attempts": 2,
    "done": true,
@@ -2991,5 +3071,5 @@
    "done": true
   }
  },
- "updated_on": "2026-10-15T15:35:13"
+ "updated_on": "2026-10-16T15:21:26"
 }
