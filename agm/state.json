@@ -1832,6 +1832,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) RIG TENDERS INDONESIA Tbk, PT"
    }
   },
+  "104256120261017091007": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-10",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-10-17",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-16",
+    "symbol": "RIGS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) RIG TENDERS INDONESIA Tbk, PT"
+   }
+  },
   "104256320261005150926": {
    "attempts": 1,
    "done": true,
@@ -2077,6 +2091,20 @@
     "agm_date": "2026-10-17",
     "agm_time": "14:30:00",
     "announcement_date": "2026-10-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-23",
+    "symbol": "VIVA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VISI MEDIA ASIA Tbk, PT"
+   }
+  },
+  "104257820261016230000": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-17",
+    "agm_time": "14:30:00",
+    "announcement_date": "2026-10-16",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-23",
@@ -3071,5 +3099,5 @@
    "done": true
   }
  },
- "updated_on": "2026-10-16T15:21:26"
+ "updated_on": "2026-10-17T14:09:10"
 }
