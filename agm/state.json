@@ -2503,6 +2503,34 @@
     "symbol": "VTNY.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VENTENY FORTUNA INTERNATIONAL Tbk, PT"
    }
+  },
+  "104260420261019144953": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-09",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-19",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-15",
+    "symbol": "DOOH.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ERA MEDIA SEJAHTERA Tbk, PT"
+   }
+  },
+  "104260520261019165538": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-25",
+    "agm_time": "13:30:00",
+    "announcement_date": "2026-10-19",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-02",
+    "symbol": "JMPD.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) JASA MARGA ( PERSERO) Tbk, PT"
+   }
   }
  },
  "minutes": {
@@ -3097,7 +3125,15 @@
   "104250220260914102200": {
    "attempts": 1,
    "done": true
+  },
+  "104250320261015142110": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-15",
+    "symbol": "ABMM.JK"
+   }
   }
  },
- "updated_on": "2026-10-18T14:26:14"
+ "updated_on": "2026-10-19T17:25:41"
 }
