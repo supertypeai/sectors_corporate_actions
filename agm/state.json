@@ -1860,6 +1860,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) LAVENDER BINA CENDIKIA Tbk, PT"
    }
   },
+  "104256320261020091008": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-11",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-10-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-19",
+    "symbol": "BMBL.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) LAVENDER BINA CENDIKIA Tbk, PT"
+   }
+  },
   "104256420261005154009": {
    "attempts": 1,
    "done": true,
@@ -2266,6 +2280,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GAYA ABADI SEMPURNA Tbk, PT"
    }
   },
+  "104258820261020095649": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-26",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-03",
+    "symbol": "KMDS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) KURNIAMITRA DUTA SENTOSA Tbk, PT"
+   }
+  },
   "104258920261013180745": {
    "attempts": 1,
    "done": true,
@@ -2518,6 +2546,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ERA MEDIA SEJAHTERA Tbk, PT"
    }
   },
+  "104260420261020091017": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-09",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-15",
+    "symbol": "DOOH.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ERA MEDIA SEJAHTERA Tbk, PT"
+   }
+  },
   "104260520261019165538": {
    "attempts": 1,
    "done": true,
@@ -2530,6 +2572,76 @@
     "recording_date": "2026-11-02",
     "symbol": "JMPD.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) JASA MARGA ( PERSERO) Tbk, PT"
+   }
+  },
+  "104260520261020173359": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-25",
+    "agm_time": "13:30:00",
+    "announcement_date": "2026-10-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-02",
+    "symbol": "JMPD.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) JASA MARGA ( PERSERO) Tbk, PT"
+   }
+  },
+  "104260620261020144525": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-12",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-20",
+    "symbol": "IDEA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) IDEA INDONESIA AKADEMI Tbk, PT"
+   }
+  },
+  "104260720261020153930": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-24",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-10-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-02",
+    "symbol": "MTPS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) META EPSI Tbk, PT"
+   }
+  },
+  "104260820261020153939": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-26",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-03",
+    "symbol": "HERO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) DFI RETAIL NUSANTARA Tbk, PT"
+   }
+  },
+  "104260920261020161636": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-26",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-03",
+    "symbol": "SDRA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BANK WOORI SAUDARA INDONESIA 1906 Tbk, PT"
    }
   }
  },
@@ -3133,7 +3245,23 @@
     "agm_date": "2026-10-15",
     "symbol": "ABMM.JK"
    }
+  },
+  "104250520261016104742": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-16",
+    "symbol": "HRTA.JK"
+   }
+  },
+  "104256420261016155459": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-16",
+    "symbol": "BIPP.JK"
+   }
   }
  },
- "updated_on": "2026-10-19T17:25:41"
+ "updated_on": "2026-10-20T15:39:14"
 }
