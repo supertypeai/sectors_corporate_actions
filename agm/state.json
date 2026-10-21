@@ -1930,6 +1930,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NEXAI DIGITAL INFRASTRUKTUR Tbk, PT"
    }
   },
+  "104256620261021091007": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-12",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-21",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-20",
+    "symbol": "MGLV.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NEXAI DIGITAL INFRASTRUKTUR Tbk, PT"
+   }
+  },
   "104256720261009140252": {
    "attempts": 2,
    "done": true,
@@ -2643,6 +2657,90 @@
     "symbol": "SDRA.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BANK WOORI SAUDARA INDONESIA 1906 Tbk, PT"
    }
+  },
+  "104261020261020181535": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-26",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-03",
+    "symbol": "META.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NUSANTARA INFRASTRUCTURE Tbk, PT"
+   }
+  },
+  "104261220261020185207": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-26",
+    "agm_time": "10:30:00",
+    "announcement_date": "2026-10-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-03",
+    "symbol": "UNVR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) UNILEVER INDONESIA Tbk, PT"
+   }
+  },
+  "104261320261020214342": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-26",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-03",
+    "symbol": "EMAS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MERDEKA GOLD RESOURCES Tbk, PT"
+   }
+  },
+  "104261620261020213121": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-26",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-03",
+    "symbol": "GJTL.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GAJAH TUNGGAL Tbk, PT"
+   }
+  },
+  "104261720261021154934": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-27",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-21",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-04",
+    "symbol": "SMCB.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SOLUSI BANGUN INDONESIA Tbk, PT"
+   }
+  },
+  "104261820261021151601": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-27",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-10-21",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-04",
+    "symbol": "TOBA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) TBS ENERGI UTAMA Tbk, PT"
+   }
   }
  },
  "minutes": {
@@ -3263,5 +3361,5 @@
    }
   }
  },
- "updated_on": "2026-10-20T15:39:14"
+ "updated_on": "2026-10-21T15:55:29"
 }
