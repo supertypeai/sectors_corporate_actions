@@ -1986,6 +1986,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ADHI KARYA (PERSERO) Tbk, PT"
    }
   },
+  "104256920261022091016": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-13",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-22",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-21",
+    "symbol": "ADHI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ADHI KARYA (PERSERO) Tbk, PT"
+   }
+  },
   "104257020261008093548": {
    "attempts": 1,
    "done": true,
@@ -2000,6 +2014,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) TOTAL BANGUN PERSADA Tbk, PT"
    }
   },
+  "104257020261022112959": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-16",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-10-22",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-22",
+    "symbol": "TOTL.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) TOTAL BANGUN PERSADA Tbk, PT"
+   }
+  },
   "104257120261007185136": {
    "attempts": 1,
    "done": true,
@@ -2007,6 +2035,20 @@
     "agm_date": "2026-11-13",
     "agm_time": "10:00:00",
     "announcement_date": "2026-10-07",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-21",
+    "symbol": "ADCP.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ADHI COMMUTER PROPERTI Tbk, PT"
+   }
+  },
+  "104257120261022091025": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-13",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-22",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-21",
@@ -2063,6 +2105,20 @@
     "agm_date": "2026-11-13",
     "agm_time": "03:00:00",
     "announcement_date": "2026-10-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-21",
+    "symbol": "CENT.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) CENTRATAMA TELEKOMUNIKASI INDONESIA Tbk, PT"
+   }
+  },
+  "104257420261022091036": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-13",
+    "agm_time": "03:00:00",
+    "announcement_date": "2026-10-22",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-21",
@@ -2630,6 +2686,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) META EPSI Tbk, PT"
    }
   },
+  "104260720261022165112": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-24",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-10-22",
+    "announcement_type": "CANCELLATION",
+    "meeting_type": "RUPSLB",
+    "recording_date": null,
+    "symbol": "MTPS.JK",
+    "title": "Pembatalan Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) META EPSI Tbk, PT"
+   }
+  },
   "104260820261020153939": {
    "attempts": 1,
    "done": true,
@@ -2740,6 +2810,63 @@
     "recording_date": "2026-11-04",
     "symbol": "TOBA.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) TBS ENERGI UTAMA Tbk, PT"
+   }
+  },
+  "104261920261022105838": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-30",
+    "agm_time": "13:30:00",
+    "announcement_date": "2026-10-22",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-05",
+    "symbol": "AGRS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BANK IBK INDONESIA Tbk, PT"
+   }
+  },
+  "104262020261022132714": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-30",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-22",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-05",
+    "symbol": "AYLS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AGRO YASA LESTARI Tbk, PT"
+   }
+  },
+  "104262120261022135607": {
+   "attempts": 1,
+   "done": false,
+   "note": "could not read the PDF"
+  },
+  "104262220261022165109": {
+   "attempts": 1,
+   "done": false,
+   "note": "could not read the PDF"
+  },
+  "104262320261022165043": {
+   "attempts": 1,
+   "done": false,
+   "note": "could not read the PDF"
+  },
+  "104262420261022172126": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-03",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-22",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-26",
+    "symbol": "MTPS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) META EPSI Tbk, PT"
    }
   }
  },
@@ -3035,6 +3162,14 @@
   "104242920260914104332": {
    "attempts": 1,
    "done": true
+  },
+  "104243020261021145911": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-21",
+    "symbol": "WIFI.JK"
+   }
   },
   "104243420260814105622": {
    "attempts": 1,
@@ -3361,5 +3496,5 @@
    }
   }
  },
- "updated_on": "2026-10-21T15:55:29"
+ "updated_on": "2026-10-22T15:53:18"
 }
