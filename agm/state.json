@@ -2378,6 +2378,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VISI MEDIA ASIA Tbk, PT"
    }
   },
+  "104257820261027000000": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-17",
+    "agm_time": "14:30:00",
+    "announcement_date": "2026-10-27",
+    "announcement_type": "CANCELLATION",
+    "meeting_type": "RUPSLB",
+    "recording_date": null,
+    "symbol": "VIVA.JK",
+    "title": "Pembatalan Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VISI MEDIA ASIA Tbk, PT"
+   }
+  },
   "104257920261009162035": {
    "attempts": 1,
    "done": true,
@@ -2448,6 +2462,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) FALMACO NONWOVEN INDUSTRI Tbk, PT"
    }
   },
+  "104258020261027091007": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-27",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-26",
+    "symbol": "FLMC.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) FALMACO NONWOVEN INDUSTRI Tbk, PT"
+   }
+  },
   "104258120261012155708": {
    "attempts": 1,
    "done": true,
@@ -2455,6 +2483,20 @@
     "agm_date": "2026-11-18",
     "agm_time": "10:00:00",
     "announcement_date": "2026-10-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-26",
+    "symbol": "TRUE.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) TRINITI DINAMIK Tbk, PT"
+   }
+  },
+  "104258120261027091020": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-27",
     "announcement_type": "NEW",
     "meeting_type": "RUPST",
     "recording_date": "2026-10-26",
@@ -2475,6 +2517,11 @@
     "symbol": "INCO.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VALE INDONESIA Tbk, PT"
    }
+  },
+  "104258220261027091036": {
+   "attempts": 1,
+   "done": false,
+   "note": "could not read the PDF"
   },
   "104258320261013235554": {
    "attempts": 1,
@@ -2518,6 +2565,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) GARDA TUJUH BUANA Tbk, PT."
    }
   },
+  "104258420261027091042": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "agm_time": "00:00:00",
+    "announcement_date": "2026-10-27",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-26",
+    "symbol": "GTBO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) GARDA TUJUH BUANA Tbk, PT."
+   }
+  },
   "104258520261012174220": {
    "attempts": 1,
    "done": true,
@@ -2525,6 +2586,20 @@
     "agm_date": "2026-11-18",
     "agm_time": "14:00:00",
     "announcement_date": "2026-10-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-26",
+    "symbol": "NINE.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) TECHNO9 INDONESIA Tbk, PT"
+   }
+  },
+  "104258520261027091050": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-27",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-26",
@@ -2707,6 +2782,20 @@
     "agm_date": "2026-11-20",
     "agm_time": "10:00:00",
     "announcement_date": "2026-10-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-28",
+    "symbol": "MSIE.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MULTISARANA INTAN EDUKA Tbk, PT"
+   }
+  },
+  "104259420261027140024": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-20",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-27",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-28",
@@ -3112,7 +3201,7 @@
    "note": "could not read the PDF"
   },
   "104262220261023070323": {
-   "attempts": 4,
+   "attempts": 5,
    "done": false,
    "note": "could not read the PDF"
   },
@@ -3122,7 +3211,7 @@
    "note": "could not read the PDF"
   },
   "104262320261023090007": {
-   "attempts": 4,
+   "attempts": 5,
    "done": false,
    "note": "could not read the PDF"
   },
@@ -3133,6 +3222,20 @@
     "agm_date": "2026-11-03",
     "agm_time": "10:00:00",
     "announcement_date": "2026-10-22",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-26",
+    "symbol": "MTPS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) META EPSI Tbk, PT"
+   }
+  },
+  "104262420261027091057": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-03",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-27",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-26",
@@ -3222,6 +3325,25 @@
     "recording_date": "2026-10-23",
     "symbol": "VIVA.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VISI MEDIA ASIA Tbk, PT"
+   }
+  },
+  "104263120261027082614": {
+   "attempts": 1,
+   "done": false,
+   "note": "could not read the PDF"
+  },
+  "104263220261027134623": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-03",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-10-27",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-10",
+    "symbol": "INTP.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDOCEMENT TUNGGAL PRAKARSA Tbk, PT"
    }
   }
  },
@@ -3850,6 +3972,14 @@
     "symbol": "WGSH.JK"
    }
   },
+  "104252120261026102416": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-26",
+    "symbol": "LINK.JK"
+   }
+  },
   "104256420261016155459": {
    "attempts": 2,
    "done": true,
@@ -3859,5 +3989,5 @@
    }
   }
  },
- "updated_on": "2026-10-26T17:16:09"
+ "updated_on": "2026-10-27T16:21:47"
 }
