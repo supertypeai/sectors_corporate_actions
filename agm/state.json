@@ -1916,6 +1916,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) CILACAP SAMUDERA FISHING INDUSTRY Tbk, PT"
    }
   },
+  "104256520261028091015": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-19",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-28",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-27",
+    "symbol": "ASHA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) CILACAP SAMUDERA FISHING INDUSTRY Tbk, PT"
+   }
+  },
   "104256620261006212045": {
    "attempts": 1,
    "done": true,
@@ -2519,9 +2533,18 @@
    }
   },
   "104258220261027091036": {
-   "attempts": 1,
-   "done": false,
-   "note": "could not read the PDF"
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-10-27",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-26",
+    "symbol": "INCO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VALE INDONESIA Tbk, PT"
+   }
   },
   "104258320261013235554": {
    "attempts": 1,
@@ -2691,6 +2714,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA MAINTENANCE FACILITY AERO ASIA Tbk, PT"
    }
   },
+  "104258920261028091025": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-19",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-28",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-27",
+    "symbol": "GMFI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA MAINTENANCE FACILITY AERO ASIA Tbk, PT"
+   }
+  },
   "104259020261013214538": {
    "attempts": 1,
    "done": true,
@@ -2698,6 +2735,20 @@
     "agm_date": "2026-11-19",
     "agm_time": "14:00:00",
     "announcement_date": "2026-10-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-27",
+    "symbol": "MARK.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MARK DYNAMICS INDONESIA Tbk, PT"
+   }
+  },
+  "104259020261028091033": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-19",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-28",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-27",
@@ -2845,6 +2896,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAHAYA BINTANG MEDAN Tbk, PT"
    }
   },
+  "104259720261028091054": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-04",
+    "agm_time": "12:00:00",
+    "announcement_date": "2026-10-28",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-27",
+    "symbol": "CBMF.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAHAYA BINTANG MEDAN Tbk, PT"
+   }
+  },
   "104259820261015152028": {
    "attempts": 1,
    "done": true,
@@ -2908,6 +2973,20 @@
     "agm_date": "2026-11-19",
     "agm_time": "10:00:00",
     "announcement_date": "2026-10-15",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-27",
+    "symbol": "GDYR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GOODYEAR INDONESIA Tbk, PT"
+   }
+  },
+  "104260120261028091101": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-19",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-28",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-27",
@@ -3332,6 +3411,20 @@
    "done": false,
    "note": "could not read the PDF"
   },
+  "104263120261028091120": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-17",
+    "agm_time": "14:30:00",
+    "announcement_date": "2026-10-28",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-23",
+    "symbol": "VIVA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VISI MEDIA ASIA Tbk, PT"
+   }
+  },
   "104263220261027134623": {
    "attempts": 1,
    "done": true,
@@ -3344,6 +3437,20 @@
     "recording_date": "2026-11-10",
     "symbol": "INTP.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDOCEMENT TUNGGAL PRAKARSA Tbk, PT"
+   }
+  },
+  "104263420261028111116": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-03",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-28",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-10",
+    "symbol": "RLCO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ABADI LESTARI INDONESIA Tbk, PT"
    }
   }
  },
@@ -3987,7 +4094,15 @@
     "agm_date": "2026-10-16",
     "symbol": "BIPP.JK"
    }
+  },
+  "104259920261026105941": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-26",
+    "symbol": "ELTY.JK"
+   }
   }
  },
- "updated_on": "2026-10-27T16:21:47"
+ "updated_on": "2026-10-28T17:05:48"
 }
