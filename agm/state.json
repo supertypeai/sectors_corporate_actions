@@ -1692,6 +1692,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PERUSAHAAN PERSEROAN (PERSERO) PT BANK SYARIAH INDONESIA Tbk"
    }
   },
+  "104255520261029151516": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-07",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-29",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-12",
+    "symbol": "TAMA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) LANCARTAMA SEJATI Tbk, PT"
+   }
+  },
   "104255620261001091014": {
    "attempts": 1,
    "done": true,
@@ -2574,6 +2588,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ATLAS RESOURCES Tbk, PT"
    }
   },
+  "104258320261029091011": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-20",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-29",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-28",
+    "symbol": "ARII.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ATLAS RESOURCES Tbk, PT"
+   }
+  },
   "104258420261012172635": {
    "attempts": 1,
    "done": true,
@@ -2728,6 +2756,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA MAINTENANCE FACILITY AERO ASIA Tbk, PT"
    }
   },
+  "104258920261029000000": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-19",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-29",
+    "announcement_type": "CANCELLATION",
+    "meeting_type": "RUPSLB",
+    "recording_date": null,
+    "symbol": "GMFI.JK",
+    "title": "Pembatalan Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA MAINTENANCE FACILITY AERO ASIA Tbk, PT"
+   }
+  },
   "104259020261013214538": {
    "attempts": 1,
    "done": true,
@@ -2798,6 +2840,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ASTRA GRAPHIA Tbk, PT"
    }
   },
+  "104259220261029091019": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-20",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-10-29",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-28",
+    "symbol": "ASGR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ASTRA GRAPHIA Tbk, PT"
+   }
+  },
   "104259320261014135358": {
    "attempts": 1,
    "done": true,
@@ -2853,6 +2909,11 @@
     "symbol": "MSIE.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MULTISARANA INTAN EDUKA Tbk, PT"
    }
+  },
+  "104259420261029091027": {
+   "attempts": 1,
+   "done": false,
+   "note": "could not read the PDF"
   },
   "104259520261014172959": {
    "attempts": 1,
@@ -3020,6 +3081,20 @@
     "recording_date": "2026-10-29",
     "symbol": "VTNY.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VENTENY FORTUNA INTERNATIONAL Tbk, PT"
+   }
+  },
+  "104260320261029093610": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-23",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-29",
+    "announcement_type": "REVISION",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-29",
+    "symbol": "VTNY.JK",
+    "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VENTENY FORTUNA INTERNATIONAL Tbk, PT"
    }
   },
   "104260420261019144953": {
@@ -3451,6 +3526,48 @@
     "recording_date": "2026-11-10",
     "symbol": "RLCO.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ABADI LESTARI INDONESIA Tbk, PT"
+   }
+  },
+  "104263620261029104848": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-07",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-29",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-12",
+    "symbol": "OLIV.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ATLAS NEXUS GROUP Tbk, PT"
+   }
+  },
+  "104263720261029115527": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-07",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-10-29",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-12",
+    "symbol": "GULA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AMAN AGRINDO Tbk, PT"
+   }
+  },
+  "104264320261029172651": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-07",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-29",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-12",
+    "symbol": "GTRA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GRAHAPRIMA SUKSESMANDIRI Tbk, PT"
    }
   }
  },
@@ -4104,5 +4221,5 @@
    }
   }
  },
- "updated_on": "2026-10-28T17:05:48"
+ "updated_on": "2026-10-29T17:24:39"
 }
