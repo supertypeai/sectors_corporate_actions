@@ -1664,6 +1664,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NITRASANATA DHARMA Tbk, PT"
    }
   },
+  "104255320261030091013": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-23",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-10-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-29",
+    "symbol": "JECX.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NITRASANATA DHARMA Tbk, PT"
+   }
+  },
   "104255420260930135238": {
    "attempts": 1,
    "done": true,
@@ -2911,9 +2925,18 @@
    }
   },
   "104259420261029091027": {
-   "attempts": 1,
-   "done": false,
-   "note": "could not read the PDF"
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-20",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-29",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-28",
+    "symbol": "MSIE.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MULTISARANA INTAN EDUKA Tbk, PT"
+   }
   },
   "104259520261014172959": {
    "attempts": 1,
@@ -2985,6 +3008,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PRODIA WIDYAHUSADA Tbk, PT"
    }
   },
+  "104259820261030091020": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-23",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-29",
+    "symbol": "PRDA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PRODIA WIDYAHUSADA Tbk, PT"
+   }
+  },
   "104259920261015111100": {
    "attempts": 1,
    "done": true,
@@ -3020,6 +3057,20 @@
     "agm_date": "2026-11-23",
     "agm_time": "10:00:00",
     "announcement_date": "2026-10-15",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-29",
+    "symbol": "PTRO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PETROSEA Tbk, PT"
+   }
+  },
+  "104260020261030091048": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-23",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-30",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-29",
@@ -3069,6 +3120,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BAYAN RESOURCES Tbk"
    }
   },
+  "104260220261030091056": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-23",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-29",
+    "symbol": "BYAN.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BAYAN RESOURCES Tbk"
+   }
+  },
   "104260320261016094924": {
    "attempts": 1,
    "done": true,
@@ -3090,6 +3155,20 @@
     "agm_date": "2026-11-23",
     "agm_time": "10:00:00",
     "announcement_date": "2026-10-29",
+    "announcement_type": "REVISION",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-29",
+    "symbol": "VTNY.JK",
+    "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VENTENY FORTUNA INTERNATIONAL Tbk, PT"
+   }
+  },
+  "104260320261030091102": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-23",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-30",
     "announcement_type": "REVISION",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-10-29",
@@ -3568,6 +3647,76 @@
     "recording_date": "2026-11-12",
     "symbol": "GTRA.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GRAHAPRIMA SUKSESMANDIRI Tbk, PT"
+   }
+  },
+  "104264420261030105457": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-19",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-27",
+    "symbol": "GMFI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA MAINTENANCE FACILITY AERO ASIA Tbk, PT"
+   }
+  },
+  "104264620261030095314": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-08",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-13",
+    "symbol": "SRSN.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDO ACIDATAMA Tbk, PT"
+   }
+  },
+  "104264720261030115500": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-10",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-30",
+    "symbol": "WIRG.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) WIR ASIA Tbk, PT"
+   }
+  },
+  "104265020261030203413": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-08",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-13",
+    "symbol": "MBMA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MERDEKA BATTERY MATERIALS Tbk, PT"
+   }
+  },
+  "104265120261030153935": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-08",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-10-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-13",
+    "symbol": "TRIN.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PERINTIS TRINITI PROPERTI Tbk, PT"
    }
   }
  },
@@ -4204,6 +4353,14 @@
     "symbol": "LINK.JK"
    }
   },
+  "104252720261028103120": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-28",
+    "symbol": "PSSI.JK"
+   }
+  },
   "104256420261016155459": {
    "attempts": 2,
    "done": true,
@@ -4221,5 +4378,5 @@
    }
   }
  },
- "updated_on": "2026-10-29T17:24:39"
+ "updated_on": "2026-10-30T17:00:50"
 }
