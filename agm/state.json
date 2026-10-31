@@ -3663,6 +3663,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA MAINTENANCE FACILITY AERO ASIA Tbk, PT"
    }
   },
+  "104264420261031091023": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-19",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-31",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-10-27",
+    "symbol": "GMFI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA MAINTENANCE FACILITY AERO ASIA Tbk, PT"
+   }
+  },
   "104264620261030095314": {
    "attempts": 1,
    "done": true,
@@ -3684,6 +3698,20 @@
     "agm_date": "2026-11-10",
     "agm_time": "14:00:00",
     "announcement_date": "2026-10-30",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-30",
+    "symbol": "WIRG.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) WIR ASIA Tbk, PT"
+   }
+  },
+  "104264720261031091045": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-10",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-10-31",
     "announcement_type": "NEW",
     "meeting_type": "RUPST",
     "recording_date": "2026-10-30",
@@ -4378,5 +4406,5 @@
    }
   }
  },
- "updated_on": "2026-10-30T17:00:50"
+ "updated_on": "2026-10-31T16:01:46"
 }
