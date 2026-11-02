@@ -1580,6 +1580,20 @@
     "title": "Pembatalan Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDAH PRAKASA SENTOSA Tbk, PT"
    }
   },
+  "104255020261102220003": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-03",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-02",
+    "announcement_type": "CANCELLATION",
+    "meeting_type": "RUPSLB",
+    "recording_date": null,
+    "symbol": "INPS.JK",
+    "title": "Pembatalan Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDAH PRAKASA SENTOSA Tbk, PT"
+   }
+  },
   "104255120260928170003": {
    "attempts": 1,
    "done": true,
@@ -3635,6 +3649,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AMAN AGRINDO Tbk, PT"
    }
   },
+  "104264220261102142012": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-09",
+    "agm_time": "10:30:00",
+    "announcement_date": "2026-11-02",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-11-16",
+    "symbol": "ARTI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) RATU PRABU ENERGI Tbk, PT"
+   }
+  },
   "104264320261029172651": {
    "attempts": 1,
    "done": true,
@@ -3745,6 +3773,76 @@
     "recording_date": "2026-11-13",
     "symbol": "TRIN.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PERINTIS TRINITI PROPERTI Tbk, PT"
+   }
+  },
+  "104265220261102121941": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-13",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-11-02",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-03",
+    "symbol": "ARMY.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ARMIDIAN KARYATAMA Tbk, PT"
+   }
+  },
+  "104265320261102092736": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-09",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-02",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-16",
+    "symbol": "IGAR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) CHAMPION PACIFIC INDONESIA Tbk, PT"
+   }
+  },
+  "104265420261102144210": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-09",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-02",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-16",
+    "symbol": "PART.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) CIPTA PERDANA LANCAR Tbk, PT"
+   }
+  },
+  "104265520261102153007": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-04",
+    "agm_time": "16:00:00",
+    "announcement_date": "2026-11-02",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-10-12",
+    "symbol": "AMOR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) ASHMORE ASSET MANAGEMENT INDONESIA Tbk, PT"
+   }
+  },
+  "104265620261102152514": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-09",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-11-02",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-16",
+    "symbol": "RANC.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SUPRA BOGA LESTARI Tbk, PT"
    }
   }
  },
@@ -4365,6 +4463,11 @@
     "symbol": "HRTA.JK"
    }
   },
+  "104251420261029135039": {
+   "attempts": 1,
+   "done": false,
+   "note": "Summarizer did not finish within 300s"
+  },
   "104251820261021095012": {
    "attempts": 2,
    "done": true,
@@ -4389,6 +4492,30 @@
     "symbol": "PSSI.JK"
    }
   },
+  "104253020261029105034": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-29",
+    "symbol": "VICI.JK"
+   }
+  },
+  "104253520261030112638": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-30",
+    "symbol": "ARMY.JK"
+   }
+  },
+  "104254420261029143612": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-29",
+    "symbol": "BBYB.JK"
+   }
+  },
   "104256420261016155459": {
    "attempts": 2,
    "done": true,
@@ -4406,5 +4533,5 @@
    }
   }
  },
- "updated_on": "2026-11-01T21:02:49"
+ "updated_on": "2026-11-02T20:51:09"
 }
