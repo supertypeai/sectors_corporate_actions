@@ -3246,6 +3246,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) JASA MARGA ( PERSERO) Tbk, PT"
    }
   },
+  "104260520261103091012": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-25",
+    "agm_time": "13:30:00",
+    "announcement_date": "2026-11-03",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-02",
+    "symbol": "JMPD.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) JASA MARGA ( PERSERO) Tbk, PT"
+   }
+  },
   "104260620261020144525": {
    "attempts": 1,
    "done": true,
@@ -3379,6 +3393,20 @@
     "agm_date": "2026-11-27",
     "agm_time": "14:00:00",
     "announcement_date": "2026-10-21",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-04",
+    "symbol": "SMCB.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SOLUSI BANGUN INDONESIA Tbk, PT"
+   }
+  },
+  "104261720261103151007": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-27",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-03",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-04",
@@ -3525,6 +3553,20 @@
     "agm_date": "2026-11-25",
     "agm_time": "10:00:00",
     "announcement_date": "2026-10-23",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-02",
+    "symbol": "BAIK.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BERSAMA MENCAPAI PUNCAK Tbk, PT"
+   }
+  },
+  "104262720261103091020": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-25",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-03",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-02",
@@ -3789,6 +3831,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ARMIDIAN KARYATAMA Tbk, PT"
    }
   },
+  "104265220261103154050": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-13",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-11-03",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-03",
+    "symbol": "ARMY.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ARMIDIAN KARYATAMA Tbk, PT"
+   }
+  },
   "104265320261102092736": {
    "attempts": 1,
    "done": true,
@@ -3843,6 +3899,34 @@
     "recording_date": "2026-11-16",
     "symbol": "RANC.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SUPRA BOGA LESTARI Tbk, PT"
+   }
+  },
+  "104265720261103091325": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-10",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-03",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-17",
+    "symbol": "HALO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) HALONI JANE Tbk, PT"
+   }
+  },
+  "104265820261103191715": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-10",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-03",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-02",
+    "symbol": "YELO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) YELOOO INTEGRA DATANET Tbk, PT"
    }
   }
  },
@@ -4464,9 +4548,13 @@
    }
   },
   "104251420261029135039": {
-   "attempts": 1,
+   "attempts": 2,
    "done": false,
-   "note": "Summarizer did not finish within 300s"
+   "meeting": {
+    "agm_date": "2026-10-29",
+    "symbol": "LAPD.JK"
+   },
+   "note": "None"
   },
   "104251820261021095012": {
    "attempts": 2,
@@ -4516,6 +4604,14 @@
     "symbol": "BBYB.JK"
    }
   },
+  "104254720261030110137": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-10-30",
+    "symbol": "BSML.JK"
+   }
+  },
   "104256420261016155459": {
    "attempts": 2,
    "done": true,
@@ -4533,5 +4629,5 @@
    }
   }
  },
- "updated_on": "2026-11-02T20:51:09"
+ "updated_on": "2026-11-03T18:23:00"
 }
