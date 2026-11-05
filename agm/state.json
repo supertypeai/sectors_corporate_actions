@@ -3540,6 +3540,20 @@
     "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) TBS ENERGI UTAMA Tbk, PT"
    }
   },
+  "104261820261105091025": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-27",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-11-05",
+    "announcement_type": "REVISION",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-04",
+    "symbol": "TOBA.JK",
+    "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) TBS ENERGI UTAMA Tbk, PT"
+   }
+  },
   "104261920261022105838": {
    "attempts": 1,
    "done": true,
@@ -4098,9 +4112,18 @@
    }
   },
   "104266020261104141051": {
-   "attempts": 1,
-   "done": false,
-   "note": "could not read the PDF"
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-11",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-11-04",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-18",
+    "symbol": "PKPK.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PARAGON KARYA PERKASA Tbk, PT"
+   }
   },
   "104266120261104113036": {
    "attempts": 1,
@@ -4170,6 +4193,20 @@
     "recording_date": "2026-11-18",
     "symbol": "BINA.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BANK INA PERDANA Tbk. PT"
+   }
+  },
+  "104266920261105224933": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-14",
+    "agm_time": "11:00:00",
+    "announcement_date": "2026-11-05",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-19",
+    "symbol": "FUTR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) FUTURA ENERGI GLOBAL Tbk, PT"
    }
   }
  },
@@ -4791,7 +4828,7 @@
    }
   },
   "104251420261029135039": {
-   "attempts": 3,
+   "attempts": 4,
    "done": false,
    "meeting": {
     "agm_date": "2026-10-29",
@@ -4855,6 +4892,14 @@
     "symbol": "BSML.JK"
    }
   },
+  "104254920261103104536": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-03",
+    "symbol": "EPAC.JK"
+   }
+  },
   "104256420261016155459": {
    "attempts": 2,
    "done": true,
@@ -4880,5 +4925,5 @@
    }
   }
  },
- "updated_on": "2026-11-04T18:38:02"
+ "updated_on": "2026-11-05T18:41:13"
 }
