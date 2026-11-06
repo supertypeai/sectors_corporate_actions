@@ -3596,6 +3596,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AGRO YASA LESTARI Tbk, PT"
    }
   },
+  "104262020261106091018": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-30",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-06",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-05",
+    "symbol": "AYLS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AGRO YASA LESTARI Tbk, PT"
+   }
+  },
   "104262120261022135607": {
    "attempts": 2,
    "done": true,
@@ -3603,6 +3617,20 @@
     "agm_date": "2026-11-30",
     "agm_time": "10:00:00",
     "announcement_date": "2026-10-22",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-05",
+    "symbol": "LABA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GREEN POWER GROUP Tbk, PT"
+   }
+  },
+  "104262120261106091026": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-30",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-06",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-05",
@@ -3686,6 +3714,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ABADI NUSANTARA HIJAU INVESTAMA Tbk, PT"
    }
   },
+  "104262620261106091038": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-30",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-06",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-05",
+    "symbol": "PACK.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ABADI NUSANTARA HIJAU INVESTAMA Tbk, PT"
+   }
+  },
   "104262720261023104723": {
    "attempts": 1,
    "done": true,
@@ -3721,6 +3763,20 @@
     "agm_date": "2026-12-02",
     "agm_time": "09:30:00",
     "announcement_date": "2026-10-26",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-09",
+    "symbol": "AVIA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AVIA AVIAN Tbk, PT"
+   }
+  },
+  "104262820261106140800": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-02",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-11-06",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-09",
@@ -3887,6 +3943,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA MAINTENANCE FACILITY AERO ASIA Tbk, PT"
    }
   },
+  "104264520261106075712": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-15",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-06",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-20",
+    "symbol": "TCID.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MANDOM INDONESIA Tbk, PT"
+   }
+  },
   "104264620261030095314": {
    "attempts": 1,
    "done": true,
@@ -3927,6 +3997,34 @@
     "recording_date": "2026-10-30",
     "symbol": "WIRG.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) WIR ASIA Tbk, PT"
+   }
+  },
+  "104264820261106123925": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-15",
+    "agm_time": "15:00:00",
+    "announcement_date": "2026-11-06",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-20",
+    "symbol": "EAST.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) EASTPARC HOTEL Tbk, PT"
+   }
+  },
+  "104264920261106151809": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-15",
+    "agm_time": "13:30:00",
+    "announcement_date": "2026-11-06",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-20",
+    "symbol": "ACST.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ACSET INDONUSA Tbk, PT"
    }
   },
   "104265020261030203413": {
@@ -4195,6 +4293,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BANK INA PERDANA Tbk. PT"
    }
   },
+  "104266820261106112329": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-15",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-06",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-20",
+    "symbol": "ROTI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NIPPON INDOSARI CORPINDO, PT"
+   }
+  },
   "104266920261105224933": {
    "attempts": 1,
    "done": true,
@@ -4207,6 +4319,48 @@
     "recording_date": "2026-11-19",
     "symbol": "FUTR.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) FUTURA ENERGI GLOBAL Tbk, PT"
+   }
+  },
+  "104267320261106152232": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-16",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-06",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-11-06",
+    "symbol": "BOSS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) BORNEO OLAH SARANA SUKSES Tbk, PT"
+   }
+  },
+  "104267420261106152748": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-16",
+    "agm_time": "11:00:00",
+    "announcement_date": "2026-11-06",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-06",
+    "symbol": "BOSS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BORNEO OLAH SARANA SUKSES Tbk, PT"
+   }
+  },
+  "104267520261106155625": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-27",
+    "agm_time": "13:30:00",
+    "announcement_date": "2026-11-06",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-04",
+    "symbol": "KOTA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) DMS PROPERTINDO Tbk, PT"
    }
   }
  },
@@ -4828,13 +4982,13 @@
    }
   },
   "104251420261029135039": {
-   "attempts": 4,
+   "attempts": 5,
    "done": false,
    "meeting": {
     "agm_date": "2026-10-29",
     "symbol": "LAPD.JK"
    },
-   "note": "None"
+   "note": "Failed to download a valid PDF from https://web.ksei.co.id/publications/corporate-action-schedules/minutes-of-meeting?file=104251420261029135039"
   },
   "104251820261021095012": {
    "attempts": 2,
@@ -4900,6 +5054,14 @@
     "symbol": "EPAC.JK"
    }
   },
+  "104255220261104104227": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-04",
+    "symbol": "MINE.JK"
+   }
+  },
   "104256420261016155459": {
    "attempts": 2,
    "done": true,
@@ -4923,7 +5085,12 @@
     "agm_date": "2026-11-03",
     "symbol": "MTPS.JK"
    }
+  },
+  "104265520261104164644": {
+   "attempts": 1,
+   "done": false,
+   "note": "Summarizer did not finish within 300s"
   }
  },
- "updated_on": "2026-11-05T18:41:13"
+ "updated_on": "2026-11-06T18:00:38"
 }
