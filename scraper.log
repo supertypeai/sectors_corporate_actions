@@ -68456,3 +68456,9 @@
 2026-10-30 21:53:01 [INFO] - Data to upsert: BRNA.JK | date: 2026-10-14
 2026-10-30 21:53:02 [INFO] - Successfully upserted 1 data to database
 2026-10-30 21:53:02 [INFO] - idx_warrant: 1 rows in 1-month window (trading_period_start >= 2026-09-30), 0 stale (missing from recent scrape)
+2026-11-06 22:38:30 [INFO] - Init Global Variable
+2026-11-06 22:38:31 [INFO] - Start scraping warrant for cutoff date: 2026-10-07
+2026-11-06 22:38:32 [INFO] - [WARRANT SCRAPER] Scraping completed. Total records collected: 1
+2026-11-06 22:38:32 [INFO] - Data to upsert: BRNA.JK | date: 2026-10-14
+2026-11-06 22:38:33 [INFO] - Successfully upserted 1 data to database
+2026-11-06 22:38:33 [INFO] - idx_warrant: 1 rows in 1-month window (trading_period_start >= 2026-10-07), 0 stale (missing from recent scrape)
