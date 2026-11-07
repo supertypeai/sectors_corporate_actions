@@ -3700,6 +3700,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NUSANTARA SAWIT SEJAHTERA Tbk, PT"
    }
   },
+  "104262520261107185215": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-01",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-07",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-06",
+    "symbol": "NSSS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NUSANTARA SAWIT SEJAHTERA Tbk, PT"
+   }
+  },
   "104262620261022235426": {
    "attempts": 1,
    "done": true,
@@ -4335,6 +4349,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) BORNEO OLAH SARANA SUKSES Tbk, PT"
    }
   },
+  "104267320261107185215": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-16",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-07",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-11-06",
+    "symbol": "BOSS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) BORNEO OLAH SARANA SUKSES Tbk, PT"
+   }
+  },
   "104267420261106152748": {
    "attempts": 1,
    "done": true,
@@ -4349,6 +4377,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BORNEO OLAH SARANA SUKSES Tbk, PT"
    }
   },
+  "104267420261107185215": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-16",
+    "agm_time": "11:00:00",
+    "announcement_date": "2026-11-07",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-06",
+    "symbol": "BOSS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BORNEO OLAH SARANA SUKSES Tbk, PT"
+   }
+  },
   "104267520261106155625": {
    "attempts": 1,
    "done": true,
@@ -4356,6 +4398,20 @@
     "agm_date": "2026-11-27",
     "agm_time": "13:30:00",
     "announcement_date": "2026-11-06",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-04",
+    "symbol": "KOTA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) DMS PROPERTINDO Tbk, PT"
+   }
+  },
+  "104267520261107091045": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-27",
+    "agm_time": "13:30:00",
+    "announcement_date": "2026-11-07",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-04",
@@ -5087,10 +5143,13 @@
    }
   },
   "104265520261104164644": {
-   "attempts": 1,
-   "done": false,
-   "note": "Summarizer did not finish within 300s"
+   "attempts": 3,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-04",
+    "symbol": "AMOR.JK"
+   }
   }
  },
- "updated_on": "2026-11-06T18:00:38"
+ "updated_on": "2026-11-07T16:49:58"
 }
