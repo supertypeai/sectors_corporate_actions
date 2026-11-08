@@ -3714,6 +3714,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NUSANTARA SAWIT SEJAHTERA Tbk, PT"
    }
   },
+  "104262520261108091010": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-01",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-08",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-06",
+    "symbol": "NSSS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NUSANTARA SAWIT SEJAHTERA Tbk, PT"
+   }
+  },
   "104262620261022235426": {
    "attempts": 1,
    "done": true,
@@ -4363,6 +4377,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) BORNEO OLAH SARANA SUKSES Tbk, PT"
    }
   },
+  "104267320261108091021": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-16",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-08",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-11-06",
+    "symbol": "BOSS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) BORNEO OLAH SARANA SUKSES Tbk, PT"
+   }
+  },
   "104267420261106152748": {
    "attempts": 1,
    "done": true,
@@ -4384,6 +4412,20 @@
     "agm_date": "2026-11-16",
     "agm_time": "11:00:00",
     "announcement_date": "2026-11-07",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-06",
+    "symbol": "BOSS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BORNEO OLAH SARANA SUKSES Tbk, PT"
+   }
+  },
+  "104267420261108091030": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-16",
+    "agm_time": "11:00:00",
+    "announcement_date": "2026-11-08",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-06",
@@ -5151,5 +5193,5 @@
    }
   }
  },
- "updated_on": "2026-11-07T16:49:58"
+ "updated_on": "2026-11-08T16:59:49"
 }
