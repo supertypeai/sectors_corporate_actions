@@ -3812,6 +3812,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AVIA AVIAN Tbk, PT"
    }
   },
+  "104262820261109173300": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-02",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-11-09",
+    "announcement_type": "REVISION",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-09",
+    "symbol": "AVIA.JK",
+    "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AVIA AVIAN Tbk, PT"
+   }
+  },
   "104262920261026131602": {
    "attempts": 1,
    "done": true,
@@ -4459,6 +4473,86 @@
     "recording_date": "2026-11-04",
     "symbol": "KOTA.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) DMS PROPERTINDO Tbk, PT"
+   }
+  },
+  "104267820261109155758": {
+   "attempts": 1,
+   "done": false,
+   "note": "could not read the PDF"
+  },
+  "104268020261109155257": {
+   "attempts": 1,
+   "done": false,
+   "note": "could not read the PDF"
+  },
+  "104268120261109160637": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-17",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-23",
+    "symbol": "BESS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BATULICIN NUSANTARA MARITIM Tbk, PT"
+   }
+  },
+  "104268220261109170802": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-16",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-23",
+    "symbol": "ADES.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AKASHA WIRA INTERNATIONAL Tbk, PT"
+   }
+  },
+  "104268320261109181832": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-16",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-11-23",
+    "symbol": "HITS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) HUMPUSS INTERMODA TRANSPORTASI Tbk, PT"
+   }
+  },
+  "104268420261109180253": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-16",
+    "agm_time": "15:00:00",
+    "announcement_date": "2026-11-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-23",
+    "symbol": "SRTG.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SARATOGA INVESTAMA SEDAYA Tbk, PT"
+   }
+  },
+  "104268520261109182343": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-16",
+    "agm_time": "11:45:00",
+    "announcement_date": "2026-11-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-23",
+    "symbol": "HITS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) HUMPUSS INTERMODA TRANSPORTASI Tbk, PT"
    }
   }
  },
@@ -5128,6 +5222,14 @@
     "symbol": "ARMY.JK"
    }
   },
+  "104253720261106103606": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-06",
+    "symbol": "MTFN.JK"
+   }
+  },
   "104254420261029143612": {
    "attempts": 2,
    "done": true,
@@ -5158,6 +5260,19 @@
    "meeting": {
     "agm_date": "2026-11-04",
     "symbol": "MINE.JK"
+   }
+  },
+  "104255420261106105831": {
+   "attempts": 1,
+   "done": false,
+   "note": "Could not resolve ticker for PERUSAHAAN PERSEROAN (PERSERO) PT BANK SYARIAH INDONESIA Tbk"
+  },
+  "104255820261106154846": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-06",
+    "symbol": "GIAA.JK"
    }
   },
   "104256420261016155459": {
@@ -5193,5 +5308,5 @@
    }
   }
  },
- "updated_on": "2026-11-08T16:59:49"
+ "updated_on": "2026-11-09T21:25:48"
 }
