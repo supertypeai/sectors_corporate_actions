@@ -3826,6 +3826,20 @@
     "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AVIA AVIAN Tbk, PT"
    }
   },
+  "104262820261110100315": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-02",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-11-10",
+    "announcement_type": "REVISION",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-09",
+    "symbol": "AVIA.JK",
+    "title": "Revisi Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AVIA AVIAN Tbk, PT"
+   }
+  },
   "104262920261026131602": {
    "attempts": 1,
    "done": true,
@@ -3833,6 +3847,20 @@
     "agm_date": "2026-12-02",
     "agm_time": "10:00:00",
     "announcement_date": "2026-10-26",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-09",
+    "symbol": "PDPP.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PRIMADAYA PLASTISINDO Tbk, PT"
+   }
+  },
+  "104262920261110091018": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-02",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-10",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-09",
@@ -4349,6 +4377,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NIPPON INDOSARI CORPINDO, PT"
    }
   },
+  "104266820261110085316": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-15",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-10",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-20",
+    "symbol": "ROTI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NIPPON INDOSARI CORPINDO, PT"
+   }
+  },
   "104266920261105224933": {
    "attempts": 1,
    "done": true,
@@ -4361,6 +4403,20 @@
     "recording_date": "2026-11-19",
     "symbol": "FUTR.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) FUTURA ENERGI GLOBAL Tbk, PT"
+   }
+  },
+  "104267120261110082105": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-17",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-10",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-24",
+    "symbol": "MBTO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MARTINA BERTO Tbk, PT"
    }
   },
   "104267320261106152232": {
@@ -4476,14 +4532,32 @@
    }
   },
   "104267820261109155758": {
-   "attempts": 1,
-   "done": false,
-   "note": "could not read the PDF"
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-16",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-23",
+    "symbol": "ASJT.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ASURANSI JASA TANIA Tbk, PT"
+   }
   },
   "104268020261109155257": {
-   "attempts": 1,
-   "done": false,
-   "note": "could not read the PDF"
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-16",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-23",
+    "symbol": "CBRE.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) CAKRA BUANA RESOURCES ENERGI Tbk, PT"
+   }
   },
   "104268120261109160637": {
    "attempts": 1,
@@ -4553,6 +4627,48 @@
     "recording_date": "2026-11-23",
     "symbol": "HITS.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) HUMPUSS INTERMODA TRANSPORTASI Tbk, PT"
+   }
+  },
+  "104268720261110143836": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-17",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-10",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-24",
+    "symbol": "HELI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) JAYA TRISHINDO Tbk, PT"
+   }
+  },
+  "104268820261110190140": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-17",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-10",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-09",
+    "symbol": "KIOS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) KIOSON KOMERSIAL INDONESIA Tbk, PT"
+   }
+  },
+  "104269020261110182206": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-17",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-10",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-24",
+    "symbol": "BMHS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BUNDAMEDIK Tbk, PT"
    }
   }
  },
@@ -5263,9 +5379,17 @@
    }
   },
   "104255420261106105831": {
-   "attempts": 1,
+   "attempts": 2,
    "done": false,
    "note": "Could not resolve ticker for PERUSAHAAN PERSEROAN (PERSERO) PT BANK SYARIAH INDONESIA Tbk"
+  },
+  "104255620261109105517": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-09",
+    "symbol": "UNTD.JK"
+   }
   },
   "104255820261106154846": {
    "attempts": 2,
@@ -5273,6 +5397,14 @@
    "meeting": {
     "agm_date": "2026-11-06",
     "symbol": "GIAA.JK"
+   }
+  },
+  "104256020261109095156": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-09",
+    "symbol": "UNTR.JK"
    }
   },
   "104256420261016155459": {
@@ -5308,5 +5440,5 @@
    }
   }
  },
- "updated_on": "2026-11-09T21:25:48"
+ "updated_on": "2026-11-10T18:36:43"
 }
