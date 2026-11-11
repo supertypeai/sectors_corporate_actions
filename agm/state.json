@@ -3915,6 +3915,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDOCEMENT TUNGGAL PRAKARSA Tbk, PT"
    }
   },
+  "104263220261111091010": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-03",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-11-11",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-10",
+    "symbol": "INTP.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDOCEMENT TUNGGAL PRAKARSA Tbk, PT"
+   }
+  },
   "104263420261028111116": {
    "attempts": 1,
    "done": true,
@@ -3922,6 +3936,20 @@
     "agm_date": "2026-12-03",
     "agm_time": "10:00:00",
     "announcement_date": "2026-10-28",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-10",
+    "symbol": "RLCO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ABADI LESTARI INDONESIA Tbk, PT"
+   }
+  },
+  "104263420261111091021": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-03",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-11",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-10",
@@ -4222,6 +4250,11 @@
     "symbol": "RANC.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SUPRA BOGA LESTARI Tbk, PT"
    }
+  },
+  "104265620261111153135": {
+   "attempts": 1,
+   "done": false,
+   "note": "could not read the PDF"
   },
   "104265720261103091325": {
    "attempts": 1,
@@ -4657,6 +4690,11 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) KIOSON KOMERSIAL INDONESIA Tbk, PT"
    }
   },
+  "104268820261111091029": {
+   "attempts": 1,
+   "done": false,
+   "note": "could not read the PDF"
+  },
   "104269020261110182206": {
    "attempts": 1,
    "done": true,
@@ -4669,6 +4707,34 @@
     "recording_date": "2026-11-24",
     "symbol": "BMHS.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BUNDAMEDIK Tbk, PT"
+   }
+  },
+  "104269120261111105322": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-18",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-11",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-25",
+    "symbol": "KOKA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) KOKA INDONESIA Tbk, PT"
+   }
+  },
+  "104269220261111114657": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-11",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-11-10",
+    "symbol": "MTFN.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAPITALINC INVESTMENT Tbk, PT"
    }
   }
  },
@@ -5379,7 +5445,7 @@
    }
   },
   "104255420261106105831": {
-   "attempts": 2,
+   "attempts": 3,
    "done": false,
    "note": "Could not resolve ticker for PERUSAHAAN PERSEROAN (PERSERO) PT BANK SYARIAH INDONESIA Tbk"
   },
@@ -5397,6 +5463,14 @@
    "meeting": {
     "agm_date": "2026-11-06",
     "symbol": "GIAA.JK"
+   }
+  },
+  "104255920261109112907": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-09",
+    "symbol": "ITIC.JK"
    }
   },
   "104256020261109095156": {
@@ -5440,5 +5514,5 @@
    }
   }
  },
- "updated_on": "2026-11-10T18:36:43"
+ "updated_on": "2026-11-11T18:32:58"
 }
