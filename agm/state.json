@@ -4069,6 +4069,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDO ACIDATAMA Tbk, PT"
    }
   },
+  "104264620261112152645": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-08",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-13",
+    "symbol": "SRSN.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDO ACIDATAMA Tbk, PT"
+   }
+  },
   "104264720261030115500": {
    "attempts": 1,
    "done": true,
@@ -4252,9 +4266,18 @@
    }
   },
   "104265620261111153135": {
-   "attempts": 1,
-   "done": false,
-   "note": "could not read the PDF"
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-09",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-11-11",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-16",
+    "symbol": "RANC.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SUPRA BOGA LESTARI Tbk, PT"
+   }
   },
   "104265720261103091325": {
    "attempts": 1,
@@ -4691,9 +4714,18 @@
    }
   },
   "104268820261111091029": {
-   "attempts": 1,
-   "done": false,
-   "note": "could not read the PDF"
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-17",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-11",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-09",
+    "symbol": "KIOS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) KIOSON KOMERSIAL INDONESIA Tbk, PT"
+   }
   },
   "104269020261110182206": {
    "attempts": 1,
@@ -4735,6 +4767,48 @@
     "recording_date": "2026-11-10",
     "symbol": "MTFN.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAPITALINC INVESTMENT Tbk, PT"
+   }
+  },
+  "104269220261112091011": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-11-10",
+    "symbol": "MTFN.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAPITALINC INVESTMENT Tbk, PT"
+   }
+  },
+  "104269420261112001623": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-18",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-25",
+    "symbol": "TAMU.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PELAYARAN TAMARIN SAMUDRA Tbk, PT"
+   }
+  },
+  "104269520261112102505": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-21",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-12",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-11-26",
+    "symbol": "ROCK.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) ROCKFIELDS PROPERTI INDONESIA Tbk, PT"
    }
   }
  },
@@ -5445,7 +5519,7 @@
    }
   },
   "104255420261106105831": {
-   "attempts": 3,
+   "attempts": 4,
    "done": false,
    "note": "Could not resolve ticker for PERUSAHAAN PERSEROAN (PERSERO) PT BANK SYARIAH INDONESIA Tbk"
   },
@@ -5505,6 +5579,14 @@
     "symbol": "MTPS.JK"
    }
   },
+  "104264720261110152129": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-10",
+    "symbol": "WIRG.JK"
+   }
+  },
   "104265520261104164644": {
    "attempts": 3,
    "done": true,
@@ -5514,5 +5596,5 @@
    }
   }
  },
- "updated_on": "2026-11-11T18:32:58"
+ "updated_on": "2026-11-12T18:48:32"
 }
