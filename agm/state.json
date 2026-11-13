@@ -1748,6 +1748,11 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) LANCARTAMA SEJATI Tbk, PT"
    }
   },
+  "104255520261113091011": {
+   "attempts": 1,
+   "done": false,
+   "note": "could not read the PDF"
+  },
   "104255620261001091014": {
    "attempts": 1,
    "done": true,
@@ -3971,6 +3976,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ATLAS NEXUS GROUP Tbk, PT"
    }
   },
+  "104263620261113091018": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-07",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-12",
+    "symbol": "OLIV.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ATLAS NEXUS GROUP Tbk, PT"
+   }
+  },
   "104263720261029115527": {
    "attempts": 1,
    "done": true,
@@ -3978,6 +3997,20 @@
     "agm_date": "2026-12-07",
     "agm_time": "09:00:00",
     "announcement_date": "2026-10-29",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-12",
+    "symbol": "GULA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) AMAN AGRINDO Tbk, PT"
+   }
+  },
+  "104263720261113091024": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-07",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-11-13",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-12",
@@ -4006,6 +4039,20 @@
     "agm_date": "2026-12-07",
     "agm_time": "10:00:00",
     "announcement_date": "2026-10-29",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-12",
+    "symbol": "GTRA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GRAHAPRIMA SUKSESMANDIRI Tbk, PT"
+   }
+  },
+  "104264320261113091030": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-07",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-13",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-12",
@@ -4810,6 +4857,76 @@
     "symbol": "ROCK.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) ROCKFIELDS PROPERTI INDONESIA Tbk, PT"
    }
+  },
+  "104269620261113093633": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-22",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-27",
+    "symbol": "UCID.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) UNI-CHARM INDONESIA Tbk, PT"
+   }
+  },
+  "104269720261113084402": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-22",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-11-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-11-27",
+    "symbol": "JMAS.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) ASURANSI JIWA SYARIAH JASA MITRA ABADI Tbk, PT"
+   }
+  },
+  "104270020261113110618": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-04",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-11",
+    "symbol": "ADHI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ADHI KARYA (PERSERO) Tbk, PT"
+   }
+  },
+  "104270120261113191115": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-22",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-27",
+    "symbol": "WOMF.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) WAHANA OTTOMITRA MULTIARTHA Tbk, PT"
+   }
+  },
+  "104270220261113215323": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-09",
+    "agm_time": "13:00:00",
+    "announcement_date": "2026-11-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-12",
+    "symbol": "VIVA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VISI MEDIA ASIA Tbk, PT"
+   }
   }
  },
  "minutes": {
@@ -5519,7 +5636,7 @@
    }
   },
   "104255420261106105831": {
-   "attempts": 4,
+   "attempts": 5,
    "done": false,
    "note": "Could not resolve ticker for PERUSAHAAN PERSEROAN (PERSERO) PT BANK SYARIAH INDONESIA Tbk"
   },
@@ -5555,6 +5672,11 @@
     "symbol": "UNTR.JK"
    }
   },
+  "104256120261110102838": {
+   "attempts": 1,
+   "done": false,
+   "note": "Could not resolve ticker for RIG TENDERS INDONESIA Tbk, PT"
+  },
   "104256420261016155459": {
    "attempts": 2,
    "done": true,
@@ -5563,12 +5685,25 @@
     "symbol": "BIPP.JK"
    }
   },
+  "104256620261112142501": {
+   "attempts": 1,
+   "done": false,
+   "note": "Could not resolve ticker for NEXAI DIGITAL INFRASTRUKTUR Tbk, PT"
+  },
   "104259920261026105941": {
    "attempts": 2,
    "done": true,
    "meeting": {
     "agm_date": "2026-10-26",
     "symbol": "ELTY.JK"
+   }
+  },
+  "104260620261112104942": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-12",
+    "symbol": "IDEA.JK"
    }
   },
   "104262420261103103011": {
@@ -5596,5 +5731,5 @@
    }
   }
  },
- "updated_on": "2026-11-12T18:48:32"
+ "updated_on": "2026-11-13T18:31:00"
 }
