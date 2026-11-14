@@ -1749,7 +1749,7 @@
    }
   },
   "104255520261113091011": {
-   "attempts": 1,
+   "attempts": 2,
    "done": false,
    "note": "could not read the PDF"
   },
@@ -4130,6 +4130,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDO ACIDATAMA Tbk, PT"
    }
   },
+  "104264620261114091010": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-08",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-13",
+    "symbol": "SRSN.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) INDO ACIDATAMA Tbk, PT"
+   }
+  },
   "104264720261030115500": {
    "attempts": 1,
    "done": true,
@@ -4200,6 +4214,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MERDEKA BATTERY MATERIALS Tbk, PT"
    }
   },
+  "104265020261114091035": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-08",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-13",
+    "symbol": "MBMA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MERDEKA BATTERY MATERIALS Tbk, PT"
+   }
+  },
   "104265120261030153935": {
    "attempts": 1,
    "done": true,
@@ -4213,6 +4241,11 @@
     "symbol": "TRIN.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PERINTIS TRINITI PROPERTI Tbk, PT"
    }
+  },
+  "104265120261114091045": {
+   "attempts": 1,
+   "done": false,
+   "note": "could not read the PDF"
   },
   "104265220261102121941": {
    "attempts": 1,
@@ -4900,6 +4933,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ADHI KARYA (PERSERO) Tbk, PT"
    }
   },
+  "104270020261114091103": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-04",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-14",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-11",
+    "symbol": "ADHI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ADHI KARYA (PERSERO) Tbk, PT"
+   }
+  },
   "104270120261113191115": {
    "attempts": 1,
    "done": true,
@@ -4921,6 +4968,20 @@
     "agm_date": "2026-12-09",
     "agm_time": "13:00:00",
     "announcement_date": "2026-11-13",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-12",
+    "symbol": "VIVA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VISI MEDIA ASIA Tbk, PT"
+   }
+  },
+  "104270220261114091127": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-09",
+    "agm_time": "13:00:00",
+    "announcement_date": "2026-11-14",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-12",
@@ -5673,7 +5734,7 @@
    }
   },
   "104256120261110102838": {
-   "attempts": 1,
+   "attempts": 2,
    "done": false,
    "note": "Could not resolve ticker for RIG TENDERS INDONESIA Tbk, PT"
   },
@@ -5686,7 +5747,7 @@
    }
   },
   "104256620261112142501": {
-   "attempts": 1,
+   "attempts": 2,
    "done": false,
    "note": "Could not resolve ticker for NEXAI DIGITAL INFRASTRUKTUR Tbk, PT"
   },
@@ -5731,5 +5792,5 @@
    }
   }
  },
- "updated_on": "2026-11-13T18:31:00"
+ "updated_on": "2026-11-14T16:56:56"
 }
