@@ -5020,6 +5020,90 @@
     "symbol": "VIVA.JK",
     "title": "Pembatalan Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VISI MEDIA ASIA Tbk, PT"
    }
+  },
+  "104270320261116083828": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-24",
+    "agm_time": "15:00:00",
+    "announcement_date": "2026-11-16",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-16",
+    "symbol": "HADE.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) HIMALAYA ENERGI PERKASA Tbk, PT"
+   }
+  },
+  "104270720261116102545": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-04",
+    "agm_time": "11:00:00",
+    "announcement_date": "2026-11-16",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-11-11",
+    "symbol": "CBMF.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAHAYA BINTANG MEDAN Tbk, PT"
+   }
+  },
+  "104270920261116102514": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-04",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-11-16",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-11-11",
+    "symbol": "CBMF.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAHAYA BINTANG MEDAN Tbk, PT"
+   }
+  },
+  "104271020261116102609": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-04",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-16",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-11-11",
+    "symbol": "CBMF.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAHAYA BINTANG MEDAN Tbk, PT"
+   }
+  },
+  "104271220261116150907": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-23",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-16",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-30",
+    "symbol": "UNSP.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BAKRIE SUMATERA PLANTATIONS Tbk, PT"
+   }
+  },
+  "104271320261116180934": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-08",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-16",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-13",
+    "symbol": "GMFI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA MAINTENANCE FACILITY AERO ASIA Tbk, PT"
+   }
   }
  },
  "minutes": {
@@ -5720,6 +5804,14 @@
     "symbol": "EPAC.JK"
    }
   },
+  "104255120261112102925": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-12",
+    "symbol": "KETR.JK"
+   }
+  },
   "104255220261104104227": {
    "attempts": 2,
    "done": true,
@@ -5766,7 +5858,7 @@
    }
   },
   "104256120261110102838": {
-   "attempts": 3,
+   "attempts": 4,
    "done": false,
    "note": "Could not resolve ticker for RIG TENDERS INDONESIA Tbk, PT"
   },
@@ -5779,7 +5871,7 @@
    }
   },
   "104256620261112142501": {
-   "attempts": 3,
+   "attempts": 4,
    "done": false,
    "note": "Could not resolve ticker for NEXAI DIGITAL INFRASTRUKTUR Tbk, PT"
   },
@@ -5815,6 +5907,14 @@
     "symbol": "WIRG.JK"
    }
   },
+  "104265220261113092021": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-13",
+    "symbol": "ARMY.JK"
+   }
+  },
   "104265520261104164644": {
    "attempts": 3,
    "done": true,
@@ -5824,5 +5924,5 @@
    }
   }
  },
- "updated_on": "2026-11-15T17:40:14"
+ "updated_on": "2026-11-16T20:56:28"
 }
