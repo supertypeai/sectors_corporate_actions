@@ -3896,6 +3896,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VISI MEDIA ASIA Tbk, PT"
    }
   },
+  "104263020261117010000": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-17",
+    "agm_time": "14:30:00",
+    "announcement_date": "2026-11-17",
+    "announcement_type": "CANCELLATION",
+    "meeting_type": "RUPSLB",
+    "recording_date": null,
+    "symbol": "VIVA.JK",
+    "title": "Pembatalan Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VISI MEDIA ASIA Tbk, PT"
+   }
+  },
   "104263120261027082614": {
    "attempts": 1,
    "done": false,
@@ -4041,6 +4055,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) RATU PRABU ENERGI Tbk, PT"
    }
   },
+  "104264220261117091014": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-09",
+    "agm_time": "10:30:00",
+    "announcement_date": "2026-11-17",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-11-16",
+    "symbol": "ARTI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) RATU PRABU ENERGI Tbk, PT"
+   }
+  },
   "104264320261029172651": {
    "attempts": 1,
    "done": true,
@@ -4104,6 +4132,20 @@
     "agm_date": "2026-12-15",
     "agm_time": "10:00:00",
     "announcement_date": "2026-11-06",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-20",
+    "symbol": "TCID.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MANDOM INDONESIA Tbk, PT"
+   }
+  },
+  "104264520261117143612": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-15",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-17",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-20",
@@ -4335,6 +4377,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) CIPTA PERDANA LANCAR Tbk, PT"
    }
   },
+  "104265420261117091028": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-09",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-17",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-16",
+    "symbol": "PART.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) CIPTA PERDANA LANCAR Tbk, PT"
+   }
+  },
   "104265520261102153007": {
    "attempts": 1,
    "done": true,
@@ -4370,6 +4426,20 @@
     "agm_date": "2026-12-09",
     "agm_time": "09:30:00",
     "announcement_date": "2026-11-11",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-16",
+    "symbol": "RANC.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) SUPRA BOGA LESTARI Tbk, PT"
+   }
+  },
+  "104265620261117091035": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-09",
+    "agm_time": "09:30:00",
+    "announcement_date": "2026-11-17",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-16",
@@ -4487,6 +4557,34 @@
     "recording_date": "2026-11-18",
     "symbol": "KBLV.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) FIRST MEDIA Tbk, PT"
+   }
+  },
+  "104266420261117143621": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-28",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-17",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPST",
+    "recording_date": "2026-12-01",
+    "symbol": "TGRA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) TERREGRA ASIA ENERGY Tbk, PT"
+   }
+  },
+  "104266520261117151357": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-28",
+    "agm_time": "13:30:00",
+    "announcement_date": "2026-11-17",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-12-01",
+    "symbol": "TGRA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) TERREGRA ASIA ENERGY Tbk, PT"
    }
   },
   "104266620261104171331": {
@@ -5035,6 +5133,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) HIMALAYA ENERGI PERKASA Tbk, PT"
    }
   },
+  "104270320261117091042": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-24",
+    "agm_time": "15:00:00",
+    "announcement_date": "2026-11-17",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-16",
+    "symbol": "HADE.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) HIMALAYA ENERGI PERKASA Tbk, PT"
+   }
+  },
   "104270720261116102545": {
    "attempts": 1,
    "done": true,
@@ -5103,6 +5215,20 @@
     "recording_date": "2026-11-13",
     "symbol": "GMFI.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA MAINTENANCE FACILITY AERO ASIA Tbk, PT"
+   }
+  },
+  "104271420261117104609": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-01",
+    "agm_time": "09:00:00",
+    "announcement_date": "2026-11-17",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-23",
+    "symbol": "BMBL.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) LAVENDER BINA CENDIKIA Tbk, PT"
    }
   }
  },
@@ -5858,7 +5984,7 @@
    }
   },
   "104256120261110102838": {
-   "attempts": 4,
+   "attempts": 5,
    "done": false,
    "note": "Could not resolve ticker for RIG TENDERS INDONESIA Tbk, PT"
   },
@@ -5871,9 +5997,22 @@
    }
   },
   "104256620261112142501": {
-   "attempts": 4,
+   "attempts": 5,
    "done": false,
    "note": "Could not resolve ticker for NEXAI DIGITAL INFRASTRUKTUR Tbk, PT"
+  },
+  "104256820261117110032": {
+   "attempts": 1,
+   "done": false,
+   "note": "Could not resolve ticker for PT SINAR MAS AGRO RESOURCES AND TECHNOLOGY Tbk. (PT. SMART TBK)"
+  },
+  "104257020261116100006": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-16",
+    "symbol": "TOTL.JK"
+   }
   },
   "104259920261026105941": {
    "attempts": 2,
@@ -5924,5 +6063,5 @@
    }
   }
  },
- "updated_on": "2026-11-16T20:56:28"
+ "updated_on": "2026-11-17T19:46:19"
 }
