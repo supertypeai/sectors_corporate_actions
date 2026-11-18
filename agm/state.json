@@ -2826,6 +2826,20 @@
     "title": "Pembatalan Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA MAINTENANCE FACILITY AERO ASIA Tbk, PT"
    }
   },
+  "104258920261118200000": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-19",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-18",
+    "announcement_type": "CANCELLATION",
+    "meeting_type": "RUPSLB",
+    "recording_date": null,
+    "symbol": "GMFI.JK",
+    "title": "Pembatalan Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) GARUDA MAINTENANCE FACILITY AERO ASIA Tbk, PT"
+   }
+  },
   "104259020261013214538": {
    "attempts": 1,
    "done": true,
@@ -4461,6 +4475,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) HALONI JANE Tbk, PT"
    }
   },
+  "104265720261118095552": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-10",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-18",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-17",
+    "symbol": "HALO.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) HALONI JANE Tbk, PT"
+   }
+  },
   "104265820261103191715": {
    "attempts": 1,
    "done": true,
@@ -5229,6 +5257,20 @@
     "recording_date": "2026-11-23",
     "symbol": "BMBL.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) LAVENDER BINA CENDIKIA Tbk, PT"
+   }
+  },
+  "104271520261118203538": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-09",
+    "agm_time": "13:00:00",
+    "announcement_date": "2026-11-18",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-12",
+    "symbol": "VIVA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) VISI MEDIA ASIA Tbk, PT"
    }
   }
  },
@@ -6001,8 +6043,16 @@
    "done": false,
    "note": "Could not resolve ticker for NEXAI DIGITAL INFRASTRUKTUR Tbk, PT"
   },
+  "104256720261117163407": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-17",
+    "symbol": "SMMA.JK"
+   }
+  },
   "104256820261117110032": {
-   "attempts": 1,
+   "attempts": 2,
    "done": false,
    "note": "Could not resolve ticker for PT SINAR MAS AGRO RESOURCES AND TECHNOLOGY Tbk. (PT. SMART TBK)"
   },
@@ -6061,7 +6111,17 @@
     "agm_date": "2026-11-04",
     "symbol": "AMOR.JK"
    }
+  },
+  "104267320261116113132": {
+   "attempts": 1,
+   "done": false,
+   "note": "Summarizer did not finish within 300s"
+  },
+  "104267420261116113517": {
+   "attempts": 1,
+   "done": false,
+   "note": "Summarizer did not finish within 300s"
   }
  },
- "updated_on": "2026-11-17T19:46:19"
+ "updated_on": "2026-11-18T19:26:03"
 }
