@@ -2966,6 +2966,20 @@
     "title": "Pembatalan Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BAKRIE SUMATERA PLANTATIONS Tbk, PT"
    }
   },
+  "104259320261120000000": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-20",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-20",
+    "announcement_type": "CANCELLATION",
+    "meeting_type": "RUPSLB",
+    "recording_date": null,
+    "symbol": "UNSP.JK",
+    "title": "Pembatalan Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) BAKRIE SUMATERA PLANTATIONS Tbk, PT"
+   }
+  },
   "104259420261014154710": {
    "attempts": 1,
    "done": true,
@@ -4279,6 +4293,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ACSET INDONUSA Tbk, PT"
    }
   },
+  "104264920261120140818": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-15",
+    "agm_time": "13:30:00",
+    "announcement_date": "2026-11-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-20",
+    "symbol": "ACST.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ACSET INDONUSA Tbk, PT"
+   }
+  },
   "104265020261030203413": {
    "attempts": 1,
    "done": true,
@@ -4797,6 +4825,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) FUTURA ENERGI GLOBAL Tbk, PT"
    }
   },
+  "104266920261120091019": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-14",
+    "agm_time": "11:00:00",
+    "announcement_date": "2026-11-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-19",
+    "symbol": "FUTR.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) FUTURA ENERGI GLOBAL Tbk, PT"
+   }
+  },
   "104267120261110082105": {
    "attempts": 1,
    "done": true,
@@ -4930,6 +4972,20 @@
     "agm_date": "2026-12-16",
     "agm_time": "14:00:00",
     "announcement_date": "2026-11-09",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-23",
+    "symbol": "ASJT.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ASURANSI JASA TANIA Tbk, PT"
+   }
+  },
+  "104267820261120142006": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-16",
+    "agm_time": "14:00:00",
+    "announcement_date": "2026-11-20",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-23",
@@ -5133,6 +5189,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAPITALINC INVESTMENT Tbk, PT"
    }
   },
+  "104269320261120135315": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-29",
+    "agm_time": "11:00:00",
+    "announcement_date": "2026-11-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-12-04",
+    "symbol": "BIMA.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) PRIMARINDO ASIA INFRASTRUCTURE Tbk, PT"
+   }
+  },
   "104269420261112001623": {
    "attempts": 1,
    "done": true,
@@ -5327,6 +5397,20 @@
     "recording_date": "2026-11-11",
     "symbol": "CBMF.JK",
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Tahunan (RUPST) CAHAYA BINTANG MEDAN Tbk, PT"
+   }
+  },
+  "104270820261120105821": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-29",
+    "agm_time": "10:30:00",
+    "announcement_date": "2026-11-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-12-04",
+    "symbol": "MARI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MAHAKA RADIO INTEGRA Tbk, PT"
    }
   },
   "104270920261116102514": {
@@ -6262,7 +6346,7 @@
    }
   },
   "104256820261117110032": {
-   "attempts": 3,
+   "attempts": 4,
    "done": false,
    "note": "Could not resolve ticker for PT SINAR MAS AGRO RESOURCES AND TECHNOLOGY Tbk. (PT. SMART TBK)"
   },
@@ -6281,6 +6365,27 @@
     "agm_date": "2026-11-17",
     "symbol": "GEMA.JK"
    }
+  },
+  "104258020261118113032": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "symbol": "FLMC.JK"
+   }
+  },
+  "104258120261118113301": {
+   "attempts": 2,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "symbol": "TRUE.JK"
+   }
+  },
+  "104258220261118103759": {
+   "attempts": 1,
+   "done": false,
+   "note": "Summarizer did not finish within 300s"
   },
   "104259920261026105941": {
    "attempts": 2,
@@ -6331,15 +6436,20 @@
    }
   },
   "104267320261116113132": {
-   "attempts": 2,
+   "attempts": 3,
    "done": false,
    "note": "Summarizer did not finish within 300s"
   },
   "104267420261116113517": {
-   "attempts": 2,
+   "attempts": 3,
+   "done": false,
+   "note": "Summarizer did not finish within 300s"
+  },
+  "104269220261118111508": {
+   "attempts": 1,
    "done": false,
    "note": "Summarizer did not finish within 300s"
   }
  },
- "updated_on": "2026-11-19T19:44:50"
+ "updated_on": "2026-11-20T19:19:31"
 }
