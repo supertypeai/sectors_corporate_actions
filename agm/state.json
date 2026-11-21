@@ -4195,6 +4195,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MANDOM INDONESIA Tbk, PT"
    }
   },
+  "104264520261121091008": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-15",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-21",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-20",
+    "symbol": "TCID.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) MANDOM INDONESIA Tbk, PT"
+   }
+  },
   "104264620261030095314": {
    "attempts": 1,
    "done": true,
@@ -4279,6 +4293,20 @@
     "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) EASTPARC HOTEL Tbk, PT"
    }
   },
+  "104264820261121091016": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-15",
+    "agm_time": "15:00:00",
+    "announcement_date": "2026-11-21",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-20",
+    "symbol": "EAST.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) EASTPARC HOTEL Tbk, PT"
+   }
+  },
   "104264920261106151809": {
    "attempts": 1,
    "done": true,
@@ -4300,6 +4328,20 @@
     "agm_date": "2026-12-15",
     "agm_time": "13:30:00",
     "announcement_date": "2026-11-20",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-20",
+    "symbol": "ACST.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) ACSET INDONUSA Tbk, PT"
+   }
+  },
+  "104264920261121091024": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-15",
+    "agm_time": "13:30:00",
+    "announcement_date": "2026-11-21",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-20",
@@ -4804,6 +4846,20 @@
     "agm_date": "2026-12-15",
     "agm_time": "10:00:00",
     "announcement_date": "2026-11-10",
+    "announcement_type": "NEW",
+    "meeting_type": "RUPSLB",
+    "recording_date": "2026-11-20",
+    "symbol": "ROTI.JK",
+    "title": "Pemberitahuan Rapat Umum Pemegang Saham Luar Biasa (RUPSLB) NIPPON INDOSARI CORPINDO, PT"
+   }
+  },
+  "104266820261121091032": {
+   "attempts": 1,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-12-15",
+    "agm_time": "10:00:00",
+    "announcement_date": "2026-11-21",
     "announcement_type": "NEW",
     "meeting_type": "RUPSLB",
     "recording_date": "2026-11-20",
@@ -6346,7 +6402,7 @@
    }
   },
   "104256820261117110032": {
-   "attempts": 4,
+   "attempts": 5,
    "done": false,
    "note": "Could not resolve ticker for PT SINAR MAS AGRO RESOURCES AND TECHNOLOGY Tbk. (PT. SMART TBK)"
   },
@@ -6383,9 +6439,12 @@
    }
   },
   "104258220261118103759": {
-   "attempts": 1,
-   "done": false,
-   "note": "Summarizer did not finish within 300s"
+   "attempts": 3,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "symbol": "INCO.JK"
+   }
   },
   "104259920261026105941": {
    "attempts": 2,
@@ -6436,20 +6495,29 @@
    }
   },
   "104267320261116113132": {
-   "attempts": 3,
-   "done": false,
-   "note": "Summarizer did not finish within 300s"
+   "attempts": 5,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-16",
+    "symbol": "BOSS.JK"
+   }
   },
   "104267420261116113517": {
-   "attempts": 3,
-   "done": false,
-   "note": "Summarizer did not finish within 300s"
+   "attempts": 5,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-16",
+    "symbol": "BOSS.JK"
+   }
   },
   "104269220261118111508": {
-   "attempts": 1,
-   "done": false,
-   "note": "Summarizer did not finish within 300s"
+   "attempts": 3,
+   "done": true,
+   "meeting": {
+    "agm_date": "2026-11-18",
+    "symbol": "MTFN.JK"
+   }
   }
  },
- "updated_on": "2026-11-20T19:19:31"
+ "updated_on": "2026-11-21T17:59:00"
 }
